@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/18 19:08:21 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/06/23 17:31:51 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/06/23 18:07:08 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,16 +57,13 @@ void	ft_list_subfolders(char *name, t_ls *stock)
 {
 	char *dir;
 
+	ft_print_normal(stock);
 
 	while (stock)
 	{
 		if (S_ISDIR(stock->stat.st_mode) && (!(strcmp(stock->name,".") == 0 || strcmp(stock->name,"..") == 0 || (*stock->name) == '.' )))
 		{
-			ft_putchar('\n');
-			printf("%s\n", stock->name);
-			ft_putchar('\n');
-	dir = ft_strjoin(name, "/");
-	dir = ft_strjoin(name, stock->name);
+			dir = ft_strjoin(ft_strjoin(name, "/"), stock->name);
 			ls(dir);
 		}
 		stock = stock->next;
