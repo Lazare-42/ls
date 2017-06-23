@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/18 19:08:21 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/06/22 17:15:05 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/06/23 17:31:51 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 #include "libft.h"
 
 int ft_print_normal(t_ls *stock);
+void	ls(char *name);
 
-t_ls	*ft_store(char *foldername, t_ls	*stock)
+t_ls	*ft_store(char *foldername)
 {
+	t_ls	*stock = NULL;
 	DIR *dir;
 	struct dirent *dent;
 	dir = opendir(foldername);
@@ -26,31 +28,20 @@ t_ls	*ft_store(char *foldername, t_ls	*stock)
 	{
 		while((dent = readdir(dir)) != NULL)
 		{
-			if (!stock)
-			{
-				stock = malloc(sizeof(t_ls));
-				(stock)->next = NULL;
-			}
-			else 
-			{
-				tmp = malloc(sizeof(t_ls));
-				tmp->next = stock;
-				stock = tmp;
-			}
-			(stock)->name = ft_strnew(ft_strlen(dent->d_name));
+			tmp = malloc(sizeof(t_ls));
+			tmp->next = stock;
+			stock = tmp;
 			(stock)->name = ft_strdup(dent->d_name);
 			stat(stock->name, &(stock->stat));
 		}
-		if (closedir(dir))
-			return (NULL);
 	}
-	 ft_print_normal(stock);
+	ft_print_normal(stock);
 	return (stock);
 }
 
 int ft_print_normal(t_ls *stock)
 {
-	while (stock && stock->next)
+	while (stock)
 	{
 		if((strcmp(stock->name,".")==0 || strcmp(stock->name,"..")==0 || (*stock->name) == '.' ))
 		{
@@ -62,19 +53,36 @@ int ft_print_normal(t_ls *stock)
 	return (1);
 }
 
-int main()
+void	ft_list_subfolders(char *name, t_ls *stock)
 {
-	t_ls *stock = NULL;
-	t_ls *new = NULL;
-	stock = ft_store(".", stock);
+	char *dir;
+
+
 	while (stock)
 	{
-	  if ( S_ISDIR(stock->stat.st_mode) && (!(strcmp(stock->name,".")==0 || strcmp(stock->name,"..")==0 || (*stock->name) == '.' )))
-		return (ft_store(stock->name, new));
-	  if (stock->next)
-		  stock = stock->next;
-	  else
-		  break;
+		if (S_ISDIR(stock->stat.st_mode) && (!(strcmp(stock->name,".") == 0 || strcmp(stock->name,"..") == 0 || (*stock->name) == '.' )))
+		{
+			ft_putchar('\n');
+			printf("%s\n", stock->name);
+			ft_putchar('\n');
+	dir = ft_strjoin(name, "/");
+	dir = ft_strjoin(name, stock->name);
+			ls(dir);
+		}
+		stock = stock->next;
 	}
-	return (0);
+}
+
+void	ls(char *name)
+{
+	t_ls *stock = NULL;
+	stock = ft_store(name);
+	ft_list_subfolders(name, stock);
+}
+
+
+int main()
+{
+	ls(".");
+	return(0);
 }
