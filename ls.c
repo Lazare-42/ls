@@ -6,10 +6,11 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/18 19:08:21 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/06/26 15:20:10 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/06/28 16:40:37 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <sys/xattr.h>
 #include "ls.h"
 #include "libft.h"
 #include <pwd.h>
@@ -25,7 +26,6 @@ t_ls	*ft_store(char *foldername)
 	dir = opendir(foldername);
 	t_ls *tmp;
 
-	printf ("voici le nom du dossier envoye a ft_store : %s\n", foldername);
 	if(dir != NULL)
 	{
 		while((dent = readdir(dir)) != NULL)
@@ -43,33 +43,54 @@ t_ls	*ft_store(char *foldername)
 
 int ft_print_normal(t_ls *stock)
 {
-	char time[13];
+	char *time;
+	acl_t acl;
 	int i;
-	int k;
-	i = 0;
-	k = 4;
+	static int k = 0;
 
-	while (stock)
+	while (stock && stock->next)
 	{
 		if((strcmp(stock->name,".")==0 || strcmp(stock->name,"..")==0 || (*stock->name) == '.' ))
 		{
 		}
 		else 
 		{
-			printf("%s", stock->name);
-			printf("   %s", getpwuid(stock->stat.st_uid)->pw_name);
-			printf("   %lld", stock->stat.st_size);
-			while (i < 12) 
+			printf( S_ISDIR(stock->stat.st_mode) ? "d" : "-");
+			printf( (stock->stat.st_mode & S_IRUSR) ? "r" : "-");
+			printf( (stock->stat.st_mode & S_IWUSR) ? "w" : "-");
+			printf( (stock->stat.st_mode & S_IXUSR) ? "x" : "-");
+			printf( (stock->stat.st_mode & S_IRGRP) ? "r" : "-");
+			printf( (stock->stat.st_mode & S_IWGRP) ? "w" : "-");
+			printf( (stock->stat.st_mode & S_IXGRP) ? "x" : "-");
+			printf( (stock->stat.st_mode & S_IROTH) ? "r" : "-");
+			printf( (stock->stat.st_mode & S_IWOTH) ? "w" : "-");
+			printf( (stock->stat.st_mode & S_IXOTH) ? "x" : "-");
+			if (listxattr(stock->name, NULL, stock->stat.st_size, XATTR_SHOWCOMPRESSION))
 			{
-				time[i] = ctime(&(stock->stat.st_atimespec.tv_sec))[k];
-				i++;
-				k++;
+				i = 1;
+				printf("%s", "@");
 			}
-			printf("   %s\n", time);
+			acl = acl_get_file(stock->name, ACL_TYPE_EXTENDED);
+			if (acl)
+			{
+				printf("%s", "+");
+				i = 1;
+			}
+			if (!(i))
+				printf("%s", " ");
+			printf("   %d", stock->stat.st_nlink);
+			printf(" %s", getpwuid(stock->stat.st_uid)->pw_name);
+			printf("   %lld", stock->stat.st_size);
+			k = k + stock->stat.st_blocks;
+			time = ft_strsub(ctime(&(stock->stat.st_mtime)), 4, 12);
+			printf("   %s ", time);
+			printf("%s\n", stock->name);
 
 		}
 		stock = stock->next;
 	}
+	k = k / 512;
+	printf("%d\n", k);
 	return (1);
 }
 
