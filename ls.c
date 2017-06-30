@@ -16,7 +16,7 @@
 #include <pwd.h>
 #include <time.h>
 int ft_print_normal(t_ls *stock);
-void	ls(char *name);
+void	ls(char **name);
 
 t_ls	*ft_store(char *foldername)
 {
@@ -104,7 +104,7 @@ int		ft_list_subfolders(char *name, t_ls *stock)
 		if (S_ISDIR(stock->stat.st_mode) && (!(strcmp(stock->name,".") == 0 || strcmp(stock->name,"..") == 0 || (*stock->name) == '.' )))
 		{
 			dir = ft_strjoin(ft_strjoin(name, "/"), (stock->name));
-			ls(dir);
+			ls(&dir);
 			return (1);
 		}
 		stock = stock->next;
@@ -112,16 +112,9 @@ int		ft_list_subfolders(char *name, t_ls *stock)
 	return (0);
 }
 
-void	ls(char *name)
+void	ls(char **name)
 {
 	t_ls *stock = NULL;
-	stock = ft_store(name);
+	stock = ft_store(*name);
 	//ft_list_subfolders(name, stock);
-}
-
-
-int main()
-{
-	ls(".");
-	return(0);
 }

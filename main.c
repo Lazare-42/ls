@@ -15,20 +15,20 @@
 
 static void		ft_check_folder_errors(char **folder)
 {
-	DIR *dir;
+	struct stat *buffstatt;
 	int i;
 
 	i = 0;
 	while (folder[i])
 	{
-		if (!(dir = opendir(folder[i])))
+		buffstatt = malloc(sizeof(stat));
+		if (stat(folder[i], buffstatt) == -1)
 		{
 			ft_putstr("ft_ls : ");
 			ft_putstr(folder[i]);
 			ft_putstr(": No such file or directory");
 		}
-		else
-			closedir(dir);
+		free(buffstatt);
 		i++;
 	}
 }
