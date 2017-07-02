@@ -1,0 +1,7 @@
+envoyer les fichiers valides listes en commande dans ls avec leurs options correspondantes, meme si des fichiers invalides sont aussi dans la commande. Mais 
+
+si une chaine de caracteres commancant par - ne contient pas une des options possibles arreter
+
+si -- est affiche arreter de verifier les options et verifier l'existence des fichiers
+
+==> du coup la fonction qui verifie les parametres n'a qu'a renvoyer un poibteur sur les chaines de caractere d'arguments

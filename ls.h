@@ -26,10 +26,11 @@
 #define CMD_R 2
 #define CMD_a 4
 #define CMD_r 8
-#define CMD_t 10
+#define CMD_t 16
+#define ERROR 8000
 
 void	ft_ls(char *foldername, int options);
-void	ls(char **name);
+void	ls(char *name);
 
 typedef struct		s_ls
 {
