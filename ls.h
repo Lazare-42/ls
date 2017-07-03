@@ -30,7 +30,7 @@
 #define ERROR 8000
 
 void	ft_ls(char *foldername, int options);
-void	ls(char *name);
+void	ls(char *name, int options);
 
 typedef struct		s_ls
 {
