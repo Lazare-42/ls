@@ -27,10 +27,7 @@
 #define CMD_a 4
 #define CMD_r 8
 #define CMD_t 16
-#define ERROR 8000
 
-void	ft_ls(char *foldername, int options);
-void	ls(char *name, int options);
 
 typedef struct		s_ls
 {
@@ -38,5 +35,10 @@ typedef struct		s_ls
 	struct 			stat stat;
 	struct 			s_ls *next;
 }					t_ls;
+
+void	ft_ls(char *foldername, int options);
+void	ls(char *name, int options);
+t_ls	*ft_store(char *foldername);
+void	ft_print_normal(t_ls *stock);
 
 #endif

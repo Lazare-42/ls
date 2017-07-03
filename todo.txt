@@ -1,7 +1,22 @@
-envoyer les fichiers valides listes en commande dans ls avec leurs options correspondantes, meme si des fichiers invalides sont aussi dans la commande. Mais 
 
-si une chaine de caracteres commancant par - ne contient pas une des options possibles arreter
 
-si -- est affiche arreter de verifier les options et verifier l'existence des fichiers
 
-==> du coup la fonction qui verifie les parametres n'a qu'a renvoyer un poibteur sur les chaines de caractere d'arguments
+les options :
+
+A. Les options de presentation :
+
+-t : on affiche le dernier modifie en premier
+-r : on inverse l'ordre de presentation
+-a : on affiche les fichiers et dossiers caches
+
+B. Les options de fond :
+
+-l : on affiche plein d'informations en plus
+
+________________________
+
+-R : recursivite
+
+Quid des liens symboliques ?
+
+

@@ -74,6 +74,7 @@ SRC = ft_atoi.c \
 	  ft_strtrim.c \
 	  ft_tolower.c \
 	  ft_toupper.c \
+	  ft_sort_alph.c \
 
 OBJECT = $(SRC:.c=.o)
 

@@ -52,11 +52,8 @@ static int		ft_check_file_errors(char **folder)
 }
 
 
-static int				ft_check_usage(char ***av)
+static int				ft_check_usage(char ***av, int command_options)
 {
-	int	command_options;
-
-	command_options = 0;
 	++*av;
 	while (*av)
 	{
@@ -64,7 +61,8 @@ static int				ft_check_usage(char ***av)
 		{
 			if (**av && *(**av + 1) == '-')
 				return (command_options);
-			++**av;
+			if (***av != '-')
+				++**av;
 			while (***av)
 			{
 				if (ft_stock_commands(***av, command_options))
@@ -116,12 +114,13 @@ int				main(int ac, char **av)
 
 	command_options = 0;
 	ac++;
-	if ((command_options = ft_check_usage(&av)) == -1)
+	if ((command_options = ft_check_usage(&av, command_options)) == -1 
+			&& **av != '-')
 	{
 		ft_print_usage_error(**av);
 		return (-1);
 	}
-	if (*av && !(ft_strcmp(*av, "--")))
+	if (*av && (ft_strequ(*av, "--")))
 		av++;
 	ft_check_file_errors(av);
 	if (*av)
