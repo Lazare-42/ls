@@ -19,18 +19,20 @@
 t_ls	*ft_new_elem(char *name)
 {
 	t_ls	*tmp;
+
 	if (!(tmp = malloc(sizeof(t_ls))))
 		exit(1);
 	tmp->name = ft_strdup(name);
 	return (tmp);
 }
 
-t_ls	*ft_add_elem(char *name, t_ls *stock)
+t_ls	*ft_place_elem(char *name, t_ls *stock)
 {
 	t_ls *new;
 	t_ls *check;
 
 	new = ft_new_elem(name);
+	stat(new->name, &(new->stat));
 	if (!stock)
 		return (new);
 	check = stock;
@@ -52,8 +54,7 @@ t_ls	*ft_store(char *foldername)
 	{
 		while((dent = readdir(dir)) != NULL)
 		{
-			stock = ft_add_elem(dent->d_name, stock);
-			stat(stock->name, &(stock->stat));
+			stock = ft_place_elem(dent->d_name, stock);
 		}
 	}
 	return (stock);

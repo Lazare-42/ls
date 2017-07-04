@@ -46,19 +46,3 @@ int		ft_CMD_r(t_ls *stock)
 	}
 	return (1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
