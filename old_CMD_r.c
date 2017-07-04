@@ -1,10 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   old_CMD_r.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/07/04 03:22:16 by lazrossi          #+#    #+#             */
+/*   Updated: 2017/07/04 03:26:16 by lazrossi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 #include <sys/xattr.h>
 #include "ls.h"
 #include "libft.h"
 #include <pwd.h>
 #include <time.h>
 
-int		ft_CMD_r(t_ls *stock);
+int		ft_CMD_r(t_ls *stock)
 {
 	char *time;
 	acl_t acl;
@@ -46,7 +59,6 @@ int		ft_CMD_r(t_ls *stock);
 			time = ft_strsub(ctime(&(stock->stat.st_mtime)), 4, 12);
 			printf("   %s ", time);
 			printf("%s\n", stock->name);
-
 		}
 		stock = stock->next;
 	}
@@ -54,4 +66,3 @@ int		ft_CMD_r(t_ls *stock);
 	printf("%d\n", k);
 	return (1);
 }
-
