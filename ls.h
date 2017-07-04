@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/19 17:14:32 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/06/28 17:56:46 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/07/04 02:51:52 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,6 @@ void	ft_ls(char *foldername, int options);
 void	ls(char *name, int options);
 t_ls	*ft_store(char *foldername);
 void	ft_print_normal(t_ls *stock);
+int		ft_CMD_r(t_ls *stock);
 
 #endif

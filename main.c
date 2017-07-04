@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/28 14:14:42 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/06/28 17:58:29 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/07/04 02:47:53 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,11 @@ static int		ft_check_file_errors(char **folder)
 }
 
 
-static int				ft_check_usage(char ***av, int command_options)
+static int				ft_check_usage(char ***av)
 {
+	int	command_options;
+
+	command_options = 0;
 	++*av;
 	while (*av)
 	{
@@ -61,8 +64,7 @@ static int				ft_check_usage(char ***av, int command_options)
 		{
 			if (**av && *(**av + 1) == '-')
 				return (command_options);
-			if (***av != '-')
-				++**av;
+			++**av;
 			while (***av)
 			{
 				if (ft_stock_commands(***av, command_options))
@@ -114,13 +116,12 @@ int				main(int ac, char **av)
 
 	command_options = 0;
 	ac++;
-	if ((command_options = ft_check_usage(&av, command_options)) == -1 
-			&& **av != '-')
+	if ((command_options = ft_check_usage(&av)) == -1)
 	{
 		ft_print_usage_error(**av);
 		return (-1);
 	}
-	if (*av && (ft_strequ(*av, "--")))
+	if (*av && !(ft_strcmp(*av, "--")))
 		av++;
 	ft_check_file_errors(av);
 	if (*av)
