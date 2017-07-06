@@ -41,5 +41,7 @@ void	ls(char *name, int options);
 t_ls	*ft_store(char *foldername);
 void	ft_print_normal(t_ls *stock);
 int		ft_CMD_r(t_ls *stock);
+t_ls	*ft_advance_stock_if_no_a(t_ls *stock);
+void	ft_ls_reverse(t_ls **begin_list);
 
 #endif

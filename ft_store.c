@@ -17,7 +17,7 @@
 #include <time.h>
 #include "ls.h"
 
-t_ls	*ft_new_elem(char *name)
+static t_ls	*ft_new_elem(char *name)
 {
 	t_ls	*tmp;
 
@@ -27,7 +27,7 @@ t_ls	*ft_new_elem(char *name)
 	return (tmp);
 }
 
-t_ls	*ft_place_elem(char *name, const char *dirname, t_ls *stock)
+static t_ls	*ft_place_elem(char *name, const char *dirname, t_ls *stock)
 {
 	t_ls *new;
 	t_ls *check;
@@ -65,3 +65,17 @@ t_ls	*ft_store(char *foldername)
 	closedir(dir);
 	return (stock);
 }
+
+t_ls	*ft_advance_stock_if_no_a(t_ls *stock)
+{
+	t_ls *tmp;
+
+	while (ft_strcmp(stock->name, "a") < 0)
+	{
+		tmp = stock->next;
+		free(stock);
+		stock = tmp;
+	}
+	return (stock);
+}
+

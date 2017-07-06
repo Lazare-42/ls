@@ -9,14 +9,12 @@
 /*   Updated: 2017/07/04 03:20:12 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "ls.h"
+
+#include <sys/xattr.h>
 #include "ls.h"
 #include "libft.h"
 #include <pwd.h>
 #include <time.h>
-#include "ls.h"
-#include "libft.h"
-#include "libft.h"
 
 int		ft_CMD_r(t_ls *stock)
 {
@@ -24,6 +22,7 @@ int		ft_CMD_r(t_ls *stock)
 
 	while (stock)
 	{
+		
 		ft_putchar (S_ISDIR(stock->stat.st_mode) ? 'd' : '-');
 		ft_putchar( (stock->stat.st_mode & S_IRUSR) ? 'r' : '-');
 		ft_putchar( (stock->stat.st_mode & S_IWUSR) ? 'w' : '-');
@@ -40,6 +39,7 @@ int		ft_CMD_r(t_ls *stock)
 		time = ft_strsub(ctime(&(stock->stat.st_mtime)), 4, 12);
 		ft_putstr("  ");
 		ft_putstr(time);
+		ft_putchar(' ');
 		ft_putstr(stock->name);
 		ft_putchar('\n');
 		stock = stock->next;
