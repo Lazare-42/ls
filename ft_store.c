@@ -66,16 +66,15 @@ t_ls	*ft_store(char *foldername)
 	return (stock);
 }
 
-t_ls	*ft_advance_stock_if_no_a(t_ls *stock)
+void ft_advance_stock_if_no_a(t_ls **stock)
 {
 	t_ls *tmp;
 
-	while (ft_strcmp(stock->name, "a") < 0)
+	while (ft_strcmp((*stock)->name, "a") < 0)
 	{
-		tmp = stock->next;
-		free(stock);
-		stock = tmp;
+		tmp = (*stock)->next;
+		free(*stock);
+		*stock = tmp;
 	}
-	return (stock);
 }
 
