@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/04 01:51:31 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/07/10 14:42:13 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/07/10 15:17:10 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static t_ls	*ft_new_elem(char *name, const char *dirname, t_ls *stock)
 
 	if (!(name))
 		return (stock);
-	if (!(new = malloc(sizeof(t_ls))))
+	if (!(new = ft_memalloc((size_t)sizeof(t_ls))))
 		exit (1);
 	new->name = ft_strdup(name);
 	path = ft_strjoin((char*)dirname, "/");
@@ -46,12 +46,12 @@ t_ls	*ft_store(char *foldername)
 	dir = opendir(foldername);
 	if (dir != NULL)
 	{
+	ft_putstr(foldername);
+	ft_putchar('\n');
 		while((dent = readdir(dir)))
-		{
-			if (dent)
 				stock = ft_new_elem(dent->d_name, foldername, stock);
-		}
 	}
+	
 	closedir(dir);
 	return (stock);
 }
@@ -62,7 +62,7 @@ void ft_advance_stock_if_no_a(t_ls **stock)
 	while (*stock && (*stock)->name[0] == '.')
 	{
 		tmp = (*stock)->next;
-	//	free (*stock);
+		free (*stock);
 		*stock = tmp;
 	}
 }

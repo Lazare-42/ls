@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/04 01:51:23 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/07/04 03:20:12 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/07/10 15:28:58 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int		ft_CMD_r(t_ls *stock)
 		ft_putchar( (stock->stat.st_mode & S_IXGRP) ? 'x' : '-');
 		ft_putchar( (stock->stat.st_mode & S_IROTH) ? 'r' : '-');
 		ft_putstr("   ");     
-		ft_putchar(stock->stat.st_nlink);
+		ft_putstr(ft_itoa(stock->stat.st_nlink));
 		ft_putstr(getpwuid(stock->stat.st_uid)->pw_name);
 		ft_putstr("   ");     
 		ft_putnbr((int)stock->stat.st_size);
