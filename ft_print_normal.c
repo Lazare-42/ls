@@ -16,7 +16,6 @@ int	ft_longest_name(t_ls *stock)
 	return (i);
 }
 
-
 void ft_print_normal(t_ls *stock)
 {
 	t_ls *tmp;
@@ -28,7 +27,8 @@ void ft_print_normal(t_ls *stock)
 	tmp = stock;
 	while (tmp)
 	{
-		ft_putstr(tmp->name);
+		if (tmp->name)
+			ft_putstr(tmp->name);
 		j = (int)ft_strlen(tmp->name);
 		while (j < i)
 		{

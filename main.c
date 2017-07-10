@@ -44,6 +44,7 @@ static int		ft_check_file_errors(char **folder)
 			ft_putstr("ft_ls: ");
 			ft_putstr(*folder);
 			ft_putstr(": No such file or directory\n");
+			return (1);
 		}
 		free(buffstatt);
 		folder++;
@@ -108,6 +109,7 @@ static void			ft_print_usage_error(char error)
 	ft_putchar(error);
 	ft_putchar('\n');
 	ft_putstr("usage: ls [-lRart] [file ...]");
+	ft_putchar('\n');
 }
 
 int				main(int ac, char **av)
@@ -123,9 +125,12 @@ int				main(int ac, char **av)
 	}
 	if (*av && !(ft_strcmp(*av, "--")))
 		av++;
-	ft_check_file_errors(av);
+	if (ft_check_file_errors(av))
+		return (-1);
 	if (*av)
+	{
 		ft_send_files_to_ls(av, command_options);
+	}
 	else
 		ls(".", command_options);
 	return (0);

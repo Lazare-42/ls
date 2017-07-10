@@ -43,5 +43,7 @@ void	ft_print_normal(t_ls *stock);
 int		ft_CMD_r(t_ls *stock);
 void	ft_advance_stock_if_no_a(t_ls **stock);
 void	ft_ls_reverse(t_ls **begin_list);
+void	ft_free(t_ls **stock);
+t_ls	*ft_place_elem(char *pathname, t_ls *stock, t_ls *new);
 
 #endif
