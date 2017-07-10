@@ -24,8 +24,9 @@ static t_ls	*ft_new_elem(char *name, const char *dirname, t_ls *stock)
 
 	if (!(name))
 		return (stock);
-	if (!(new = ft_memalloc((size_t)sizeof(t_ls))))
+	if (!(new = malloc(sizeof(t_ls))))
 		exit (1);
+	new->next = NULL;
 	new->name = ft_strdup(name);
 	path = ft_strjoin((char*)dirname, "/");
 	path = ft_strjoin(path, name);
@@ -46,8 +47,6 @@ t_ls	*ft_store(char *foldername)
 	dir = opendir(foldername);
 	if (dir != NULL)
 	{
-	ft_putstr(foldername);
-	ft_putchar('\n');
 		while((dent = readdir(dir)))
 				stock = ft_new_elem(dent->d_name, foldername, stock);
 	}
