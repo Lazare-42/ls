@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/04 01:51:31 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/07/04 01:51:33 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/07/10 14:42:13 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void ft_advance_stock_if_no_a(t_ls **stock)
 	while (*stock && (*stock)->name[0] == '.')
 	{
 		tmp = (*stock)->next;
-		free (*stock);
+	//	free (*stock);
 		*stock = tmp;
 	}
 }
