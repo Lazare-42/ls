@@ -73,6 +73,7 @@ int		ft_CMD_r(t_ls *stock, char *foldername)
 	int max_group_size;
 	int	max_bytes_size;
     int  i = 0;
+	acl_t acl;
 
 	max_size_size = ft_max_size(stock, 1);
 	max_name_size = ft_max_size(stock, 2);
@@ -91,11 +92,18 @@ int		ft_CMD_r(t_ls *stock, char *foldername)
 		ft_putchar( (stock->stat.st_mode & S_IROTH) ? 'r' : '-');
 
 
-		i = listxattr(find_path(stock->name, foldername), NULL, stock->stat.st_size, XATTR_SHOWCOMPRESSION);
+		i = listxattr(find_path(stock->name, foldername), NULL, stock->stat.st_size, XATTR_NOFOLLOW);
+
 		if (i)
 			ft_putchar('@');
 		else
-			ft_putchar(' ');
+		{
+			acl = acl_get_file(find_path(stock->name, foldername), ACL_TYPE_EXTENDED);
+			if (acl != NULL)
+				ft_putchar('+');
+			else
+				ft_putchar(' ');
+		}
 
 		ft_put_whites(max_size_size, stock->stat.st_nlink, 1);
 		ft_putnbr(stock->stat.st_nlink);
