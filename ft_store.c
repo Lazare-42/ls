@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/04 01:51:31 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/07/10 15:17:10 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/07/12 08:41:05 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,15 @@
 #include <pwd.h>
 #include <time.h>
 #include "ls.h"
+
+char	*find_path(char *name, const char *dirname)
+{
+	char *path;
+
+	path = ft_strjoin((char*)dirname, "/");
+	path = ft_strjoin(path, name);
+	return (path);
+}
 
 static t_ls	*ft_new_elem(char *name, const char *dirname, t_ls *stock)
 {
@@ -28,8 +37,7 @@ static t_ls	*ft_new_elem(char *name, const char *dirname, t_ls *stock)
 		exit (1);
 	new->next = NULL;
 	new->name = ft_strdup(name);
-	path = ft_strjoin((char*)dirname, "/");
-	path = ft_strjoin(path, name);
+	path = find_path(name, dirname);
 	if (!stock)
 	{
 		stat(path, &(new->stat));
