@@ -45,5 +45,5 @@ void	ft_advance_stock_if_no_a(t_ls **stock);
 void	ft_ls_reverse(t_ls **begin_list);
 void	ft_free(t_ls **stock);
 t_ls	*ft_place_elem(char *pathname, t_ls *stock, t_ls *new);
-
+void	ft_time(t_ls *stock);
 #endif
