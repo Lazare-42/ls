@@ -1,11 +1,41 @@
 #include "ls.h"
 #include "libft.h"
 
-t_ls *ft_place_elem(char *pathname, t_ls *stock, t_ls *new)
+t_ls *ft_place_elem_according_to_time(t_ls *stock, t_ls *new)
+{
+	t_ls *check;
+	t_ls *tmp;
+	int t1;
+	int t2;
+
+	check = stock;
+	t1 = check->stat.st_mtimespec.tv_sec;
+	t2 = new->stat.st_mtimespec.tv_sec;
+	if (t2 > t1)
+	{
+		new->next = stock;
+		stock = new;
+		return (stock);
+	}
+	while(check->next && t2 <= t1)
+	{
+		tmp = check;
+		check = check->next;
+		t1 = check->stat.st_mtimespec.tv_sec;
+	}
+	new->next = check;
+	if (tmp)
+	tmp->next = new;
+	return (stock);
+}
+
+t_ls *ft_place_elem(t_ls *stock, t_ls *new, int options)
 {
 	t_ls	*check;
 
 	check = stock;
+	if (options == 1)
+		return (ft_place_elem_according_to_time(stock, new));
 	if (ft_strcmp(check->name, new->name) > 0)
 	{
 		new->next = stock;
@@ -15,8 +45,5 @@ t_ls *ft_place_elem(char *pathname, t_ls *stock, t_ls *new)
 			check = check->next;
 	new->next = check->next;
 	check->next = new;
-	stat(pathname, &(new->stat));
 	return (stock);
 }
-	
-

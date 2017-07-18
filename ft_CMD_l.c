@@ -17,55 +17,27 @@
 #include <time.h>
 #include <grp.h>
 
-void	ft_put_whites(int max_str_len,int  fillup, int options)
-{
-	if (options == 1 || options == 4)
-		fillup = ft_strlen(ft_itoa(fillup));
-	while (fillup <= max_str_len)
-	{
-		ft_putchar(' ');
-		fillup++;
-	}
-	ft_putchar(' ');
-}
+// this function prints out the total number of blocks
 
-int		ft_max_size(t_ls *stock, int options)
+void	ft_print_512_byte_blocks(t_ls *stock)
 {
-	int max;
-	int tmp_val;
-	struct group *grp;
 	t_ls *tmp;
+	int k;
 
-	max = 0;
+	k = 0;
 	tmp = stock;
-	while (tmp && options == 1)
+	while (tmp)
 	{
-		(tmp->stat.st_nlink > max) ? max = tmp->stat.st_nlink : max;
+		k = k + tmp->stat.st_blocks;
 		tmp = tmp->next;
 	}
-	while (tmp && options == 2)
-	{
-		tmp_val = ft_strlen(getpwuid(tmp->stat.st_uid)->pw_name);
-		(tmp_val > max) ? max = tmp_val: max;
-		tmp = tmp->next;
-	}
-	while (tmp && options == 3)
-	{
-		grp = getgrgid(tmp->stat.st_gid);
-		((int)ft_strlen(grp->gr_name) > max) ? max = (int)ft_strlen(grp->gr_name) : max;
-		tmp = tmp->next;
-	}
-	while (tmp && options == 4)
-	{
-		((int)tmp->stat.st_size > max) ?  max = (int)tmp->stat.st_size : max;
-		tmp = tmp->next;
-	}
-	if (options == 1 || options == 4)
-		max = ft_strlen(ft_itoa(max));
-	return (max);
+	ft_putstr("total ");
+	ft_putnbr(k);
 }
 
-int		ft_CMD_r(t_ls *stock, char *foldername)
+// this function is the proper ft_CMD_r
+
+int		ft_CMD_l(t_ls *stock, char *foldername)
 {
 	char *time;
 	int  max_size_size;
@@ -79,9 +51,20 @@ int		ft_CMD_r(t_ls *stock, char *foldername)
 	max_name_size = ft_max_size(stock, 2);
 	max_group_size = ft_max_size(stock, 3);
 	max_bytes_size = ft_max_size(stock, 4);
+	ft_print_512_byte_blocks(stock);
 	while (stock)
 	{
 
+		ft_putchar('\n');
+		if (0 && S_IFLNK & stock->stat.st_mode)
+		{
+		}
+		else
+		{
+
+		if (S_IFLNK & stock->stat.st_mode)
+			ft_putchar('l');
+		else
 		ft_putchar (S_ISDIR(stock->stat.st_mode) ? 'd' : '-');
 		ft_putchar( (stock->stat.st_mode & S_IRUSR) ? 'r' : '-');
 		ft_putchar( (stock->stat.st_mode & S_IWUSR) ? 'w' : '-');
@@ -90,6 +73,9 @@ int		ft_CMD_r(t_ls *stock, char *foldername)
 		ft_putchar( (stock->stat.st_mode & S_IWGRP) ? 'w' : '-');
 		ft_putchar( (stock->stat.st_mode & S_IXGRP) ? 'x' : '-');
 		ft_putchar( (stock->stat.st_mode & S_IROTH) ? 'r' : '-');
+		ft_putchar(' ');
+		ft_putnbr(stock->stat.st_mtimespec.tv_sec);
+		ft_putchar(' ');
 
 
 		i = listxattr(find_path(stock->name, foldername), NULL, stock->stat.st_size, XATTR_NOFOLLOW);
@@ -134,7 +120,7 @@ int		ft_CMD_r(t_ls *stock, char *foldername)
 
 		ft_putchar(' ');
 		ft_putstr(stock->name);
-		ft_putchar('\n');
+		}
 		stock = stock->next;
 	}
 	return (1);

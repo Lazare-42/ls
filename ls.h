@@ -38,13 +38,18 @@ typedef struct		s_ls
 
 void	ft_ls(char *foldername, int options);
 void	ls(char *name, int options);
-t_ls	*ft_store(char *foldername);
+t_ls	*ft_store(char *foldername, int options);
 void	ft_print_normal(t_ls *stock);
-int		ft_CMD_r(t_ls *stock, char *foldername);
-void	ft_advance_stock_if_no_a(t_ls **stock);
-void	ft_ls_reverse(t_ls **begin_list);
+t_ls	*ft_advance_stock_if_no_a(t_ls *stock, int options);
+void	ft_CMD_r(t_ls **begin_list);
+void	ft_CMD_t(t_ls **stock);
+int		ft_CMD_l(t_ls *stock, char *foldername);
 void	ft_free(t_ls **stock);
-t_ls	*ft_place_elem(char *pathname, t_ls *stock, t_ls *new);
+t_ls	*ft_place_elem(t_ls *stock, t_ls *new, int options);
 void	ft_time(t_ls *stock);
 char	*find_path(char *name, const char *dirname);
+int		ft_max_size_2(t_ls *stock, int options);
+int		ft_max_size(t_ls *stock, int options);
+void	ft_put_whites(int max_str_len, int fillup, int options);
+
 #endif

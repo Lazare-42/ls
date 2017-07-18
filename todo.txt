@@ -17,18 +17,15 @@ les options :
 
 A. Les options de presentation :
 
--t : on affiche le dernier modifie en premier
--r : on inverse l'ordre de presentation
--a : on affiche les fichiers et dossiers caches
+-t : on affiche par ordre chronologique inverse 
+-r : 
+-a :
 
 B. Les options de fond :
 
--l : on affiche plein d'informations en plus
-
-________________________
+-l : gestion des liens symboliaues et SEGFAULT inconnu sur la racine ? 
 
 -R : recursivite
 
-Quid des liens symboliques ?
 
 

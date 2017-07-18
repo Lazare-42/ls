@@ -12,7 +12,7 @@
 
 #include "ls.h"
 
-void	ft_ls_reverse(t_ls **begin_list)
+void	ft_CMD_r(t_ls **begin_list)
 {
 	t_ls*list;
 	t_ls*q;

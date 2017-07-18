@@ -17,10 +17,10 @@ void	ls(char *name, int options)
 {
 	t_ls *stock;
 
-	stock = ft_store(name);
-	(options & CMD_a) ? stock : ft_advance_stock_if_no_a(&stock);
-	(options & CMD_r) ? ft_ls_reverse(&(stock)) : stock;
-	(options & CMD_l) ? ft_CMD_r(stock, name) : ft_print_normal(stock);
+	stock = (options & CMD_t) ? ft_store(name, 1) : ft_store(name, 0);
+	stock = (options & CMD_a) ? stock : ft_advance_stock_if_no_a(stock, options);
+	(options & CMD_r) ? ft_CMD_r(&(stock)) : stock;
+	(options & CMD_l) ? ft_CMD_l(stock, name) : ft_print_normal(stock);
 	ft_free(&stock);
 	ft_putchar('\n');
 }
