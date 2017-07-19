@@ -51,5 +51,5 @@ char	*find_path(char *name, const char *dirname);
 int		ft_max_size_2(t_ls *stock, int options);
 int		ft_max_size(t_ls *stock, int options);
 void	ft_put_whites(int max_str_len, int fillup, int options);
-
+void	ft_CMD_R(t_ls *stock, char *name, int options);
 #endif

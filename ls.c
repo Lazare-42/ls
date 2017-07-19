@@ -21,6 +21,7 @@ void	ls(char *name, int options)
 	stock = (options & CMD_a) ? stock : ft_advance_stock_if_no_a(stock, options);
 	(options & CMD_r) ? ft_CMD_r(&(stock)) : stock;
 	(options & CMD_l) ? ft_CMD_l(stock, name) : ft_print_normal(stock);
+	(options & CMD_R) ? ft_CMD_R(stock, name, options) : options;
 	ft_free(&stock);
 	ft_putchar('\n');
 }

@@ -59,8 +59,7 @@ t_ls	*ft_store(char *foldername, int time)
 		while((dent = readdir(dir)))
 			stock = ft_new_elem(dent->d_name, foldername, stock, time);
 	}
-
-	closedir(dir);
+	//closedir(dir);
 	return (stock);
 }
 

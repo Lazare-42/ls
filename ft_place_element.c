@@ -10,7 +10,7 @@ t_ls *ft_place_elem_according_to_time(t_ls *stock, t_ls *new)
 	check = stock;
 	t1 = check->stat.st_mtimespec.tv_sec;
 	t2 = new->stat.st_mtimespec.tv_sec;
-	if (t2 > t1)
+	if (t2 >= t1)
 	{
 		new->next = stock;
 		return (stock = new);
