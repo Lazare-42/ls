@@ -73,9 +73,6 @@ int		ft_CMD_l(t_ls *stock, char *foldername)
 		ft_putchar( (stock->stat.st_mode & S_IWGRP) ? 'w' : '-');
 		ft_putchar( (stock->stat.st_mode & S_IXGRP) ? 'x' : '-');
 		ft_putchar( (stock->stat.st_mode & S_IROTH) ? 'r' : '-');
-		ft_putchar(' ');
-		ft_putnbr(stock->stat.st_mtimespec.tv_sec);
-		ft_putchar(' ');
 
 
 		i = listxattr(find_path(stock->name, foldername), NULL, stock->stat.st_size, XATTR_NOFOLLOW);

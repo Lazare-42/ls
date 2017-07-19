@@ -4,7 +4,6 @@
 t_ls *ft_place_elem_according_to_time(t_ls *stock, t_ls *new)
 {
 	t_ls *check;
-	t_ls *tmp;
 	int t1;
 	int t2;
 
@@ -14,35 +13,30 @@ t_ls *ft_place_elem_according_to_time(t_ls *stock, t_ls *new)
 	if (t2 > t1)
 	{
 		new->next = stock;
-		stock = new;
-		return (stock);
+		return (stock = new);
 	}
-	while(check->next && t2 <= t1)
-	{
-		tmp = check;
+	while(check->next && check->next->next &&  t2 <= (t1 = check->next->stat.st_mtimespec.tv_sec))
 		check = check->next;
-		t1 = check->stat.st_mtimespec.tv_sec;
-	}
-	new->next = check;
-	if (tmp)
-	tmp->next = new;
+	new->next = check->next;
+	check->next = new;
 	return (stock);
 }
 
-t_ls *ft_place_elem(t_ls *stock, t_ls *new, int options)
+t_ls *ft_place_elem(t_ls *stock, t_ls *new, int time)
 {
 	t_ls	*check;
 
 	check = stock;
-	if (options == 1)
+	if (time == 1)
 		return (ft_place_elem_according_to_time(stock, new));
+
 	if (ft_strcmp(check->name, new->name) > 0)
 	{
 		new->next = stock;
 		return (stock = new);
 	}
 	while (check->next && ft_strcmp(check->next->name, new->name) < 0)
-			check = check->next;
+		check = check->next;
 	new->next = check->next;
 	check->next = new;
 	return (stock);

@@ -45,7 +45,7 @@ void	ft_CMD_r(t_ls **begin_list);
 void	ft_CMD_t(t_ls **stock);
 int		ft_CMD_l(t_ls *stock, char *foldername);
 void	ft_free(t_ls **stock);
-t_ls	*ft_place_elem(t_ls *stock, t_ls *new, int options);
+t_ls	*ft_place_elem(t_ls *stock, t_ls *new, int time);
 void	ft_time(t_ls *stock);
 char	*find_path(char *name, const char *dirname);
 int		ft_max_size_2(t_ls *stock, int options);

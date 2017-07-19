@@ -78,8 +78,8 @@ t_ls  *ft_advance_stock_if_no_a(t_ls *stock, int options)
 		}
 		return (stock);
 	}
-	if ((stock)->name[0] == '.')
-		return (ft_advance_stock_if_no_a(((stock)->next), options));
+	if (stock->name[0] == '.' && stock->next)
+		return (ft_advance_stock_if_no_a((stock->next), options));
 	tmp_1 = stock;
 	while (tmp_1)
 	{
