@@ -9,7 +9,7 @@ void	ft_CMD_R(t_ls *stock,char *name, int options)
 	tmp = stock;
 	while (stock)
 	{
-		if (S_ISDIR(stock->stat.st_mode) && stock->name[0] != '.')
+		if (S_ISDIR(stock->stat.st_mode) && (ft_strcmp(stock->name, "..") != 0))
 		{
 			ft_putchar('\n');
 			ft_putchar('\n');
