@@ -102,3 +102,32 @@ lrw-r--r    1 Lazare  staff    12288 Jul 19 16:16 .ft_place_element.c.swp
 drwxr-xr   28 Lazare  staff      952 Jul 19 16:16 .
 total 0
 drwxr-xr   28 Lazare  staff    952 Jul 19 16:17 .
+total 328
+drwxr-xr    15 Lazare  staff      510 Jul 19 19:07 .git
+drwxr-xr    28 Lazare  staff      952 Jul 19 19:06 .
+lrw-r--r     1 Lazare  staff    12288 Jul 19 19:06 .ft_place_element.c.swp
+lrwxr-xr     1 Lazare  staff    37760 Jul 19 19:06 a.out
+lrw-r--r     1 Lazare  staff      865 Jul 19 19:06 ft_place_element.c
+lrw-r--r     1 Lazare  staff    12288 Jul 19 18:38 .ft_store.c.swp
+lrw-r--r     1 Lazare  staff     2411 Jul 19 18:38 ft_store.c
+lrw-r--r     1 Lazare  staff     6007 Jul 19 16:17 myls
+lrw-r--r     1 Lazare  staff     1912 Jul 19 16:17 ls.h
+lrw-r--r     1 Lazare  staff     3473 Jul 19 15:53 ls
+lrw-r--r     1 Lazare  staff     1282 Jul 19 15:31 ls.c
+drwxr-xr     7 Lazare  staff      238 Jul 19 15:30 ..
+lrw-r--r     1 Lazare  staff     3449 Jul 18 19:40 ft_CMD_l.c
+lrw-r--r     1 Lazare  staff     1113 Jul 17 22:40 ft_list_reverse.c
+lrw-r--r     1 Lazare  staff     1303 Jul 16 18:03 ft_padding.c
+lrw-r--r     1 Lazare  staff     1124 Jul 16 17:30 todo.txt
+lrw-r--r     1 Lazare  staff    12288 Jul 12 05:50 .ft_CMD_r.c.swo
+lrw-r--r     1 Lazare  staff    12288 Jul 12 05:50 .tmp.c.swp
+drwxr-xr     3 Lazare  staff      102 Jul 12 05:50 a.out.dSYM
+lrw-r--r     1 Lazare  staff     1032 Jul 12 05:50 ft_free.c
+lrw-r--r     1 Lazare  staff     1263 Jul 12 05:50 ft_list_subfolders.c
+lrw-r--r     1 Lazare  staff      541 Jul 12 05:50 ft_print_normal.c
+drwxr-xr   136 Lazare  staff     4624 Jul 12 05:50 libft
+lrw-r--r     1 Lazare  staff     3941 Jul 12 05:50 libft.h
+lrw-r--r     1 Lazare  staff     3330 Jul 12 05:50 main.c
+lrw-r--r     1 Lazare  staff     2342 Jul 12 05:50 printf_CMD_r.c
+lrw-r--r     1 Lazare  staff     1452 Jul 12 05:50 tmp.c
+lrw-r--r     1 Lazare  staff      351 Jul 12 03:53 ft_time.c

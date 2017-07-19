@@ -15,7 +15,7 @@ t_ls *ft_place_elem_according_to_time(t_ls *stock, t_ls *new)
 		new->next = stock;
 		return (stock = new);
 	}
-	while(check->next && check->next->next &&  t2 <= (t1 = check->next->stat.st_mtimespec.tv_sec))
+	while(check->next &&  t2 <= (t1 = check->next->stat.st_mtimespec.tv_sec))
 		check = check->next;
 	new->next = check->next;
 	check->next = new;
