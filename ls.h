@@ -38,7 +38,7 @@ typedef struct		s_ls
 
 void	ft_ls(char *foldername, int options);
 void	ls(char *name, int options);
-t_ls	*ft_store(char *foldername, int options);
+t_ls	*ft_store(char *foldername, DIR *dir, int options);
 void	ft_print_normal(t_ls *stock);
 t_ls	*ft_advance_stock_if_no_a(t_ls *stock, int options);
 void	ft_CMD_r(t_ls **begin_list);

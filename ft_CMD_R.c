@@ -9,16 +9,18 @@ void	ft_CMD_R(t_ls *stock,char *name, int options)
 	tmp = stock;
 	while (stock)
 	{
-		if (S_ISDIR(stock->stat.st_mode) && (ft_strcmp(stock->name, "..") != 0))
+		new_name = NULL;
+		if (S_ISDIR(stock->stat.st_mode) && ft_strcmp("..", stock->name) && ft_strcmp(".", stock->name))
 		{
-			ft_putchar('\n');
-			ft_putchar('\n');
-			ft_putstr(stock->name);
+
+			new_name = ft_strjoin(ft_strjoin(name, "/"), stock->name);
+			ft_putstr(new_name);
 			ft_putstr(":\n");
-			name = ft_strjoin(name, "/");
-			new_name = ft_strjoin(name, stock->name);
 			ls(new_name, options);
 		}
+		if (new_name)
+			ft_bzero(new_name, ft_strlen(new_name));
 		stock = stock->next;
+		new_name = NULL;
 	}
 }

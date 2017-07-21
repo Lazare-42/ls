@@ -47,19 +47,16 @@ static t_ls	*ft_new_elem(char *name, const char *dirname, t_ls *stock, int time)
 	return (ft_place_elem(stock, new, time));
 }
 
-t_ls	*ft_store(char *foldername, int time)
+t_ls	*ft_store(char *foldername, DIR *dir, int time)
 {
 	t_ls	*stock = NULL;
-	DIR *dir;
 	struct dirent *dent;
 
-	dir = opendir(foldername);
 	if (dir != NULL)
 	{
-		while((dent = readdir(dir)))
+		while((dir && (dent = readdir(dir))))
 			stock = ft_new_elem(dent->d_name, foldername, stock, time);
 	}
-	//closedir(dir);
 	return (stock);
 }
 
