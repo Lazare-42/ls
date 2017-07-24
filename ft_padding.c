@@ -17,49 +17,43 @@ void	ft_put_whites(int max_str_len,int  fillup, int options)
 	ft_putchar(' ');
 }
 
-int		ft_max_size_2(t_ls *stock, int options)
+int *ft_new_int_tab(int *new)
 {
-	int max;
-	int tmp_val;
-	t_ls *tmp;
-
-	max = 0;
-	tmp = stock;
-	while (tmp && options == 1)
-	{
-		(tmp->stat.st_nlink > max) ? max = tmp->stat.st_nlink : max;
-		tmp = tmp->next;
-	}
-	while (tmp && options == 2)
-	{
-		tmp_val = ft_strlen(getpwuid(tmp->stat.st_uid)->pw_name);
-		(tmp_val > max) ? max = tmp_val: max;
-		tmp = tmp->next;
-	}
-	return (max);
+	new[0] = 0;
+	new[1] = 0;
+	new[2] = 0;
+	new[2] = 0;
+	return (new);
 }
-int		ft_max_size(t_ls *stock, int options)
+
+int	*ft_max_size(t_ls *stock)
 {
-	int max;
+	int *max;
+	int val;
 	struct group *grp;
 	t_ls *tmp;
-
-	max = 0;
+	int k;
+	
+	k = 0;
+	max = malloc(sizeof(int) * 4);
+	max = ft_new_int_tab(max);
 	tmp = stock;
-	if (options == 1 || options == 2)
-		max = ft_max_size_2(stock, options);
-	while (tmp && options == 3)
+	while (tmp)
 	{
+		(tmp->stat.st_nlink > max[0]) ? max[0] = tmp->stat.st_nlink : max[0];
+		val = ft_strlen(getpwuid(tmp->stat.st_uid)->pw_name);
+		(val > max[1] )? max[1] = val : max[1]; 
 		grp = getgrgid(tmp->stat.st_gid);
-		((int)ft_strlen(grp->gr_name) > max) ? max = (int)ft_strlen(grp->gr_name) : max;
+		val = ((int)ft_strlen(grp->gr_name));
+		(val > max[2] )? max[2] = val : max[2];
+		((int)tmp->stat.st_size > max[3]) ?  max[3] = (int)tmp->stat.st_size : max[3];
+		k = k + tmp->stat.st_blocks;
 		tmp = tmp->next;
 	}
-	while (tmp && options == 4)
-	{
-		((int)tmp->stat.st_size > max) ?  max = (int)tmp->stat.st_size : max;
-		tmp = tmp->next;
-	}
-	if (options == 1 || options == 4)
-		max = ft_strlen(ft_itoa(max));
+	max[0] = ft_strlen(ft_itoa(max[0]));
+	max[3] = ft_strlen(ft_itoa(max[1]));
+	ft_putstr("total ");
+	ft_putnbr(k);
+	ft_putchar('\n');
 	return (max);
 }

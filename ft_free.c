@@ -22,4 +22,3 @@ void	ft_free(t_ls **stock)
 		*stock = tmp;
 	}
 }
-

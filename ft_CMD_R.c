@@ -12,7 +12,6 @@ void	ft_CMD_R(t_ls *stock,char *name, int options)
 		new_name = NULL;
 		if (S_ISDIR(stock->stat.st_mode) && ft_strcmp("..", stock->name) && ft_strcmp(".", stock->name))
 		{
-
 			new_name = ft_strjoin(ft_strjoin(name, "/"), stock->name);
 			ft_putstr(new_name);
 			ft_putstr(":\n");

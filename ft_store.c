@@ -40,7 +40,12 @@ static t_ls	*ft_new_elem(char *name, const char *dirname, t_ls *stock, int time)
 	path = find_path(name, dirname);
 	if (!stock)
 	{
-		lstat(path, &(new->stat));
+		if (lstat(path, &(new->stat)))
+		{
+			ft_strdel(&path);
+			ft_putstr(strerror(errno));
+		}
+		ft_strdel(&path);
 		return (new);
 	}
 	lstat(path, &(new->stat));
