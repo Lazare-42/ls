@@ -22,7 +22,7 @@ int *ft_new_int_tab(int *new)
 	new[0] = 0;
 	new[1] = 0;
 	new[2] = 0;
-	new[2] = 0;
+	new[3] = 0;
 	return (new);
 }
 
@@ -51,9 +51,8 @@ int	*ft_max_size(t_ls *stock)
 		tmp = tmp->next;
 	}
 	max[0] = ft_strlen(ft_itoa(max[0]));
-	max[3] = ft_strlen(ft_itoa(max[1]));
+	max[3] = ft_strlen(ft_itoa(max[3]));
 	ft_putstr("total ");
 	ft_putnbr(k);
-	ft_putchar('\n');
 	return (max);
 }
