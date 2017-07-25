@@ -17,9 +17,10 @@ void	ls(char *name, int options)
 {
 	t_ls *stock;
 	DIR *dir;
-
 	dir = NULL;
-	dir = opendir(name);
+
+	if (!(dir = opendir((const char *)name)))
+		return ;
 	stock = (options & CMD_t) ? ft_store(name, dir,  1) : ft_store(name, dir,  0);
 	stock = (options & CMD_a) ? stock : ft_advance_stock_if_no_a(stock, options);
 	(options & CMD_r) ? ft_CMD_r(&(stock)) : stock;
@@ -30,5 +31,5 @@ void	ls(char *name, int options)
 	if (options & CMD_R)
 		ft_putchar('\n');
 	(options & CMD_R) ? ft_CMD_R(stock, name, options) : options;
-	//ft_free(&stock);
+	ft_free(&stock);
 }

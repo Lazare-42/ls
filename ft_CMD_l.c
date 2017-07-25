@@ -77,8 +77,7 @@ void	ft_print_name(unsigned char c, char *name, int st_mode)
 	}
 }
 
-
-int		ft_CMD_l(t_ls *stock, char *foldername)
+int		ft_CMD_l(t_ls *tmp, char *foldername)
 {
 	int  *max_size;
 	time_t local_time;
@@ -86,7 +85,9 @@ int		ft_CMD_l(t_ls *stock, char *foldername)
 	char *path;
 	char c;
 	local_time = time(&local_time);
+	t_ls *stock;
 
+	stock = tmp;
 	max_size = ft_max_size(stock);
 	while (stock)
 	{

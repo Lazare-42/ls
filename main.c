@@ -27,26 +27,28 @@ static void      ft_send_files_to_ls(char **folder, int command_options)
 		buffstatt = malloc(sizeof(stat));
 		if (!(stat(*folder, buffstatt)))
 			ls(*folder, command_options);
-		free(buffstatt);
+		if (buffstatt)
+			free(buffstatt);
 		folder++;
 	}
 }
 
 static int		ft_check_file_errors(char **folder)
 {
-	struct stat *buffstatt;
 
+	DIR *dir;
+
+	dir = NULL;
 	while (*folder)
 	{
-		buffstatt = malloc(sizeof(stat));
-		if (stat(*folder, buffstatt) == -1)
+		if (!(dir = opendir(*folder)))
 		{
 			ft_putstr("ft_ls: ");
 			ft_putstr(*folder);
 			ft_putstr(": No such file or directory\n");
 			return (1);
 		}
-		free(buffstatt);
+		closedir(dir);
 		folder++;
 	}
 	return (0);
