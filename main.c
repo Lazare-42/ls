@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/28 14:14:42 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/07/26 15:01:59 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/07/26 20:03:16 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,44 +16,22 @@
 static void			ft_print_usage_error(char error);
 static int 		ft_stock_commands(char command, int command_options);
 
-static void      ft_send_files_to_ls(char **folder, int command_options)
+static int		ft_check_file_errors(char *folder, int print_option)
 {
-//	struct stat *buffstatt;
+	struct stat buffstatt;
 
-	if (*folder && !(ft_strcmp(*folder, "--")))
-		folder++;
-	while (*folder)
+	if (lstat(folder, &buffstatt))
 	{
-//		buffstatt = malloc(sizeof(stat));
-//		if (!(stat(*folder, buffstatt)))
-			ls(*folder, command_options);
-//		if (buffstatt)
-//			free(buffstatt);
-		folder++;
-	}
-}
-
-static int		ft_check_file_errors(char **folder)
-{
-
-	DIR *dir;
-
-	dir = NULL;
-	while (*folder)
-	{
-		if (!(dir = opendir(*folder)))
+		if (print_option)
 		{
-			ft_putstr("ft_ls: ");
-			ft_putstr(*folder);
-			ft_putstr(": No such file or directory\n");
-			return (1);
+		ft_putstr("ft_ls: ");
+		ft_putstr(folder);
+		ft_putstr(": No such file or directory\n");
 		}
-		closedir(dir);
-		folder++;
+		return (0);
 	}
-	return (0);
+	return (1);
 }
-
 
 static int				ft_check_usage(char ***av)
 {
@@ -117,6 +95,7 @@ static void			ft_print_usage_error(char error)
 int				main(int ac, char **av)
 {
 	int command_options;
+	char **tmp;
 
 	command_options = 0;
 	ac++;
@@ -127,11 +106,21 @@ int				main(int ac, char **av)
 	}
 	if (*av && !(ft_strcmp(*av, "--")))
 		av++;
-	if (ft_check_file_errors(av))
-		return (-1);
 	if (*av)
 	{
-		ft_send_files_to_ls(av, command_options);
+		tmp = av;
+		while (*tmp)
+		{
+			ft_check_file_errors(*tmp, 1);
+			tmp++;
+		}
+		while (*av)
+		{
+			if (ft_check_file_errors(*av, 0))
+				ls(*av, command_options);
+			av++;
+		}
+		return (0);
 	}
 	else
 		ls(".", command_options);
