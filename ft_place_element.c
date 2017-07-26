@@ -22,14 +22,20 @@ t_ls *ft_place_elem_according_to_time(t_ls *stock, t_ls *new)
 	return (stock);
 }
 
-t_ls *ft_place_elem(t_ls *stock, t_ls *new, int time)
+t_ls *ft_place_elem(t_ls *stock, t_ls *new, int options)
 {
 	t_ls	*check;
 
 	check = stock;
-	if (time == 1)
+	if (!(options & CMD_a) && new->name[0] == '.')
+	{
+		ft_memdel((void**)&new);
+		return (stock);
+	}
+	if (!(stock))
+		return (stock = new);
+	if (options & CMD_t)
 		return (ft_place_elem_according_to_time(stock, new));
-
 	if (ft_strcmp(check->name, new->name) > 0)
 	{
 		new->next = stock;

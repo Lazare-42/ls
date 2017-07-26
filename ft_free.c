@@ -19,6 +19,7 @@ void	ft_free(t_ls **stock)
 	{
 		tmp = (*stock)->next;
 		free (*stock);
+		*stock = NULL;
 		*stock = tmp;
 	}
 }

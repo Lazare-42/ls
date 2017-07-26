@@ -1,0 +1,1760 @@
+total 0
+drwxr-xr-x  14 Lazare  staff   476 Jul  6 05:19 Piscine-C
+drwxr-xr-x  80 Lazare  staff  2720 Jun 14 10:03 fillit
+drwxr-xr-x  30 Lazare  staff  1020 Jul 25 12:19 ft_ls
+drwxr-xr-x  12 Lazare  staff   408 Jul 21 11:13 ft_other_ls
+drwxr-xr-x  10 Lazare  staff   340 Jun  9 18:14 get-next-line
+drwxr-xr-x  73 Lazare  staff  2482 Jun 13 11:01 libft
+drwxr-xr-x  30 Lazare  staff  1020 Jul 25 17:30 ls
+drwxr-xr-x  29 Lazare  staff   986 Jul 24 23:01 myls
+
+../Piscine-C:
+total 0
+drwxr-xr-x  12 Lazare  staff  408 Jul  6 05:19 d00
+drwxr-xr-x  10 Lazare  staff  340 Jul  6 05:19 d01
+drwxr-xr-x   9 Lazare  staff  306 Jul  6 05:19 d02
+drwxr-xr-x  11 Lazare  staff  374 Jul  6 05:19 d03
+drwxr-xr-x  10 Lazare  staff  340 Jul  6 05:19 d04
+drwxr-xr-x  22 Lazare  staff  748 Jul  6 05:19 d05
+drwxr-xr-x   7 Lazare  staff  238 Jul  6 05:19 d06
+drwxr-xr-x   2 Lazare  staff   68 Jul  6 05:19 d07
+drwxr-xr-x   9 Lazare  staff  306 Jul  6 05:19 d08
+drwxr-xr-x   8 Lazare  staff  272 Jul  6 05:19 d10
+drwxr-xr-x  17 Lazare  staff  578 Jul  6 05:22 d11
+
+../Piscine-C/d00:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex01
+drwxr-xr-x  6 Lazare  staff  204 Jul  6 05:19 ex02
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex03
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex04
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex05
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex06
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex07
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex08
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex09
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex10
+
+../Piscine-C/d00/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  2048 Jul  6 05:19 testDay00.tar
+
+../Piscine-C/d00/ex02:
+total 16
+-rw-r--r--  1 Lazare  staff  6144 Jul  6 05:19 exo2.tar
+
+../Piscine-C/d00/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  1257 Jul  6 05:19 klist.txt
+
+../Piscine-C/d00/ex04:
+total 8
+-rwxr-xr-x  1 Lazare  staff  937 Jul  6 05:19 who_am_i.sh
+
+../Piscine-C/d00/ex05:
+total 8
+-rwxr-xr-x  1 Lazare  staff  77 Jul  6 05:19 people.sh
+
+../Piscine-C/d00/ex06:
+total 8
+-rwxr-xr-x  1 Lazare  staff  121 Jul  6 05:19 mobile-phone.ldif
+
+../Piscine-C/d00/ex07:
+total 8
+-rw-r--r--  1 Lazare  staff  13 Jul  6 05:19 midLS
+
+../Piscine-C/d00/ex08:
+total 8
+-rw-r--r--  1 Lazare  staff  2 Jul  6 05:19 z
+
+../Piscine-C/d00/ex09:
+total 8
+-rw-r--r--  1 Lazare  staff  538 Jul  6 05:19 b
+
+../Piscine-C/d00/ex10:
+total 8
+-rw-r--r--  1 Lazare  staff  63 Jul  6 05:19 clean
+
+../Piscine-C/d01:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex01
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex02
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex03
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex04
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex05
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex06
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex07
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex08
+
+../Piscine-C/d01/ex01:
+total 8
+-rwxr-xr-x  1 Lazare  staff  56 Jul  6 05:19 print_groups.sh
+
+../Piscine-C/d01/ex02:
+total 8
+-rwxr-xr-x  1 Lazare  staff  75 Jul  6 05:19 find_sh.sh
+
+../Piscine-C/d01/ex03:
+total 8
+-rwxr-xr-x  1 Lazare  staff  65 Jul  6 05:19 count_files.sh
+
+../Piscine-C/d01/ex04:
+total 8
+-rwxr-xr-x  1 Lazare  staff  108 Jul  6 05:19 MAC.sh
+
+../Piscine-C/d01/ex05:
+total 8
+-rw-r--r--  1 Lazare  staff  2 Jul  6 05:19 "\?$*'KwaMe'*$?\"
+
+../Piscine-C/d01/ex06:
+total 8
+-rwxr-xr-x  1 Lazare  staff  32 Jul  6 05:19 skip.sh
+
+../Piscine-C/d01/ex07:
+total 8
+-rwxr-xr-x  1 Lazare  staff  187 Jul  6 05:19 r_dwssap.sh
+
+../Piscine-C/d01/ex08:
+total 8
+-rwxr-xr-x  1 Lazare  staff  84 Jul  6 05:19 bon.sh
+
+../Piscine-C/d02:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex00
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex01
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex02
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex03
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex04
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex05
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex06
+
+../Piscine-C/d02/ex00:
+total 8
+-rw-r--r--  1 Lazare  staff  1046 Jul  6 05:19 ft_print_alphabet.c
+
+../Piscine-C/d02/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  1048 Jul  6 05:19 ft_print_reverse_alphabet.c
+
+../Piscine-C/d02/ex02:
+total 8
+-rw-r--r--  1 Lazare  staff  1039 Jul  6 05:19 ft_print_numbers.c
+
+../Piscine-C/d02/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  1027 Jul  6 05:19 ft_is_negative.c
+
+../Piscine-C/d02/ex04:
+total 8
+-rw-r--r--  1 Lazare  staff  1367 Jul  6 05:19 ft_print_comb.c
+
+../Piscine-C/d02/ex05:
+total 8
+-rw-r--r--  1 Lazare  staff  1587 Jul  6 05:19 ft_print_comb2.c
+
+../Piscine-C/d02/ex06:
+total 8
+-rw-r--r--  1 Lazare  staff  1090 Jul  6 05:19 ft_putnbr.c
+
+../Piscine-C/d03:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex00
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex01
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex02
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex03
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex04
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex05
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex06
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex07
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex08
+
+../Piscine-C/d03/ex00:
+total 8
+-rw-r--r--  1 Lazare  staff  929 Jul  6 05:19 ft_ft.c
+
+../Piscine-C/d03/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  954 Jul  6 05:19 ft_ultimate_ft.c
+
+../Piscine-C/d03/ex02:
+total 8
+-rw-r--r--  1 Lazare  staff  962 Jul  6 05:19 ft_swap.c
+
+../Piscine-C/d03/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  976 Jul  6 05:19 ft_div_mod.c
+
+../Piscine-C/d03/ex04:
+total 8
+-rw-r--r--  1 Lazare  staff  998 Jul  6 05:19 ft_ultimate_div_mod.c
+
+../Piscine-C/d03/ex05:
+total 8
+-rw-r--r--  1 Lazare  staff  1024 Jul  6 05:19 ft_putstr.c
+
+../Piscine-C/d03/ex06:
+total 8
+-rw-r--r--  1 Lazare  staff  983 Jul  6 05:19 ft_strlen.c
+
+../Piscine-C/d03/ex07:
+total 8
+-rw-r--r--  1 Lazare  staff  1215 Jul  6 05:19 ft_strrev.c
+
+../Piscine-C/d03/ex08:
+total 8
+-rw-r--r--  1 Lazare  staff  1188 Jul  6 05:19 ft_atoi.c
+
+../Piscine-C/d04:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex00
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex01
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex02
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex03
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex04
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex05
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex06
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex07
+
+../Piscine-C/d04/ex00:
+total 8
+-rw-r--r--  1 Lazare  staff  1106 Jul  6 05:19 ft_iterative_factorial.c
+
+../Piscine-C/d04/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  1115 Jul  6 05:19 ft_recursive_factorial.c
+
+../Piscine-C/d04/ex02:
+total 8
+-rw-r--r--  1 Lazare  staff  1079 Jul  6 05:19 ft_iterative_power.c
+
+../Piscine-C/d04/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  1114 Jul  6 05:19 ft_recursive_power.c
+
+../Piscine-C/d04/ex04:
+total 8
+-rw-r--r--  1 Lazare  staff  1095 Jul  6 05:19 ft_fibonacci.c
+
+../Piscine-C/d04/ex05:
+total 8
+-rw-r--r--  1 Lazare  staff  1147 Jul  6 05:19 ft_sqrt.c
+
+../Piscine-C/d04/ex06:
+total 8
+-rw-r--r--  1 Lazare  staff  1137 Jul  6 05:19 ft_is_prime.c
+
+../Piscine-C/d04/ex07:
+total 8
+-rw-r--r--  1 Lazare  staff  1248 Jul  6 05:19 ft_find_next_prime.c
+
+../Piscine-C/d05:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex00
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex01
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex02
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex03
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex04
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex05
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex06
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex07
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex08
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex09
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex10
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex11
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex12
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex13
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex14
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex15
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex16
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex17
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex18
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex19
+
+../Piscine-C/d05/ex00:
+total 8
+-rw-r--r--  1 Lazare  staff  1016 Jul  6 05:19 ft_putstr.c
+
+../Piscine-C/d05/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  1097 Jul  6 05:19 ft_putnbr.c
+
+../Piscine-C/d05/ex02:
+total 8
+-rw-r--r--  1 Lazare  staff  1214 Jul  6 05:19 ft_atoi.c
+
+../Piscine-C/d05/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  1106 Jul  6 05:19 ft_strcpy.c
+
+../Piscine-C/d05/ex04:
+total 8
+-rw-r--r--  1 Lazare  staff  1111 Jul  6 05:19 ft_strncpy.c
+
+../Piscine-C/d05/ex05:
+total 8
+-rw-r--r--  1 Lazare  staff  1214 Jul  6 05:19 ft_strstr.c
+
+../Piscine-C/d05/ex06:
+total 8
+-rw-r--r--  1 Lazare  staff  1022 Jul  6 05:19 ft_strcmp.c
+
+../Piscine-C/d05/ex07:
+total 8
+-rw-r--r--  1 Lazare  staff  1063 Jul  6 05:19 ft_strncmp.c
+
+../Piscine-C/d05/ex08:
+total 8
+-rw-r--r--  1 Lazare  staff  1091 Jul  6 05:19 ft_strupcase.c
+
+../Piscine-C/d05/ex09:
+total 8
+-rw-r--r--  1 Lazare  staff  1098 Jul  6 05:19 ft_strlowcase.c
+
+../Piscine-C/d05/ex10:
+total 8
+-rw-r--r--  1 Lazare  staff  1281 Jul  6 05:19 ft_strcapitalize.c
+
+../Piscine-C/d05/ex11:
+total 8
+-rw-r--r--  1 Lazare  staff  1105 Jul  6 05:19 ft_str_is_alpha.c
+
+../Piscine-C/d05/ex12:
+total 8
+-rw-r--r--  1 Lazare  staff  1017 Jul  6 05:19 ft_str_is_numeric.c
+
+../Piscine-C/d05/ex13:
+total 8
+-rw-r--r--  1 Lazare  staff  1020 Jul  6 05:19 ft_str_is_lowercase.c
+
+../Piscine-C/d05/ex14:
+total 8
+-rw-r--r--  1 Lazare  staff  1019 Jul  6 05:19 ft_str_is_uppercase.c
+
+../Piscine-C/d05/ex15:
+total 8
+-rw-r--r--  1 Lazare  staff  1040 Jul  6 05:19 ft_str_is_printable.c
+
+../Piscine-C/d05/ex16:
+total 8
+-rw-r--r--  1 Lazare  staff  1082 Jul  6 05:19 ft_strcat.c
+
+../Piscine-C/d05/ex17:
+total 8
+-rw-r--r--  1 Lazare  staff  1099 Jul  6 05:19 ft_strncat.c
+
+../Piscine-C/d05/ex18:
+total 8
+-rw-r--r--  1 Lazare  staff  1150 Jul  6 05:19 strlcat.c
+
+../Piscine-C/d05/ex19:
+total 8
+-rw-r--r--  1 Lazare  staff  1160 Jul  6 05:19 strlcpy.c
+
+../Piscine-C/d06:
+total 0
+drwxr-xr-x  9 Lazare  staff  306 Jul  6 05:19 ex00
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex01
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex02
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex03
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex04
+
+../Piscine-C/d06/ex00:
+total 56
+-rw-r--r--  1 Lazare  staff   959 Jul  6 05:19 ft_putchar.c
+-rw-r--r--  1 Lazare  staff  1024 Jul  6 05:19 ft_putstr.c
+-rw-r--r--  1 Lazare  staff  1022 Jul  6 05:19 ft_strcmp.c
+-rw-r--r--  1 Lazare  staff   983 Jul  6 05:19 ft_strlen.c
+-rw-r--r--  1 Lazare  staff  1145 Jul  6 05:19 ft_strrev.c
+-rw-r--r--  1 Lazare  staff   962 Jul  6 05:19 ft_swap.c
+-rwxr-xr-x  1 Lazare  staff   192 Jul  6 05:19 libft_creator.sh
+
+../Piscine-C/d06/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  1082 Jul  6 05:19 ft_print_program_name.c
+
+../Piscine-C/d06/ex02:
+total 8
+-rw-r--r--  1 Lazare  staff  1125 Jul  6 05:19 ft_print_params.c
+
+../Piscine-C/d06/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  1129 Jul  6 05:19 ft_rev_params.c
+
+../Piscine-C/d06/ex04:
+total 8
+-rw-r--r--  1 Lazare  staff  1574 Jul  6 05:19 ft_sort_params.c
+
+../Piscine-C/d07:
+
+../Piscine-C/d08:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex00
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex01
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex02
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex03
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex04
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex05
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex06
+
+../Piscine-C/d08/ex00:
+total 8
+-rw-r--r--  1 Lazare  staff  2061 Jul  6 05:19 ft_split_whitespaces.c
+
+../Piscine-C/d08/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  1072 Jul  6 05:19 ft.h
+
+../Piscine-C/d08/ex02:
+total 8
+-rw-r--r--  1 Lazare  staff  1181 Jul  6 05:19 ft_boolean.h
+
+../Piscine-C/d08/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  969 Jul  6 05:19 ft_abs.h
+
+../Piscine-C/d08/ex04:
+total 8
+-rw-r--r--  1 Lazare  staff  995 Jul  6 05:19 ft_point.h
+
+../Piscine-C/d08/ex05:
+total 16
+-rw-r--r--  1 Lazare  staff  1726 Jul  6 05:19 ft_param_to_tab.c
+-rw-r--r--  1 Lazare  staff  1122 Jul  6 05:19 ft_stock_par.h
+
+../Piscine-C/d08/ex06:
+total 16
+-rw-r--r--  1 Lazare  staff  1418 Jul  6 05:19 ft_show_tab.c
+-rw-r--r--  1 Lazare  staff  1122 Jul  6 05:19 ft_stock_par.h
+
+../Piscine-C/d10:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex00
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex01
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex02
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex03
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex04
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 ex05
+
+../Piscine-C/d10/ex00:
+total 8
+-rw-r--r--  1 Lazare  staff  1322 Jul  6 05:19 Makefile
+
+../Piscine-C/d10/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  1013 Jul  6 05:19 ft_foreach.c
+
+../Piscine-C/d10/ex02:
+total 8
+-rw-r--r--  1 Lazare  staff  1132 Jul  6 05:19 ft_map.c
+
+../Piscine-C/d10/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  1038 Jul  6 05:19 ft_any.c
+
+../Piscine-C/d10/ex04:
+total 8
+-rw-r--r--  1 Lazare  staff  1052 Jul  6 05:19 ft_count_if.c
+
+../Piscine-C/d10/ex05:
+total 8
+-rw-r--r--  1 Lazare  staff  1248 Jul  6 05:19 ft_is_sort.c
+
+../Piscine-C/d11:
+total 0
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex00
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex01
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex02
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex03
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex04
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex05
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex06
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex07
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex08
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex09
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex10
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex11
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex12
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex13
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 ex14
+
+../Piscine-C/d11/ex00:
+total 16
+-rw-r--r--  1 Lazare  staff  1121 Jul  6 05:19 ft_create_elem.c
+-rw-r--r--  1 Lazare  staff  1014 Jul  6 05:19 ft_list.h
+
+../Piscine-C/d11/ex01:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 ft_list.h
+-rw-r--r--  1 Lazare  staff  1203 Jul  6 05:19 ft_list_push_back.c
+
+../Piscine-C/d11/ex02:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 ft_list.h
+-rw-r--r--  1 Lazare  staff  1162 Jul  6 05:19 ft_list_push_front.c
+
+../Piscine-C/d11/ex03:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 ft_list.h
+-rw-r--r--  1 Lazare  staff  1137 Jul  6 05:19 ft_list_size.c
+
+../Piscine-C/d11/ex04:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 ft_list.h
+-rw-r--r--  1 Lazare  staff  1146 Jul  6 05:19 ft_list_last.c
+
+../Piscine-C/d11/ex05:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 ft_list.h
+-rw-r--r--  1 Lazare  staff  1345 Jul  6 05:19 ft_list_push_params.c
+
+../Piscine-C/d11/ex06:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 ft_list.h
+-rw-r--r--  1 Lazare  staff  1212 Jul  6 05:19 ft_list_clear.c
+
+../Piscine-C/d11/ex07:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 ft_list.h
+-rw-r--r--  1 Lazare  staff  1150 Jul  6 05:19 ft_list_at.c
+
+../Piscine-C/d11/ex08:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 ft_list.h
+-rw-r--r--  1 Lazare  staff  1155 Jul  6 05:19 ft_list_reverse.c
+
+../Piscine-C/d11/ex09:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 ft_list.h
+-rw-r--r--  1 Lazare  staff  1097 Jul  6 05:19 ft_list_foreach.c
+
+../Piscine-C/d11/ex10:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 ft_list.h
+-rw-r--r--  1 Lazare  staff  1167 Jul  6 05:19 ft_list_foreach_if.c
+
+../Piscine-C/d11/ex11:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 ft_list.h
+-rw-r--r--  1 Lazare  staff  1154 Jul  6 05:19 ft_list_find.c
+
+../Piscine-C/d11/ex12:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 ft_list.h
+-rw-r--r--  1 Lazare  staff  1471 Jul  6 05:19 ft_list_remove_if.c
+
+../Piscine-C/d11/ex13:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 ft_list.h
+-rw-r--r--  1 Lazare  staff  1179 Jul  6 05:19 ft_list_merge.c
+
+../Piscine-C/d11/ex14:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 ft_list.h
+-rw-r--r--  1 Lazare  staff  1477 Jul  6 05:19 ft_list_sort.c
+
+../fillit:
+total 616
+-rw-r--r--  1 Lazare  staff  2911 Jun 13 11:03 Makefile
+-rw-r--r--  1 Lazare  staff  2138 Jun 13 11:03 fillit.h
+-rw-r--r--  1 Lazare  staff  1901 Jun 13 11:03 ft_atoi.c
+-rw-r--r--  1 Lazare  staff   970 Jun 13 11:03 ft_bzero.c
+-rw-r--r--  1 Lazare  staff  1427 Jun 13 11:03 ft_check_syntax.c
+-rw-r--r--  1 Lazare  staff  1850 Jun 13 11:03 ft_check_tetriminos.c
+-rw-r--r--  1 Lazare  staff  1259 Jun 13 11:03 ft_create_grid.c
+-rw-r--r--  1 Lazare  staff  1408 Jun 13 11:03 ft_file_to_string.c
+-rw-r--r--  1 Lazare  staff  1025 Jun 13 11:03 ft_free_tables.c
+-rw-r--r--  1 Lazare  staff  1003 Jun 13 11:03 ft_isalnum.c
+-rw-r--r--  1 Lazare  staff  1001 Jun 13 11:03 ft_isalpha.c
+-rw-r--r--  1 Lazare  staff   971 Jun 13 11:03 ft_isascii.c
+-rw-r--r--  1 Lazare  staff   973 Jun 13 11:03 ft_isdigit.c
+-rw-r--r--  1 Lazare  staff   974 Jun 13 11:03 ft_islower.c
+-rw-r--r--  1 Lazare  staff   972 Jun 13 11:03 ft_isprint.c
+-rw-r--r--  1 Lazare  staff   974 Jun 13 11:03 ft_isupper.c
+-rw-r--r--  1 Lazare  staff  1507 Jun 13 11:03 ft_itoa.c
+-rw-r--r--  1 Lazare  staff   993 Jun 13 11:03 ft_lstadd.c
+-rw-r--r--  1 Lazare  staff  1152 Jun 13 11:03 ft_lstdel.c
+-rw-r--r--  1 Lazare  staff  1051 Jun 13 11:03 ft_lstdelone.c
+-rw-r--r--  1 Lazare  staff  1018 Jun 13 11:03 ft_lstiter.c
+-rw-r--r--  1 Lazare  staff  1403 Jun 13 11:03 ft_lstmap.c
+-rw-r--r--  1 Lazare  staff  1343 Jun 13 11:03 ft_lstnew.c
+-rw-r--r--  1 Lazare  staff  1049 Jun 13 11:03 ft_memalloc.c
+-rw-r--r--  1 Lazare  staff  1160 Jun 13 11:03 ft_memccpy.c
+-rw-r--r--  1 Lazare  staff  1115 Jun 13 11:03 ft_memchr.c
+-rw-r--r--  1 Lazare  staff  1155 Jun 13 11:03 ft_memcmp.c
+-rw-r--r--  1 Lazare  staff  1094 Jun 13 11:03 ft_memcpy.c
+-rw-r--r--  1 Lazare  staff   984 Jun 13 11:03 ft_memdel.c
+-rw-r--r--  1 Lazare  staff  1230 Jun 13 11:03 ft_memmove.c
+-rw-r--r--  1 Lazare  staff  1079 Jun 13 11:03 ft_memset.c
+-rw-r--r--  1 Lazare  staff  1217 Jun 13 11:03 ft_myitoa_bin.c
+-rw-r--r--  1 Lazare  staff  1039 Jun 13 11:03 ft_print_tables.c
+-rw-r--r--  1 Lazare  staff  2526 Jun 13 11:03 ft_print_tetriminos.c
+-rw-r--r--  1 Lazare  staff   959 Jun 13 11:03 ft_putchar.c
+-rw-r--r--  1 Lazare  staff   971 Jun 13 11:03 ft_putchar_fd.c
+-rw-r--r--  1 Lazare  staff  1031 Jun 13 11:03 ft_putendl.c
+-rw-r--r--  1 Lazare  staff  1044 Jun 13 11:03 ft_putendl_fd.c
+-rw-r--r--  1 Lazare  staff  1157 Jun 13 11:03 ft_putnbr.c
+-rw-r--r--  1 Lazare  staff  1196 Jun 13 11:03 ft_putnbr_fd.c
+-rw-r--r--  1 Lazare  staff  1003 Jun 13 11:03 ft_putstr.c
+-rw-r--r--  1 Lazare  staff  1015 Jun 13 11:03 ft_putstr_fd.c
+-rw-r--r--  1 Lazare  staff  2673 Jun 13 11:03 ft_resolve.c
+-rw-r--r--  1 Lazare  staff  1139 Jun 13 11:03 ft_square_min.c
+-rw-r--r--  1 Lazare  staff  2606 Jun 13 11:03 ft_stockintab.c
+-rw-r--r--  1 Lazare  staff  1010 Jun 13 11:03 ft_strcat.c
+-rw-r--r--  1 Lazare  staff  1024 Jun 13 11:03 ft_strchr.c
+-rw-r--r--  1 Lazare  staff   979 Jun 13 11:03 ft_strclr.c
+-rw-r--r--  1 Lazare  staff  1073 Jun 13 11:03 ft_strcmp.c
+-rw-r--r--  1 Lazare  staff  1047 Jun 13 11:03 ft_strcpy.c
+-rw-r--r--  1 Lazare  staff   966 Jun 13 11:03 ft_strdel.c
+-rw-r--r--  1 Lazare  staff  1158 Jun 13 11:03 ft_strdup.c
+-rw-r--r--  1 Lazare  staff  1054 Jun 13 11:03 ft_strequ.c
+-rw-r--r--  1 Lazare  staff   997 Jun 13 11:03 ft_striter.c
+-rw-r--r--  1 Lazare  staff  1049 Jun 13 11:03 ft_striteri.c
+-rw-r--r--  1 Lazare  staff  1160 Jun 13 11:03 ft_strjoin.c
+-rw-r--r--  1 Lazare  staff  1307 Jun 13 11:03 ft_strjoin_free.c
+-rw-r--r--  1 Lazare  staff  1281 Jun 13 11:03 ft_strlcat.c
+-rw-r--r--  1 Lazare  staff  1016 Jun 13 11:03 ft_strlen.c
+-rw-r--r--  1 Lazare  staff  1176 Jun 13 11:03 ft_strmap.c
+-rw-r--r--  1 Lazare  staff  1194 Jun 13 11:03 ft_strmapi.c
+-rw-r--r--  1 Lazare  staff  1101 Jun 13 11:03 ft_strncat.c
+-rw-r--r--  1 Lazare  staff  1134 Jun 13 11:03 ft_strncmp.c
+-rw-r--r--  1 Lazare  staff  1114 Jun 13 11:03 ft_strncpy.c
+-rw-r--r--  1 Lazare  staff  1069 Jun 13 11:03 ft_strnequ.c
+-rw-r--r--  1 Lazare  staff   978 Jun 13 11:03 ft_strnew.c
+-rw-r--r--  1 Lazare  staff  1270 Jun 13 11:03 ft_strnstr.c
+-rw-r--r--  1 Lazare  staff  1103 Jun 13 11:03 ft_strrchr.c
+-rw-r--r--  1 Lazare  staff  1834 Jun 13 11:03 ft_strsplit.c
+-rw-r--r--  1 Lazare  staff  1191 Jun 13 11:03 ft_strstr.c
+-rw-r--r--  1 Lazare  staff  1112 Jun 13 11:03 ft_strsub.c
+-rw-r--r--  1 Lazare  staff  1340 Jun 13 11:03 ft_strtrim.c
+-rw-r--r--  1 Lazare  staff  1368 Jun 13 11:03 ft_strtrim_free.c
+-rw-r--r--  1 Lazare  staff   978 Jun 13 11:03 ft_tolower.c
+-rw-r--r--  1 Lazare  staff   978 Jun 13 11:03 ft_toupper.c
+-rw-r--r--  1 Lazare  staff  3965 Jun 13 11:03 libft.h
+-rw-r--r--  1 Lazare  staff  1750 Jun 13 11:03 main.c
+
+../ft_ls:
+total 75432
+-rw-r--r--    1 Lazare  staff      1591 Jul 20 18:59 Makefile
+-rw-r--r--    1 Lazare  staff       110 Jul 20 18:59 README.md
+-rwxr-xr-x    1 Lazare  staff     38632 Jul 20 19:05 a.out
+-rw-r--r--    1 Lazare  staff      4852 Jul 25 12:19 additional_func.o
+-rw-r--r--    1 Lazare  staff      7504 Jul 25 12:19 additional_func2.o
+-rw-r--r--    1 Lazare  staff      6836 Jul 25 12:19 additional_func3.o
+-rw-r--r--    1 Lazare  staff      7532 Jul 25 12:19 addtoshow.o
+-rw-r--r--    1 Lazare  staff         7 Jul 20 18:59 auteur
+-rwxr-xr-x    1 Lazare  staff     67740 Jul 25 12:19 ft_ls
+-rw-r--r--    1 Lazare  staff      5052 Jul 25 12:19 gestion.o
+-rw-r--r--    1 Lazare  staff      8356 Jul 25 12:19 gestion_l.o
+drwxr-xr-x    3 Lazare  staff       102 Jul 24 19:56 includes
+drwxr-xr-x  159 Lazare  staff      5406 Jul 25 12:19 libft
+-rw-r--r--    1 Lazare  staff      4568 Jul 25 12:19 ls_perms.o
+-rw-r--r--    1 Lazare  staff      3616 Jul 25 12:19 main.o
+-rw-r--r--    1 Lazare  staff      3924 Jul 25 12:19 parser.o
+-rw-r--r--    1 Lazare  staff     10308 Jul 25 12:19 save_ls.o
+-rw-r--r--    1 Lazare  staff      4152 Jul 25 12:19 single_file.o
+drwxr-xr-x   15 Lazare  staff       510 Jul 25 14:18 srcs
+-rw-r--r--    1 Lazare  staff   3247691 Jul 20 19:05 testmysls
+-rw-r--r--    1 Lazare  staff  14418525 Jul 20 19:07 testotherls
+-rw-r--r--    1 Lazare  staff  14393980 Jul 20 19:03 testthisls
+-rw-r--r--    1 Lazare  staff   6330787 Jul 20 19:04 truels
+-rw-r--r--    1 Lazare  staff      5796 Jul 25 12:19 user_info.o
+
+../ft_ls/includes:
+total 8
+-rw-r--r--  1 Lazare  staff  2804 Jul 20 18:59 ft_ls.h
+
+../ft_ls/libft:
+total 1496
+-rwxr-xr-x   1 Lazare  staff    3661 Jul 20 18:59 Makefile
+-rwxr-xr-x   1 Lazare  staff       7 Jul 20 18:59 auteur
+-rwxr-xr-x   1 Lazare  staff    1924 Jul 20 18:59 ft_atoi.c
+-rw-r--r--   1 Lazare  staff    1872 Jul 25 12:19 ft_atoi.o
+-rwxr-xr-x   1 Lazare  staff    1942 Jul 20 18:59 ft_atoi_base.c
+-rw-r--r--   1 Lazare  staff    1864 Jul 25 12:19 ft_atoi_base.o
+-rwxr-xr-x   1 Lazare  staff    1987 Jul 20 18:59 ft_atoi_nbase.c
+-rw-r--r--   1 Lazare  staff    1868 Jul 25 12:19 ft_atoi_nbase.o
+-rwxr-xr-x   1 Lazare  staff    1026 Jul 20 18:59 ft_binlen.c
+-rw-r--r--   1 Lazare  staff     652 Jul 25 12:19 ft_binlen.o
+-rwxr-xr-x   1 Lazare  staff    1087 Jul 20 18:59 ft_bzero.c
+-rw-r--r--   1 Lazare  staff     692 Jul 25 12:19 ft_bzero.o
+-rwxr-xr-x   1 Lazare  staff    1536 Jul 20 18:59 ft_cat.c
+-rw-r--r--   1 Lazare  staff    1556 Jul 25 12:19 ft_cat.o
+-rwxr-xr-x   1 Lazare  staff    1080 Jul 20 18:59 ft_charwlen.c
+-rw-r--r--   1 Lazare  staff     720 Jul 25 12:19 ft_charwlen.o
+-rwxr-xr-x   1 Lazare  staff    1067 Jul 20 18:59 ft_isalnum.c
+-rw-r--r--   1 Lazare  staff     696 Jul 25 12:19 ft_isalnum.o
+-rwxr-xr-x   1 Lazare  staff    1035 Jul 20 18:59 ft_isalpha.c
+-rw-r--r--   1 Lazare  staff     672 Jul 25 12:19 ft_isalpha.o
+-rwxr-xr-x   1 Lazare  staff    1005 Jul 20 18:59 ft_isascii.c
+-rw-r--r--   1 Lazare  staff     656 Jul 25 12:19 ft_isascii.o
+-rwxr-xr-x   1 Lazare  staff    1007 Jul 20 18:59 ft_isdigit.c
+-rw-r--r--   1 Lazare  staff     656 Jul 25 12:19 ft_isdigit.o
+-rwxr-xr-x   1 Lazare  staff    1006 Jul 20 18:59 ft_isprint.c
+-rw-r--r--   1 Lazare  staff     656 Jul 25 12:19 ft_isprint.o
+-rwxr-xr-x   1 Lazare  staff    1349 Jul 20 18:59 ft_itoa.c
+-rw-r--r--   1 Lazare  staff     908 Jul 25 12:19 ft_itoa.o
+-rwxr-xr-x   1 Lazare  staff    1475 Jul 20 18:59 ft_itoa_base.c
+-rw-r--r--   1 Lazare  staff    1180 Jul 25 12:19 ft_itoa_base.o
+-rwxr-xr-x   1 Lazare  staff    1476 Jul 20 18:59 ft_itoa_base_l.c
+-rw-r--r--   1 Lazare  staff    1220 Jul 25 12:19 ft_itoa_base_l.o
+-rwxr-xr-x   1 Lazare  staff    1494 Jul 20 18:59 ft_itoa_base_ll.c
+-rw-r--r--   1 Lazare  staff    1220 Jul 25 12:19 ft_itoa_base_ll.o
+-rwxr-xr-x   1 Lazare  staff    1469 Jul 20 18:59 ft_itoa_base_uint.c
+-rw-r--r--   1 Lazare  staff    1228 Jul 25 12:19 ft_itoa_base_uint.o
+-rwxr-xr-x   1 Lazare  staff    1044 Jul 20 18:59 ft_memalloc.c
+-rw-r--r--   1 Lazare  staff     744 Jul 25 12:19 ft_memalloc.o
+-rwxr-xr-x   1 Lazare  staff    1210 Jul 20 18:59 ft_memccpy.c
+-rw-r--r--   1 Lazare  staff     768 Jul 25 12:19 ft_memccpy.o
+-rwxr-xr-x   1 Lazare  staff    1166 Jul 20 18:59 ft_memchr.c
+-rw-r--r--   1 Lazare  staff     732 Jul 25 12:19 ft_memchr.o
+-rwxr-xr-x   1 Lazare  staff    1276 Jul 20 18:59 ft_memcmp.c
+-rw-r--r--   1 Lazare  staff     804 Jul 25 12:19 ft_memcmp.o
+-rwxr-xr-x   1 Lazare  staff    1125 Jul 20 18:59 ft_memcpy.c
+-rw-r--r--   1 Lazare  staff     764 Jul 25 12:19 ft_memcpy.o
+-rwxr-xr-x   1 Lazare  staff    1007 Jul 20 18:59 ft_memdel.c
+-rw-r--r--   1 Lazare  staff     700 Jul 25 12:19 ft_memdel.o
+-rwxr-xr-x   1 Lazare  staff    1189 Jul 20 18:59 ft_memmove.c
+-rw-r--r--   1 Lazare  staff     824 Jul 25 12:19 ft_memmove.o
+-rwxr-xr-x   1 Lazare  staff    1122 Jul 20 18:59 ft_memset.c
+-rw-r--r--   1 Lazare  staff     716 Jul 25 12:19 ft_memset.o
+-rwxr-xr-x   1 Lazare  staff    1112 Jul 20 18:59 ft_nblen.c
+-rw-r--r--   1 Lazare  staff     748 Jul 25 12:19 ft_nblen.o
+-rwxr-xr-x   1 Lazare  staff    1124 Jul 20 18:59 ft_nblen_l.c
+-rw-r--r--   1 Lazare  staff     760 Jul 25 12:19 ft_nblen_l.o
+-rwxr-xr-x   1 Lazare  staff    1181 Jul 20 18:59 ft_nblen_ll.c
+-rw-r--r--   1 Lazare  staff     800 Jul 25 12:19 ft_nblen_ll.o
+-rwxr-xr-x   1 Lazare  staff    1022 Jul 20 18:59 ft_power.c
+-rw-r--r--   1 Lazare  staff     652 Jul 25 12:19 ft_power.o
+drwxr-xr-x  33 Lazare  staff    1122 Jul 25 12:19 ft_printf
+-rwxr-xr-x   1 Lazare  staff     958 Jul 20 18:59 ft_putchar.c
+-rw-r--r--   1 Lazare  staff     676 Jul 25 12:19 ft_putchar.o
+-rwxr-xr-x   1 Lazare  staff     970 Jul 20 18:59 ft_putchar_fd.c
+-rw-r--r--   1 Lazare  staff     688 Jul 25 12:19 ft_putchar_fd.o
+-rwxr-xr-x   1 Lazare  staff     981 Jul 20 18:59 ft_putendl.c
+-rw-r--r--   1 Lazare  staff     708 Jul 25 12:19 ft_putendl.o
+-rwxr-xr-x   1 Lazare  staff    1006 Jul 20 18:59 ft_putendl_fd.c
+-rw-r--r--   1 Lazare  staff     728 Jul 25 12:19 ft_putendl_fd.o
+-rwxr-xr-x   1 Lazare  staff    1112 Jul 20 18:59 ft_putnbr.c
+-rw-r--r--   1 Lazare  staff     800 Jul 25 12:19 ft_putnbr.o
+-rwxr-xr-x   1 Lazare  staff    1151 Jul 20 18:59 ft_putnbr_fd.c
+-rw-r--r--   1 Lazare  staff     832 Jul 25 12:19 ft_putnbr_fd.o
+-rwxr-xr-x   1 Lazare  staff    1107 Jul 20 18:59 ft_putnbr_l.c
+-rw-r--r--   1 Lazare  staff     924 Jul 25 12:19 ft_putnbr_l.o
+-rwxr-xr-x   1 Lazare  staff    1201 Jul 20 18:59 ft_putnbr_ll.c
+-rw-r--r--   1 Lazare  staff    1032 Jul 25 12:19 ft_putnbr_ll.o
+-rwxr-xr-x   1 Lazare  staff    1093 Jul 20 18:59 ft_putnstr.c
+-rw-r--r--   1 Lazare  staff     828 Jul 25 12:19 ft_putnstr.o
+-rwxr-xr-x   1 Lazare  staff    2018 Jul 20 18:59 ft_putnwchar.c
+-rw-r--r--   1 Lazare  staff    2080 Jul 25 12:19 ft_putnwchar.o
+-rwxr-xr-x   1 Lazare  staff    1081 Jul 20 18:59 ft_putnwstr.c
+-rw-r--r--   1 Lazare  staff     772 Jul 25 12:19 ft_putnwstr.o
+-rwxr-xr-x   1 Lazare  staff     983 Jul 20 18:59 ft_putstr.c
+-rw-r--r--   1 Lazare  staff     720 Jul 25 12:19 ft_putstr.o
+-rwxr-xr-x   1 Lazare  staff    1003 Jul 20 18:59 ft_putstr_fd.c
+-rw-r--r--   1 Lazare  staff     724 Jul 25 12:19 ft_putstr_fd.o
+-rwxr-xr-x   1 Lazare  staff    1953 Jul 20 18:59 ft_putwchar.c
+-rw-r--r--   1 Lazare  staff    2016 Jul 25 12:19 ft_putwchar.o
+-rwxr-xr-x   1 Lazare  staff    1716 Jul 20 18:59 ft_split_whitespaces.c
+-rw-r--r--   1 Lazare  staff    1636 Jul 25 12:19 ft_split_whitespaces.o
+-rwxr-xr-x   1 Lazare  staff    1084 Jul 20 18:59 ft_strcat.c
+-rw-r--r--   1 Lazare  staff     760 Jul 25 12:19 ft_strcat.o
+-rwxr-xr-x   1 Lazare  staff    1083 Jul 20 18:59 ft_strchr.c
+-rw-r--r--   1 Lazare  staff     772 Jul 25 12:19 ft_strchr.o
+-rwxr-xr-x   1 Lazare  staff    1023 Jul 20 18:59 ft_strclr.c
+-rw-r--r--   1 Lazare  staff     720 Jul 25 12:19 ft_strclr.o
+-rwxr-xr-x   1 Lazare  staff    1187 Jul 20 18:59 ft_strcmp.c
+-rw-r--r--   1 Lazare  staff     788 Jul 25 12:19 ft_strcmp.o
+-rwxr-xr-x   1 Lazare  staff    1036 Jul 20 18:59 ft_strcpy.c
+-rw-r--r--   1 Lazare  staff     692 Jul 25 12:19 ft_strcpy.o
+-rwxr-xr-x   1 Lazare  staff     999 Jul 20 18:59 ft_strdel.c
+-rw-r--r--   1 Lazare  staff     688 Jul 25 12:19 ft_strdel.o
+-rwxr-xr-x   1 Lazare  staff    1184 Jul 20 18:59 ft_strdup.c
+-rw-r--r--   1 Lazare  staff     840 Jul 25 12:19 ft_strdup.o
+-rwxr-xr-x   1 Lazare  staff    1076 Jul 20 18:59 ft_strequ.c
+-rw-r--r--   1 Lazare  staff     760 Jul 25 12:19 ft_strequ.o
+-rwxr-xr-x   1 Lazare  staff    1224 Jul 20 18:59 ft_strisdigit.c
+-rw-r--r--   1 Lazare  staff     880 Jul 25 12:19 ft_strisdigit.o
+-rwxr-xr-x   1 Lazare  staff    1056 Jul 20 18:59 ft_striter.c
+-rw-r--r--   1 Lazare  staff     712 Jul 25 12:19 ft_striter.o
+-rwxr-xr-x   1 Lazare  staff    1083 Jul 20 18:59 ft_striteri.c
+-rw-r--r--   1 Lazare  staff     720 Jul 25 12:19 ft_striteri.o
+-rwxr-xr-x   1 Lazare  staff    1334 Jul 20 18:59 ft_strjoin.c
+-rw-r--r--   1 Lazare  staff     948 Jul 25 12:19 ft_strjoin.o
+-rwxr-xr-x   1 Lazare  staff    1234 Jul 20 18:59 ft_strlcat.c
+-rw-r--r--   1 Lazare  staff     928 Jul 25 12:19 ft_strlcat.o
+-rwxr-xr-x   1 Lazare  staff    1024 Jul 20 18:59 ft_strlen.c
+-rw-r--r--   1 Lazare  staff     660 Jul 25 12:19 ft_strlen.o
+-rwxr-xr-x   1 Lazare  staff    1149 Jul 20 18:59 ft_strmap.c
+-rw-r--r--   1 Lazare  staff     860 Jul 25 12:19 ft_strmap.o
+-rwxr-xr-x   1 Lazare  staff    1167 Jul 20 18:59 ft_strmapi.c
+-rw-r--r--   1 Lazare  staff     860 Jul 25 12:19 ft_strmapi.o
+-rwxr-xr-x   1 Lazare  staff    1108 Jul 20 18:59 ft_strncat.c
+-rw-r--r--   1 Lazare  staff     816 Jul 25 12:19 ft_strncat.o
+-rwxr-xr-x   1 Lazare  staff    1236 Jul 20 18:59 ft_strncmp.c
+-rw-r--r--   1 Lazare  staff     848 Jul 25 12:19 ft_strncmp.o
+-rwxr-xr-x   1 Lazare  staff    1108 Jul 20 18:59 ft_strncpy.c
+-rw-r--r--   1 Lazare  staff     776 Jul 25 12:19 ft_strncpy.o
+-rwxr-xr-x   1 Lazare  staff    1091 Jul 20 18:59 ft_strnequ.c
+-rw-r--r--   1 Lazare  staff     772 Jul 25 12:19 ft_strnequ.o
+-rwxr-xr-x   1 Lazare  staff    1074 Jul 20 18:59 ft_strnew.c
+-rw-r--r--   1 Lazare  staff     760 Jul 25 12:19 ft_strnew.o
+-rwxr-xr-x   1 Lazare  staff    1286 Jul 20 18:59 ft_strnstr.c
+-rw-r--r--   1 Lazare  staff     912 Jul 25 12:19 ft_strnstr.o
+-rwxr-xr-x   1 Lazare  staff    1089 Jul 20 18:59 ft_strrchr.c
+-rw-r--r--   1 Lazare  staff     808 Jul 25 12:19 ft_strrchr.o
+-rwxr-xr-x   1 Lazare  staff    1757 Jul 20 18:59 ft_strsplit.c
+-rw-r--r--   1 Lazare  staff    1664 Jul 25 12:19 ft_strsplit.o
+-rwxr-xr-x   1 Lazare  staff    1251 Jul 20 18:59 ft_strstr.c
+-rw-r--r--   1 Lazare  staff     864 Jul 25 12:19 ft_strstr.o
+-rwxr-xr-x   1 Lazare  staff    1157 Jul 20 18:59 ft_strsub.c
+-rw-r--r--   1 Lazare  staff     808 Jul 25 12:19 ft_strsub.o
+-rwxr-xr-x   1 Lazare  staff    1298 Jul 20 18:59 ft_strtrim.c
+-rw-r--r--   1 Lazare  staff    1060 Jul 25 12:19 ft_strtrim.o
+-rwxr-xr-x   1 Lazare  staff    1045 Jul 20 18:59 ft_strwlen.c
+-rw-r--r--   1 Lazare  staff     724 Jul 25 12:19 ft_strwlen.o
+-rwxr-xr-x   1 Lazare  staff     996 Jul 20 18:59 ft_tolower.c
+-rw-r--r--   1 Lazare  staff     656 Jul 25 12:19 ft_tolower.o
+-rwxr-xr-x   1 Lazare  staff     997 Jul 20 18:59 ft_toupper.c
+-rw-r--r--   1 Lazare  staff     656 Jul 25 12:19 ft_toupper.o
+-rw-r--r--   1 Lazare  staff    2059 Jul 20 18:59 get_next_line.c
+-rw-r--r--   1 Lazare  staff    2036 Jul 25 12:19 get_next_line.o
+drwxr-xr-x   4 Lazare  staff     136 Jul 20 18:59 includes
+-rw-r--r--   1 Lazare  staff  141608 Jul 25 12:19 libft.a
+
+../ft_ls/libft/ft_printf:
+total 344
+-rw-r--r--   1 Lazare  staff   1611 Jul 20 18:59 Makefile
+-rw-r--r--   1 Lazare  staff      9 Jul 20 18:59 auteur
+-rw-r--r--   1 Lazare  staff   2332 Jul 25 12:19 check_flags.o
+-rw-r--r--   1 Lazare  staff   1548 Jul 25 12:19 check_precision_max.o
+-rw-r--r--   1 Lazare  staff    752 Jul 25 12:19 check_spaces.o
+-rw-r--r--   1 Lazare  staff   1892 Jul 25 12:19 check_width.o
+-rw-r--r--   1 Lazare  staff   2876 Jul 25 12:19 color.o
+-rw-r--r--   1 Lazare  staff   3896 Jul 25 12:19 color2.o
+-rw-r--r--   1 Lazare  staff   3480 Jul 25 12:19 color3.o
+-rw-r--r--   1 Lazare  staff   1412 Jul 25 12:19 convert_c.o
+-rw-r--r--   1 Lazare  staff   2996 Jul 25 12:19 convert_d.o
+-rw-r--r--   1 Lazare  staff   3668 Jul 25 12:19 convert_jzlh.o
+-rw-r--r--   1 Lazare  staff   2560 Jul 25 12:19 convert_o.o
+-rw-r--r--   1 Lazare  staff   2116 Jul 25 12:19 convert_p.o
+-rw-r--r--   1 Lazare  staff   1100 Jul 25 12:19 convert_percent.o
+-rw-r--r--   1 Lazare  staff   1200 Jul 25 12:19 convert_r.o
+-rw-r--r--   1 Lazare  staff   2108 Jul 25 12:19 convert_s.o
+-rw-r--r--   1 Lazare  staff   2532 Jul 25 12:19 convert_u.o
+-rw-r--r--   1 Lazare  staff   3220 Jul 25 12:19 convert_x.o
+-rw-r--r--   1 Lazare  staff  64640 Jul 25 12:19 ft_printf.a
+-rw-r--r--   1 Lazare  staff   2788 Jul 25 12:19 ft_printf.o
+drwxr-xr-x   6 Lazare  staff    204 Jul 20 18:59 includes
+drwxr-xr-x  80 Lazare  staff   2720 Jul 20 18:59 libft
+-rw-r--r--   1 Lazare  staff   3272 Jul 25 12:19 parser.o
+-rw-r--r--   1 Lazare  staff   2564 Jul 25 12:19 print_d.o
+-rw-r--r--   1 Lazare  staff   2736 Jul 25 12:19 print_o.o
+-rw-r--r--   1 Lazare  staff   2736 Jul 25 12:19 print_u.o
+-rw-r--r--   1 Lazare  staff   2820 Jul 25 12:19 print_x.o
+-rw-r--r--   1 Lazare  staff   2724 Jul 25 12:19 print_xx.o
+drwxr-xr-x  27 Lazare  staff    918 Jul 20 18:59 srcs
+-rw-r--r--   1 Lazare  staff   1748 Jul 25 12:19 utils.o
+
+../ft_ls/libft/ft_printf/includes:
+total 32
+-rw-r--r--  1 Lazare  staff  2491 Jul 20 18:59 colors.h
+-rw-r--r--  1 Lazare  staff  1121 Jul 20 18:59 includes.h
+-rw-r--r--  1 Lazare  staff  3759 Jul 20 18:59 proto.h
+-rw-r--r--  1 Lazare  staff  1507 Jul 20 18:59 struct.h
+
+../ft_ls/libft/ft_printf/libft:
+total 616
+-rwxr-xr-x  1 Lazare  staff  3496 Jul 20 18:59 Makefile
+-rwxr-xr-x  1 Lazare  staff    27 Jul 20 18:59 README.md
+-rwxr-xr-x  1 Lazare  staff     9 Jul 20 18:59 auteur
+-rwxr-xr-x  1 Lazare  staff  1924 Jul 20 18:59 ft_atoi.c
+-rwxr-xr-x  1 Lazare  staff  1942 Jul 20 18:59 ft_atoi_base.c
+-rwxr-xr-x  1 Lazare  staff  1987 Jul 20 18:59 ft_atoi_nbase.c
+-rw-r--r--  1 Lazare  staff  1026 Jul 20 18:59 ft_binlen.c
+-rwxr-xr-x  1 Lazare  staff  1087 Jul 20 18:59 ft_bzero.c
+-rwxr-xr-x  1 Lazare  staff  1536 Jul 20 18:59 ft_cat.c
+-rw-r--r--  1 Lazare  staff  1080 Jul 20 18:59 ft_charwlen.c
+-rwxr-xr-x  1 Lazare  staff  1067 Jul 20 18:59 ft_isalnum.c
+-rwxr-xr-x  1 Lazare  staff  1035 Jul 20 18:59 ft_isalpha.c
+-rwxr-xr-x  1 Lazare  staff  1005 Jul 20 18:59 ft_isascii.c
+-rwxr-xr-x  1 Lazare  staff  1007 Jul 20 18:59 ft_isdigit.c
+-rwxr-xr-x  1 Lazare  staff  1006 Jul 20 18:59 ft_isprint.c
+-rwxr-xr-x  1 Lazare  staff  1349 Jul 20 18:59 ft_itoa.c
+-rwxr-xr-x  1 Lazare  staff  1475 Jul 20 18:59 ft_itoa_base.c
+-rwxr-xr-x  1 Lazare  staff  1476 Jul 20 18:59 ft_itoa_base_l.c
+-rwxr-xr-x  1 Lazare  staff  1494 Jul 20 18:59 ft_itoa_base_ll.c
+-rw-r--r--  1 Lazare  staff  1471 Jul 20 18:59 ft_itoa_base_uint.c
+-rwxr-xr-x  1 Lazare  staff  1044 Jul 20 18:59 ft_memalloc.c
+-rwxr-xr-x  1 Lazare  staff  1210 Jul 20 18:59 ft_memccpy.c
+-rwxr-xr-x  1 Lazare  staff  1166 Jul 20 18:59 ft_memchr.c
+-rwxr-xr-x  1 Lazare  staff  1276 Jul 20 18:59 ft_memcmp.c
+-rwxr-xr-x  1 Lazare  staff  1125 Jul 20 18:59 ft_memcpy.c
+-rwxr-xr-x  1 Lazare  staff  1007 Jul 20 18:59 ft_memdel.c
+-rwxr-xr-x  1 Lazare  staff  1189 Jul 20 18:59 ft_memmove.c
+-rwxr-xr-x  1 Lazare  staff  1122 Jul 20 18:59 ft_memset.c
+-rwxr-xr-x  1 Lazare  staff  1106 Jul 20 18:59 ft_nblen.c
+-rwxr-xr-x  1 Lazare  staff  1118 Jul 20 18:59 ft_nblen_l.c
+-rwxr-xr-x  1 Lazare  staff  1175 Jul 20 18:59 ft_nblen_ll.c
+-rwxr-xr-x  1 Lazare  staff  1022 Jul 20 18:59 ft_power.c
+-rwxr-xr-x  1 Lazare  staff   958 Jul 20 18:59 ft_putchar.c
+-rwxr-xr-x  1 Lazare  staff   970 Jul 20 18:59 ft_putchar_fd.c
+-rwxr-xr-x  1 Lazare  staff   981 Jul 20 18:59 ft_putendl.c
+-rwxr-xr-x  1 Lazare  staff  1006 Jul 20 18:59 ft_putendl_fd.c
+-rwxr-xr-x  1 Lazare  staff  1112 Jul 20 18:59 ft_putnbr.c
+-rwxr-xr-x  1 Lazare  staff  1151 Jul 20 18:59 ft_putnbr_fd.c
+-rwxr-xr-x  1 Lazare  staff  1107 Jul 20 18:59 ft_putnbr_l.c
+-rwxr-xr-x  1 Lazare  staff  1201 Jul 20 18:59 ft_putnbr_ll.c
+-rw-r--r--  1 Lazare  staff  1093 Jul 20 18:59 ft_putnstr.c
+-rw-r--r--  1 Lazare  staff  2018 Jul 20 18:59 ft_putnwchar.c
+-rw-r--r--  1 Lazare  staff  1081 Jul 20 18:59 ft_putnwstr.c
+-rwxr-xr-x  1 Lazare  staff   983 Jul 20 18:59 ft_putstr.c
+-rwxr-xr-x  1 Lazare  staff  1003 Jul 20 18:59 ft_putstr_fd.c
+-rw-r--r--  1 Lazare  staff  1953 Jul 20 18:59 ft_putwchar.c
+-rwxr-xr-x  1 Lazare  staff  1716 Jul 20 18:59 ft_split_whitespaces.c
+-rwxr-xr-x  1 Lazare  staff  1084 Jul 20 18:59 ft_strcat.c
+-rwxr-xr-x  1 Lazare  staff  1083 Jul 20 18:59 ft_strchr.c
+-rwxr-xr-x  1 Lazare  staff  1023 Jul 20 18:59 ft_strclr.c
+-rwxr-xr-x  1 Lazare  staff  1187 Jul 20 18:59 ft_strcmp.c
+-rwxr-xr-x  1 Lazare  staff  1036 Jul 20 18:59 ft_strcpy.c
+-rwxr-xr-x  1 Lazare  staff   999 Jul 20 18:59 ft_strdel.c
+-rwxr-xr-x  1 Lazare  staff  1184 Jul 20 18:59 ft_strdup.c
+-rwxr-xr-x  1 Lazare  staff  1076 Jul 20 18:59 ft_strequ.c
+-rwxr-xr-x  1 Lazare  staff  1224 Jul 20 18:59 ft_strisdigit.c
+-rwxr-xr-x  1 Lazare  staff  1056 Jul 20 18:59 ft_striter.c
+-rwxr-xr-x  1 Lazare  staff  1083 Jul 20 18:59 ft_striteri.c
+-rwxr-xr-x  1 Lazare  staff  1334 Jul 20 18:59 ft_strjoin.c
+-rwxr-xr-x  1 Lazare  staff  1234 Jul 20 18:59 ft_strlcat.c
+-rwxr-xr-x  1 Lazare  staff   989 Jul 20 18:59 ft_strlen.c
+-rwxr-xr-x  1 Lazare  staff  1149 Jul 20 18:59 ft_strmap.c
+-rwxr-xr-x  1 Lazare  staff  1167 Jul 20 18:59 ft_strmapi.c
+-rwxr-xr-x  1 Lazare  staff  1108 Jul 20 18:59 ft_strncat.c
+-rwxr-xr-x  1 Lazare  staff  1236 Jul 20 18:59 ft_strncmp.c
+-rwxr-xr-x  1 Lazare  staff  1108 Jul 20 18:59 ft_strncpy.c
+-rwxr-xr-x  1 Lazare  staff  1091 Jul 20 18:59 ft_strnequ.c
+-rwxr-xr-x  1 Lazare  staff  1074 Jul 20 18:59 ft_strnew.c
+-rwxr-xr-x  1 Lazare  staff  1286 Jul 20 18:59 ft_strnstr.c
+-rwxr-xr-x  1 Lazare  staff  1089 Jul 20 18:59 ft_strrchr.c
+-rwxr-xr-x  1 Lazare  staff  1757 Jul 20 18:59 ft_strsplit.c
+-rwxr-xr-x  1 Lazare  staff  1251 Jul 20 18:59 ft_strstr.c
+-rwxr-xr-x  1 Lazare  staff  1157 Jul 20 18:59 ft_strsub.c
+-rwxr-xr-x  1 Lazare  staff  1298 Jul 20 18:59 ft_strtrim.c
+-rw-r--r--  1 Lazare  staff  1045 Jul 20 18:59 ft_strwlen.c
+-rwxr-xr-x  1 Lazare  staff   996 Jul 20 18:59 ft_tolower.c
+-rwxr-xr-x  1 Lazare  staff   997 Jul 20 18:59 ft_toupper.c
+drwxr-xr-x  3 Lazare  staff   102 Jul 20 18:59 includes
+
+../ft_ls/libft/ft_printf/libft/includes:
+total 16
+-rw-r--r--  1 Lazare  staff  4277 Jul 20 18:59 libft.h
+
+../ft_ls/libft/ft_printf/srcs:
+total 200
+-rw-r--r--  1 Lazare  staff  2318 Jul 20 18:59 check_flags.c
+-rw-r--r--  1 Lazare  staff  1736 Jul 20 18:59 check_precision_max.c
+-rw-r--r--  1 Lazare  staff  1140 Jul 20 18:59 check_spaces.c
+-rw-r--r--  1 Lazare  staff  2008 Jul 20 18:59 check_width.c
+-rw-r--r--  1 Lazare  staff  2683 Jul 20 18:59 color.c
+-rw-r--r--  1 Lazare  staff  3459 Jul 20 18:59 color2.c
+-rw-r--r--  1 Lazare  staff  3116 Jul 20 18:59 color3.c
+-rw-r--r--  1 Lazare  staff  1469 Jul 20 18:59 convert_c.c
+-rw-r--r--  1 Lazare  staff  2569 Jul 20 18:59 convert_d.c
+-rw-r--r--  1 Lazare  staff  3634 Jul 20 18:59 convert_jzlh.c
+-rw-r--r--  1 Lazare  staff  2235 Jul 20 18:59 convert_o.c
+-rw-r--r--  1 Lazare  staff  1982 Jul 20 18:59 convert_p.c
+-rw-r--r--  1 Lazare  staff  1264 Jul 20 18:59 convert_percent.c
+-rw-r--r--  1 Lazare  staff  1846 Jul 20 18:59 convert_r.c
+-rw-r--r--  1 Lazare  staff  1900 Jul 20 18:59 convert_s.c
+-rw-r--r--  1 Lazare  staff  2287 Jul 20 18:59 convert_u.c
+-rw-r--r--  1 Lazare  staff  2845 Jul 20 18:59 convert_x.c
+-rw-r--r--  1 Lazare  staff  2554 Jul 20 18:59 ft_printf.c
+-rw-r--r--  1 Lazare  staff  2925 Jul 20 18:59 parser.c
+-rw-r--r--  1 Lazare  staff  2450 Jul 20 18:59 print_d.c
+-rw-r--r--  1 Lazare  staff  2555 Jul 20 18:59 print_o.c
+-rw-r--r--  1 Lazare  staff  2559 Jul 20 18:59 print_u.c
+-rw-r--r--  1 Lazare  staff  2596 Jul 20 18:59 print_x.c
+-rw-r--r--  1 Lazare  staff  2525 Jul 20 18:59 print_xx.c
+-rw-r--r--  1 Lazare  staff  1829 Jul 20 18:59 utils.c
+
+../ft_ls/libft/includes:
+total 24
+-rw-r--r--  1 Lazare  staff  1041 Jul 20 18:59 get_next_line.h
+-rwxr-xr-x  1 Lazare  staff  4356 Jul 20 18:59 libft.h
+
+../ft_ls/srcs:
+total 152
+-rw-r--r--  1 Lazare  staff   1921 Jul 20 18:59 additional_func.c
+-rw-r--r--  1 Lazare  staff   2262 Jul 20 18:59 additional_func2.c
+-rw-r--r--  1 Lazare  staff   1548 Jul 20 18:59 additional_func3.c
+-rw-r--r--  1 Lazare  staff   2236 Jul 20 18:59 addtoshow.c
+-rw-r--r--  1 Lazare  staff  24579 Jul 23 20:30 allcode.txt
+-rw-r--r--  1 Lazare  staff   1989 Jul 24 19:42 gestion.c
+-rw-r--r--  1 Lazare  staff   2443 Jul 20 18:59 gestion_l.c
+-rw-r--r--  1 Lazare  staff   1959 Jul 20 18:59 ls_perms.c
+-rw-r--r--  1 Lazare  staff   1873 Jul 20 18:59 main.c
+-rw-r--r--  1 Lazare  staff   1663 Jul 20 18:59 parser.c
+-rw-r--r--  1 Lazare  staff   3113 Jul 25 12:22 save_ls.c
+-rw-r--r--  1 Lazare  staff   1577 Jul 20 18:59 single_file.c
+-rw-r--r--  1 Lazare  staff   2032 Jul 20 18:59 user_info.c
+
+../ft_other_ls:
+total 160
+-rw-r--r--   1 Lazare  staff   1591 Jul 20 19:06 Makefile
+-rw-r--r--   1 Lazare  staff    110 Jul 20 19:06 README.md
+-rw-r--r--   1 Lazare  staff      7 Jul 20 19:06 auteur
+-rwxr-xr-x   1 Lazare  staff  67820 Jul 20 19:07 ft_ls
+drwxr-xr-x   3 Lazare  staff    102 Jul 20 19:06 includes
+drwxr-xr-x  84 Lazare  staff   2856 Jul 21 11:13 libft
+drwxr-xr-x  14 Lazare  staff    476 Jul 21 12:06 srcs
+
+../ft_other_ls/includes:
+total 8
+-rw-r--r--  1 Lazare  staff  2804 Jul 20 19:06 ft_ls.h
+
+../ft_other_ls/libft:
+total 896
+-rwxr-xr-x  1 Lazare  staff    3661 Jul 20 19:06 Makefile
+-rwxr-xr-x  1 Lazare  staff       7 Jul 20 19:06 auteur
+-rwxr-xr-x  1 Lazare  staff    1924 Jul 20 19:06 ft_atoi.c
+-rwxr-xr-x  1 Lazare  staff    1942 Jul 20 19:06 ft_atoi_base.c
+-rwxr-xr-x  1 Lazare  staff    1987 Jul 20 19:06 ft_atoi_nbase.c
+-rwxr-xr-x  1 Lazare  staff    1026 Jul 20 19:06 ft_binlen.c
+-rwxr-xr-x  1 Lazare  staff    1087 Jul 20 19:06 ft_bzero.c
+-rwxr-xr-x  1 Lazare  staff    1536 Jul 20 19:06 ft_cat.c
+-rwxr-xr-x  1 Lazare  staff    1080 Jul 20 19:06 ft_charwlen.c
+-rwxr-xr-x  1 Lazare  staff    1067 Jul 20 19:06 ft_isalnum.c
+-rwxr-xr-x  1 Lazare  staff    1035 Jul 20 19:06 ft_isalpha.c
+-rwxr-xr-x  1 Lazare  staff    1005 Jul 20 19:06 ft_isascii.c
+-rwxr-xr-x  1 Lazare  staff    1007 Jul 20 19:06 ft_isdigit.c
+-rwxr-xr-x  1 Lazare  staff    1006 Jul 20 19:06 ft_isprint.c
+-rwxr-xr-x  1 Lazare  staff    1349 Jul 20 19:06 ft_itoa.c
+-rwxr-xr-x  1 Lazare  staff    1475 Jul 20 19:06 ft_itoa_base.c
+-rwxr-xr-x  1 Lazare  staff    1476 Jul 20 19:06 ft_itoa_base_l.c
+-rwxr-xr-x  1 Lazare  staff    1494 Jul 20 19:06 ft_itoa_base_ll.c
+-rwxr-xr-x  1 Lazare  staff    1469 Jul 20 19:06 ft_itoa_base_uint.c
+-rwxr-xr-x  1 Lazare  staff    1044 Jul 20 19:06 ft_memalloc.c
+-rwxr-xr-x  1 Lazare  staff    1210 Jul 20 19:06 ft_memccpy.c
+-rwxr-xr-x  1 Lazare  staff    1166 Jul 20 19:06 ft_memchr.c
+-rwxr-xr-x  1 Lazare  staff    1276 Jul 20 19:06 ft_memcmp.c
+-rwxr-xr-x  1 Lazare  staff    1125 Jul 20 19:06 ft_memcpy.c
+-rwxr-xr-x  1 Lazare  staff    1007 Jul 20 19:06 ft_memdel.c
+-rwxr-xr-x  1 Lazare  staff    1189 Jul 20 19:06 ft_memmove.c
+-rwxr-xr-x  1 Lazare  staff    1122 Jul 20 19:06 ft_memset.c
+-rwxr-xr-x  1 Lazare  staff    1112 Jul 20 19:06 ft_nblen.c
+-rwxr-xr-x  1 Lazare  staff    1124 Jul 20 19:06 ft_nblen_l.c
+-rwxr-xr-x  1 Lazare  staff    1181 Jul 20 19:06 ft_nblen_ll.c
+-rwxr-xr-x  1 Lazare  staff    1022 Jul 20 19:06 ft_power.c
+drwxr-xr-x  7 Lazare  staff     238 Jul 21 11:13 ft_printf
+-rwxr-xr-x  1 Lazare  staff     958 Jul 20 19:06 ft_putchar.c
+-rwxr-xr-x  1 Lazare  staff     970 Jul 20 19:06 ft_putchar_fd.c
+-rwxr-xr-x  1 Lazare  staff     981 Jul 20 19:06 ft_putendl.c
+-rwxr-xr-x  1 Lazare  staff    1006 Jul 20 19:06 ft_putendl_fd.c
+-rwxr-xr-x  1 Lazare  staff    1112 Jul 20 19:06 ft_putnbr.c
+-rwxr-xr-x  1 Lazare  staff    1151 Jul 20 19:06 ft_putnbr_fd.c
+-rwxr-xr-x  1 Lazare  staff    1107 Jul 20 19:06 ft_putnbr_l.c
+-rwxr-xr-x  1 Lazare  staff    1201 Jul 20 19:06 ft_putnbr_ll.c
+-rwxr-xr-x  1 Lazare  staff    1093 Jul 20 19:06 ft_putnstr.c
+-rwxr-xr-x  1 Lazare  staff    2018 Jul 20 19:06 ft_putnwchar.c
+-rwxr-xr-x  1 Lazare  staff    1081 Jul 20 19:06 ft_putnwstr.c
+-rwxr-xr-x  1 Lazare  staff     983 Jul 20 19:06 ft_putstr.c
+-rwxr-xr-x  1 Lazare  staff    1003 Jul 20 19:06 ft_putstr_fd.c
+-rwxr-xr-x  1 Lazare  staff    1953 Jul 20 19:06 ft_putwchar.c
+-rwxr-xr-x  1 Lazare  staff    1716 Jul 20 19:06 ft_split_whitespaces.c
+-rwxr-xr-x  1 Lazare  staff    1084 Jul 20 19:06 ft_strcat.c
+-rwxr-xr-x  1 Lazare  staff    1083 Jul 20 19:06 ft_strchr.c
+-rwxr-xr-x  1 Lazare  staff    1023 Jul 20 19:06 ft_strclr.c
+-rwxr-xr-x  1 Lazare  staff    1187 Jul 20 19:06 ft_strcmp.c
+-rwxr-xr-x  1 Lazare  staff    1036 Jul 20 19:06 ft_strcpy.c
+-rwxr-xr-x  1 Lazare  staff     999 Jul 20 19:06 ft_strdel.c
+-rwxr-xr-x  1 Lazare  staff    1184 Jul 20 19:06 ft_strdup.c
+-rwxr-xr-x  1 Lazare  staff    1076 Jul 20 19:06 ft_strequ.c
+-rwxr-xr-x  1 Lazare  staff    1224 Jul 20 19:06 ft_strisdigit.c
+-rwxr-xr-x  1 Lazare  staff    1056 Jul 20 19:06 ft_striter.c
+-rwxr-xr-x  1 Lazare  staff    1083 Jul 20 19:06 ft_striteri.c
+-rwxr-xr-x  1 Lazare  staff    1334 Jul 20 19:06 ft_strjoin.c
+-rwxr-xr-x  1 Lazare  staff    1234 Jul 20 19:06 ft_strlcat.c
+-rwxr-xr-x  1 Lazare  staff    1024 Jul 20 19:06 ft_strlen.c
+-rwxr-xr-x  1 Lazare  staff    1149 Jul 20 19:06 ft_strmap.c
+-rwxr-xr-x  1 Lazare  staff    1167 Jul 20 19:06 ft_strmapi.c
+-rwxr-xr-x  1 Lazare  staff    1108 Jul 20 19:06 ft_strncat.c
+-rwxr-xr-x  1 Lazare  staff    1236 Jul 20 19:06 ft_strncmp.c
+-rwxr-xr-x  1 Lazare  staff    1108 Jul 20 19:06 ft_strncpy.c
+-rwxr-xr-x  1 Lazare  staff    1091 Jul 20 19:06 ft_strnequ.c
+-rwxr-xr-x  1 Lazare  staff    1074 Jul 20 19:06 ft_strnew.c
+-rwxr-xr-x  1 Lazare  staff    1286 Jul 20 19:06 ft_strnstr.c
+-rwxr-xr-x  1 Lazare  staff    1089 Jul 20 19:06 ft_strrchr.c
+-rwxr-xr-x  1 Lazare  staff    1757 Jul 20 19:06 ft_strsplit.c
+-rwxr-xr-x  1 Lazare  staff    1251 Jul 20 19:06 ft_strstr.c
+-rwxr-xr-x  1 Lazare  staff    1157 Jul 20 19:06 ft_strsub.c
+-rwxr-xr-x  1 Lazare  staff    1298 Jul 20 19:06 ft_strtrim.c
+-rwxr-xr-x  1 Lazare  staff    1045 Jul 20 19:06 ft_strwlen.c
+-rwxr-xr-x  1 Lazare  staff     996 Jul 20 19:06 ft_tolower.c
+-rwxr-xr-x  1 Lazare  staff     997 Jul 20 19:06 ft_toupper.c
+-rw-r--r--  1 Lazare  staff    2059 Jul 20 19:06 get_next_line.c
+drwxr-xr-x  4 Lazare  staff     136 Jul 20 19:06 includes
+-rw-r--r--  1 Lazare  staff  141608 Jul 20 19:07 libft.a
+
+../ft_other_ls/libft/ft_printf:
+total 16
+-rw-r--r--   1 Lazare  staff  1611 Jul 20 19:06 Makefile
+-rw-r--r--   1 Lazare  staff     9 Jul 20 19:06 auteur
+drwxr-xr-x   6 Lazare  staff   204 Jul 20 19:06 includes
+drwxr-xr-x  80 Lazare  staff  2720 Jul 20 19:06 libft
+drwxr-xr-x  27 Lazare  staff   918 Jul 20 19:06 srcs
+
+../ft_other_ls/libft/ft_printf/includes:
+total 32
+-rw-r--r--  1 Lazare  staff  2491 Jul 20 19:06 colors.h
+-rw-r--r--  1 Lazare  staff  1121 Jul 20 19:06 includes.h
+-rw-r--r--  1 Lazare  staff  3759 Jul 20 19:06 proto.h
+-rw-r--r--  1 Lazare  staff  1507 Jul 20 19:06 struct.h
+
+../ft_other_ls/libft/ft_printf/libft:
+total 616
+-rwxr-xr-x  1 Lazare  staff  3496 Jul 20 19:06 Makefile
+-rwxr-xr-x  1 Lazare  staff    27 Jul 20 19:06 README.md
+-rwxr-xr-x  1 Lazare  staff     9 Jul 20 19:06 auteur
+-rwxr-xr-x  1 Lazare  staff  1924 Jul 20 19:06 ft_atoi.c
+-rwxr-xr-x  1 Lazare  staff  1942 Jul 20 19:06 ft_atoi_base.c
+-rwxr-xr-x  1 Lazare  staff  1987 Jul 20 19:06 ft_atoi_nbase.c
+-rw-r--r--  1 Lazare  staff  1026 Jul 20 19:06 ft_binlen.c
+-rwxr-xr-x  1 Lazare  staff  1087 Jul 20 19:06 ft_bzero.c
+-rwxr-xr-x  1 Lazare  staff  1536 Jul 20 19:06 ft_cat.c
+-rw-r--r--  1 Lazare  staff  1080 Jul 20 19:06 ft_charwlen.c
+-rwxr-xr-x  1 Lazare  staff  1067 Jul 20 19:06 ft_isalnum.c
+-rwxr-xr-x  1 Lazare  staff  1035 Jul 20 19:06 ft_isalpha.c
+-rwxr-xr-x  1 Lazare  staff  1005 Jul 20 19:06 ft_isascii.c
+-rwxr-xr-x  1 Lazare  staff  1007 Jul 20 19:06 ft_isdigit.c
+-rwxr-xr-x  1 Lazare  staff  1006 Jul 20 19:06 ft_isprint.c
+-rwxr-xr-x  1 Lazare  staff  1349 Jul 20 19:06 ft_itoa.c
+-rwxr-xr-x  1 Lazare  staff  1475 Jul 20 19:06 ft_itoa_base.c
+-rwxr-xr-x  1 Lazare  staff  1476 Jul 20 19:06 ft_itoa_base_l.c
+-rwxr-xr-x  1 Lazare  staff  1494 Jul 20 19:06 ft_itoa_base_ll.c
+-rw-r--r--  1 Lazare  staff  1471 Jul 20 19:06 ft_itoa_base_uint.c
+-rwxr-xr-x  1 Lazare  staff  1044 Jul 20 19:06 ft_memalloc.c
+-rwxr-xr-x  1 Lazare  staff  1210 Jul 20 19:06 ft_memccpy.c
+-rwxr-xr-x  1 Lazare  staff  1166 Jul 20 19:06 ft_memchr.c
+-rwxr-xr-x  1 Lazare  staff  1276 Jul 20 19:06 ft_memcmp.c
+-rwxr-xr-x  1 Lazare  staff  1125 Jul 20 19:06 ft_memcpy.c
+-rwxr-xr-x  1 Lazare  staff  1007 Jul 20 19:06 ft_memdel.c
+-rwxr-xr-x  1 Lazare  staff  1189 Jul 20 19:06 ft_memmove.c
+-rwxr-xr-x  1 Lazare  staff  1122 Jul 20 19:06 ft_memset.c
+-rwxr-xr-x  1 Lazare  staff  1106 Jul 20 19:06 ft_nblen.c
+-rwxr-xr-x  1 Lazare  staff  1118 Jul 20 19:06 ft_nblen_l.c
+-rwxr-xr-x  1 Lazare  staff  1175 Jul 20 19:06 ft_nblen_ll.c
+-rwxr-xr-x  1 Lazare  staff  1022 Jul 20 19:06 ft_power.c
+-rwxr-xr-x  1 Lazare  staff   958 Jul 20 19:06 ft_putchar.c
+-rwxr-xr-x  1 Lazare  staff   970 Jul 20 19:06 ft_putchar_fd.c
+-rwxr-xr-x  1 Lazare  staff   981 Jul 20 19:06 ft_putendl.c
+-rwxr-xr-x  1 Lazare  staff  1006 Jul 20 19:06 ft_putendl_fd.c
+-rwxr-xr-x  1 Lazare  staff  1112 Jul 20 19:06 ft_putnbr.c
+-rwxr-xr-x  1 Lazare  staff  1151 Jul 20 19:06 ft_putnbr_fd.c
+-rwxr-xr-x  1 Lazare  staff  1107 Jul 20 19:06 ft_putnbr_l.c
+-rwxr-xr-x  1 Lazare  staff  1201 Jul 20 19:06 ft_putnbr_ll.c
+-rw-r--r--  1 Lazare  staff  1093 Jul 20 19:06 ft_putnstr.c
+-rw-r--r--  1 Lazare  staff  2018 Jul 20 19:06 ft_putnwchar.c
+-rw-r--r--  1 Lazare  staff  1081 Jul 20 19:06 ft_putnwstr.c
+-rwxr-xr-x  1 Lazare  staff   983 Jul 20 19:06 ft_putstr.c
+-rwxr-xr-x  1 Lazare  staff  1003 Jul 20 19:06 ft_putstr_fd.c
+-rw-r--r--  1 Lazare  staff  1953 Jul 20 19:06 ft_putwchar.c
+-rwxr-xr-x  1 Lazare  staff  1716 Jul 20 19:06 ft_split_whitespaces.c
+-rwxr-xr-x  1 Lazare  staff  1084 Jul 20 19:06 ft_strcat.c
+-rwxr-xr-x  1 Lazare  staff  1083 Jul 20 19:06 ft_strchr.c
+-rwxr-xr-x  1 Lazare  staff  1023 Jul 20 19:06 ft_strclr.c
+-rwxr-xr-x  1 Lazare  staff  1187 Jul 20 19:06 ft_strcmp.c
+-rwxr-xr-x  1 Lazare  staff  1036 Jul 20 19:06 ft_strcpy.c
+-rwxr-xr-x  1 Lazare  staff   999 Jul 20 19:06 ft_strdel.c
+-rwxr-xr-x  1 Lazare  staff  1184 Jul 20 19:06 ft_strdup.c
+-rwxr-xr-x  1 Lazare  staff  1076 Jul 20 19:06 ft_strequ.c
+-rwxr-xr-x  1 Lazare  staff  1224 Jul 20 19:06 ft_strisdigit.c
+-rwxr-xr-x  1 Lazare  staff  1056 Jul 20 19:06 ft_striter.c
+-rwxr-xr-x  1 Lazare  staff  1083 Jul 20 19:06 ft_striteri.c
+-rwxr-xr-x  1 Lazare  staff  1334 Jul 20 19:06 ft_strjoin.c
+-rwxr-xr-x  1 Lazare  staff  1234 Jul 20 19:06 ft_strlcat.c
+-rwxr-xr-x  1 Lazare  staff   989 Jul 20 19:06 ft_strlen.c
+-rwxr-xr-x  1 Lazare  staff  1149 Jul 20 19:06 ft_strmap.c
+-rwxr-xr-x  1 Lazare  staff  1167 Jul 20 19:06 ft_strmapi.c
+-rwxr-xr-x  1 Lazare  staff  1108 Jul 20 19:06 ft_strncat.c
+-rwxr-xr-x  1 Lazare  staff  1236 Jul 20 19:06 ft_strncmp.c
+-rwxr-xr-x  1 Lazare  staff  1108 Jul 20 19:06 ft_strncpy.c
+-rwxr-xr-x  1 Lazare  staff  1091 Jul 20 19:06 ft_strnequ.c
+-rwxr-xr-x  1 Lazare  staff  1074 Jul 20 19:06 ft_strnew.c
+-rwxr-xr-x  1 Lazare  staff  1286 Jul 20 19:06 ft_strnstr.c
+-rwxr-xr-x  1 Lazare  staff  1089 Jul 20 19:06 ft_strrchr.c
+-rwxr-xr-x  1 Lazare  staff  1757 Jul 20 19:06 ft_strsplit.c
+-rwxr-xr-x  1 Lazare  staff  1251 Jul 20 19:06 ft_strstr.c
+-rwxr-xr-x  1 Lazare  staff  1157 Jul 20 19:06 ft_strsub.c
+-rwxr-xr-x  1 Lazare  staff  1298 Jul 20 19:06 ft_strtrim.c
+-rw-r--r--  1 Lazare  staff  1045 Jul 20 19:06 ft_strwlen.c
+-rwxr-xr-x  1 Lazare  staff   996 Jul 20 19:06 ft_tolower.c
+-rwxr-xr-x  1 Lazare  staff   997 Jul 20 19:06 ft_toupper.c
+drwxr-xr-x  3 Lazare  staff   102 Jul 20 19:06 includes
+
+../ft_other_ls/libft/ft_printf/libft/includes:
+total 16
+-rw-r--r--  1 Lazare  staff  4277 Jul 20 19:06 libft.h
+
+../ft_other_ls/libft/ft_printf/srcs:
+total 200
+-rw-r--r--  1 Lazare  staff  2318 Jul 20 19:06 check_flags.c
+-rw-r--r--  1 Lazare  staff  1736 Jul 20 19:06 check_precision_max.c
+-rw-r--r--  1 Lazare  staff  1140 Jul 20 19:06 check_spaces.c
+-rw-r--r--  1 Lazare  staff  2008 Jul 20 19:06 check_width.c
+-rw-r--r--  1 Lazare  staff  2683 Jul 20 19:06 color.c
+-rw-r--r--  1 Lazare  staff  3459 Jul 20 19:06 color2.c
+-rw-r--r--  1 Lazare  staff  3116 Jul 20 19:06 color3.c
+-rw-r--r--  1 Lazare  staff  1469 Jul 20 19:06 convert_c.c
+-rw-r--r--  1 Lazare  staff  2569 Jul 20 19:06 convert_d.c
+-rw-r--r--  1 Lazare  staff  3634 Jul 20 19:06 convert_jzlh.c
+-rw-r--r--  1 Lazare  staff  2235 Jul 20 19:06 convert_o.c
+-rw-r--r--  1 Lazare  staff  1982 Jul 20 19:06 convert_p.c
+-rw-r--r--  1 Lazare  staff  1264 Jul 20 19:06 convert_percent.c
+-rw-r--r--  1 Lazare  staff  1846 Jul 20 19:06 convert_r.c
+-rw-r--r--  1 Lazare  staff  1900 Jul 20 19:06 convert_s.c
+-rw-r--r--  1 Lazare  staff  2287 Jul 20 19:06 convert_u.c
+-rw-r--r--  1 Lazare  staff  2845 Jul 20 19:06 convert_x.c
+-rw-r--r--  1 Lazare  staff  2554 Jul 20 19:06 ft_printf.c
+-rw-r--r--  1 Lazare  staff  2925 Jul 20 19:06 parser.c
+-rw-r--r--  1 Lazare  staff  2450 Jul 20 19:06 print_d.c
+-rw-r--r--  1 Lazare  staff  2555 Jul 20 19:06 print_o.c
+-rw-r--r--  1 Lazare  staff  2559 Jul 20 19:06 print_u.c
+-rw-r--r--  1 Lazare  staff  2596 Jul 20 19:06 print_x.c
+-rw-r--r--  1 Lazare  staff  2525 Jul 20 19:06 print_xx.c
+-rw-r--r--  1 Lazare  staff  1829 Jul 20 19:06 utils.c
+
+../ft_other_ls/libft/includes:
+total 24
+-rw-r--r--  1 Lazare  staff  1041 Jul 20 19:06 get_next_line.h
+-rwxr-xr-x  1 Lazare  staff  4356 Jul 20 19:06 libft.h
+
+../ft_other_ls/srcs:
+total 96
+-rw-r--r--  1 Lazare  staff  1921 Jul 20 19:06 additional_func.c
+-rw-r--r--  1 Lazare  staff  2262 Jul 20 19:06 additional_func2.c
+-rw-r--r--  1 Lazare  staff  1548 Jul 20 19:06 additional_func3.c
+-rw-r--r--  1 Lazare  staff  2236 Jul 20 19:06 addtoshow.c
+-rw-r--r--  1 Lazare  staff  1989 Jul 20 19:06 gestion.c
+-rw-r--r--  1 Lazare  staff  2443 Jul 20 19:06 gestion_l.c
+-rw-r--r--  1 Lazare  staff  1959 Jul 20 19:06 ls_perms.c
+-rw-r--r--  1 Lazare  staff  1873 Jul 20 19:06 main.c
+-rw-r--r--  1 Lazare  staff  1663 Jul 20 19:06 parser.c
+-rw-r--r--  1 Lazare  staff  3076 Jul 20 19:06 save_ls.c
+-rw-r--r--  1 Lazare  staff  1577 Jul 20 19:06 single_file.c
+-rw-r--r--  1 Lazare  staff  2032 Jul 20 19:06 user_info.c
+
+../get-next-line:
+total 64
+-rwxr-xr-x   1 Lazare  staff  14032 Jun  9 01:17 a.out
+drwxr-xr-x   3 Lazare  staff    102 Jun  9 01:15 a.out.dSYM
+-rw-r--r--   1 Lazare  staff      9 Jun  9 18:14 author
+-rw-r--r--   1 Lazare  staff   2741 Jun  9 10:31 get_next_line.c
+-rw-r--r--   1 Lazare  staff   1111 Jun  9 10:32 get_next_line.h
+drwxr-xr-x  68 Lazare  staff   2312 Jun  9 01:10 libft
+-rw-r--r--   1 Lazare  staff   3900 Jun  9 01:10 libft.h
+
+../get-next-line/a.out.dSYM:
+total 0
+drwxr-xr-x  4 Lazare  staff  136 Jun  9 01:15 Contents
+
+../get-next-line/a.out.dSYM/Contents:
+total 8
+-rw-r--r--  1 Lazare  staff  634 Jun  9 01:17 Info.plist
+drwxr-xr-x  3 Lazare  staff  102 Jun  9 01:15 Resources
+
+../get-next-line/a.out.dSYM/Contents/Resources:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jun  9 01:15 DWARF
+
+../get-next-line/a.out.dSYM/Contents/Resources/DWARF:
+total 24
+-rw-r--r--  1 Lazare  staff  10781 Jun  9 01:17 a.out
+
+../get-next-line/libft:
+total 640
+-rw-r--r--  1 Lazare  staff   1004 Jun  9 01:10 ft_atoi.o
+-rw-r--r--  1 Lazare  staff    676 Jun  9 01:10 ft_bzero.o
+-rw-r--r--  1 Lazare  staff    752 Jun  9 01:10 ft_freetables.o
+-rw-r--r--  1 Lazare  staff    688 Jun  9 01:10 ft_int_size.o
+-rw-r--r--  1 Lazare  staff    752 Jun  9 01:10 ft_isalnum.o
+-rw-r--r--  1 Lazare  staff    672 Jun  9 01:10 ft_isalpha.o
+-rw-r--r--  1 Lazare  staff    656 Jun  9 01:10 ft_isascii.o
+-rw-r--r--  1 Lazare  staff    656 Jun  9 01:10 ft_isdigit.o
+-rw-r--r--  1 Lazare  staff    656 Jun  9 01:10 ft_isprint.o
+-rw-r--r--  1 Lazare  staff   1008 Jun  9 01:10 ft_itoa.o
+-rw-r--r--  1 Lazare  staff    636 Jun  9 01:10 ft_lstadd.o
+-rw-r--r--  1 Lazare  staff    884 Jun  9 01:10 ft_lstdel.o
+-rw-r--r--  1 Lazare  staff    752 Jun  9 01:10 ft_lstdelone.o
+-rw-r--r--  1 Lazare  staff    712 Jun  9 01:10 ft_lstiter.o
+-rw-r--r--  1 Lazare  staff    840 Jun  9 01:10 ft_lstmap.o
+-rw-r--r--  1 Lazare  staff    888 Jun  9 01:10 ft_lstnew.o
+-rw-r--r--  1 Lazare  staff    744 Jun  9 01:10 ft_memalloc.o
+-rw-r--r--  1 Lazare  staff    776 Jun  9 01:10 ft_memccpy.o
+-rw-r--r--  1 Lazare  staff    748 Jun  9 01:10 ft_memchr.o
+-rw-r--r--  1 Lazare  staff    780 Jun  9 01:10 ft_memcmp.o
+-rw-r--r--  1 Lazare  staff    700 Jun  9 01:10 ft_memcpy.o
+-rw-r--r--  1 Lazare  staff    684 Jun  9 01:10 ft_memdel.o
+-rw-r--r--  1 Lazare  staff    848 Jun  9 01:10 ft_memmove.o
+-rw-r--r--  1 Lazare  staff    692 Jun  9 01:10 ft_memset.o
+-rw-r--r--  1 Lazare  staff    716 Jun  9 01:10 ft_printtables.o
+-rw-r--r--  1 Lazare  staff    676 Jun  9 01:10 ft_putchar.o
+-rw-r--r--  1 Lazare  staff    688 Jun  9 01:10 ft_putchar_fd.o
+-rw-r--r--  1 Lazare  staff    740 Jun  9 01:10 ft_putendl.o
+-rw-r--r--  1 Lazare  staff    768 Jun  9 01:10 ft_putendl_fd.o
+-rw-r--r--  1 Lazare  staff    800 Jun  9 01:10 ft_putnbr.o
+-rw-r--r--  1 Lazare  staff    816 Jun  9 01:10 ft_putnbr_fd.o
+-rw-r--r--  1 Lazare  staff    728 Jun  9 01:10 ft_putstr.o
+-rw-r--r--  1 Lazare  staff    744 Jun  9 01:10 ft_putstr_fd.o
+-rw-r--r--  1 Lazare  staff   2072 Jun  9 01:10 ft_split_whitespaces.o
+-rw-r--r--  1 Lazare  staff    748 Jun  9 01:10 ft_strcat.o
+-rw-r--r--  1 Lazare  staff    748 Jun  9 01:10 ft_strchr.o
+-rw-r--r--  1 Lazare  staff    732 Jun  9 01:10 ft_strclr.o
+-rw-r--r--  1 Lazare  staff    772 Jun  9 01:10 ft_strcmp.o
+-rw-r--r--  1 Lazare  staff    724 Jun  9 01:10 ft_strcpy.o
+-rw-r--r--  1 Lazare  staff    664 Jun  9 01:10 ft_strdel.o
+-rw-r--r--  1 Lazare  staff    832 Jun  9 01:10 ft_strdup.o
+-rw-r--r--  1 Lazare  staff    720 Jun  9 01:10 ft_strequ.o
+-rw-r--r--  1 Lazare  staff    696 Jun  9 01:10 ft_striter.o
+-rw-r--r--  1 Lazare  staff    720 Jun  9 01:10 ft_striteri.o
+-rw-r--r--  1 Lazare  staff   1264 Jun  9 01:10 ft_strjoin.c
+-rw-r--r--  1 Lazare  staff    964 Jun  9 01:10 ft_strjoin.o
+-rw-r--r--  1 Lazare  staff    840 Jun  9 01:10 ft_strjoinfree.o
+-rw-r--r--  1 Lazare  staff    952 Jun  9 01:10 ft_strlcat.o
+-rw-r--r--  1 Lazare  staff    660 Jun  9 01:10 ft_strlen.o
+-rw-r--r--  1 Lazare  staff    880 Jun  9 01:10 ft_strmap.o
+-rw-r--r--  1 Lazare  staff    904 Jun  9 01:10 ft_strmapi.o
+-rw-r--r--  1 Lazare  staff    800 Jun  9 01:10 ft_strncat.o
+-rw-r--r--  1 Lazare  staff    840 Jun  9 01:10 ft_strncmp.o
+-rw-r--r--  1 Lazare  staff    792 Jun  9 01:10 ft_strncpy.o
+-rw-r--r--  1 Lazare  staff    732 Jun  9 01:10 ft_strnequ.o
+-rw-r--r--  1 Lazare  staff    772 Jun  9 01:10 ft_strnew.o
+-rw-r--r--  1 Lazare  staff   1008 Jun  9 01:10 ft_strnstr.o
+-rw-r--r--  1 Lazare  staff    768 Jun  9 01:10 ft_strrchr.o
+-rw-r--r--  1 Lazare  staff   1924 Jun  9 01:10 ft_strsplit.o
+-rw-r--r--  1 Lazare  staff    996 Jun  9 01:10 ft_strstr.o
+-rw-r--r--  1 Lazare  staff    804 Jun  9 01:10 ft_strsub.o
+-rw-r--r--  1 Lazare  staff   1128 Jun  9 01:10 ft_strtrim.o
+-rw-r--r--  1 Lazare  staff    648 Jun  9 01:10 ft_tolower.o
+-rw-r--r--  1 Lazare  staff    648 Jun  9 01:10 ft_toupper.o
+-rw-r--r--  1 Lazare  staff  57880 Jun  9 01:10 libft.a
+-rw-r--r--  1 Lazare  staff   3900 Jun  9 01:10 libft.h
+
+../libft:
+total 648
+-rw-r--r--  1 Lazare  staff   2242 Jun 13 11:00 Makefile
+-rw-r--r--  1 Lazare  staff      9 Jun 13 11:00 auteur
+-rw-r--r--  1 Lazare  staff   1306 Jun 13 11:00 ft_atoi.c
+-rw-r--r--  1 Lazare  staff   1050 Jun 13 11:00 ft_bzero.c
+-rw-r--r--  1 Lazare  staff   1052 Jun 13 11:00 ft_freetables.c
+-rw-r--r--  1 Lazare  staff   1007 Jun 13 11:00 ft_int_size.c
+-rw-r--r--  1 Lazare  staff   1003 Jun 13 11:00 ft_isalnum.c
+-rw-r--r--  1 Lazare  staff   1000 Jun 13 11:00 ft_isalpha.c
+-rw-r--r--  1 Lazare  staff    971 Jun 13 11:00 ft_isascii.c
+-rw-r--r--  1 Lazare  staff    973 Jun 13 11:00 ft_isdigit.c
+-rw-r--r--  1 Lazare  staff    971 Jun 13 11:00 ft_isprint.c
+-rw-r--r--  1 Lazare  staff   1397 Jun 13 11:00 ft_itoa.c
+-rw-r--r--  1 Lazare  staff   1013 Jun 13 11:00 ft_lstadd.c
+-rw-r--r--  1 Lazare  staff   1393 Jun 13 11:00 ft_lstdel.c
+-rw-r--r--  1 Lazare  staff   1139 Jun 13 11:00 ft_lstdelone.c
+-rw-r--r--  1 Lazare  staff   1123 Jun 13 11:00 ft_lstiter.c
+-rw-r--r--  1 Lazare  staff   1323 Jun 13 11:00 ft_lstmap.c
+-rw-r--r--  1 Lazare  staff   1362 Jun 13 11:00 ft_lstnew.c
+-rw-r--r--  1 Lazare  staff   1086 Jun 13 11:00 ft_memalloc.c
+-rw-r--r--  1 Lazare  staff   1237 Jun 13 11:00 ft_memccpy.c
+-rw-r--r--  1 Lazare  staff   1142 Jun 13 11:00 ft_memchr.c
+-rw-r--r--  1 Lazare  staff   1198 Jun 13 11:00 ft_memcmp.c
+-rw-r--r--  1 Lazare  staff   1170 Jun 13 11:00 ft_memcpy.c
+-rw-r--r--  1 Lazare  staff    985 Jun 13 11:00 ft_memdel.c
+-rw-r--r--  1 Lazare  staff   1340 Jun 13 11:00 ft_memmove.c
+-rw-r--r--  1 Lazare  staff   1087 Jun 13 11:00 ft_memset.c
+-rw-r--r--  1 Lazare  staff   1015 Jun 13 11:00 ft_printtables.c
+-rw-r--r--  1 Lazare  staff    979 Jun 13 11:00 ft_putchar.c
+-rw-r--r--  1 Lazare  staff    971 Jun 13 11:00 ft_putchar_fd.c
+-rw-r--r--  1 Lazare  staff   1018 Jun 13 11:00 ft_putendl.c
+-rw-r--r--  1 Lazare  staff   1065 Jun 13 11:00 ft_putendl_fd.c
+-rw-r--r--  1 Lazare  staff   1087 Jun 13 11:00 ft_putnbr.c
+-rw-r--r--  1 Lazare  staff   1121 Jun 13 11:00 ft_putnbr_fd.c
+-rw-r--r--  1 Lazare  staff   1039 Jun 13 11:00 ft_putstr.c
+-rw-r--r--  1 Lazare  staff   1038 Jun 13 11:00 ft_putstr_fd.c
+-rw-r--r--  1 Lazare  staff   2085 Jun 13 11:00 ft_split_whitespaces.c
+-rw-r--r--  1 Lazare  staff   1103 Jun 13 11:00 ft_strcat.c
+-rw-r--r--  1 Lazare  staff   1099 Jun 13 11:00 ft_strchr.c
+-rw-r--r--  1 Lazare  staff    977 Jun 13 11:00 ft_strclr.c
+-rw-r--r--  1 Lazare  staff   1064 Jun 13 11:00 ft_strcmp.c
+-rw-r--r--  1 Lazare  staff   1058 Jun 13 11:00 ft_strcpy.c
+-rw-r--r--  1 Lazare  staff    986 Jun 13 11:00 ft_strdel.c
+-rw-r--r--  1 Lazare  staff   1168 Jun 13 11:00 ft_strdup.c
+-rw-r--r--  1 Lazare  staff   1025 Jun 13 11:00 ft_strequ.c
+-rw-r--r--  1 Lazare  staff    997 Jun 13 11:00 ft_striter.c
+-rw-r--r--  1 Lazare  staff   1049 Jun 13 11:00 ft_striteri.c
+-rw-r--r--  1 Lazare  staff   1265 Jun 13 11:00 ft_strjoin.c
+-rw-r--r--  1 Lazare  staff   1191 Jun 13 11:00 ft_strjoinfree.c
+-rw-r--r--  1 Lazare  staff   1395 Jun 13 11:00 ft_strlcat.c
+-rw-r--r--  1 Lazare  staff   1011 Jun 13 11:00 ft_strlen.c
+-rw-r--r--  1 Lazare  staff   1226 Jun 13 11:00 ft_strmap.c
+-rw-r--r--  1 Lazare  staff   1281 Jun 13 11:00 ft_strmapi.c
+-rw-r--r--  1 Lazare  staff   1109 Jun 13 11:00 ft_strncat.c
+-rw-r--r--  1 Lazare  staff   1139 Jun 13 11:00 ft_strncmp.c
+-rw-r--r--  1 Lazare  staff   1128 Jun 13 11:00 ft_strncpy.c
+-rw-r--r--  1 Lazare  staff   1040 Jun 13 11:00 ft_strnequ.c
+-rw-r--r--  1 Lazare  staff   1120 Jun 13 11:00 ft_strnew.c
+-rw-r--r--  1 Lazare  staff   1430 Jun 13 11:00 ft_strnstr.c
+-rw-r--r--  1 Lazare  staff   1125 Jun 13 11:00 ft_strrchr.c
+-rw-r--r--  1 Lazare  staff   2070 Jun 13 11:00 ft_strsplit.c
+-rw-r--r--  1 Lazare  staff   1403 Jun 13 11:00 ft_strstr.c
+-rw-r--r--  1 Lazare  staff   1161 Jun 13 11:00 ft_strsub.c
+-rw-r--r--  1 Lazare  staff   1380 Jun 13 11:00 ft_strtrim.c
+-rw-r--r--  1 Lazare  staff    980 Jun 13 11:00 ft_tolower.c
+-rw-r--r--  1 Lazare  staff    980 Jun 13 11:00 ft_toupper.c
+-rw-r--r--  1 Lazare  staff  57880 Jun 13 11:01 libft.a
+-rw-r--r--  1 Lazare  staff   3899 Jun 13 11:00 libft.h
+
+../ls:
+total 696
+-rwxr-xr-x    1 Lazare  staff  48416 Jul 25 17:26 a.out
+drwxr-xr-x    3 Lazare  staff    102 Jul 24 20:02 a.out.dSYM
+-rw-r--r--    1 Lazare  staff  15564 Jul 24 20:17 allcode.c
+-rw-r--r--    1 Lazare  staff    154 Jul 25 12:31 commande.txt
+-rw-r--r--    1 Lazare  staff    571 Jul 25 17:27 ft_CMD_R.c
+-rw-r--r--    1 Lazare  staff   3297 Jul 25 17:01 ft_CMD_l.c
+-rw-r--r--    1 Lazare  staff   1031 Jul 22 13:48 ft_free.c
+-rw-r--r--    1 Lazare  staff   1113 Jul 17 22:40 ft_list_reverse.c
+-rwxr-xr-x    1 Lazare  staff  67820 Jul 24 20:03 ft_ls
+-rw-r--r--    1 Lazare  staff   1220 Jul 25 14:30 ft_padding.c
+-rw-r--r--    1 Lazare  staff    866 Jul 19 19:16 ft_place_element.c
+-rw-r--r--    1 Lazare  staff    997 Jul 25 17:03 ft_print_normal.c
+-rw-r--r--    1 Lazare  staff   2458 Jul 25 16:38 ft_store.c
+drwxr-xr-x  136 Lazare  staff   4624 Jul 22 13:36 libft
+-rw-r--r--    1 Lazare  staff   3941 Jul 12 05:50 libft.h
+-rw-r--r--    1 Lazare  staff   1462 Jul 25 17:13 ls.c
+-rw-r--r--    1 Lazare  staff   1936 Jul 25 17:18 ls.h
+-rw-r--r--    1 Lazare  staff   3305 Jul 25 12:09 main.c
+lrwxr-xr-x    1 Lazare  staff      9 Jul 25 14:02 mycoucou -> allcode.c
+-rw-r--r--    1 Lazare  staff  96114 Jul 25 17:29 myls
+lrwxr-xr-x    1 Lazare  staff      8 Jul 25 17:11 mymycoucou -> mycoucou
+-rw-r--r--    1 Lazare  staff  61440 Jul 25 17:30 truels
+
+../ls/a.out.dSYM:
+total 0
+drwxr-xr-x  4 Lazare  staff  136 Jul 24 20:02 Contents
+
+../ls/a.out.dSYM/Contents:
+total 8
+-rw-r--r--  1 Lazare  staff  634 Jul 25 17:26 Info.plist
+drwxr-xr-x  3 Lazare  staff  102 Jul 24 20:02 Resources
+
+../ls/a.out.dSYM/Contents/Resources:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul 24 20:02 DWARF
+
+../ls/a.out.dSYM/Contents/Resources/DWARF:
+total 88
+-rw-r--r--  1 Lazare  staff  41269 Jul 25 17:26 a.out
+
+../ls/libft:
+total 1152
+-rw-r--r--  1 Lazare  staff   2242 Jul 12 05:50 Makefile
+-rw-r--r--  1 Lazare  staff      9 Jul 12 05:50 auteur
+-rw-r--r--  1 Lazare  staff   1306 Jul 12 05:50 ft_atoi.c
+-rw-r--r--  1 Lazare  staff   1004 Jul 12 05:50 ft_atoi.o
+-rw-r--r--  1 Lazare  staff   1050 Jul 12 05:50 ft_bzero.c
+-rw-r--r--  1 Lazare  staff    676 Jul 12 05:50 ft_bzero.o
+-rw-r--r--  1 Lazare  staff   1052 Jul 12 05:50 ft_freetables.c
+-rw-r--r--  1 Lazare  staff    752 Jul 12 05:50 ft_freetables.o
+-rw-r--r--  1 Lazare  staff   1007 Jul 12 05:50 ft_int_size.c
+-rw-r--r--  1 Lazare  staff    688 Jul 12 05:50 ft_int_size.o
+-rw-r--r--  1 Lazare  staff   1003 Jul 12 05:50 ft_isalnum.c
+-rw-r--r--  1 Lazare  staff    752 Jul 12 05:50 ft_isalnum.o
+-rw-r--r--  1 Lazare  staff   1000 Jul 12 05:50 ft_isalpha.c
+-rw-r--r--  1 Lazare  staff    672 Jul 12 05:50 ft_isalpha.o
+-rw-r--r--  1 Lazare  staff    971 Jul 12 05:50 ft_isascii.c
+-rw-r--r--  1 Lazare  staff    656 Jul 12 05:50 ft_isascii.o
+-rw-r--r--  1 Lazare  staff    973 Jul 12 05:50 ft_isdigit.c
+-rw-r--r--  1 Lazare  staff    656 Jul 12 05:50 ft_isdigit.o
+-rw-r--r--  1 Lazare  staff    971 Jul 12 05:50 ft_isprint.c
+-rw-r--r--  1 Lazare  staff    656 Jul 12 05:50 ft_isprint.o
+-rw-r--r--  1 Lazare  staff   1397 Jul 12 05:50 ft_itoa.c
+-rw-r--r--  1 Lazare  staff   1008 Jul 12 05:50 ft_itoa.o
+-rw-r--r--  1 Lazare  staff   1013 Jul 12 05:50 ft_lstadd.c
+-rw-r--r--  1 Lazare  staff    636 Jul 12 05:50 ft_lstadd.o
+-rw-r--r--  1 Lazare  staff   1393 Jul 12 05:50 ft_lstdel.c
+-rw-r--r--  1 Lazare  staff    884 Jul 12 05:50 ft_lstdel.o
+-rw-r--r--  1 Lazare  staff   1139 Jul 12 05:50 ft_lstdelone.c
+-rw-r--r--  1 Lazare  staff    752 Jul 12 05:50 ft_lstdelone.o
+-rw-r--r--  1 Lazare  staff   1123 Jul 12 05:50 ft_lstiter.c
+-rw-r--r--  1 Lazare  staff    712 Jul 12 05:50 ft_lstiter.o
+-rw-r--r--  1 Lazare  staff   1323 Jul 12 05:50 ft_lstmap.c
+-rw-r--r--  1 Lazare  staff    840 Jul 12 05:50 ft_lstmap.o
+-rw-r--r--  1 Lazare  staff   1362 Jul 12 05:50 ft_lstnew.c
+-rw-r--r--  1 Lazare  staff    888 Jul 12 05:50 ft_lstnew.o
+-rw-r--r--  1 Lazare  staff   1086 Jul 12 05:50 ft_memalloc.c
+-rw-r--r--  1 Lazare  staff    744 Jul 12 05:50 ft_memalloc.o
+-rw-r--r--  1 Lazare  staff   1237 Jul 12 05:50 ft_memccpy.c
+-rw-r--r--  1 Lazare  staff    776 Jul 12 05:50 ft_memccpy.o
+-rw-r--r--  1 Lazare  staff   1142 Jul 12 05:50 ft_memchr.c
+-rw-r--r--  1 Lazare  staff    748 Jul 12 05:50 ft_memchr.o
+-rw-r--r--  1 Lazare  staff   1198 Jul 12 05:50 ft_memcmp.c
+-rw-r--r--  1 Lazare  staff    780 Jul 12 05:50 ft_memcmp.o
+-rw-r--r--  1 Lazare  staff   1170 Jul 12 05:50 ft_memcpy.c
+-rw-r--r--  1 Lazare  staff    700 Jul 12 05:50 ft_memcpy.o
+-rw-r--r--  1 Lazare  staff    985 Jul 12 05:50 ft_memdel.c
+-rw-r--r--  1 Lazare  staff    684 Jul 12 05:50 ft_memdel.o
+-rw-r--r--  1 Lazare  staff   1340 Jul 12 05:50 ft_memmove.c
+-rw-r--r--  1 Lazare  staff    848 Jul 12 05:50 ft_memmove.o
+-rw-r--r--  1 Lazare  staff   1087 Jul 12 05:50 ft_memset.c
+-rw-r--r--  1 Lazare  staff    692 Jul 12 05:50 ft_memset.o
+-rw-r--r--  1 Lazare  staff   1015 Jul 12 05:50 ft_printtables.c
+-rw-r--r--  1 Lazare  staff    716 Jul 12 05:50 ft_printtables.o
+-rw-r--r--  1 Lazare  staff    979 Jul 12 05:50 ft_putchar.c
+-rw-r--r--  1 Lazare  staff    676 Jul 12 05:50 ft_putchar.o
+-rw-r--r--  1 Lazare  staff    971 Jul 12 05:50 ft_putchar_fd.c
+-rw-r--r--  1 Lazare  staff    688 Jul 12 05:50 ft_putchar_fd.o
+-rw-r--r--  1 Lazare  staff   1018 Jul 12 05:50 ft_putendl.c
+-rw-r--r--  1 Lazare  staff    740 Jul 12 05:50 ft_putendl.o
+-rw-r--r--  1 Lazare  staff   1065 Jul 12 05:50 ft_putendl_fd.c
+-rw-r--r--  1 Lazare  staff    768 Jul 12 05:50 ft_putendl_fd.o
+-rw-r--r--  1 Lazare  staff   1087 Jul 12 05:50 ft_putnbr.c
+-rw-r--r--  1 Lazare  staff    800 Jul 12 05:50 ft_putnbr.o
+-rw-r--r--  1 Lazare  staff   1121 Jul 12 05:50 ft_putnbr_fd.c
+-rw-r--r--  1 Lazare  staff    816 Jul 12 05:50 ft_putnbr_fd.o
+-rw-r--r--  1 Lazare  staff   1039 Jul 12 05:50 ft_putstr.c
+-rw-r--r--  1 Lazare  staff    728 Jul 12 05:50 ft_putstr.o
+-rw-r--r--  1 Lazare  staff   1038 Jul 12 05:50 ft_putstr_fd.c
+-rw-r--r--  1 Lazare  staff    744 Jul 12 05:50 ft_putstr_fd.o
+-rw-r--r--  1 Lazare  staff   2085 Jul 12 05:50 ft_split_whitespaces.c
+-rw-r--r--  1 Lazare  staff   2072 Jul 12 05:50 ft_split_whitespaces.o
+-rw-r--r--  1 Lazare  staff   1103 Jul 12 05:50 ft_strcat.c
+-rw-r--r--  1 Lazare  staff    748 Jul 12 05:50 ft_strcat.o
+-rw-r--r--  1 Lazare  staff   1099 Jul 12 05:50 ft_strchr.c
+-rw-r--r--  1 Lazare  staff    748 Jul 12 05:50 ft_strchr.o
+-rw-r--r--  1 Lazare  staff    977 Jul 12 05:50 ft_strclr.c
+-rw-r--r--  1 Lazare  staff    732 Jul 12 05:50 ft_strclr.o
+-rw-r--r--  1 Lazare  staff   1064 Jul 12 05:50 ft_strcmp.c
+-rw-r--r--  1 Lazare  staff    772 Jul 12 05:50 ft_strcmp.o
+-rw-r--r--  1 Lazare  staff   1058 Jul 12 05:50 ft_strcpy.c
+-rw-r--r--  1 Lazare  staff    724 Jul 12 05:50 ft_strcpy.o
+-rw-r--r--  1 Lazare  staff    986 Jul 12 05:50 ft_strdel.c
+-rw-r--r--  1 Lazare  staff    664 Jul 12 05:50 ft_strdel.o
+-rw-r--r--  1 Lazare  staff   1168 Jul 12 05:50 ft_strdup.c
+-rw-r--r--  1 Lazare  staff    832 Jul 12 05:50 ft_strdup.o
+-rw-r--r--  1 Lazare  staff   1025 Jul 12 05:50 ft_strequ.c
+-rw-r--r--  1 Lazare  staff    720 Jul 12 05:50 ft_strequ.o
+-rw-r--r--  1 Lazare  staff    997 Jul 12 05:50 ft_striter.c
+-rw-r--r--  1 Lazare  staff    696 Jul 12 05:50 ft_striter.o
+-rw-r--r--  1 Lazare  staff   1049 Jul 12 05:50 ft_striteri.c
+-rw-r--r--  1 Lazare  staff    720 Jul 12 05:50 ft_striteri.o
+-rw-r--r--  1 Lazare  staff   1265 Jul 12 05:50 ft_strjoin.c
+-rw-r--r--  1 Lazare  staff    964 Jul 12 05:50 ft_strjoin.o
+-rw-r--r--  1 Lazare  staff   1191 Jul 12 05:50 ft_strjoinfree.c
+-rw-r--r--  1 Lazare  staff    840 Jul 12 05:50 ft_strjoinfree.o
+-rw-r--r--  1 Lazare  staff   1395 Jul 12 05:50 ft_strlcat.c
+-rw-r--r--  1 Lazare  staff    952 Jul 12 05:50 ft_strlcat.o
+-rw-r--r--  1 Lazare  staff   1011 Jul 12 05:50 ft_strlen.c
+-rw-r--r--  1 Lazare  staff    660 Jul 12 05:50 ft_strlen.o
+-rw-r--r--  1 Lazare  staff   1226 Jul 12 05:50 ft_strmap.c
+-rw-r--r--  1 Lazare  staff    880 Jul 12 05:50 ft_strmap.o
+-rw-r--r--  1 Lazare  staff   1281 Jul 12 05:50 ft_strmapi.c
+-rw-r--r--  1 Lazare  staff    904 Jul 12 05:50 ft_strmapi.o
+-rw-r--r--  1 Lazare  staff   1109 Jul 12 05:50 ft_strncat.c
+-rw-r--r--  1 Lazare  staff    800 Jul 12 05:50 ft_strncat.o
+-rw-r--r--  1 Lazare  staff   1139 Jul 12 05:50 ft_strncmp.c
+-rw-r--r--  1 Lazare  staff    840 Jul 12 05:50 ft_strncmp.o
+-rw-r--r--  1 Lazare  staff   1128 Jul 12 05:50 ft_strncpy.c
+-rw-r--r--  1 Lazare  staff    792 Jul 12 05:50 ft_strncpy.o
+-rw-r--r--  1 Lazare  staff   1040 Jul 12 05:50 ft_strnequ.c
+-rw-r--r--  1 Lazare  staff    732 Jul 12 05:50 ft_strnequ.o
+-rw-r--r--  1 Lazare  staff   1120 Jul 12 05:50 ft_strnew.c
+-rw-r--r--  1 Lazare  staff    772 Jul 12 05:50 ft_strnew.o
+-rw-r--r--  1 Lazare  staff   1430 Jul 12 05:50 ft_strnstr.c
+-rw-r--r--  1 Lazare  staff   1008 Jul 12 05:50 ft_strnstr.o
+-rw-r--r--  1 Lazare  staff   1125 Jul 12 05:50 ft_strrchr.c
+-rw-r--r--  1 Lazare  staff    768 Jul 12 05:50 ft_strrchr.o
+-rw-r--r--  1 Lazare  staff   2070 Jul 12 05:50 ft_strsplit.c
+-rw-r--r--  1 Lazare  staff   1924 Jul 12 05:50 ft_strsplit.o
+-rw-r--r--  1 Lazare  staff   1403 Jul 12 05:50 ft_strstr.c
+-rw-r--r--  1 Lazare  staff    996 Jul 12 05:50 ft_strstr.o
+-rw-r--r--  1 Lazare  staff   1161 Jul 12 05:50 ft_strsub.c
+-rw-r--r--  1 Lazare  staff    804 Jul 12 05:50 ft_strsub.o
+-rw-r--r--  1 Lazare  staff   1380 Jul 12 05:50 ft_strtrim.c
+-rw-r--r--  1 Lazare  staff   1128 Jul 12 05:50 ft_strtrim.o
+-rw-r--r--  1 Lazare  staff    980 Jul 12 05:50 ft_tolower.c
+-rw-r--r--  1 Lazare  staff    648 Jul 12 05:50 ft_tolower.o
+-rw-r--r--  1 Lazare  staff    980 Jul 12 05:50 ft_toupper.c
+-rw-r--r--  1 Lazare  staff    648 Jul 12 05:50 ft_toupper.o
+-rw-r--r--  1 Lazare  staff  57880 Jul 12 05:50 libft.a
+-rw-r--r--  1 Lazare  staff   3899 Jul 12 05:50 libft.h
+
+../myls:
+total 119384
+-rwxr-xr-x    1 Lazare  staff     22512 Jul 24 23:01 a.out
+drwxr-xr-x    3 Lazare  staff       102 Jul 24 22:58 a.out.dSYM
+-rw-r--r--    1 Lazare  staff     32617 Jul 24 22:58 allcode.txt
+-rw-r--r--    1 Lazare  staff       517 Jul 24 22:57 ft_CMD_R.c
+-rw-r--r--    1 Lazare  staff      1601 Jul 24 22:59 ft_CMD_l.c
+-rw-r--r--    1 Lazare  staff      1031 Jul 24 22:57 ft_free.c
+-rw-r--r--    1 Lazare  staff      1113 Jul 24 22:57 ft_list_reverse.c
+-rwxr-xr-x    1 Lazare  staff     67820 Jul 24 22:57 ft_ls
+-rw-r--r--    1 Lazare  staff      1204 Jul 24 22:58 ft_padding.c
+-rw-r--r--    1 Lazare  staff       866 Jul 24 22:57 ft_place_element.c
+-rw-r--r--    1 Lazare  staff       541 Jul 24 22:57 ft_print_normal.c
+-rw-r--r--    1 Lazare  staff      2458 Jul 24 22:57 ft_store.c
+-rw-r--r--    1 Lazare  staff       351 Jul 24 22:57 ft_time.c
+drwxr-xr-x  136 Lazare  staff      4624 Jul 24 22:57 libft
+-rw-r--r--    1 Lazare  staff      3941 Jul 24 22:57 libft.h
+-rw-r--r--    1 Lazare  staff      1474 Jul 24 22:57 ls.c
+-rw-r--r--    1 Lazare  staff      1935 Jul 24 22:57 ls.h
+-rw-r--r--    1 Lazare  staff      3330 Jul 24 22:57 main.c
+-rw-r--r--    1 Lazare  staff  12280967 Jul 24 22:58 myls
+-rw-r--r--    1 Lazare  staff      3538 Jul 24 22:58 old_cmd_l.c
+-rw-r--r--    1 Lazare  staff      1303 Jul 24 22:58 old_padding.c
+-rw-r--r--    1 Lazare  staff      2342 Jul 24 22:58 printf_CMD_r.c
+-rw-r--r--    1 Lazare  staff      1124 Jul 24 22:58 todo.txt
+-rw-r--r--    1 Lazare  staff  48642725 Jul 24 22:58 truels
+
+../myls/a.out.dSYM:
+total 0
+drwxr-xr-x  4 Lazare  staff  136 Jul 24 22:58 Contents
+
+../myls/a.out.dSYM/Contents:
+total 8
+-rw-r--r--  1 Lazare  staff  634 Jul 24 23:01 Info.plist
+drwxr-xr-x  3 Lazare  staff  102 Jul 24 22:58 Resources
+
+../myls/a.out.dSYM/Contents/Resources:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul 24 22:58 DWARF
+
+../myls/a.out.dSYM/Contents/Resources/DWARF:
+total 80
+-rw-r--r--  1 Lazare  staff  38403 Jul 24 23:01 a.out
+
+../myls/libft:
+total 1152
+-rw-r--r--  1 Lazare  staff   2242 Jul 24 22:57 Makefile
+-rw-r--r--  1 Lazare  staff      9 Jul 24 22:57 auteur
+-rw-r--r--  1 Lazare  staff   1306 Jul 24 22:57 ft_atoi.c
+-rw-r--r--  1 Lazare  staff   1004 Jul 24 22:57 ft_atoi.o
+-rw-r--r--  1 Lazare  staff   1050 Jul 24 22:57 ft_bzero.c
+-rw-r--r--  1 Lazare  staff    676 Jul 24 22:57 ft_bzero.o
+-rw-r--r--  1 Lazare  staff   1052 Jul 24 22:57 ft_freetables.c
+-rw-r--r--  1 Lazare  staff    752 Jul 24 22:57 ft_freetables.o
+-rw-r--r--  1 Lazare  staff   1007 Jul 24 22:57 ft_int_size.c
+-rw-r--r--  1 Lazare  staff    688 Jul 24 22:57 ft_int_size.o
+-rw-r--r--  1 Lazare  staff   1003 Jul 24 22:57 ft_isalnum.c
+-rw-r--r--  1 Lazare  staff    752 Jul 24 22:57 ft_isalnum.o
+-rw-r--r--  1 Lazare  staff   1000 Jul 24 22:57 ft_isalpha.c
+-rw-r--r--  1 Lazare  staff    672 Jul 24 22:57 ft_isalpha.o
+-rw-r--r--  1 Lazare  staff    971 Jul 24 22:57 ft_isascii.c
+-rw-r--r--  1 Lazare  staff    656 Jul 24 22:57 ft_isascii.o
+-rw-r--r--  1 Lazare  staff    973 Jul 24 22:57 ft_isdigit.c
+-rw-r--r--  1 Lazare  staff    656 Jul 24 22:57 ft_isdigit.o
+-rw-r--r--  1 Lazare  staff    971 Jul 24 22:57 ft_isprint.c
+-rw-r--r--  1 Lazare  staff    656 Jul 24 22:57 ft_isprint.o
+-rw-r--r--  1 Lazare  staff   1397 Jul 24 22:57 ft_itoa.c
+-rw-r--r--  1 Lazare  staff   1008 Jul 24 22:57 ft_itoa.o
+-rw-r--r--  1 Lazare  staff   1013 Jul 24 22:57 ft_lstadd.c
+-rw-r--r--  1 Lazare  staff    636 Jul 24 22:57 ft_lstadd.o
+-rw-r--r--  1 Lazare  staff   1393 Jul 24 22:57 ft_lstdel.c
+-rw-r--r--  1 Lazare  staff    884 Jul 24 22:57 ft_lstdel.o
+-rw-r--r--  1 Lazare  staff   1139 Jul 24 22:57 ft_lstdelone.c
+-rw-r--r--  1 Lazare  staff    752 Jul 24 22:57 ft_lstdelone.o
+-rw-r--r--  1 Lazare  staff   1123 Jul 24 22:57 ft_lstiter.c
+-rw-r--r--  1 Lazare  staff    712 Jul 24 22:57 ft_lstiter.o
+-rw-r--r--  1 Lazare  staff   1323 Jul 24 22:57 ft_lstmap.c
+-rw-r--r--  1 Lazare  staff    840 Jul 24 22:57 ft_lstmap.o
+-rw-r--r--  1 Lazare  staff   1362 Jul 24 22:57 ft_lstnew.c
+-rw-r--r--  1 Lazare  staff    888 Jul 24 22:57 ft_lstnew.o
+-rw-r--r--  1 Lazare  staff   1086 Jul 24 22:57 ft_memalloc.c
+-rw-r--r--  1 Lazare  staff    744 Jul 24 22:57 ft_memalloc.o
+-rw-r--r--  1 Lazare  staff   1237 Jul 24 22:57 ft_memccpy.c
+-rw-r--r--  1 Lazare  staff    776 Jul 24 22:57 ft_memccpy.o
+-rw-r--r--  1 Lazare  staff   1142 Jul 24 22:57 ft_memchr.c
+-rw-r--r--  1 Lazare  staff    748 Jul 24 22:57 ft_memchr.o
+-rw-r--r--  1 Lazare  staff   1198 Jul 24 22:57 ft_memcmp.c
+-rw-r--r--  1 Lazare  staff    780 Jul 24 22:57 ft_memcmp.o
+-rw-r--r--  1 Lazare  staff   1170 Jul 24 22:57 ft_memcpy.c
+-rw-r--r--  1 Lazare  staff    700 Jul 24 22:57 ft_memcpy.o
+-rw-r--r--  1 Lazare  staff    985 Jul 24 22:57 ft_memdel.c
+-rw-r--r--  1 Lazare  staff    684 Jul 24 22:57 ft_memdel.o
+-rw-r--r--  1 Lazare  staff   1340 Jul 24 22:57 ft_memmove.c
+-rw-r--r--  1 Lazare  staff    848 Jul 24 22:57 ft_memmove.o
+-rw-r--r--  1 Lazare  staff   1087 Jul 24 22:57 ft_memset.c
+-rw-r--r--  1 Lazare  staff    692 Jul 24 22:57 ft_memset.o
+-rw-r--r--  1 Lazare  staff   1015 Jul 24 22:57 ft_printtables.c
+-rw-r--r--  1 Lazare  staff    716 Jul 24 22:57 ft_printtables.o
+-rw-r--r--  1 Lazare  staff    979 Jul 24 22:57 ft_putchar.c
+-rw-r--r--  1 Lazare  staff    676 Jul 24 22:57 ft_putchar.o
+-rw-r--r--  1 Lazare  staff    971 Jul 24 22:57 ft_putchar_fd.c
+-rw-r--r--  1 Lazare  staff    688 Jul 24 22:57 ft_putchar_fd.o
+-rw-r--r--  1 Lazare  staff   1018 Jul 24 22:57 ft_putendl.c
+-rw-r--r--  1 Lazare  staff    740 Jul 24 22:57 ft_putendl.o
+-rw-r--r--  1 Lazare  staff   1065 Jul 24 22:57 ft_putendl_fd.c
+-rw-r--r--  1 Lazare  staff    768 Jul 24 22:57 ft_putendl_fd.o
+-rw-r--r--  1 Lazare  staff   1087 Jul 24 22:57 ft_putnbr.c
+-rw-r--r--  1 Lazare  staff    800 Jul 24 22:57 ft_putnbr.o
+-rw-r--r--  1 Lazare  staff   1121 Jul 24 22:57 ft_putnbr_fd.c
+-rw-r--r--  1 Lazare  staff    816 Jul 24 22:57 ft_putnbr_fd.o
+-rw-r--r--  1 Lazare  staff   1039 Jul 24 22:57 ft_putstr.c
+-rw-r--r--  1 Lazare  staff    728 Jul 24 22:57 ft_putstr.o
+-rw-r--r--  1 Lazare  staff   1038 Jul 24 22:57 ft_putstr_fd.c
+-rw-r--r--  1 Lazare  staff    744 Jul 24 22:57 ft_putstr_fd.o
+-rw-r--r--  1 Lazare  staff   2085 Jul 24 22:57 ft_split_whitespaces.c
+-rw-r--r--  1 Lazare  staff   2072 Jul 24 22:57 ft_split_whitespaces.o
+-rw-r--r--  1 Lazare  staff   1103 Jul 24 22:57 ft_strcat.c
+-rw-r--r--  1 Lazare  staff    748 Jul 24 22:57 ft_strcat.o
+-rw-r--r--  1 Lazare  staff   1099 Jul 24 22:57 ft_strchr.c
+-rw-r--r--  1 Lazare  staff    748 Jul 24 22:57 ft_strchr.o
+-rw-r--r--  1 Lazare  staff    977 Jul 24 22:57 ft_strclr.c
+-rw-r--r--  1 Lazare  staff    732 Jul 24 22:57 ft_strclr.o
+-rw-r--r--  1 Lazare  staff   1064 Jul 24 22:57 ft_strcmp.c
+-rw-r--r--  1 Lazare  staff    772 Jul 24 22:57 ft_strcmp.o
+-rw-r--r--  1 Lazare  staff   1058 Jul 24 22:57 ft_strcpy.c
+-rw-r--r--  1 Lazare  staff    724 Jul 24 22:57 ft_strcpy.o
+-rw-r--r--  1 Lazare  staff    986 Jul 24 22:57 ft_strdel.c
+-rw-r--r--  1 Lazare  staff    664 Jul 24 22:57 ft_strdel.o
+-rw-r--r--  1 Lazare  staff   1168 Jul 24 22:57 ft_strdup.c
+-rw-r--r--  1 Lazare  staff    832 Jul 24 22:57 ft_strdup.o
+-rw-r--r--  1 Lazare  staff   1025 Jul 24 22:57 ft_strequ.c
+-rw-r--r--  1 Lazare  staff    720 Jul 24 22:57 ft_strequ.o
+-rw-r--r--  1 Lazare  staff    997 Jul 24 22:57 ft_striter.c
+-rw-r--r--  1 Lazare  staff    696 Jul 24 22:57 ft_striter.o
+-rw-r--r--  1 Lazare  staff   1049 Jul 24 22:57 ft_striteri.c
+-rw-r--r--  1 Lazare  staff    720 Jul 24 22:57 ft_striteri.o
+-rw-r--r--  1 Lazare  staff   1265 Jul 24 22:57 ft_strjoin.c
+-rw-r--r--  1 Lazare  staff    964 Jul 24 22:57 ft_strjoin.o
+-rw-r--r--  1 Lazare  staff   1191 Jul 24 22:57 ft_strjoinfree.c
+-rw-r--r--  1 Lazare  staff    840 Jul 24 22:57 ft_strjoinfree.o
+-rw-r--r--  1 Lazare  staff   1395 Jul 24 22:57 ft_strlcat.c
+-rw-r--r--  1 Lazare  staff    952 Jul 24 22:57 ft_strlcat.o
+-rw-r--r--  1 Lazare  staff   1011 Jul 24 22:57 ft_strlen.c
+-rw-r--r--  1 Lazare  staff    660 Jul 24 22:57 ft_strlen.o
+-rw-r--r--  1 Lazare  staff   1226 Jul 24 22:57 ft_strmap.c
+-rw-r--r--  1 Lazare  staff    880 Jul 24 22:57 ft_strmap.o
+-rw-r--r--  1 Lazare  staff   1281 Jul 24 22:57 ft_strmapi.c
+-rw-r--r--  1 Lazare  staff    904 Jul 24 22:57 ft_strmapi.o
+-rw-r--r--  1 Lazare  staff   1109 Jul 24 22:57 ft_strncat.c
+-rw-r--r--  1 Lazare  staff    800 Jul 24 22:57 ft_strncat.o
+-rw-r--r--  1 Lazare  staff   1139 Jul 24 22:57 ft_strncmp.c
+-rw-r--r--  1 Lazare  staff    840 Jul 24 22:57 ft_strncmp.o
+-rw-r--r--  1 Lazare  staff   1128 Jul 24 22:57 ft_strncpy.c
+-rw-r--r--  1 Lazare  staff    792 Jul 24 22:57 ft_strncpy.o
+-rw-r--r--  1 Lazare  staff   1040 Jul 24 22:57 ft_strnequ.c
+-rw-r--r--  1 Lazare  staff    732 Jul 24 22:57 ft_strnequ.o
+-rw-r--r--  1 Lazare  staff   1120 Jul 24 22:57 ft_strnew.c
+-rw-r--r--  1 Lazare  staff    772 Jul 24 22:57 ft_strnew.o
+-rw-r--r--  1 Lazare  staff   1430 Jul 24 22:57 ft_strnstr.c
+-rw-r--r--  1 Lazare  staff   1008 Jul 24 22:57 ft_strnstr.o
+-rw-r--r--  1 Lazare  staff   1125 Jul 24 22:57 ft_strrchr.c
+-rw-r--r--  1 Lazare  staff    768 Jul 24 22:57 ft_strrchr.o
+-rw-r--r--  1 Lazare  staff   2070 Jul 24 22:57 ft_strsplit.c
+-rw-r--r--  1 Lazare  staff   1924 Jul 24 22:57 ft_strsplit.o
+-rw-r--r--  1 Lazare  staff   1403 Jul 24 22:57 ft_strstr.c
+-rw-r--r--  1 Lazare  staff    996 Jul 24 22:57 ft_strstr.o
+-rw-r--r--  1 Lazare  staff   1161 Jul 24 22:57 ft_strsub.c
+-rw-r--r--  1 Lazare  staff    804 Jul 24 22:57 ft_strsub.o
+-rw-r--r--  1 Lazare  staff   1380 Jul 24 22:57 ft_strtrim.c
+-rw-r--r--  1 Lazare  staff   1128 Jul 24 22:57 ft_strtrim.o
+-rw-r--r--  1 Lazare  staff    980 Jul 24 22:57 ft_tolower.c
+-rw-r--r--  1 Lazare  staff    648 Jul 24 22:57 ft_tolower.o
+-rw-r--r--  1 Lazare  staff    980 Jul 24 22:57 ft_toupper.c
+-rw-r--r--  1 Lazare  staff    648 Jul 24 22:57 ft_toupper.o
+-rw-r--r--  1 Lazare  staff  57880 Jul 24 22:57 libft.a
+-rw-r--r--  1 Lazare  staff   3899 Jul 24 22:57 libft.h

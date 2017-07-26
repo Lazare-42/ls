@@ -14,7 +14,8 @@ void	ft_put_whites(int max_str_len,int  fillup, int options)
 		ft_putchar(' ');
 		fillup++;
 	}
-	ft_putchar(' ');
+	if (options != 1 && options != 3)
+		ft_putchar(' ');
 }
 
 int *ft_new_int_tab(int *new)
@@ -33,7 +34,7 @@ int	*ft_max_size(t_ls *stock)
 	struct group *grp;
 	t_ls *tmp;
 	int k;
-	
+
 	k = 0;
 	max = malloc(sizeof(int) * 4);
 	max = ft_new_int_tab(max);
@@ -44,7 +45,8 @@ int	*ft_max_size(t_ls *stock)
 		val = ft_strlen(getpwuid(tmp->stat.st_uid)->pw_name);
 		(val > max[1] )? max[1] = val : max[1]; 
 		grp = getgrgid(tmp->stat.st_gid);
-		val = ((int)ft_strlen(grp->gr_name));
+		if (grp)
+			val = ((int)ft_strlen(grp->gr_name));
 		(val > max[2] )? max[2] = val : max[2];
 		((int)tmp->stat.st_size > max[3]) ?  max[3] = (int)tmp->stat.st_size : max[3];
 		k = k + tmp->stat.st_blocks;

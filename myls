@@ -1,0 +1,1762 @@
+total 0
+drwxr-xr-x  14 Lazare  staff   476 Jul  6 05:19 [0;96mPiscine-C[0m
+drwxr-xr-x  80 Lazare  staff  2720 Jun 14 10:03 [0;96mfillit[0m
+drwxr-xr-x  30 Lazare  staff  1020 Jul 25 12:19 [0;96mft_ls[0m
+drwxr-xr-x  12 Lazare  staff   408 Jul 21 11:13 [0;96mft_other_ls[0m
+drwxr-xr-x  10 Lazare  staff   340 Jun  9 18:14 [0;96mget-next-line[0m
+drwxr-xr-x  73 Lazare  staff  2482 Jun 13 11:01 [0;96mlibft[0m
+drwxr-xr-x  29 Lazare  staff   986 Jul 25 17:29 [0;96mls[0m
+drwxr-xr-x  29 Lazare  staff   986 Jul 24 23:01 [0;96mmyls[0m
+
+../Piscine-C:
+total 0
+drwxr-xr-x  12 Lazare  staff  408 Jul  6 05:19 [0;96md00[0m
+drwxr-xr-x  10 Lazare  staff  340 Jul  6 05:19 [0;96md01[0m
+drwxr-xr-x   9 Lazare  staff  306 Jul  6 05:19 [0;96md02[0m
+drwxr-xr-x  11 Lazare  staff  374 Jul  6 05:19 [0;96md03[0m
+drwxr-xr-x  10 Lazare  staff  340 Jul  6 05:19 [0;96md04[0m
+drwxr-xr-x  22 Lazare  staff  748 Jul  6 05:19 [0;96md05[0m
+drwxr-xr-x   7 Lazare  staff  238 Jul  6 05:19 [0;96md06[0m
+drwxr-xr-x   2 Lazare  staff   68 Jul  6 05:19 [0;96md07[0m
+drwxr-xr-x   9 Lazare  staff  306 Jul  6 05:19 [0;96md08[0m
+drwxr-xr-x   8 Lazare  staff  272 Jul  6 05:19 [0;96md10[0m
+drwxr-xr-x  17 Lazare  staff  578 Jul  6 05:22 [0;96md11[0m
+
+../Piscine-C/d00:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex01[0m
+drwxr-xr-x  6 Lazare  staff  204 Jul  6 05:19 [0;96mex02[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex03[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex04[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex05[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex06[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex07[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex08[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex09[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex10[0m
+
+../Piscine-C/d00/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  2048 Jul  6 05:19 [0mtestDay00.tar[0m
+
+../Piscine-C/d00/ex02:
+total 16
+-rw-r--r--  1 Lazare  staff  6144 Jul  6 05:19 [0mexo2.tar[0m
+
+../Piscine-C/d00/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  1257 Jul  6 05:19 [0mklist.txt[0m
+
+../Piscine-C/d00/ex04:
+total 8
+-rwxr-xr-x  1 Lazare  staff  937 Jul  6 05:19 [0;31mwho_am_i.sh[0m
+
+../Piscine-C/d00/ex05:
+total 8
+-rwxr-xr-x  1 Lazare  staff  77 Jul  6 05:19 [0;31mpeople.sh[0m
+
+../Piscine-C/d00/ex06:
+total 8
+-rwxr-xr-x  1 Lazare  staff  121 Jul  6 05:19 [0;31mmobile-phone.ldif[0m
+
+../Piscine-C/d00/ex07:
+total 8
+-rw-r--r--  1 Lazare  staff  13 Jul  6 05:19 [0mmidLS[0m
+
+../Piscine-C/d00/ex08:
+total 8
+-rw-r--r--  1 Lazare  staff  2 Jul  6 05:19 [0mz[0m
+
+../Piscine-C/d00/ex09:
+total 8
+-rw-r--r--  1 Lazare  staff  538 Jul  6 05:19 [0mb[0m
+
+../Piscine-C/d00/ex10:
+total 8
+-rw-r--r--  1 Lazare  staff  63 Jul  6 05:19 [0mclean[0m
+
+../Piscine-C/d01:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex01[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex02[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex03[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex04[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex05[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex06[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex07[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex08[0m
+
+../Piscine-C/d01/ex01:
+total 8
+-rwxr-xr-x  1 Lazare  staff  56 Jul  6 05:19 [0;31mprint_groups.sh[0m
+
+../Piscine-C/d01/ex02:
+total 8
+-rwxr-xr-x  1 Lazare  staff  75 Jul  6 05:19 [0;31mfind_sh.sh[0m
+
+../Piscine-C/d01/ex03:
+total 8
+-rwxr-xr-x  1 Lazare  staff  65 Jul  6 05:19 [0;31mcount_files.sh[0m
+
+../Piscine-C/d01/ex04:
+total 8
+-rwxr-xr-x  1 Lazare  staff  108 Jul  6 05:19 [0;31mMAC.sh[0m
+
+../Piscine-C/d01/ex05:
+total 8
+-rw-r--r--   1 Lazare  staff    2 Jul  6 05:19 [0m"\?$*'KwaMe'*$?\"[0m
+drwxr-xr-x   3 Lazare  staff  102 Jul  6 05:19 [0;96m.[0m
+drwxr-xr-x  10 Lazare  staff  340 Jul  6 05:19 [0;96m..[0m
+
+../Piscine-C/d01/ex06:
+total 8
+-rwxr-xr-x  1 Lazare  staff  32 Jul  6 05:19 [0;31mskip.sh[0m
+
+../Piscine-C/d01/ex07:
+total 8
+-rwxr-xr-x  1 Lazare  staff  187 Jul  6 05:19 [0;31mr_dwssap.sh[0m
+
+../Piscine-C/d01/ex08:
+total 8
+-rwxr-xr-x  1 Lazare  staff  84 Jul  6 05:19 [0;31mbon.sh[0m
+
+../Piscine-C/d02:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex00[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex01[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex02[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex03[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex04[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex05[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex06[0m
+
+../Piscine-C/d02/ex00:
+total 8
+-rw-r--r--  1 Lazare  staff  1046 Jul  6 05:19 [0mft_print_alphabet.c[0m
+
+../Piscine-C/d02/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  1048 Jul  6 05:19 [0mft_print_reverse_alphabet.c[0m
+
+../Piscine-C/d02/ex02:
+total 8
+-rw-r--r--  1 Lazare  staff  1039 Jul  6 05:19 [0mft_print_numbers.c[0m
+
+../Piscine-C/d02/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  1027 Jul  6 05:19 [0mft_is_negative.c[0m
+
+../Piscine-C/d02/ex04:
+total 8
+-rw-r--r--  1 Lazare  staff  1367 Jul  6 05:19 [0mft_print_comb.c[0m
+
+../Piscine-C/d02/ex05:
+total 8
+-rw-r--r--  1 Lazare  staff  1587 Jul  6 05:19 [0mft_print_comb2.c[0m
+
+../Piscine-C/d02/ex06:
+total 8
+-rw-r--r--  1 Lazare  staff  1090 Jul  6 05:19 [0mft_putnbr.c[0m
+
+../Piscine-C/d03:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex00[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex01[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex02[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex03[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex04[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex05[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex06[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex07[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex08[0m
+
+../Piscine-C/d03/ex00:
+total 8
+-rw-r--r--  1 Lazare  staff  929 Jul  6 05:19 [0mft_ft.c[0m
+
+../Piscine-C/d03/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  954 Jul  6 05:19 [0mft_ultimate_ft.c[0m
+
+../Piscine-C/d03/ex02:
+total 8
+-rw-r--r--  1 Lazare  staff  962 Jul  6 05:19 [0mft_swap.c[0m
+
+../Piscine-C/d03/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  976 Jul  6 05:19 [0mft_div_mod.c[0m
+
+../Piscine-C/d03/ex04:
+total 8
+-rw-r--r--  1 Lazare  staff  998 Jul  6 05:19 [0mft_ultimate_div_mod.c[0m
+
+../Piscine-C/d03/ex05:
+total 8
+-rw-r--r--  1 Lazare  staff  1024 Jul  6 05:19 [0mft_putstr.c[0m
+
+../Piscine-C/d03/ex06:
+total 8
+-rw-r--r--  1 Lazare  staff  983 Jul  6 05:19 [0mft_strlen.c[0m
+
+../Piscine-C/d03/ex07:
+total 8
+-rw-r--r--  1 Lazare  staff  1215 Jul  6 05:19 [0mft_strrev.c[0m
+
+../Piscine-C/d03/ex08:
+total 8
+-rw-r--r--  1 Lazare  staff  1188 Jul  6 05:19 [0mft_atoi.c[0m
+
+../Piscine-C/d04:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex00[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex01[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex02[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex03[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex04[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex05[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex06[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex07[0m
+
+../Piscine-C/d04/ex00:
+total 8
+-rw-r--r--  1 Lazare  staff  1106 Jul  6 05:19 [0mft_iterative_factorial.c[0m
+
+../Piscine-C/d04/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  1115 Jul  6 05:19 [0mft_recursive_factorial.c[0m
+
+../Piscine-C/d04/ex02:
+total 8
+-rw-r--r--  1 Lazare  staff  1079 Jul  6 05:19 [0mft_iterative_power.c[0m
+
+../Piscine-C/d04/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  1114 Jul  6 05:19 [0mft_recursive_power.c[0m
+
+../Piscine-C/d04/ex04:
+total 8
+-rw-r--r--  1 Lazare  staff  1095 Jul  6 05:19 [0mft_fibonacci.c[0m
+
+../Piscine-C/d04/ex05:
+total 8
+-rw-r--r--  1 Lazare  staff  1147 Jul  6 05:19 [0mft_sqrt.c[0m
+
+../Piscine-C/d04/ex06:
+total 8
+-rw-r--r--  1 Lazare  staff  1137 Jul  6 05:19 [0mft_is_prime.c[0m
+
+../Piscine-C/d04/ex07:
+total 8
+-rw-r--r--  1 Lazare  staff  1248 Jul  6 05:19 [0mft_find_next_prime.c[0m
+
+../Piscine-C/d05:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex00[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex01[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex02[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex03[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex04[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex05[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex06[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex07[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex08[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex09[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex10[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex11[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex12[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex13[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex14[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex15[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex16[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex17[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex18[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex19[0m
+
+../Piscine-C/d05/ex00:
+total 8
+-rw-r--r--  1 Lazare  staff  1016 Jul  6 05:19 [0mft_putstr.c[0m
+
+../Piscine-C/d05/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  1097 Jul  6 05:19 [0mft_putnbr.c[0m
+
+../Piscine-C/d05/ex02:
+total 8
+-rw-r--r--  1 Lazare  staff  1214 Jul  6 05:19 [0mft_atoi.c[0m
+
+../Piscine-C/d05/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  1106 Jul  6 05:19 [0mft_strcpy.c[0m
+
+../Piscine-C/d05/ex04:
+total 8
+-rw-r--r--  1 Lazare  staff  1111 Jul  6 05:19 [0mft_strncpy.c[0m
+
+../Piscine-C/d05/ex05:
+total 8
+-rw-r--r--  1 Lazare  staff  1214 Jul  6 05:19 [0mft_strstr.c[0m
+
+../Piscine-C/d05/ex06:
+total 8
+-rw-r--r--  1 Lazare  staff  1022 Jul  6 05:19 [0mft_strcmp.c[0m
+
+../Piscine-C/d05/ex07:
+total 8
+-rw-r--r--  1 Lazare  staff  1063 Jul  6 05:19 [0mft_strncmp.c[0m
+
+../Piscine-C/d05/ex08:
+total 8
+-rw-r--r--  1 Lazare  staff  1091 Jul  6 05:19 [0mft_strupcase.c[0m
+
+../Piscine-C/d05/ex09:
+total 8
+-rw-r--r--  1 Lazare  staff  1098 Jul  6 05:19 [0mft_strlowcase.c[0m
+
+../Piscine-C/d05/ex10:
+total 8
+-rw-r--r--  1 Lazare  staff  1281 Jul  6 05:19 [0mft_strcapitalize.c[0m
+
+../Piscine-C/d05/ex11:
+total 8
+-rw-r--r--  1 Lazare  staff  1105 Jul  6 05:19 [0mft_str_is_alpha.c[0m
+
+../Piscine-C/d05/ex12:
+total 8
+-rw-r--r--  1 Lazare  staff  1017 Jul  6 05:19 [0mft_str_is_numeric.c[0m
+
+../Piscine-C/d05/ex13:
+total 8
+-rw-r--r--  1 Lazare  staff  1020 Jul  6 05:19 [0mft_str_is_lowercase.c[0m
+
+../Piscine-C/d05/ex14:
+total 8
+-rw-r--r--  1 Lazare  staff  1019 Jul  6 05:19 [0mft_str_is_uppercase.c[0m
+
+../Piscine-C/d05/ex15:
+total 8
+-rw-r--r--  1 Lazare  staff  1040 Jul  6 05:19 [0mft_str_is_printable.c[0m
+
+../Piscine-C/d05/ex16:
+total 8
+-rw-r--r--  1 Lazare  staff  1082 Jul  6 05:19 [0mft_strcat.c[0m
+
+../Piscine-C/d05/ex17:
+total 8
+-rw-r--r--  1 Lazare  staff  1099 Jul  6 05:19 [0mft_strncat.c[0m
+
+../Piscine-C/d05/ex18:
+total 8
+-rw-r--r--  1 Lazare  staff  1150 Jul  6 05:19 [0mstrlcat.c[0m
+
+../Piscine-C/d05/ex19:
+total 8
+-rw-r--r--  1 Lazare  staff  1160 Jul  6 05:19 [0mstrlcpy.c[0m
+
+../Piscine-C/d06:
+total 0
+drwxr-xr-x  9 Lazare  staff  306 Jul  6 05:19 [0;96mex00[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex01[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex02[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex03[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex04[0m
+
+../Piscine-C/d06/ex00:
+total 56
+-rw-r--r--  1 Lazare  staff   959 Jul  6 05:19 [0mft_putchar.c[0m
+-rw-r--r--  1 Lazare  staff  1024 Jul  6 05:19 [0mft_putstr.c[0m
+-rw-r--r--  1 Lazare  staff  1022 Jul  6 05:19 [0mft_strcmp.c[0m
+-rw-r--r--  1 Lazare  staff   983 Jul  6 05:19 [0mft_strlen.c[0m
+-rw-r--r--  1 Lazare  staff  1145 Jul  6 05:19 [0mft_strrev.c[0m
+-rw-r--r--  1 Lazare  staff   962 Jul  6 05:19 [0mft_swap.c[0m
+-rwxr-xr-x  1 Lazare  staff   192 Jul  6 05:19 [0;31mlibft_creator.sh[0m
+
+../Piscine-C/d06/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  1082 Jul  6 05:19 [0mft_print_program_name.c[0m
+
+../Piscine-C/d06/ex02:
+total 8
+-rw-r--r--  1 Lazare  staff  1125 Jul  6 05:19 [0mft_print_params.c[0m
+
+../Piscine-C/d06/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  1129 Jul  6 05:19 [0mft_rev_params.c[0m
+
+../Piscine-C/d06/ex04:
+total 8
+-rw-r--r--  1 Lazare  staff  1574 Jul  6 05:19 [0mft_sort_params.c[0m
+
+../Piscine-C/d07:
+total 0
+
+../Piscine-C/d08:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex00[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex01[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex02[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex03[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex04[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex05[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex06[0m
+
+../Piscine-C/d08/ex00:
+total 8
+-rw-r--r--  1 Lazare  staff  2061 Jul  6 05:19 [0mft_split_whitespaces.c[0m
+
+../Piscine-C/d08/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  1072 Jul  6 05:19 [0mft.h[0m
+
+../Piscine-C/d08/ex02:
+total 8
+-rw-r--r--  1 Lazare  staff  1181 Jul  6 05:19 [0mft_boolean.h[0m
+
+../Piscine-C/d08/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  969 Jul  6 05:19 [0mft_abs.h[0m
+
+../Piscine-C/d08/ex04:
+total 8
+-rw-r--r--  1 Lazare  staff  995 Jul  6 05:19 [0mft_point.h[0m
+
+../Piscine-C/d08/ex05:
+total 16
+-rw-r--r--  1 Lazare  staff  1726 Jul  6 05:19 [0mft_param_to_tab.c[0m
+-rw-r--r--  1 Lazare  staff  1122 Jul  6 05:19 [0mft_stock_par.h[0m
+
+../Piscine-C/d08/ex06:
+total 16
+-rw-r--r--  1 Lazare  staff  1418 Jul  6 05:19 [0mft_show_tab.c[0m
+-rw-r--r--  1 Lazare  staff  1122 Jul  6 05:19 [0mft_stock_par.h[0m
+
+../Piscine-C/d10:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex00[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex01[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex02[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex03[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex04[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul  6 05:19 [0;96mex05[0m
+
+../Piscine-C/d10/ex00:
+total 8
+-rw-r--r--  1 Lazare  staff  1322 Jul  6 05:19 [0mMakefile[0m
+
+../Piscine-C/d10/ex01:
+total 8
+-rw-r--r--  1 Lazare  staff  1013 Jul  6 05:19 [0mft_foreach.c[0m
+
+../Piscine-C/d10/ex02:
+total 8
+-rw-r--r--  1 Lazare  staff  1132 Jul  6 05:19 [0mft_map.c[0m
+
+../Piscine-C/d10/ex03:
+total 8
+-rw-r--r--  1 Lazare  staff  1038 Jul  6 05:19 [0mft_any.c[0m
+
+../Piscine-C/d10/ex04:
+total 8
+-rw-r--r--  1 Lazare  staff  1052 Jul  6 05:19 [0mft_count_if.c[0m
+
+../Piscine-C/d10/ex05:
+total 8
+-rw-r--r--  1 Lazare  staff  1248 Jul  6 05:19 [0mft_is_sort.c[0m
+
+../Piscine-C/d11:
+total 0
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex00[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex01[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex02[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex03[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex04[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex05[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex06[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex07[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex08[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex09[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex10[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex11[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex12[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex13[0m
+drwxr-xr-x  4 Lazare  staff  136 Jul  6 05:19 [0;96mex14[0m
+
+../Piscine-C/d11/ex00:
+total 16
+-rw-r--r--  1 Lazare  staff  1121 Jul  6 05:19 [0mft_create_elem.c[0m
+-rw-r--r--  1 Lazare  staff  1014 Jul  6 05:19 [0mft_list.h[0m
+
+../Piscine-C/d11/ex01:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 [0mft_list.h[0m
+-rw-r--r--  1 Lazare  staff  1203 Jul  6 05:19 [0mft_list_push_back.c[0m
+
+../Piscine-C/d11/ex02:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 [0mft_list.h[0m
+-rw-r--r--  1 Lazare  staff  1162 Jul  6 05:19 [0mft_list_push_front.c[0m
+
+../Piscine-C/d11/ex03:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 [0mft_list.h[0m
+-rw-r--r--  1 Lazare  staff  1137 Jul  6 05:19 [0mft_list_size.c[0m
+
+../Piscine-C/d11/ex04:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 [0mft_list.h[0m
+-rw-r--r--  1 Lazare  staff  1146 Jul  6 05:19 [0mft_list_last.c[0m
+
+../Piscine-C/d11/ex05:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 [0mft_list.h[0m
+-rw-r--r--  1 Lazare  staff  1345 Jul  6 05:19 [0mft_list_push_params.c[0m
+
+../Piscine-C/d11/ex06:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 [0mft_list.h[0m
+-rw-r--r--  1 Lazare  staff  1212 Jul  6 05:19 [0mft_list_clear.c[0m
+
+../Piscine-C/d11/ex07:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 [0mft_list.h[0m
+-rw-r--r--  1 Lazare  staff  1150 Jul  6 05:19 [0mft_list_at.c[0m
+
+../Piscine-C/d11/ex08:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 [0mft_list.h[0m
+-rw-r--r--  1 Lazare  staff  1155 Jul  6 05:19 [0mft_list_reverse.c[0m
+
+../Piscine-C/d11/ex09:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 [0mft_list.h[0m
+-rw-r--r--  1 Lazare  staff  1097 Jul  6 05:19 [0mft_list_foreach.c[0m
+
+../Piscine-C/d11/ex10:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 [0mft_list.h[0m
+-rw-r--r--  1 Lazare  staff  1167 Jul  6 05:19 [0mft_list_foreach_if.c[0m
+
+../Piscine-C/d11/ex11:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 [0mft_list.h[0m
+-rw-r--r--  1 Lazare  staff  1154 Jul  6 05:19 [0mft_list_find.c[0m
+
+../Piscine-C/d11/ex12:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 [0mft_list.h[0m
+-rw-r--r--  1 Lazare  staff  1471 Jul  6 05:19 [0mft_list_remove_if.c[0m
+
+../Piscine-C/d11/ex13:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 [0mft_list.h[0m
+-rw-r--r--  1 Lazare  staff  1179 Jul  6 05:19 [0mft_list_merge.c[0m
+
+../Piscine-C/d11/ex14:
+total 16
+-rw-r--r--  1 Lazare  staff  1054 Jul  6 05:19 [0mft_list.h[0m
+-rw-r--r--  1 Lazare  staff  1477 Jul  6 05:19 [0mft_list_sort.c[0m
+
+../fillit:
+total 616
+-rw-r--r--  1 Lazare  staff  2911 Jun 13 11:03 [0mMakefile[0m
+-rw-r--r--  1 Lazare  staff  2138 Jun 13 11:03 [0mfillit.h[0m
+-rw-r--r--  1 Lazare  staff  1901 Jun 13 11:03 [0mft_atoi.c[0m
+-rw-r--r--  1 Lazare  staff   970 Jun 13 11:03 [0mft_bzero.c[0m
+-rw-r--r--  1 Lazare  staff  1427 Jun 13 11:03 [0mft_check_syntax.c[0m
+-rw-r--r--  1 Lazare  staff  1850 Jun 13 11:03 [0mft_check_tetriminos.c[0m
+-rw-r--r--  1 Lazare  staff  1259 Jun 13 11:03 [0mft_create_grid.c[0m
+-rw-r--r--  1 Lazare  staff  1408 Jun 13 11:03 [0mft_file_to_string.c[0m
+-rw-r--r--  1 Lazare  staff  1025 Jun 13 11:03 [0mft_free_tables.c[0m
+-rw-r--r--  1 Lazare  staff  1003 Jun 13 11:03 [0mft_isalnum.c[0m
+-rw-r--r--  1 Lazare  staff  1001 Jun 13 11:03 [0mft_isalpha.c[0m
+-rw-r--r--  1 Lazare  staff   971 Jun 13 11:03 [0mft_isascii.c[0m
+-rw-r--r--  1 Lazare  staff   973 Jun 13 11:03 [0mft_isdigit.c[0m
+-rw-r--r--  1 Lazare  staff   974 Jun 13 11:03 [0mft_islower.c[0m
+-rw-r--r--  1 Lazare  staff   972 Jun 13 11:03 [0mft_isprint.c[0m
+-rw-r--r--  1 Lazare  staff   974 Jun 13 11:03 [0mft_isupper.c[0m
+-rw-r--r--  1 Lazare  staff  1507 Jun 13 11:03 [0mft_itoa.c[0m
+-rw-r--r--  1 Lazare  staff   993 Jun 13 11:03 [0mft_lstadd.c[0m
+-rw-r--r--  1 Lazare  staff  1152 Jun 13 11:03 [0mft_lstdel.c[0m
+-rw-r--r--  1 Lazare  staff  1051 Jun 13 11:03 [0mft_lstdelone.c[0m
+-rw-r--r--  1 Lazare  staff  1018 Jun 13 11:03 [0mft_lstiter.c[0m
+-rw-r--r--  1 Lazare  staff  1403 Jun 13 11:03 [0mft_lstmap.c[0m
+-rw-r--r--  1 Lazare  staff  1343 Jun 13 11:03 [0mft_lstnew.c[0m
+-rw-r--r--  1 Lazare  staff  1049 Jun 13 11:03 [0mft_memalloc.c[0m
+-rw-r--r--  1 Lazare  staff  1160 Jun 13 11:03 [0mft_memccpy.c[0m
+-rw-r--r--  1 Lazare  staff  1115 Jun 13 11:03 [0mft_memchr.c[0m
+-rw-r--r--  1 Lazare  staff  1155 Jun 13 11:03 [0mft_memcmp.c[0m
+-rw-r--r--  1 Lazare  staff  1094 Jun 13 11:03 [0mft_memcpy.c[0m
+-rw-r--r--  1 Lazare  staff   984 Jun 13 11:03 [0mft_memdel.c[0m
+-rw-r--r--  1 Lazare  staff  1230 Jun 13 11:03 [0mft_memmove.c[0m
+-rw-r--r--  1 Lazare  staff  1079 Jun 13 11:03 [0mft_memset.c[0m
+-rw-r--r--  1 Lazare  staff  1217 Jun 13 11:03 [0mft_myitoa_bin.c[0m
+-rw-r--r--  1 Lazare  staff  1039 Jun 13 11:03 [0mft_print_tables.c[0m
+-rw-r--r--  1 Lazare  staff  2526 Jun 13 11:03 [0mft_print_tetriminos.c[0m
+-rw-r--r--  1 Lazare  staff   959 Jun 13 11:03 [0mft_putchar.c[0m
+-rw-r--r--  1 Lazare  staff   971 Jun 13 11:03 [0mft_putchar_fd.c[0m
+-rw-r--r--  1 Lazare  staff  1031 Jun 13 11:03 [0mft_putendl.c[0m
+-rw-r--r--  1 Lazare  staff  1044 Jun 13 11:03 [0mft_putendl_fd.c[0m
+-rw-r--r--  1 Lazare  staff  1157 Jun 13 11:03 [0mft_putnbr.c[0m
+-rw-r--r--  1 Lazare  staff  1196 Jun 13 11:03 [0mft_putnbr_fd.c[0m
+-rw-r--r--  1 Lazare  staff  1003 Jun 13 11:03 [0mft_putstr.c[0m
+-rw-r--r--  1 Lazare  staff  1015 Jun 13 11:03 [0mft_putstr_fd.c[0m
+-rw-r--r--  1 Lazare  staff  2673 Jun 13 11:03 [0mft_resolve.c[0m
+-rw-r--r--  1 Lazare  staff  1139 Jun 13 11:03 [0mft_square_min.c[0m
+-rw-r--r--  1 Lazare  staff  2606 Jun 13 11:03 [0mft_stockintab.c[0m
+-rw-r--r--  1 Lazare  staff  1010 Jun 13 11:03 [0mft_strcat.c[0m
+-rw-r--r--  1 Lazare  staff  1024 Jun 13 11:03 [0mft_strchr.c[0m
+-rw-r--r--  1 Lazare  staff   979 Jun 13 11:03 [0mft_strclr.c[0m
+-rw-r--r--  1 Lazare  staff  1073 Jun 13 11:03 [0mft_strcmp.c[0m
+-rw-r--r--  1 Lazare  staff  1047 Jun 13 11:03 [0mft_strcpy.c[0m
+-rw-r--r--  1 Lazare  staff   966 Jun 13 11:03 [0mft_strdel.c[0m
+-rw-r--r--  1 Lazare  staff  1158 Jun 13 11:03 [0mft_strdup.c[0m
+-rw-r--r--  1 Lazare  staff  1054 Jun 13 11:03 [0mft_strequ.c[0m
+-rw-r--r--  1 Lazare  staff   997 Jun 13 11:03 [0mft_striter.c[0m
+-rw-r--r--  1 Lazare  staff  1049 Jun 13 11:03 [0mft_striteri.c[0m
+-rw-r--r--  1 Lazare  staff  1160 Jun 13 11:03 [0mft_strjoin.c[0m
+-rw-r--r--  1 Lazare  staff  1307 Jun 13 11:03 [0mft_strjoin_free.c[0m
+-rw-r--r--  1 Lazare  staff  1281 Jun 13 11:03 [0mft_strlcat.c[0m
+-rw-r--r--  1 Lazare  staff  1016 Jun 13 11:03 [0mft_strlen.c[0m
+-rw-r--r--  1 Lazare  staff  1176 Jun 13 11:03 [0mft_strmap.c[0m
+-rw-r--r--  1 Lazare  staff  1194 Jun 13 11:03 [0mft_strmapi.c[0m
+-rw-r--r--  1 Lazare  staff  1101 Jun 13 11:03 [0mft_strncat.c[0m
+-rw-r--r--  1 Lazare  staff  1134 Jun 13 11:03 [0mft_strncmp.c[0m
+-rw-r--r--  1 Lazare  staff  1114 Jun 13 11:03 [0mft_strncpy.c[0m
+-rw-r--r--  1 Lazare  staff  1069 Jun 13 11:03 [0mft_strnequ.c[0m
+-rw-r--r--  1 Lazare  staff   978 Jun 13 11:03 [0mft_strnew.c[0m
+-rw-r--r--  1 Lazare  staff  1270 Jun 13 11:03 [0mft_strnstr.c[0m
+-rw-r--r--  1 Lazare  staff  1103 Jun 13 11:03 [0mft_strrchr.c[0m
+-rw-r--r--  1 Lazare  staff  1834 Jun 13 11:03 [0mft_strsplit.c[0m
+-rw-r--r--  1 Lazare  staff  1191 Jun 13 11:03 [0mft_strstr.c[0m
+-rw-r--r--  1 Lazare  staff  1112 Jun 13 11:03 [0mft_strsub.c[0m
+-rw-r--r--  1 Lazare  staff  1340 Jun 13 11:03 [0mft_strtrim.c[0m
+-rw-r--r--  1 Lazare  staff  1368 Jun 13 11:03 [0mft_strtrim_free.c[0m
+-rw-r--r--  1 Lazare  staff   978 Jun 13 11:03 [0mft_tolower.c[0m
+-rw-r--r--  1 Lazare  staff   978 Jun 13 11:03 [0mft_toupper.c[0m
+-rw-r--r--  1 Lazare  staff  3965 Jun 13 11:03 [0mlibft.h[0m
+-rw-r--r--  1 Lazare  staff  1750 Jun 13 11:03 [0mmain.c[0m
+
+../ft_ls:
+total 75432
+-rw-r--r--    1 Lazare  staff      1591 Jul 20 18:59 [0mMakefile[0m
+-rw-r--r--    1 Lazare  staff       110 Jul 20 18:59 [0mREADME.md[0m
+-rwxr-xr-x    1 Lazare  staff     38632 Jul 20 19:05 [0;31ma.out[0m
+-rw-r--r--    1 Lazare  staff      4852 Jul 25 12:19 [0madditional_func.o[0m
+-rw-r--r--    1 Lazare  staff      7504 Jul 25 12:19 [0madditional_func2.o[0m
+-rw-r--r--    1 Lazare  staff      6836 Jul 25 12:19 [0madditional_func3.o[0m
+-rw-r--r--    1 Lazare  staff      7532 Jul 25 12:19 [0maddtoshow.o[0m
+-rw-r--r--    1 Lazare  staff         7 Jul 20 18:59 [0mauteur[0m
+-rwxr-xr-x    1 Lazare  staff     67740 Jul 25 12:19 [0;31mft_ls[0m
+-rw-r--r--    1 Lazare  staff      5052 Jul 25 12:19 [0mgestion.o[0m
+-rw-r--r--    1 Lazare  staff      8356 Jul 25 12:19 [0mgestion_l.o[0m
+drwxr-xr-x    3 Lazare  staff       102 Jul 24 19:56 [0;96mincludes[0m
+drwxr-xr-x  159 Lazare  staff      5406 Jul 25 12:19 [0;96mlibft[0m
+-rw-r--r--    1 Lazare  staff      4568 Jul 25 12:19 [0mls_perms.o[0m
+-rw-r--r--    1 Lazare  staff      3616 Jul 25 12:19 [0mmain.o[0m
+-rw-r--r--    1 Lazare  staff      3924 Jul 25 12:19 [0mparser.o[0m
+-rw-r--r--    1 Lazare  staff     10308 Jul 25 12:19 [0msave_ls.o[0m
+-rw-r--r--    1 Lazare  staff      4152 Jul 25 12:19 [0msingle_file.o[0m
+drwxr-xr-x   15 Lazare  staff       510 Jul 25 14:18 [0;96msrcs[0m
+-rw-r--r--    1 Lazare  staff   3247691 Jul 20 19:05 [0mtestmysls[0m
+-rw-r--r--    1 Lazare  staff  14418525 Jul 20 19:07 [0mtestotherls[0m
+-rw-r--r--    1 Lazare  staff  14393980 Jul 20 19:03 [0mtestthisls[0m
+-rw-r--r--    1 Lazare  staff   6330787 Jul 20 19:04 [0mtruels[0m
+-rw-r--r--    1 Lazare  staff      5796 Jul 25 12:19 [0muser_info.o[0m
+
+../ft_ls/includes:
+total 8
+-rw-r--r--  1 Lazare  staff  2804 Jul 20 18:59 [0mft_ls.h[0m
+
+../ft_ls/libft:
+total 1496
+-rwxr-xr-x   1 Lazare  staff    3661 Jul 20 18:59 [0;31mMakefile[0m
+-rwxr-xr-x   1 Lazare  staff       7 Jul 20 18:59 [0;31mauteur[0m
+-rwxr-xr-x   1 Lazare  staff    1924 Jul 20 18:59 [0;31mft_atoi.c[0m
+-rw-r--r--   1 Lazare  staff    1872 Jul 25 12:19 [0mft_atoi.o[0m
+-rwxr-xr-x   1 Lazare  staff    1942 Jul 20 18:59 [0;31mft_atoi_base.c[0m
+-rw-r--r--   1 Lazare  staff    1864 Jul 25 12:19 [0mft_atoi_base.o[0m
+-rwxr-xr-x   1 Lazare  staff    1987 Jul 20 18:59 [0;31mft_atoi_nbase.c[0m
+-rw-r--r--   1 Lazare  staff    1868 Jul 25 12:19 [0mft_atoi_nbase.o[0m
+-rwxr-xr-x   1 Lazare  staff    1026 Jul 20 18:59 [0;31mft_binlen.c[0m
+-rw-r--r--   1 Lazare  staff     652 Jul 25 12:19 [0mft_binlen.o[0m
+-rwxr-xr-x   1 Lazare  staff    1087 Jul 20 18:59 [0;31mft_bzero.c[0m
+-rw-r--r--   1 Lazare  staff     692 Jul 25 12:19 [0mft_bzero.o[0m
+-rwxr-xr-x   1 Lazare  staff    1536 Jul 20 18:59 [0;31mft_cat.c[0m
+-rw-r--r--   1 Lazare  staff    1556 Jul 25 12:19 [0mft_cat.o[0m
+-rwxr-xr-x   1 Lazare  staff    1080 Jul 20 18:59 [0;31mft_charwlen.c[0m
+-rw-r--r--   1 Lazare  staff     720 Jul 25 12:19 [0mft_charwlen.o[0m
+-rwxr-xr-x   1 Lazare  staff    1067 Jul 20 18:59 [0;31mft_isalnum.c[0m
+-rw-r--r--   1 Lazare  staff     696 Jul 25 12:19 [0mft_isalnum.o[0m
+-rwxr-xr-x   1 Lazare  staff    1035 Jul 20 18:59 [0;31mft_isalpha.c[0m
+-rw-r--r--   1 Lazare  staff     672 Jul 25 12:19 [0mft_isalpha.o[0m
+-rwxr-xr-x   1 Lazare  staff    1005 Jul 20 18:59 [0;31mft_isascii.c[0m
+-rw-r--r--   1 Lazare  staff     656 Jul 25 12:19 [0mft_isascii.o[0m
+-rwxr-xr-x   1 Lazare  staff    1007 Jul 20 18:59 [0;31mft_isdigit.c[0m
+-rw-r--r--   1 Lazare  staff     656 Jul 25 12:19 [0mft_isdigit.o[0m
+-rwxr-xr-x   1 Lazare  staff    1006 Jul 20 18:59 [0;31mft_isprint.c[0m
+-rw-r--r--   1 Lazare  staff     656 Jul 25 12:19 [0mft_isprint.o[0m
+-rwxr-xr-x   1 Lazare  staff    1349 Jul 20 18:59 [0;31mft_itoa.c[0m
+-rw-r--r--   1 Lazare  staff     908 Jul 25 12:19 [0mft_itoa.o[0m
+-rwxr-xr-x   1 Lazare  staff    1475 Jul 20 18:59 [0;31mft_itoa_base.c[0m
+-rw-r--r--   1 Lazare  staff    1180 Jul 25 12:19 [0mft_itoa_base.o[0m
+-rwxr-xr-x   1 Lazare  staff    1476 Jul 20 18:59 [0;31mft_itoa_base_l.c[0m
+-rw-r--r--   1 Lazare  staff    1220 Jul 25 12:19 [0mft_itoa_base_l.o[0m
+-rwxr-xr-x   1 Lazare  staff    1494 Jul 20 18:59 [0;31mft_itoa_base_ll.c[0m
+-rw-r--r--   1 Lazare  staff    1220 Jul 25 12:19 [0mft_itoa_base_ll.o[0m
+-rwxr-xr-x   1 Lazare  staff    1469 Jul 20 18:59 [0;31mft_itoa_base_uint.c[0m
+-rw-r--r--   1 Lazare  staff    1228 Jul 25 12:19 [0mft_itoa_base_uint.o[0m
+-rwxr-xr-x   1 Lazare  staff    1044 Jul 20 18:59 [0;31mft_memalloc.c[0m
+-rw-r--r--   1 Lazare  staff     744 Jul 25 12:19 [0mft_memalloc.o[0m
+-rwxr-xr-x   1 Lazare  staff    1210 Jul 20 18:59 [0;31mft_memccpy.c[0m
+-rw-r--r--   1 Lazare  staff     768 Jul 25 12:19 [0mft_memccpy.o[0m
+-rwxr-xr-x   1 Lazare  staff    1166 Jul 20 18:59 [0;31mft_memchr.c[0m
+-rw-r--r--   1 Lazare  staff     732 Jul 25 12:19 [0mft_memchr.o[0m
+-rwxr-xr-x   1 Lazare  staff    1276 Jul 20 18:59 [0;31mft_memcmp.c[0m
+-rw-r--r--   1 Lazare  staff     804 Jul 25 12:19 [0mft_memcmp.o[0m
+-rwxr-xr-x   1 Lazare  staff    1125 Jul 20 18:59 [0;31mft_memcpy.c[0m
+-rw-r--r--   1 Lazare  staff     764 Jul 25 12:19 [0mft_memcpy.o[0m
+-rwxr-xr-x   1 Lazare  staff    1007 Jul 20 18:59 [0;31mft_memdel.c[0m
+-rw-r--r--   1 Lazare  staff     700 Jul 25 12:19 [0mft_memdel.o[0m
+-rwxr-xr-x   1 Lazare  staff    1189 Jul 20 18:59 [0;31mft_memmove.c[0m
+-rw-r--r--   1 Lazare  staff     824 Jul 25 12:19 [0mft_memmove.o[0m
+-rwxr-xr-x   1 Lazare  staff    1122 Jul 20 18:59 [0;31mft_memset.c[0m
+-rw-r--r--   1 Lazare  staff     716 Jul 25 12:19 [0mft_memset.o[0m
+-rwxr-xr-x   1 Lazare  staff    1112 Jul 20 18:59 [0;31mft_nblen.c[0m
+-rw-r--r--   1 Lazare  staff     748 Jul 25 12:19 [0mft_nblen.o[0m
+-rwxr-xr-x   1 Lazare  staff    1124 Jul 20 18:59 [0;31mft_nblen_l.c[0m
+-rw-r--r--   1 Lazare  staff     760 Jul 25 12:19 [0mft_nblen_l.o[0m
+-rwxr-xr-x   1 Lazare  staff    1181 Jul 20 18:59 [0;31mft_nblen_ll.c[0m
+-rw-r--r--   1 Lazare  staff     800 Jul 25 12:19 [0mft_nblen_ll.o[0m
+-rwxr-xr-x   1 Lazare  staff    1022 Jul 20 18:59 [0;31mft_power.c[0m
+-rw-r--r--   1 Lazare  staff     652 Jul 25 12:19 [0mft_power.o[0m
+drwxr-xr-x  33 Lazare  staff    1122 Jul 25 12:19 [0;96mft_printf[0m
+-rwxr-xr-x   1 Lazare  staff     958 Jul 20 18:59 [0;31mft_putchar.c[0m
+-rw-r--r--   1 Lazare  staff     676 Jul 25 12:19 [0mft_putchar.o[0m
+-rwxr-xr-x   1 Lazare  staff     970 Jul 20 18:59 [0;31mft_putchar_fd.c[0m
+-rw-r--r--   1 Lazare  staff     688 Jul 25 12:19 [0mft_putchar_fd.o[0m
+-rwxr-xr-x   1 Lazare  staff     981 Jul 20 18:59 [0;31mft_putendl.c[0m
+-rw-r--r--   1 Lazare  staff     708 Jul 25 12:19 [0mft_putendl.o[0m
+-rwxr-xr-x   1 Lazare  staff    1006 Jul 20 18:59 [0;31mft_putendl_fd.c[0m
+-rw-r--r--   1 Lazare  staff     728 Jul 25 12:19 [0mft_putendl_fd.o[0m
+-rwxr-xr-x   1 Lazare  staff    1112 Jul 20 18:59 [0;31mft_putnbr.c[0m
+-rw-r--r--   1 Lazare  staff     800 Jul 25 12:19 [0mft_putnbr.o[0m
+-rwxr-xr-x   1 Lazare  staff    1151 Jul 20 18:59 [0;31mft_putnbr_fd.c[0m
+-rw-r--r--   1 Lazare  staff     832 Jul 25 12:19 [0mft_putnbr_fd.o[0m
+-rwxr-xr-x   1 Lazare  staff    1107 Jul 20 18:59 [0;31mft_putnbr_l.c[0m
+-rw-r--r--   1 Lazare  staff     924 Jul 25 12:19 [0mft_putnbr_l.o[0m
+-rwxr-xr-x   1 Lazare  staff    1201 Jul 20 18:59 [0;31mft_putnbr_ll.c[0m
+-rw-r--r--   1 Lazare  staff    1032 Jul 25 12:19 [0mft_putnbr_ll.o[0m
+-rwxr-xr-x   1 Lazare  staff    1093 Jul 20 18:59 [0;31mft_putnstr.c[0m
+-rw-r--r--   1 Lazare  staff     828 Jul 25 12:19 [0mft_putnstr.o[0m
+-rwxr-xr-x   1 Lazare  staff    2018 Jul 20 18:59 [0;31mft_putnwchar.c[0m
+-rw-r--r--   1 Lazare  staff    2080 Jul 25 12:19 [0mft_putnwchar.o[0m
+-rwxr-xr-x   1 Lazare  staff    1081 Jul 20 18:59 [0;31mft_putnwstr.c[0m
+-rw-r--r--   1 Lazare  staff     772 Jul 25 12:19 [0mft_putnwstr.o[0m
+-rwxr-xr-x   1 Lazare  staff     983 Jul 20 18:59 [0;31mft_putstr.c[0m
+-rw-r--r--   1 Lazare  staff     720 Jul 25 12:19 [0mft_putstr.o[0m
+-rwxr-xr-x   1 Lazare  staff    1003 Jul 20 18:59 [0;31mft_putstr_fd.c[0m
+-rw-r--r--   1 Lazare  staff     724 Jul 25 12:19 [0mft_putstr_fd.o[0m
+-rwxr-xr-x   1 Lazare  staff    1953 Jul 20 18:59 [0;31mft_putwchar.c[0m
+-rw-r--r--   1 Lazare  staff    2016 Jul 25 12:19 [0mft_putwchar.o[0m
+-rwxr-xr-x   1 Lazare  staff    1716 Jul 20 18:59 [0;31mft_split_whitespaces.c[0m
+-rw-r--r--   1 Lazare  staff    1636 Jul 25 12:19 [0mft_split_whitespaces.o[0m
+-rwxr-xr-x   1 Lazare  staff    1084 Jul 20 18:59 [0;31mft_strcat.c[0m
+-rw-r--r--   1 Lazare  staff     760 Jul 25 12:19 [0mft_strcat.o[0m
+-rwxr-xr-x   1 Lazare  staff    1083 Jul 20 18:59 [0;31mft_strchr.c[0m
+-rw-r--r--   1 Lazare  staff     772 Jul 25 12:19 [0mft_strchr.o[0m
+-rwxr-xr-x   1 Lazare  staff    1023 Jul 20 18:59 [0;31mft_strclr.c[0m
+-rw-r--r--   1 Lazare  staff     720 Jul 25 12:19 [0mft_strclr.o[0m
+-rwxr-xr-x   1 Lazare  staff    1187 Jul 20 18:59 [0;31mft_strcmp.c[0m
+-rw-r--r--   1 Lazare  staff     788 Jul 25 12:19 [0mft_strcmp.o[0m
+-rwxr-xr-x   1 Lazare  staff    1036 Jul 20 18:59 [0;31mft_strcpy.c[0m
+-rw-r--r--   1 Lazare  staff     692 Jul 25 12:19 [0mft_strcpy.o[0m
+-rwxr-xr-x   1 Lazare  staff     999 Jul 20 18:59 [0;31mft_strdel.c[0m
+-rw-r--r--   1 Lazare  staff     688 Jul 25 12:19 [0mft_strdel.o[0m
+-rwxr-xr-x   1 Lazare  staff    1184 Jul 20 18:59 [0;31mft_strdup.c[0m
+-rw-r--r--   1 Lazare  staff     840 Jul 25 12:19 [0mft_strdup.o[0m
+-rwxr-xr-x   1 Lazare  staff    1076 Jul 20 18:59 [0;31mft_strequ.c[0m
+-rw-r--r--   1 Lazare  staff     760 Jul 25 12:19 [0mft_strequ.o[0m
+-rwxr-xr-x   1 Lazare  staff    1224 Jul 20 18:59 [0;31mft_strisdigit.c[0m
+-rw-r--r--   1 Lazare  staff     880 Jul 25 12:19 [0mft_strisdigit.o[0m
+-rwxr-xr-x   1 Lazare  staff    1056 Jul 20 18:59 [0;31mft_striter.c[0m
+-rw-r--r--   1 Lazare  staff     712 Jul 25 12:19 [0mft_striter.o[0m
+-rwxr-xr-x   1 Lazare  staff    1083 Jul 20 18:59 [0;31mft_striteri.c[0m
+-rw-r--r--   1 Lazare  staff     720 Jul 25 12:19 [0mft_striteri.o[0m
+-rwxr-xr-x   1 Lazare  staff    1334 Jul 20 18:59 [0;31mft_strjoin.c[0m
+-rw-r--r--   1 Lazare  staff     948 Jul 25 12:19 [0mft_strjoin.o[0m
+-rwxr-xr-x   1 Lazare  staff    1234 Jul 20 18:59 [0;31mft_strlcat.c[0m
+-rw-r--r--   1 Lazare  staff     928 Jul 25 12:19 [0mft_strlcat.o[0m
+-rwxr-xr-x   1 Lazare  staff    1024 Jul 20 18:59 [0;31mft_strlen.c[0m
+-rw-r--r--   1 Lazare  staff     660 Jul 25 12:19 [0mft_strlen.o[0m
+-rwxr-xr-x   1 Lazare  staff    1149 Jul 20 18:59 [0;31mft_strmap.c[0m
+-rw-r--r--   1 Lazare  staff     860 Jul 25 12:19 [0mft_strmap.o[0m
+-rwxr-xr-x   1 Lazare  staff    1167 Jul 20 18:59 [0;31mft_strmapi.c[0m
+-rw-r--r--   1 Lazare  staff     860 Jul 25 12:19 [0mft_strmapi.o[0m
+-rwxr-xr-x   1 Lazare  staff    1108 Jul 20 18:59 [0;31mft_strncat.c[0m
+-rw-r--r--   1 Lazare  staff     816 Jul 25 12:19 [0mft_strncat.o[0m
+-rwxr-xr-x   1 Lazare  staff    1236 Jul 20 18:59 [0;31mft_strncmp.c[0m
+-rw-r--r--   1 Lazare  staff     848 Jul 25 12:19 [0mft_strncmp.o[0m
+-rwxr-xr-x   1 Lazare  staff    1108 Jul 20 18:59 [0;31mft_strncpy.c[0m
+-rw-r--r--   1 Lazare  staff     776 Jul 25 12:19 [0mft_strncpy.o[0m
+-rwxr-xr-x   1 Lazare  staff    1091 Jul 20 18:59 [0;31mft_strnequ.c[0m
+-rw-r--r--   1 Lazare  staff     772 Jul 25 12:19 [0mft_strnequ.o[0m
+-rwxr-xr-x   1 Lazare  staff    1074 Jul 20 18:59 [0;31mft_strnew.c[0m
+-rw-r--r--   1 Lazare  staff     760 Jul 25 12:19 [0mft_strnew.o[0m
+-rwxr-xr-x   1 Lazare  staff    1286 Jul 20 18:59 [0;31mft_strnstr.c[0m
+-rw-r--r--   1 Lazare  staff     912 Jul 25 12:19 [0mft_strnstr.o[0m
+-rwxr-xr-x   1 Lazare  staff    1089 Jul 20 18:59 [0;31mft_strrchr.c[0m
+-rw-r--r--   1 Lazare  staff     808 Jul 25 12:19 [0mft_strrchr.o[0m
+-rwxr-xr-x   1 Lazare  staff    1757 Jul 20 18:59 [0;31mft_strsplit.c[0m
+-rw-r--r--   1 Lazare  staff    1664 Jul 25 12:19 [0mft_strsplit.o[0m
+-rwxr-xr-x   1 Lazare  staff    1251 Jul 20 18:59 [0;31mft_strstr.c[0m
+-rw-r--r--   1 Lazare  staff     864 Jul 25 12:19 [0mft_strstr.o[0m
+-rwxr-xr-x   1 Lazare  staff    1157 Jul 20 18:59 [0;31mft_strsub.c[0m
+-rw-r--r--   1 Lazare  staff     808 Jul 25 12:19 [0mft_strsub.o[0m
+-rwxr-xr-x   1 Lazare  staff    1298 Jul 20 18:59 [0;31mft_strtrim.c[0m
+-rw-r--r--   1 Lazare  staff    1060 Jul 25 12:19 [0mft_strtrim.o[0m
+-rwxr-xr-x   1 Lazare  staff    1045 Jul 20 18:59 [0;31mft_strwlen.c[0m
+-rw-r--r--   1 Lazare  staff     724 Jul 25 12:19 [0mft_strwlen.o[0m
+-rwxr-xr-x   1 Lazare  staff     996 Jul 20 18:59 [0;31mft_tolower.c[0m
+-rw-r--r--   1 Lazare  staff     656 Jul 25 12:19 [0mft_tolower.o[0m
+-rwxr-xr-x   1 Lazare  staff     997 Jul 20 18:59 [0;31mft_toupper.c[0m
+-rw-r--r--   1 Lazare  staff     656 Jul 25 12:19 [0mft_toupper.o[0m
+-rw-r--r--   1 Lazare  staff    2059 Jul 20 18:59 [0mget_next_line.c[0m
+-rw-r--r--   1 Lazare  staff    2036 Jul 25 12:19 [0mget_next_line.o[0m
+drwxr-xr-x   4 Lazare  staff     136 Jul 20 18:59 [0;96mincludes[0m
+-rw-r--r--   1 Lazare  staff  141608 Jul 25 12:19 [0mlibft.a[0m
+
+../ft_ls/libft/ft_printf:
+total 344
+-rw-r--r--   1 Lazare  staff   1611 Jul 20 18:59 [0mMakefile[0m
+-rw-r--r--   1 Lazare  staff      9 Jul 20 18:59 [0mauteur[0m
+-rw-r--r--   1 Lazare  staff   2332 Jul 25 12:19 [0mcheck_flags.o[0m
+-rw-r--r--   1 Lazare  staff   1548 Jul 25 12:19 [0mcheck_precision_max.o[0m
+-rw-r--r--   1 Lazare  staff    752 Jul 25 12:19 [0mcheck_spaces.o[0m
+-rw-r--r--   1 Lazare  staff   1892 Jul 25 12:19 [0mcheck_width.o[0m
+-rw-r--r--   1 Lazare  staff   2876 Jul 25 12:19 [0mcolor.o[0m
+-rw-r--r--   1 Lazare  staff   3896 Jul 25 12:19 [0mcolor2.o[0m
+-rw-r--r--   1 Lazare  staff   3480 Jul 25 12:19 [0mcolor3.o[0m
+-rw-r--r--   1 Lazare  staff   1412 Jul 25 12:19 [0mconvert_c.o[0m
+-rw-r--r--   1 Lazare  staff   2996 Jul 25 12:19 [0mconvert_d.o[0m
+-rw-r--r--   1 Lazare  staff   3668 Jul 25 12:19 [0mconvert_jzlh.o[0m
+-rw-r--r--   1 Lazare  staff   2560 Jul 25 12:19 [0mconvert_o.o[0m
+-rw-r--r--   1 Lazare  staff   2116 Jul 25 12:19 [0mconvert_p.o[0m
+-rw-r--r--   1 Lazare  staff   1100 Jul 25 12:19 [0mconvert_percent.o[0m
+-rw-r--r--   1 Lazare  staff   1200 Jul 25 12:19 [0mconvert_r.o[0m
+-rw-r--r--   1 Lazare  staff   2108 Jul 25 12:19 [0mconvert_s.o[0m
+-rw-r--r--   1 Lazare  staff   2532 Jul 25 12:19 [0mconvert_u.o[0m
+-rw-r--r--   1 Lazare  staff   3220 Jul 25 12:19 [0mconvert_x.o[0m
+-rw-r--r--   1 Lazare  staff  64640 Jul 25 12:19 [0mft_printf.a[0m
+-rw-r--r--   1 Lazare  staff   2788 Jul 25 12:19 [0mft_printf.o[0m
+drwxr-xr-x   6 Lazare  staff    204 Jul 20 18:59 [0;96mincludes[0m
+drwxr-xr-x  80 Lazare  staff   2720 Jul 20 18:59 [0;96mlibft[0m
+-rw-r--r--   1 Lazare  staff   3272 Jul 25 12:19 [0mparser.o[0m
+-rw-r--r--   1 Lazare  staff   2564 Jul 25 12:19 [0mprint_d.o[0m
+-rw-r--r--   1 Lazare  staff   2736 Jul 25 12:19 [0mprint_o.o[0m
+-rw-r--r--   1 Lazare  staff   2736 Jul 25 12:19 [0mprint_u.o[0m
+-rw-r--r--   1 Lazare  staff   2820 Jul 25 12:19 [0mprint_x.o[0m
+-rw-r--r--   1 Lazare  staff   2724 Jul 25 12:19 [0mprint_xx.o[0m
+drwxr-xr-x  27 Lazare  staff    918 Jul 20 18:59 [0;96msrcs[0m
+-rw-r--r--   1 Lazare  staff   1748 Jul 25 12:19 [0mutils.o[0m
+
+../ft_ls/libft/ft_printf/includes:
+total 32
+-rw-r--r--  1 Lazare  staff  2491 Jul 20 18:59 [0mcolors.h[0m
+-rw-r--r--  1 Lazare  staff  1121 Jul 20 18:59 [0mincludes.h[0m
+-rw-r--r--  1 Lazare  staff  3759 Jul 20 18:59 [0mproto.h[0m
+-rw-r--r--  1 Lazare  staff  1507 Jul 20 18:59 [0mstruct.h[0m
+
+../ft_ls/libft/ft_printf/libft:
+total 616
+-rwxr-xr-x  1 Lazare  staff  3496 Jul 20 18:59 [0;31mMakefile[0m
+-rwxr-xr-x  1 Lazare  staff    27 Jul 20 18:59 [0;31mREADME.md[0m
+-rwxr-xr-x  1 Lazare  staff     9 Jul 20 18:59 [0;31mauteur[0m
+-rwxr-xr-x  1 Lazare  staff  1924 Jul 20 18:59 [0;31mft_atoi.c[0m
+-rwxr-xr-x  1 Lazare  staff  1942 Jul 20 18:59 [0;31mft_atoi_base.c[0m
+-rwxr-xr-x  1 Lazare  staff  1987 Jul 20 18:59 [0;31mft_atoi_nbase.c[0m
+-rw-r--r--  1 Lazare  staff  1026 Jul 20 18:59 [0mft_binlen.c[0m
+-rwxr-xr-x  1 Lazare  staff  1087 Jul 20 18:59 [0;31mft_bzero.c[0m
+-rwxr-xr-x  1 Lazare  staff  1536 Jul 20 18:59 [0;31mft_cat.c[0m
+-rw-r--r--  1 Lazare  staff  1080 Jul 20 18:59 [0mft_charwlen.c[0m
+-rwxr-xr-x  1 Lazare  staff  1067 Jul 20 18:59 [0;31mft_isalnum.c[0m
+-rwxr-xr-x  1 Lazare  staff  1035 Jul 20 18:59 [0;31mft_isalpha.c[0m
+-rwxr-xr-x  1 Lazare  staff  1005 Jul 20 18:59 [0;31mft_isascii.c[0m
+-rwxr-xr-x  1 Lazare  staff  1007 Jul 20 18:59 [0;31mft_isdigit.c[0m
+-rwxr-xr-x  1 Lazare  staff  1006 Jul 20 18:59 [0;31mft_isprint.c[0m
+-rwxr-xr-x  1 Lazare  staff  1349 Jul 20 18:59 [0;31mft_itoa.c[0m
+-rwxr-xr-x  1 Lazare  staff  1475 Jul 20 18:59 [0;31mft_itoa_base.c[0m
+-rwxr-xr-x  1 Lazare  staff  1476 Jul 20 18:59 [0;31mft_itoa_base_l.c[0m
+-rwxr-xr-x  1 Lazare  staff  1494 Jul 20 18:59 [0;31mft_itoa_base_ll.c[0m
+-rw-r--r--  1 Lazare  staff  1471 Jul 20 18:59 [0mft_itoa_base_uint.c[0m
+-rwxr-xr-x  1 Lazare  staff  1044 Jul 20 18:59 [0;31mft_memalloc.c[0m
+-rwxr-xr-x  1 Lazare  staff  1210 Jul 20 18:59 [0;31mft_memccpy.c[0m
+-rwxr-xr-x  1 Lazare  staff  1166 Jul 20 18:59 [0;31mft_memchr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1276 Jul 20 18:59 [0;31mft_memcmp.c[0m
+-rwxr-xr-x  1 Lazare  staff  1125 Jul 20 18:59 [0;31mft_memcpy.c[0m
+-rwxr-xr-x  1 Lazare  staff  1007 Jul 20 18:59 [0;31mft_memdel.c[0m
+-rwxr-xr-x  1 Lazare  staff  1189 Jul 20 18:59 [0;31mft_memmove.c[0m
+-rwxr-xr-x  1 Lazare  staff  1122 Jul 20 18:59 [0;31mft_memset.c[0m
+-rwxr-xr-x  1 Lazare  staff  1106 Jul 20 18:59 [0;31mft_nblen.c[0m
+-rwxr-xr-x  1 Lazare  staff  1118 Jul 20 18:59 [0;31mft_nblen_l.c[0m
+-rwxr-xr-x  1 Lazare  staff  1175 Jul 20 18:59 [0;31mft_nblen_ll.c[0m
+-rwxr-xr-x  1 Lazare  staff  1022 Jul 20 18:59 [0;31mft_power.c[0m
+-rwxr-xr-x  1 Lazare  staff   958 Jul 20 18:59 [0;31mft_putchar.c[0m
+-rwxr-xr-x  1 Lazare  staff   970 Jul 20 18:59 [0;31mft_putchar_fd.c[0m
+-rwxr-xr-x  1 Lazare  staff   981 Jul 20 18:59 [0;31mft_putendl.c[0m
+-rwxr-xr-x  1 Lazare  staff  1006 Jul 20 18:59 [0;31mft_putendl_fd.c[0m
+-rwxr-xr-x  1 Lazare  staff  1112 Jul 20 18:59 [0;31mft_putnbr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1151 Jul 20 18:59 [0;31mft_putnbr_fd.c[0m
+-rwxr-xr-x  1 Lazare  staff  1107 Jul 20 18:59 [0;31mft_putnbr_l.c[0m
+-rwxr-xr-x  1 Lazare  staff  1201 Jul 20 18:59 [0;31mft_putnbr_ll.c[0m
+-rw-r--r--  1 Lazare  staff  1093 Jul 20 18:59 [0mft_putnstr.c[0m
+-rw-r--r--  1 Lazare  staff  2018 Jul 20 18:59 [0mft_putnwchar.c[0m
+-rw-r--r--  1 Lazare  staff  1081 Jul 20 18:59 [0mft_putnwstr.c[0m
+-rwxr-xr-x  1 Lazare  staff   983 Jul 20 18:59 [0;31mft_putstr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1003 Jul 20 18:59 [0;31mft_putstr_fd.c[0m
+-rw-r--r--  1 Lazare  staff  1953 Jul 20 18:59 [0mft_putwchar.c[0m
+-rwxr-xr-x  1 Lazare  staff  1716 Jul 20 18:59 [0;31mft_split_whitespaces.c[0m
+-rwxr-xr-x  1 Lazare  staff  1084 Jul 20 18:59 [0;31mft_strcat.c[0m
+-rwxr-xr-x  1 Lazare  staff  1083 Jul 20 18:59 [0;31mft_strchr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1023 Jul 20 18:59 [0;31mft_strclr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1187 Jul 20 18:59 [0;31mft_strcmp.c[0m
+-rwxr-xr-x  1 Lazare  staff  1036 Jul 20 18:59 [0;31mft_strcpy.c[0m
+-rwxr-xr-x  1 Lazare  staff   999 Jul 20 18:59 [0;31mft_strdel.c[0m
+-rwxr-xr-x  1 Lazare  staff  1184 Jul 20 18:59 [0;31mft_strdup.c[0m
+-rwxr-xr-x  1 Lazare  staff  1076 Jul 20 18:59 [0;31mft_strequ.c[0m
+-rwxr-xr-x  1 Lazare  staff  1224 Jul 20 18:59 [0;31mft_strisdigit.c[0m
+-rwxr-xr-x  1 Lazare  staff  1056 Jul 20 18:59 [0;31mft_striter.c[0m
+-rwxr-xr-x  1 Lazare  staff  1083 Jul 20 18:59 [0;31mft_striteri.c[0m
+-rwxr-xr-x  1 Lazare  staff  1334 Jul 20 18:59 [0;31mft_strjoin.c[0m
+-rwxr-xr-x  1 Lazare  staff  1234 Jul 20 18:59 [0;31mft_strlcat.c[0m
+-rwxr-xr-x  1 Lazare  staff   989 Jul 20 18:59 [0;31mft_strlen.c[0m
+-rwxr-xr-x  1 Lazare  staff  1149 Jul 20 18:59 [0;31mft_strmap.c[0m
+-rwxr-xr-x  1 Lazare  staff  1167 Jul 20 18:59 [0;31mft_strmapi.c[0m
+-rwxr-xr-x  1 Lazare  staff  1108 Jul 20 18:59 [0;31mft_strncat.c[0m
+-rwxr-xr-x  1 Lazare  staff  1236 Jul 20 18:59 [0;31mft_strncmp.c[0m
+-rwxr-xr-x  1 Lazare  staff  1108 Jul 20 18:59 [0;31mft_strncpy.c[0m
+-rwxr-xr-x  1 Lazare  staff  1091 Jul 20 18:59 [0;31mft_strnequ.c[0m
+-rwxr-xr-x  1 Lazare  staff  1074 Jul 20 18:59 [0;31mft_strnew.c[0m
+-rwxr-xr-x  1 Lazare  staff  1286 Jul 20 18:59 [0;31mft_strnstr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1089 Jul 20 18:59 [0;31mft_strrchr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1757 Jul 20 18:59 [0;31mft_strsplit.c[0m
+-rwxr-xr-x  1 Lazare  staff  1251 Jul 20 18:59 [0;31mft_strstr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1157 Jul 20 18:59 [0;31mft_strsub.c[0m
+-rwxr-xr-x  1 Lazare  staff  1298 Jul 20 18:59 [0;31mft_strtrim.c[0m
+-rw-r--r--  1 Lazare  staff  1045 Jul 20 18:59 [0mft_strwlen.c[0m
+-rwxr-xr-x  1 Lazare  staff   996 Jul 20 18:59 [0;31mft_tolower.c[0m
+-rwxr-xr-x  1 Lazare  staff   997 Jul 20 18:59 [0;31mft_toupper.c[0m
+drwxr-xr-x  3 Lazare  staff   102 Jul 20 18:59 [0;96mincludes[0m
+
+../ft_ls/libft/ft_printf/libft/includes:
+total 16
+-rw-r--r--  1 Lazare  staff  4277 Jul 20 18:59 [0mlibft.h[0m
+
+../ft_ls/libft/ft_printf/srcs:
+total 200
+-rw-r--r--  1 Lazare  staff  2318 Jul 20 18:59 [0mcheck_flags.c[0m
+-rw-r--r--  1 Lazare  staff  1736 Jul 20 18:59 [0mcheck_precision_max.c[0m
+-rw-r--r--  1 Lazare  staff  1140 Jul 20 18:59 [0mcheck_spaces.c[0m
+-rw-r--r--  1 Lazare  staff  2008 Jul 20 18:59 [0mcheck_width.c[0m
+-rw-r--r--  1 Lazare  staff  2683 Jul 20 18:59 [0mcolor.c[0m
+-rw-r--r--  1 Lazare  staff  3459 Jul 20 18:59 [0mcolor2.c[0m
+-rw-r--r--  1 Lazare  staff  3116 Jul 20 18:59 [0mcolor3.c[0m
+-rw-r--r--  1 Lazare  staff  1469 Jul 20 18:59 [0mconvert_c.c[0m
+-rw-r--r--  1 Lazare  staff  2569 Jul 20 18:59 [0mconvert_d.c[0m
+-rw-r--r--  1 Lazare  staff  3634 Jul 20 18:59 [0mconvert_jzlh.c[0m
+-rw-r--r--  1 Lazare  staff  2235 Jul 20 18:59 [0mconvert_o.c[0m
+-rw-r--r--  1 Lazare  staff  1982 Jul 20 18:59 [0mconvert_p.c[0m
+-rw-r--r--  1 Lazare  staff  1264 Jul 20 18:59 [0mconvert_percent.c[0m
+-rw-r--r--  1 Lazare  staff  1846 Jul 20 18:59 [0mconvert_r.c[0m
+-rw-r--r--  1 Lazare  staff  1900 Jul 20 18:59 [0mconvert_s.c[0m
+-rw-r--r--  1 Lazare  staff  2287 Jul 20 18:59 [0mconvert_u.c[0m
+-rw-r--r--  1 Lazare  staff  2845 Jul 20 18:59 [0mconvert_x.c[0m
+-rw-r--r--  1 Lazare  staff  2554 Jul 20 18:59 [0mft_printf.c[0m
+-rw-r--r--  1 Lazare  staff  2925 Jul 20 18:59 [0mparser.c[0m
+-rw-r--r--  1 Lazare  staff  2450 Jul 20 18:59 [0mprint_d.c[0m
+-rw-r--r--  1 Lazare  staff  2555 Jul 20 18:59 [0mprint_o.c[0m
+-rw-r--r--  1 Lazare  staff  2559 Jul 20 18:59 [0mprint_u.c[0m
+-rw-r--r--  1 Lazare  staff  2596 Jul 20 18:59 [0mprint_x.c[0m
+-rw-r--r--  1 Lazare  staff  2525 Jul 20 18:59 [0mprint_xx.c[0m
+-rw-r--r--  1 Lazare  staff  1829 Jul 20 18:59 [0mutils.c[0m
+
+../ft_ls/libft/includes:
+total 24
+-rw-r--r--  1 Lazare  staff  1041 Jul 20 18:59 [0mget_next_line.h[0m
+-rwxr-xr-x  1 Lazare  staff  4356 Jul 20 18:59 [0;31mlibft.h[0m
+
+../ft_ls/srcs:
+total 152
+-rw-r--r--  1 Lazare  staff   1921 Jul 20 18:59 [0madditional_func.c[0m
+-rw-r--r--  1 Lazare  staff   2262 Jul 20 18:59 [0madditional_func2.c[0m
+-rw-r--r--  1 Lazare  staff   1548 Jul 20 18:59 [0madditional_func3.c[0m
+-rw-r--r--  1 Lazare  staff   2236 Jul 20 18:59 [0maddtoshow.c[0m
+-rw-r--r--  1 Lazare  staff  24579 Jul 23 20:30 [0mallcode.txt[0m
+-rw-r--r--  1 Lazare  staff   1989 Jul 24 19:42 [0mgestion.c[0m
+-rw-r--r--  1 Lazare  staff   2443 Jul 20 18:59 [0mgestion_l.c[0m
+-rw-r--r--  1 Lazare  staff   1959 Jul 20 18:59 [0mls_perms.c[0m
+-rw-r--r--  1 Lazare  staff   1873 Jul 20 18:59 [0mmain.c[0m
+-rw-r--r--  1 Lazare  staff   1663 Jul 20 18:59 [0mparser.c[0m
+-rw-r--r--  1 Lazare  staff   3113 Jul 25 12:22 [0msave_ls.c[0m
+-rw-r--r--  1 Lazare  staff   1577 Jul 20 18:59 [0msingle_file.c[0m
+-rw-r--r--  1 Lazare  staff   2032 Jul 20 18:59 [0muser_info.c[0m
+
+../ft_other_ls:
+total 160
+-rw-r--r--   1 Lazare  staff   1591 Jul 20 19:06 [0mMakefile[0m
+-rw-r--r--   1 Lazare  staff    110 Jul 20 19:06 [0mREADME.md[0m
+-rw-r--r--   1 Lazare  staff      7 Jul 20 19:06 [0mauteur[0m
+-rwxr-xr-x   1 Lazare  staff  67820 Jul 20 19:07 [0;31mft_ls[0m
+drwxr-xr-x   3 Lazare  staff    102 Jul 20 19:06 [0;96mincludes[0m
+drwxr-xr-x  84 Lazare  staff   2856 Jul 21 11:13 [0;96mlibft[0m
+drwxr-xr-x  14 Lazare  staff    476 Jul 21 12:06 [0;96msrcs[0m
+
+../ft_other_ls/includes:
+total 8
+-rw-r--r--  1 Lazare  staff  2804 Jul 20 19:06 [0mft_ls.h[0m
+
+../ft_other_ls/libft:
+total 896
+-rwxr-xr-x  1 Lazare  staff    3661 Jul 20 19:06 [0;31mMakefile[0m
+-rwxr-xr-x  1 Lazare  staff       7 Jul 20 19:06 [0;31mauteur[0m
+-rwxr-xr-x  1 Lazare  staff    1924 Jul 20 19:06 [0;31mft_atoi.c[0m
+-rwxr-xr-x  1 Lazare  staff    1942 Jul 20 19:06 [0;31mft_atoi_base.c[0m
+-rwxr-xr-x  1 Lazare  staff    1987 Jul 20 19:06 [0;31mft_atoi_nbase.c[0m
+-rwxr-xr-x  1 Lazare  staff    1026 Jul 20 19:06 [0;31mft_binlen.c[0m
+-rwxr-xr-x  1 Lazare  staff    1087 Jul 20 19:06 [0;31mft_bzero.c[0m
+-rwxr-xr-x  1 Lazare  staff    1536 Jul 20 19:06 [0;31mft_cat.c[0m
+-rwxr-xr-x  1 Lazare  staff    1080 Jul 20 19:06 [0;31mft_charwlen.c[0m
+-rwxr-xr-x  1 Lazare  staff    1067 Jul 20 19:06 [0;31mft_isalnum.c[0m
+-rwxr-xr-x  1 Lazare  staff    1035 Jul 20 19:06 [0;31mft_isalpha.c[0m
+-rwxr-xr-x  1 Lazare  staff    1005 Jul 20 19:06 [0;31mft_isascii.c[0m
+-rwxr-xr-x  1 Lazare  staff    1007 Jul 20 19:06 [0;31mft_isdigit.c[0m
+-rwxr-xr-x  1 Lazare  staff    1006 Jul 20 19:06 [0;31mft_isprint.c[0m
+-rwxr-xr-x  1 Lazare  staff    1349 Jul 20 19:06 [0;31mft_itoa.c[0m
+-rwxr-xr-x  1 Lazare  staff    1475 Jul 20 19:06 [0;31mft_itoa_base.c[0m
+-rwxr-xr-x  1 Lazare  staff    1476 Jul 20 19:06 [0;31mft_itoa_base_l.c[0m
+-rwxr-xr-x  1 Lazare  staff    1494 Jul 20 19:06 [0;31mft_itoa_base_ll.c[0m
+-rwxr-xr-x  1 Lazare  staff    1469 Jul 20 19:06 [0;31mft_itoa_base_uint.c[0m
+-rwxr-xr-x  1 Lazare  staff    1044 Jul 20 19:06 [0;31mft_memalloc.c[0m
+-rwxr-xr-x  1 Lazare  staff    1210 Jul 20 19:06 [0;31mft_memccpy.c[0m
+-rwxr-xr-x  1 Lazare  staff    1166 Jul 20 19:06 [0;31mft_memchr.c[0m
+-rwxr-xr-x  1 Lazare  staff    1276 Jul 20 19:06 [0;31mft_memcmp.c[0m
+-rwxr-xr-x  1 Lazare  staff    1125 Jul 20 19:06 [0;31mft_memcpy.c[0m
+-rwxr-xr-x  1 Lazare  staff    1007 Jul 20 19:06 [0;31mft_memdel.c[0m
+-rwxr-xr-x  1 Lazare  staff    1189 Jul 20 19:06 [0;31mft_memmove.c[0m
+-rwxr-xr-x  1 Lazare  staff    1122 Jul 20 19:06 [0;31mft_memset.c[0m
+-rwxr-xr-x  1 Lazare  staff    1112 Jul 20 19:06 [0;31mft_nblen.c[0m
+-rwxr-xr-x  1 Lazare  staff    1124 Jul 20 19:06 [0;31mft_nblen_l.c[0m
+-rwxr-xr-x  1 Lazare  staff    1181 Jul 20 19:06 [0;31mft_nblen_ll.c[0m
+-rwxr-xr-x  1 Lazare  staff    1022 Jul 20 19:06 [0;31mft_power.c[0m
+drwxr-xr-x  7 Lazare  staff     238 Jul 21 11:13 [0;96mft_printf[0m
+-rwxr-xr-x  1 Lazare  staff     958 Jul 20 19:06 [0;31mft_putchar.c[0m
+-rwxr-xr-x  1 Lazare  staff     970 Jul 20 19:06 [0;31mft_putchar_fd.c[0m
+-rwxr-xr-x  1 Lazare  staff     981 Jul 20 19:06 [0;31mft_putendl.c[0m
+-rwxr-xr-x  1 Lazare  staff    1006 Jul 20 19:06 [0;31mft_putendl_fd.c[0m
+-rwxr-xr-x  1 Lazare  staff    1112 Jul 20 19:06 [0;31mft_putnbr.c[0m
+-rwxr-xr-x  1 Lazare  staff    1151 Jul 20 19:06 [0;31mft_putnbr_fd.c[0m
+-rwxr-xr-x  1 Lazare  staff    1107 Jul 20 19:06 [0;31mft_putnbr_l.c[0m
+-rwxr-xr-x  1 Lazare  staff    1201 Jul 20 19:06 [0;31mft_putnbr_ll.c[0m
+-rwxr-xr-x  1 Lazare  staff    1093 Jul 20 19:06 [0;31mft_putnstr.c[0m
+-rwxr-xr-x  1 Lazare  staff    2018 Jul 20 19:06 [0;31mft_putnwchar.c[0m
+-rwxr-xr-x  1 Lazare  staff    1081 Jul 20 19:06 [0;31mft_putnwstr.c[0m
+-rwxr-xr-x  1 Lazare  staff     983 Jul 20 19:06 [0;31mft_putstr.c[0m
+-rwxr-xr-x  1 Lazare  staff    1003 Jul 20 19:06 [0;31mft_putstr_fd.c[0m
+-rwxr-xr-x  1 Lazare  staff    1953 Jul 20 19:06 [0;31mft_putwchar.c[0m
+-rwxr-xr-x  1 Lazare  staff    1716 Jul 20 19:06 [0;31mft_split_whitespaces.c[0m
+-rwxr-xr-x  1 Lazare  staff    1084 Jul 20 19:06 [0;31mft_strcat.c[0m
+-rwxr-xr-x  1 Lazare  staff    1083 Jul 20 19:06 [0;31mft_strchr.c[0m
+-rwxr-xr-x  1 Lazare  staff    1023 Jul 20 19:06 [0;31mft_strclr.c[0m
+-rwxr-xr-x  1 Lazare  staff    1187 Jul 20 19:06 [0;31mft_strcmp.c[0m
+-rwxr-xr-x  1 Lazare  staff    1036 Jul 20 19:06 [0;31mft_strcpy.c[0m
+-rwxr-xr-x  1 Lazare  staff     999 Jul 20 19:06 [0;31mft_strdel.c[0m
+-rwxr-xr-x  1 Lazare  staff    1184 Jul 20 19:06 [0;31mft_strdup.c[0m
+-rwxr-xr-x  1 Lazare  staff    1076 Jul 20 19:06 [0;31mft_strequ.c[0m
+-rwxr-xr-x  1 Lazare  staff    1224 Jul 20 19:06 [0;31mft_strisdigit.c[0m
+-rwxr-xr-x  1 Lazare  staff    1056 Jul 20 19:06 [0;31mft_striter.c[0m
+-rwxr-xr-x  1 Lazare  staff    1083 Jul 20 19:06 [0;31mft_striteri.c[0m
+-rwxr-xr-x  1 Lazare  staff    1334 Jul 20 19:06 [0;31mft_strjoin.c[0m
+-rwxr-xr-x  1 Lazare  staff    1234 Jul 20 19:06 [0;31mft_strlcat.c[0m
+-rwxr-xr-x  1 Lazare  staff    1024 Jul 20 19:06 [0;31mft_strlen.c[0m
+-rwxr-xr-x  1 Lazare  staff    1149 Jul 20 19:06 [0;31mft_strmap.c[0m
+-rwxr-xr-x  1 Lazare  staff    1167 Jul 20 19:06 [0;31mft_strmapi.c[0m
+-rwxr-xr-x  1 Lazare  staff    1108 Jul 20 19:06 [0;31mft_strncat.c[0m
+-rwxr-xr-x  1 Lazare  staff    1236 Jul 20 19:06 [0;31mft_strncmp.c[0m
+-rwxr-xr-x  1 Lazare  staff    1108 Jul 20 19:06 [0;31mft_strncpy.c[0m
+-rwxr-xr-x  1 Lazare  staff    1091 Jul 20 19:06 [0;31mft_strnequ.c[0m
+-rwxr-xr-x  1 Lazare  staff    1074 Jul 20 19:06 [0;31mft_strnew.c[0m
+-rwxr-xr-x  1 Lazare  staff    1286 Jul 20 19:06 [0;31mft_strnstr.c[0m
+-rwxr-xr-x  1 Lazare  staff    1089 Jul 20 19:06 [0;31mft_strrchr.c[0m
+-rwxr-xr-x  1 Lazare  staff    1757 Jul 20 19:06 [0;31mft_strsplit.c[0m
+-rwxr-xr-x  1 Lazare  staff    1251 Jul 20 19:06 [0;31mft_strstr.c[0m
+-rwxr-xr-x  1 Lazare  staff    1157 Jul 20 19:06 [0;31mft_strsub.c[0m
+-rwxr-xr-x  1 Lazare  staff    1298 Jul 20 19:06 [0;31mft_strtrim.c[0m
+-rwxr-xr-x  1 Lazare  staff    1045 Jul 20 19:06 [0;31mft_strwlen.c[0m
+-rwxr-xr-x  1 Lazare  staff     996 Jul 20 19:06 [0;31mft_tolower.c[0m
+-rwxr-xr-x  1 Lazare  staff     997 Jul 20 19:06 [0;31mft_toupper.c[0m
+-rw-r--r--  1 Lazare  staff    2059 Jul 20 19:06 [0mget_next_line.c[0m
+drwxr-xr-x  4 Lazare  staff     136 Jul 20 19:06 [0;96mincludes[0m
+-rw-r--r--  1 Lazare  staff  141608 Jul 20 19:07 [0mlibft.a[0m
+
+../ft_other_ls/libft/ft_printf:
+total 16
+-rw-r--r--   1 Lazare  staff  1611 Jul 20 19:06 [0mMakefile[0m
+-rw-r--r--   1 Lazare  staff     9 Jul 20 19:06 [0mauteur[0m
+drwxr-xr-x   6 Lazare  staff   204 Jul 20 19:06 [0;96mincludes[0m
+drwxr-xr-x  80 Lazare  staff  2720 Jul 20 19:06 [0;96mlibft[0m
+drwxr-xr-x  27 Lazare  staff   918 Jul 20 19:06 [0;96msrcs[0m
+
+../ft_other_ls/libft/ft_printf/includes:
+total 32
+-rw-r--r--  1 Lazare  staff  2491 Jul 20 19:06 [0mcolors.h[0m
+-rw-r--r--  1 Lazare  staff  1121 Jul 20 19:06 [0mincludes.h[0m
+-rw-r--r--  1 Lazare  staff  3759 Jul 20 19:06 [0mproto.h[0m
+-rw-r--r--  1 Lazare  staff  1507 Jul 20 19:06 [0mstruct.h[0m
+
+../ft_other_ls/libft/ft_printf/libft:
+total 616
+-rwxr-xr-x  1 Lazare  staff  3496 Jul 20 19:06 [0;31mMakefile[0m
+-rwxr-xr-x  1 Lazare  staff    27 Jul 20 19:06 [0;31mREADME.md[0m
+-rwxr-xr-x  1 Lazare  staff     9 Jul 20 19:06 [0;31mauteur[0m
+-rwxr-xr-x  1 Lazare  staff  1924 Jul 20 19:06 [0;31mft_atoi.c[0m
+-rwxr-xr-x  1 Lazare  staff  1942 Jul 20 19:06 [0;31mft_atoi_base.c[0m
+-rwxr-xr-x  1 Lazare  staff  1987 Jul 20 19:06 [0;31mft_atoi_nbase.c[0m
+-rw-r--r--  1 Lazare  staff  1026 Jul 20 19:06 [0mft_binlen.c[0m
+-rwxr-xr-x  1 Lazare  staff  1087 Jul 20 19:06 [0;31mft_bzero.c[0m
+-rwxr-xr-x  1 Lazare  staff  1536 Jul 20 19:06 [0;31mft_cat.c[0m
+-rw-r--r--  1 Lazare  staff  1080 Jul 20 19:06 [0mft_charwlen.c[0m
+-rwxr-xr-x  1 Lazare  staff  1067 Jul 20 19:06 [0;31mft_isalnum.c[0m
+-rwxr-xr-x  1 Lazare  staff  1035 Jul 20 19:06 [0;31mft_isalpha.c[0m
+-rwxr-xr-x  1 Lazare  staff  1005 Jul 20 19:06 [0;31mft_isascii.c[0m
+-rwxr-xr-x  1 Lazare  staff  1007 Jul 20 19:06 [0;31mft_isdigit.c[0m
+-rwxr-xr-x  1 Lazare  staff  1006 Jul 20 19:06 [0;31mft_isprint.c[0m
+-rwxr-xr-x  1 Lazare  staff  1349 Jul 20 19:06 [0;31mft_itoa.c[0m
+-rwxr-xr-x  1 Lazare  staff  1475 Jul 20 19:06 [0;31mft_itoa_base.c[0m
+-rwxr-xr-x  1 Lazare  staff  1476 Jul 20 19:06 [0;31mft_itoa_base_l.c[0m
+-rwxr-xr-x  1 Lazare  staff  1494 Jul 20 19:06 [0;31mft_itoa_base_ll.c[0m
+-rw-r--r--  1 Lazare  staff  1471 Jul 20 19:06 [0mft_itoa_base_uint.c[0m
+-rwxr-xr-x  1 Lazare  staff  1044 Jul 20 19:06 [0;31mft_memalloc.c[0m
+-rwxr-xr-x  1 Lazare  staff  1210 Jul 20 19:06 [0;31mft_memccpy.c[0m
+-rwxr-xr-x  1 Lazare  staff  1166 Jul 20 19:06 [0;31mft_memchr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1276 Jul 20 19:06 [0;31mft_memcmp.c[0m
+-rwxr-xr-x  1 Lazare  staff  1125 Jul 20 19:06 [0;31mft_memcpy.c[0m
+-rwxr-xr-x  1 Lazare  staff  1007 Jul 20 19:06 [0;31mft_memdel.c[0m
+-rwxr-xr-x  1 Lazare  staff  1189 Jul 20 19:06 [0;31mft_memmove.c[0m
+-rwxr-xr-x  1 Lazare  staff  1122 Jul 20 19:06 [0;31mft_memset.c[0m
+-rwxr-xr-x  1 Lazare  staff  1106 Jul 20 19:06 [0;31mft_nblen.c[0m
+-rwxr-xr-x  1 Lazare  staff  1118 Jul 20 19:06 [0;31mft_nblen_l.c[0m
+-rwxr-xr-x  1 Lazare  staff  1175 Jul 20 19:06 [0;31mft_nblen_ll.c[0m
+-rwxr-xr-x  1 Lazare  staff  1022 Jul 20 19:06 [0;31mft_power.c[0m
+-rwxr-xr-x  1 Lazare  staff   958 Jul 20 19:06 [0;31mft_putchar.c[0m
+-rwxr-xr-x  1 Lazare  staff   970 Jul 20 19:06 [0;31mft_putchar_fd.c[0m
+-rwxr-xr-x  1 Lazare  staff   981 Jul 20 19:06 [0;31mft_putendl.c[0m
+-rwxr-xr-x  1 Lazare  staff  1006 Jul 20 19:06 [0;31mft_putendl_fd.c[0m
+-rwxr-xr-x  1 Lazare  staff  1112 Jul 20 19:06 [0;31mft_putnbr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1151 Jul 20 19:06 [0;31mft_putnbr_fd.c[0m
+-rwxr-xr-x  1 Lazare  staff  1107 Jul 20 19:06 [0;31mft_putnbr_l.c[0m
+-rwxr-xr-x  1 Lazare  staff  1201 Jul 20 19:06 [0;31mft_putnbr_ll.c[0m
+-rw-r--r--  1 Lazare  staff  1093 Jul 20 19:06 [0mft_putnstr.c[0m
+-rw-r--r--  1 Lazare  staff  2018 Jul 20 19:06 [0mft_putnwchar.c[0m
+-rw-r--r--  1 Lazare  staff  1081 Jul 20 19:06 [0mft_putnwstr.c[0m
+-rwxr-xr-x  1 Lazare  staff   983 Jul 20 19:06 [0;31mft_putstr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1003 Jul 20 19:06 [0;31mft_putstr_fd.c[0m
+-rw-r--r--  1 Lazare  staff  1953 Jul 20 19:06 [0mft_putwchar.c[0m
+-rwxr-xr-x  1 Lazare  staff  1716 Jul 20 19:06 [0;31mft_split_whitespaces.c[0m
+-rwxr-xr-x  1 Lazare  staff  1084 Jul 20 19:06 [0;31mft_strcat.c[0m
+-rwxr-xr-x  1 Lazare  staff  1083 Jul 20 19:06 [0;31mft_strchr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1023 Jul 20 19:06 [0;31mft_strclr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1187 Jul 20 19:06 [0;31mft_strcmp.c[0m
+-rwxr-xr-x  1 Lazare  staff  1036 Jul 20 19:06 [0;31mft_strcpy.c[0m
+-rwxr-xr-x  1 Lazare  staff   999 Jul 20 19:06 [0;31mft_strdel.c[0m
+-rwxr-xr-x  1 Lazare  staff  1184 Jul 20 19:06 [0;31mft_strdup.c[0m
+-rwxr-xr-x  1 Lazare  staff  1076 Jul 20 19:06 [0;31mft_strequ.c[0m
+-rwxr-xr-x  1 Lazare  staff  1224 Jul 20 19:06 [0;31mft_strisdigit.c[0m
+-rwxr-xr-x  1 Lazare  staff  1056 Jul 20 19:06 [0;31mft_striter.c[0m
+-rwxr-xr-x  1 Lazare  staff  1083 Jul 20 19:06 [0;31mft_striteri.c[0m
+-rwxr-xr-x  1 Lazare  staff  1334 Jul 20 19:06 [0;31mft_strjoin.c[0m
+-rwxr-xr-x  1 Lazare  staff  1234 Jul 20 19:06 [0;31mft_strlcat.c[0m
+-rwxr-xr-x  1 Lazare  staff   989 Jul 20 19:06 [0;31mft_strlen.c[0m
+-rwxr-xr-x  1 Lazare  staff  1149 Jul 20 19:06 [0;31mft_strmap.c[0m
+-rwxr-xr-x  1 Lazare  staff  1167 Jul 20 19:06 [0;31mft_strmapi.c[0m
+-rwxr-xr-x  1 Lazare  staff  1108 Jul 20 19:06 [0;31mft_strncat.c[0m
+-rwxr-xr-x  1 Lazare  staff  1236 Jul 20 19:06 [0;31mft_strncmp.c[0m
+-rwxr-xr-x  1 Lazare  staff  1108 Jul 20 19:06 [0;31mft_strncpy.c[0m
+-rwxr-xr-x  1 Lazare  staff  1091 Jul 20 19:06 [0;31mft_strnequ.c[0m
+-rwxr-xr-x  1 Lazare  staff  1074 Jul 20 19:06 [0;31mft_strnew.c[0m
+-rwxr-xr-x  1 Lazare  staff  1286 Jul 20 19:06 [0;31mft_strnstr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1089 Jul 20 19:06 [0;31mft_strrchr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1757 Jul 20 19:06 [0;31mft_strsplit.c[0m
+-rwxr-xr-x  1 Lazare  staff  1251 Jul 20 19:06 [0;31mft_strstr.c[0m
+-rwxr-xr-x  1 Lazare  staff  1157 Jul 20 19:06 [0;31mft_strsub.c[0m
+-rwxr-xr-x  1 Lazare  staff  1298 Jul 20 19:06 [0;31mft_strtrim.c[0m
+-rw-r--r--  1 Lazare  staff  1045 Jul 20 19:06 [0mft_strwlen.c[0m
+-rwxr-xr-x  1 Lazare  staff   996 Jul 20 19:06 [0;31mft_tolower.c[0m
+-rwxr-xr-x  1 Lazare  staff   997 Jul 20 19:06 [0;31mft_toupper.c[0m
+drwxr-xr-x  3 Lazare  staff   102 Jul 20 19:06 [0;96mincludes[0m
+
+../ft_other_ls/libft/ft_printf/libft/includes:
+total 16
+-rw-r--r--  1 Lazare  staff  4277 Jul 20 19:06 [0mlibft.h[0m
+
+../ft_other_ls/libft/ft_printf/srcs:
+total 200
+-rw-r--r--  1 Lazare  staff  2318 Jul 20 19:06 [0mcheck_flags.c[0m
+-rw-r--r--  1 Lazare  staff  1736 Jul 20 19:06 [0mcheck_precision_max.c[0m
+-rw-r--r--  1 Lazare  staff  1140 Jul 20 19:06 [0mcheck_spaces.c[0m
+-rw-r--r--  1 Lazare  staff  2008 Jul 20 19:06 [0mcheck_width.c[0m
+-rw-r--r--  1 Lazare  staff  2683 Jul 20 19:06 [0mcolor.c[0m
+-rw-r--r--  1 Lazare  staff  3459 Jul 20 19:06 [0mcolor2.c[0m
+-rw-r--r--  1 Lazare  staff  3116 Jul 20 19:06 [0mcolor3.c[0m
+-rw-r--r--  1 Lazare  staff  1469 Jul 20 19:06 [0mconvert_c.c[0m
+-rw-r--r--  1 Lazare  staff  2569 Jul 20 19:06 [0mconvert_d.c[0m
+-rw-r--r--  1 Lazare  staff  3634 Jul 20 19:06 [0mconvert_jzlh.c[0m
+-rw-r--r--  1 Lazare  staff  2235 Jul 20 19:06 [0mconvert_o.c[0m
+-rw-r--r--  1 Lazare  staff  1982 Jul 20 19:06 [0mconvert_p.c[0m
+-rw-r--r--  1 Lazare  staff  1264 Jul 20 19:06 [0mconvert_percent.c[0m
+-rw-r--r--  1 Lazare  staff  1846 Jul 20 19:06 [0mconvert_r.c[0m
+-rw-r--r--  1 Lazare  staff  1900 Jul 20 19:06 [0mconvert_s.c[0m
+-rw-r--r--  1 Lazare  staff  2287 Jul 20 19:06 [0mconvert_u.c[0m
+-rw-r--r--  1 Lazare  staff  2845 Jul 20 19:06 [0mconvert_x.c[0m
+-rw-r--r--  1 Lazare  staff  2554 Jul 20 19:06 [0mft_printf.c[0m
+-rw-r--r--  1 Lazare  staff  2925 Jul 20 19:06 [0mparser.c[0m
+-rw-r--r--  1 Lazare  staff  2450 Jul 20 19:06 [0mprint_d.c[0m
+-rw-r--r--  1 Lazare  staff  2555 Jul 20 19:06 [0mprint_o.c[0m
+-rw-r--r--  1 Lazare  staff  2559 Jul 20 19:06 [0mprint_u.c[0m
+-rw-r--r--  1 Lazare  staff  2596 Jul 20 19:06 [0mprint_x.c[0m
+-rw-r--r--  1 Lazare  staff  2525 Jul 20 19:06 [0mprint_xx.c[0m
+-rw-r--r--  1 Lazare  staff  1829 Jul 20 19:06 [0mutils.c[0m
+
+../ft_other_ls/libft/includes:
+total 24
+-rw-r--r--  1 Lazare  staff  1041 Jul 20 19:06 [0mget_next_line.h[0m
+-rwxr-xr-x  1 Lazare  staff  4356 Jul 20 19:06 [0;31mlibft.h[0m
+
+../ft_other_ls/srcs:
+total 96
+-rw-r--r--  1 Lazare  staff  1921 Jul 20 19:06 [0madditional_func.c[0m
+-rw-r--r--  1 Lazare  staff  2262 Jul 20 19:06 [0madditional_func2.c[0m
+-rw-r--r--  1 Lazare  staff  1548 Jul 20 19:06 [0madditional_func3.c[0m
+-rw-r--r--  1 Lazare  staff  2236 Jul 20 19:06 [0maddtoshow.c[0m
+-rw-r--r--  1 Lazare  staff  1989 Jul 20 19:06 [0mgestion.c[0m
+-rw-r--r--  1 Lazare  staff  2443 Jul 20 19:06 [0mgestion_l.c[0m
+-rw-r--r--  1 Lazare  staff  1959 Jul 20 19:06 [0mls_perms.c[0m
+-rw-r--r--  1 Lazare  staff  1873 Jul 20 19:06 [0mmain.c[0m
+-rw-r--r--  1 Lazare  staff  1663 Jul 20 19:06 [0mparser.c[0m
+-rw-r--r--  1 Lazare  staff  3076 Jul 20 19:06 [0msave_ls.c[0m
+-rw-r--r--  1 Lazare  staff  1577 Jul 20 19:06 [0msingle_file.c[0m
+-rw-r--r--  1 Lazare  staff  2032 Jul 20 19:06 [0muser_info.c[0m
+
+../get-next-line:
+total 64
+-rwxr-xr-x   1 Lazare  staff  14032 Jun  9 01:17 [0;31ma.out[0m
+drwxr-xr-x   3 Lazare  staff    102 Jun  9 01:15 [0;96ma.out.dSYM[0m
+-rw-r--r--   1 Lazare  staff      9 Jun  9 18:14 [0mauthor[0m
+-rw-r--r--   1 Lazare  staff   2741 Jun  9 10:31 [0mget_next_line.c[0m
+-rw-r--r--   1 Lazare  staff   1111 Jun  9 10:32 [0mget_next_line.h[0m
+drwxr-xr-x  68 Lazare  staff   2312 Jun  9 01:10 [0;96mlibft[0m
+-rw-r--r--   1 Lazare  staff   3900 Jun  9 01:10 [0mlibft.h[0m
+
+../get-next-line/a.out.dSYM:
+total 0
+drwxr-xr-x  4 Lazare  staff  136 Jun  9 01:15 [0;96mContents[0m
+
+../get-next-line/a.out.dSYM/Contents:
+total 8
+-rw-r--r--  1 Lazare  staff  634 Jun  9 01:17 [0mInfo.plist[0m
+drwxr-xr-x  3 Lazare  staff  102 Jun  9 01:15 [0;96mResources[0m
+
+../get-next-line/a.out.dSYM/Contents/Resources:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jun  9 01:15 [0;96mDWARF[0m
+
+../get-next-line/a.out.dSYM/Contents/Resources/DWARF:
+total 24
+-rw-r--r--  1 Lazare  staff  10781 Jun  9 01:17 [0ma.out[0m
+
+../get-next-line/libft:
+total 640
+-rw-r--r--  1 Lazare  staff   1004 Jun  9 01:10 [0mft_atoi.o[0m
+-rw-r--r--  1 Lazare  staff    676 Jun  9 01:10 [0mft_bzero.o[0m
+-rw-r--r--  1 Lazare  staff    752 Jun  9 01:10 [0mft_freetables.o[0m
+-rw-r--r--  1 Lazare  staff    688 Jun  9 01:10 [0mft_int_size.o[0m
+-rw-r--r--  1 Lazare  staff    752 Jun  9 01:10 [0mft_isalnum.o[0m
+-rw-r--r--  1 Lazare  staff    672 Jun  9 01:10 [0mft_isalpha.o[0m
+-rw-r--r--  1 Lazare  staff    656 Jun  9 01:10 [0mft_isascii.o[0m
+-rw-r--r--  1 Lazare  staff    656 Jun  9 01:10 [0mft_isdigit.o[0m
+-rw-r--r--  1 Lazare  staff    656 Jun  9 01:10 [0mft_isprint.o[0m
+-rw-r--r--  1 Lazare  staff   1008 Jun  9 01:10 [0mft_itoa.o[0m
+-rw-r--r--  1 Lazare  staff    636 Jun  9 01:10 [0mft_lstadd.o[0m
+-rw-r--r--  1 Lazare  staff    884 Jun  9 01:10 [0mft_lstdel.o[0m
+-rw-r--r--  1 Lazare  staff    752 Jun  9 01:10 [0mft_lstdelone.o[0m
+-rw-r--r--  1 Lazare  staff    712 Jun  9 01:10 [0mft_lstiter.o[0m
+-rw-r--r--  1 Lazare  staff    840 Jun  9 01:10 [0mft_lstmap.o[0m
+-rw-r--r--  1 Lazare  staff    888 Jun  9 01:10 [0mft_lstnew.o[0m
+-rw-r--r--  1 Lazare  staff    744 Jun  9 01:10 [0mft_memalloc.o[0m
+-rw-r--r--  1 Lazare  staff    776 Jun  9 01:10 [0mft_memccpy.o[0m
+-rw-r--r--  1 Lazare  staff    748 Jun  9 01:10 [0mft_memchr.o[0m
+-rw-r--r--  1 Lazare  staff    780 Jun  9 01:10 [0mft_memcmp.o[0m
+-rw-r--r--  1 Lazare  staff    700 Jun  9 01:10 [0mft_memcpy.o[0m
+-rw-r--r--  1 Lazare  staff    684 Jun  9 01:10 [0mft_memdel.o[0m
+-rw-r--r--  1 Lazare  staff    848 Jun  9 01:10 [0mft_memmove.o[0m
+-rw-r--r--  1 Lazare  staff    692 Jun  9 01:10 [0mft_memset.o[0m
+-rw-r--r--  1 Lazare  staff    716 Jun  9 01:10 [0mft_printtables.o[0m
+-rw-r--r--  1 Lazare  staff    676 Jun  9 01:10 [0mft_putchar.o[0m
+-rw-r--r--  1 Lazare  staff    688 Jun  9 01:10 [0mft_putchar_fd.o[0m
+-rw-r--r--  1 Lazare  staff    740 Jun  9 01:10 [0mft_putendl.o[0m
+-rw-r--r--  1 Lazare  staff    768 Jun  9 01:10 [0mft_putendl_fd.o[0m
+-rw-r--r--  1 Lazare  staff    800 Jun  9 01:10 [0mft_putnbr.o[0m
+-rw-r--r--  1 Lazare  staff    816 Jun  9 01:10 [0mft_putnbr_fd.o[0m
+-rw-r--r--  1 Lazare  staff    728 Jun  9 01:10 [0mft_putstr.o[0m
+-rw-r--r--  1 Lazare  staff    744 Jun  9 01:10 [0mft_putstr_fd.o[0m
+-rw-r--r--  1 Lazare  staff   2072 Jun  9 01:10 [0mft_split_whitespaces.o[0m
+-rw-r--r--  1 Lazare  staff    748 Jun  9 01:10 [0mft_strcat.o[0m
+-rw-r--r--  1 Lazare  staff    748 Jun  9 01:10 [0mft_strchr.o[0m
+-rw-r--r--  1 Lazare  staff    732 Jun  9 01:10 [0mft_strclr.o[0m
+-rw-r--r--  1 Lazare  staff    772 Jun  9 01:10 [0mft_strcmp.o[0m
+-rw-r--r--  1 Lazare  staff    724 Jun  9 01:10 [0mft_strcpy.o[0m
+-rw-r--r--  1 Lazare  staff    664 Jun  9 01:10 [0mft_strdel.o[0m
+-rw-r--r--  1 Lazare  staff    832 Jun  9 01:10 [0mft_strdup.o[0m
+-rw-r--r--  1 Lazare  staff    720 Jun  9 01:10 [0mft_strequ.o[0m
+-rw-r--r--  1 Lazare  staff    696 Jun  9 01:10 [0mft_striter.o[0m
+-rw-r--r--  1 Lazare  staff    720 Jun  9 01:10 [0mft_striteri.o[0m
+-rw-r--r--  1 Lazare  staff   1264 Jun  9 01:10 [0mft_strjoin.c[0m
+-rw-r--r--  1 Lazare  staff    964 Jun  9 01:10 [0mft_strjoin.o[0m
+-rw-r--r--  1 Lazare  staff    840 Jun  9 01:10 [0mft_strjoinfree.o[0m
+-rw-r--r--  1 Lazare  staff    952 Jun  9 01:10 [0mft_strlcat.o[0m
+-rw-r--r--  1 Lazare  staff    660 Jun  9 01:10 [0mft_strlen.o[0m
+-rw-r--r--  1 Lazare  staff    880 Jun  9 01:10 [0mft_strmap.o[0m
+-rw-r--r--  1 Lazare  staff    904 Jun  9 01:10 [0mft_strmapi.o[0m
+-rw-r--r--  1 Lazare  staff    800 Jun  9 01:10 [0mft_strncat.o[0m
+-rw-r--r--  1 Lazare  staff    840 Jun  9 01:10 [0mft_strncmp.o[0m
+-rw-r--r--  1 Lazare  staff    792 Jun  9 01:10 [0mft_strncpy.o[0m
+-rw-r--r--  1 Lazare  staff    732 Jun  9 01:10 [0mft_strnequ.o[0m
+-rw-r--r--  1 Lazare  staff    772 Jun  9 01:10 [0mft_strnew.o[0m
+-rw-r--r--  1 Lazare  staff   1008 Jun  9 01:10 [0mft_strnstr.o[0m
+-rw-r--r--  1 Lazare  staff    768 Jun  9 01:10 [0mft_strrchr.o[0m
+-rw-r--r--  1 Lazare  staff   1924 Jun  9 01:10 [0mft_strsplit.o[0m
+-rw-r--r--  1 Lazare  staff    996 Jun  9 01:10 [0mft_strstr.o[0m
+-rw-r--r--  1 Lazare  staff    804 Jun  9 01:10 [0mft_strsub.o[0m
+-rw-r--r--  1 Lazare  staff   1128 Jun  9 01:10 [0mft_strtrim.o[0m
+-rw-r--r--  1 Lazare  staff    648 Jun  9 01:10 [0mft_tolower.o[0m
+-rw-r--r--  1 Lazare  staff    648 Jun  9 01:10 [0mft_toupper.o[0m
+-rw-r--r--  1 Lazare  staff  57880 Jun  9 01:10 [0mlibft.a[0m
+-rw-r--r--  1 Lazare  staff   3900 Jun  9 01:10 [0mlibft.h[0m
+
+../libft:
+total 648
+-rw-r--r--  1 Lazare  staff   2242 Jun 13 11:00 [0mMakefile[0m
+-rw-r--r--  1 Lazare  staff      9 Jun 13 11:00 [0mauteur[0m
+-rw-r--r--  1 Lazare  staff   1306 Jun 13 11:00 [0mft_atoi.c[0m
+-rw-r--r--  1 Lazare  staff   1050 Jun 13 11:00 [0mft_bzero.c[0m
+-rw-r--r--  1 Lazare  staff   1052 Jun 13 11:00 [0mft_freetables.c[0m
+-rw-r--r--  1 Lazare  staff   1007 Jun 13 11:00 [0mft_int_size.c[0m
+-rw-r--r--  1 Lazare  staff   1003 Jun 13 11:00 [0mft_isalnum.c[0m
+-rw-r--r--  1 Lazare  staff   1000 Jun 13 11:00 [0mft_isalpha.c[0m
+-rw-r--r--  1 Lazare  staff    971 Jun 13 11:00 [0mft_isascii.c[0m
+-rw-r--r--  1 Lazare  staff    973 Jun 13 11:00 [0mft_isdigit.c[0m
+-rw-r--r--  1 Lazare  staff    971 Jun 13 11:00 [0mft_isprint.c[0m
+-rw-r--r--  1 Lazare  staff   1397 Jun 13 11:00 [0mft_itoa.c[0m
+-rw-r--r--  1 Lazare  staff   1013 Jun 13 11:00 [0mft_lstadd.c[0m
+-rw-r--r--  1 Lazare  staff   1393 Jun 13 11:00 [0mft_lstdel.c[0m
+-rw-r--r--  1 Lazare  staff   1139 Jun 13 11:00 [0mft_lstdelone.c[0m
+-rw-r--r--  1 Lazare  staff   1123 Jun 13 11:00 [0mft_lstiter.c[0m
+-rw-r--r--  1 Lazare  staff   1323 Jun 13 11:00 [0mft_lstmap.c[0m
+-rw-r--r--  1 Lazare  staff   1362 Jun 13 11:00 [0mft_lstnew.c[0m
+-rw-r--r--  1 Lazare  staff   1086 Jun 13 11:00 [0mft_memalloc.c[0m
+-rw-r--r--  1 Lazare  staff   1237 Jun 13 11:00 [0mft_memccpy.c[0m
+-rw-r--r--  1 Lazare  staff   1142 Jun 13 11:00 [0mft_memchr.c[0m
+-rw-r--r--  1 Lazare  staff   1198 Jun 13 11:00 [0mft_memcmp.c[0m
+-rw-r--r--  1 Lazare  staff   1170 Jun 13 11:00 [0mft_memcpy.c[0m
+-rw-r--r--  1 Lazare  staff    985 Jun 13 11:00 [0mft_memdel.c[0m
+-rw-r--r--  1 Lazare  staff   1340 Jun 13 11:00 [0mft_memmove.c[0m
+-rw-r--r--  1 Lazare  staff   1087 Jun 13 11:00 [0mft_memset.c[0m
+-rw-r--r--  1 Lazare  staff   1015 Jun 13 11:00 [0mft_printtables.c[0m
+-rw-r--r--  1 Lazare  staff    979 Jun 13 11:00 [0mft_putchar.c[0m
+-rw-r--r--  1 Lazare  staff    971 Jun 13 11:00 [0mft_putchar_fd.c[0m
+-rw-r--r--  1 Lazare  staff   1018 Jun 13 11:00 [0mft_putendl.c[0m
+-rw-r--r--  1 Lazare  staff   1065 Jun 13 11:00 [0mft_putendl_fd.c[0m
+-rw-r--r--  1 Lazare  staff   1087 Jun 13 11:00 [0mft_putnbr.c[0m
+-rw-r--r--  1 Lazare  staff   1121 Jun 13 11:00 [0mft_putnbr_fd.c[0m
+-rw-r--r--  1 Lazare  staff   1039 Jun 13 11:00 [0mft_putstr.c[0m
+-rw-r--r--  1 Lazare  staff   1038 Jun 13 11:00 [0mft_putstr_fd.c[0m
+-rw-r--r--  1 Lazare  staff   2085 Jun 13 11:00 [0mft_split_whitespaces.c[0m
+-rw-r--r--  1 Lazare  staff   1103 Jun 13 11:00 [0mft_strcat.c[0m
+-rw-r--r--  1 Lazare  staff   1099 Jun 13 11:00 [0mft_strchr.c[0m
+-rw-r--r--  1 Lazare  staff    977 Jun 13 11:00 [0mft_strclr.c[0m
+-rw-r--r--  1 Lazare  staff   1064 Jun 13 11:00 [0mft_strcmp.c[0m
+-rw-r--r--  1 Lazare  staff   1058 Jun 13 11:00 [0mft_strcpy.c[0m
+-rw-r--r--  1 Lazare  staff    986 Jun 13 11:00 [0mft_strdel.c[0m
+-rw-r--r--  1 Lazare  staff   1168 Jun 13 11:00 [0mft_strdup.c[0m
+-rw-r--r--  1 Lazare  staff   1025 Jun 13 11:00 [0mft_strequ.c[0m
+-rw-r--r--  1 Lazare  staff    997 Jun 13 11:00 [0mft_striter.c[0m
+-rw-r--r--  1 Lazare  staff   1049 Jun 13 11:00 [0mft_striteri.c[0m
+-rw-r--r--  1 Lazare  staff   1265 Jun 13 11:00 [0mft_strjoin.c[0m
+-rw-r--r--  1 Lazare  staff   1191 Jun 13 11:00 [0mft_strjoinfree.c[0m
+-rw-r--r--  1 Lazare  staff   1395 Jun 13 11:00 [0mft_strlcat.c[0m
+-rw-r--r--  1 Lazare  staff   1011 Jun 13 11:00 [0mft_strlen.c[0m
+-rw-r--r--  1 Lazare  staff   1226 Jun 13 11:00 [0mft_strmap.c[0m
+-rw-r--r--  1 Lazare  staff   1281 Jun 13 11:00 [0mft_strmapi.c[0m
+-rw-r--r--  1 Lazare  staff   1109 Jun 13 11:00 [0mft_strncat.c[0m
+-rw-r--r--  1 Lazare  staff   1139 Jun 13 11:00 [0mft_strncmp.c[0m
+-rw-r--r--  1 Lazare  staff   1128 Jun 13 11:00 [0mft_strncpy.c[0m
+-rw-r--r--  1 Lazare  staff   1040 Jun 13 11:00 [0mft_strnequ.c[0m
+-rw-r--r--  1 Lazare  staff   1120 Jun 13 11:00 [0mft_strnew.c[0m
+-rw-r--r--  1 Lazare  staff   1430 Jun 13 11:00 [0mft_strnstr.c[0m
+-rw-r--r--  1 Lazare  staff   1125 Jun 13 11:00 [0mft_strrchr.c[0m
+-rw-r--r--  1 Lazare  staff   2070 Jun 13 11:00 [0mft_strsplit.c[0m
+-rw-r--r--  1 Lazare  staff   1403 Jun 13 11:00 [0mft_strstr.c[0m
+-rw-r--r--  1 Lazare  staff   1161 Jun 13 11:00 [0mft_strsub.c[0m
+-rw-r--r--  1 Lazare  staff   1380 Jun 13 11:00 [0mft_strtrim.c[0m
+-rw-r--r--  1 Lazare  staff    980 Jun 13 11:00 [0mft_tolower.c[0m
+-rw-r--r--  1 Lazare  staff    980 Jun 13 11:00 [0mft_toupper.c[0m
+-rw-r--r--  1 Lazare  staff  57880 Jun 13 11:01 [0mlibft.a[0m
+-rw-r--r--  1 Lazare  staff   3899 Jun 13 11:00 [0mlibft.h[0m
+
+../ls:
+total 536
+-rwxr-xr-x    1 Lazare  staff  48416 Jul 25 17:26 [0;31ma.out[0m
+drwxr-xr-x    3 Lazare  staff    102 Jul 24 20:02 [0;96ma.out.dSYM[0m
+-rw-r--r--    1 Lazare  staff  15564 Jul 24 20:17 [0mallcode.c[0m
+-rw-r--r--    1 Lazare  staff    154 Jul 25 12:31 [0mcommande.txt[0m
+-rw-r--r--    1 Lazare  staff    571 Jul 25 17:27 [0mft_CMD_R.c[0m
+-rw-r--r--    1 Lazare  staff   3297 Jul 25 17:01 [0mft_CMD_l.c[0m
+-rw-r--r--    1 Lazare  staff   1031 Jul 22 13:48 [0mft_free.c[0m
+-rw-r--r--    1 Lazare  staff   1113 Jul 17 22:40 [0mft_list_reverse.c[0m
+-rwxr-xr-x    1 Lazare  staff  67820 Jul 24 20:03 [0;31mft_ls[0m
+-rw-r--r--    1 Lazare  staff   1220 Jul 25 14:30 [0mft_padding.c[0m
+-rw-r--r--    1 Lazare  staff    866 Jul 19 19:16 [0mft_place_element.c[0m
+-rw-r--r--    1 Lazare  staff    997 Jul 25 17:03 [0mft_print_normal.c[0m
+-rw-r--r--    1 Lazare  staff   2458 Jul 25 16:38 [0mft_store.c[0m
+drwxr-xr-x  136 Lazare  staff   4624 Jul 22 13:36 [0;96mlibft[0m
+-rw-r--r--    1 Lazare  staff   3941 Jul 12 05:50 [0mlibft.h[0m
+-rw-r--r--    1 Lazare  staff   1462 Jul 25 17:13 [0mls.c[0m
+-rw-r--r--    1 Lazare  staff   1936 Jul 25 17:18 [0mls.h[0m
+-rw-r--r--    1 Lazare  staff   3305 Jul 25 12:09 [0mmain.c[0m
+lrwxr-xr-x    1 Lazare  staff      9 Jul 25 14:02 [0;35mmycoucou[0m -> allcode.c
+-rw-r--r--    1 Lazare  staff  73932 Jul 25 17:29 [0mmyls[0m
+lrwxr-xr-x    1 Lazare  staff      8 Jul 25 17:11 [0;35mmymycoucou[0m -> mycoucou
+
+../ls/a.out.dSYM:
+total 0
+drwxr-xr-x  4 Lazare  staff  136 Jul 24 20:02 [0;96mContents[0m
+
+../ls/a.out.dSYM/Contents:
+total 8
+-rw-r--r--  1 Lazare  staff  634 Jul 25 17:26 [0mInfo.plist[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul 24 20:02 [0;96mResources[0m
+
+../ls/a.out.dSYM/Contents/Resources:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul 24 20:02 [0;96mDWARF[0m
+
+../ls/a.out.dSYM/Contents/Resources/DWARF:
+total 88
+-rw-r--r--  1 Lazare  staff  41269 Jul 25 17:26 [0ma.out[0m
+
+../ls/libft:
+total 1152
+-rw-r--r--  1 Lazare  staff   2242 Jul 12 05:50 [0mMakefile[0m
+-rw-r--r--  1 Lazare  staff      9 Jul 12 05:50 [0mauteur[0m
+-rw-r--r--  1 Lazare  staff   1306 Jul 12 05:50 [0mft_atoi.c[0m
+-rw-r--r--  1 Lazare  staff   1004 Jul 12 05:50 [0mft_atoi.o[0m
+-rw-r--r--  1 Lazare  staff   1050 Jul 12 05:50 [0mft_bzero.c[0m
+-rw-r--r--  1 Lazare  staff    676 Jul 12 05:50 [0mft_bzero.o[0m
+-rw-r--r--  1 Lazare  staff   1052 Jul 12 05:50 [0mft_freetables.c[0m
+-rw-r--r--  1 Lazare  staff    752 Jul 12 05:50 [0mft_freetables.o[0m
+-rw-r--r--  1 Lazare  staff   1007 Jul 12 05:50 [0mft_int_size.c[0m
+-rw-r--r--  1 Lazare  staff    688 Jul 12 05:50 [0mft_int_size.o[0m
+-rw-r--r--  1 Lazare  staff   1003 Jul 12 05:50 [0mft_isalnum.c[0m
+-rw-r--r--  1 Lazare  staff    752 Jul 12 05:50 [0mft_isalnum.o[0m
+-rw-r--r--  1 Lazare  staff   1000 Jul 12 05:50 [0mft_isalpha.c[0m
+-rw-r--r--  1 Lazare  staff    672 Jul 12 05:50 [0mft_isalpha.o[0m
+-rw-r--r--  1 Lazare  staff    971 Jul 12 05:50 [0mft_isascii.c[0m
+-rw-r--r--  1 Lazare  staff    656 Jul 12 05:50 [0mft_isascii.o[0m
+-rw-r--r--  1 Lazare  staff    973 Jul 12 05:50 [0mft_isdigit.c[0m
+-rw-r--r--  1 Lazare  staff    656 Jul 12 05:50 [0mft_isdigit.o[0m
+-rw-r--r--  1 Lazare  staff    971 Jul 12 05:50 [0mft_isprint.c[0m
+-rw-r--r--  1 Lazare  staff    656 Jul 12 05:50 [0mft_isprint.o[0m
+-rw-r--r--  1 Lazare  staff   1397 Jul 12 05:50 [0mft_itoa.c[0m
+-rw-r--r--  1 Lazare  staff   1008 Jul 12 05:50 [0mft_itoa.o[0m
+-rw-r--r--  1 Lazare  staff   1013 Jul 12 05:50 [0mft_lstadd.c[0m
+-rw-r--r--  1 Lazare  staff    636 Jul 12 05:50 [0mft_lstadd.o[0m
+-rw-r--r--  1 Lazare  staff   1393 Jul 12 05:50 [0mft_lstdel.c[0m
+-rw-r--r--  1 Lazare  staff    884 Jul 12 05:50 [0mft_lstdel.o[0m
+-rw-r--r--  1 Lazare  staff   1139 Jul 12 05:50 [0mft_lstdelone.c[0m
+-rw-r--r--  1 Lazare  staff    752 Jul 12 05:50 [0mft_lstdelone.o[0m
+-rw-r--r--  1 Lazare  staff   1123 Jul 12 05:50 [0mft_lstiter.c[0m
+-rw-r--r--  1 Lazare  staff    712 Jul 12 05:50 [0mft_lstiter.o[0m
+-rw-r--r--  1 Lazare  staff   1323 Jul 12 05:50 [0mft_lstmap.c[0m
+-rw-r--r--  1 Lazare  staff    840 Jul 12 05:50 [0mft_lstmap.o[0m
+-rw-r--r--  1 Lazare  staff   1362 Jul 12 05:50 [0mft_lstnew.c[0m
+-rw-r--r--  1 Lazare  staff    888 Jul 12 05:50 [0mft_lstnew.o[0m
+-rw-r--r--  1 Lazare  staff   1086 Jul 12 05:50 [0mft_memalloc.c[0m
+-rw-r--r--  1 Lazare  staff    744 Jul 12 05:50 [0mft_memalloc.o[0m
+-rw-r--r--  1 Lazare  staff   1237 Jul 12 05:50 [0mft_memccpy.c[0m
+-rw-r--r--  1 Lazare  staff    776 Jul 12 05:50 [0mft_memccpy.o[0m
+-rw-r--r--  1 Lazare  staff   1142 Jul 12 05:50 [0mft_memchr.c[0m
+-rw-r--r--  1 Lazare  staff    748 Jul 12 05:50 [0mft_memchr.o[0m
+-rw-r--r--  1 Lazare  staff   1198 Jul 12 05:50 [0mft_memcmp.c[0m
+-rw-r--r--  1 Lazare  staff    780 Jul 12 05:50 [0mft_memcmp.o[0m
+-rw-r--r--  1 Lazare  staff   1170 Jul 12 05:50 [0mft_memcpy.c[0m
+-rw-r--r--  1 Lazare  staff    700 Jul 12 05:50 [0mft_memcpy.o[0m
+-rw-r--r--  1 Lazare  staff    985 Jul 12 05:50 [0mft_memdel.c[0m
+-rw-r--r--  1 Lazare  staff    684 Jul 12 05:50 [0mft_memdel.o[0m
+-rw-r--r--  1 Lazare  staff   1340 Jul 12 05:50 [0mft_memmove.c[0m
+-rw-r--r--  1 Lazare  staff    848 Jul 12 05:50 [0mft_memmove.o[0m
+-rw-r--r--  1 Lazare  staff   1087 Jul 12 05:50 [0mft_memset.c[0m
+-rw-r--r--  1 Lazare  staff    692 Jul 12 05:50 [0mft_memset.o[0m
+-rw-r--r--  1 Lazare  staff   1015 Jul 12 05:50 [0mft_printtables.c[0m
+-rw-r--r--  1 Lazare  staff    716 Jul 12 05:50 [0mft_printtables.o[0m
+-rw-r--r--  1 Lazare  staff    979 Jul 12 05:50 [0mft_putchar.c[0m
+-rw-r--r--  1 Lazare  staff    676 Jul 12 05:50 [0mft_putchar.o[0m
+-rw-r--r--  1 Lazare  staff    971 Jul 12 05:50 [0mft_putchar_fd.c[0m
+-rw-r--r--  1 Lazare  staff    688 Jul 12 05:50 [0mft_putchar_fd.o[0m
+-rw-r--r--  1 Lazare  staff   1018 Jul 12 05:50 [0mft_putendl.c[0m
+-rw-r--r--  1 Lazare  staff    740 Jul 12 05:50 [0mft_putendl.o[0m
+-rw-r--r--  1 Lazare  staff   1065 Jul 12 05:50 [0mft_putendl_fd.c[0m
+-rw-r--r--  1 Lazare  staff    768 Jul 12 05:50 [0mft_putendl_fd.o[0m
+-rw-r--r--  1 Lazare  staff   1087 Jul 12 05:50 [0mft_putnbr.c[0m
+-rw-r--r--  1 Lazare  staff    800 Jul 12 05:50 [0mft_putnbr.o[0m
+-rw-r--r--  1 Lazare  staff   1121 Jul 12 05:50 [0mft_putnbr_fd.c[0m
+-rw-r--r--  1 Lazare  staff    816 Jul 12 05:50 [0mft_putnbr_fd.o[0m
+-rw-r--r--  1 Lazare  staff   1039 Jul 12 05:50 [0mft_putstr.c[0m
+-rw-r--r--  1 Lazare  staff    728 Jul 12 05:50 [0mft_putstr.o[0m
+-rw-r--r--  1 Lazare  staff   1038 Jul 12 05:50 [0mft_putstr_fd.c[0m
+-rw-r--r--  1 Lazare  staff    744 Jul 12 05:50 [0mft_putstr_fd.o[0m
+-rw-r--r--  1 Lazare  staff   2085 Jul 12 05:50 [0mft_split_whitespaces.c[0m
+-rw-r--r--  1 Lazare  staff   2072 Jul 12 05:50 [0mft_split_whitespaces.o[0m
+-rw-r--r--  1 Lazare  staff   1103 Jul 12 05:50 [0mft_strcat.c[0m
+-rw-r--r--  1 Lazare  staff    748 Jul 12 05:50 [0mft_strcat.o[0m
+-rw-r--r--  1 Lazare  staff   1099 Jul 12 05:50 [0mft_strchr.c[0m
+-rw-r--r--  1 Lazare  staff    748 Jul 12 05:50 [0mft_strchr.o[0m
+-rw-r--r--  1 Lazare  staff    977 Jul 12 05:50 [0mft_strclr.c[0m
+-rw-r--r--  1 Lazare  staff    732 Jul 12 05:50 [0mft_strclr.o[0m
+-rw-r--r--  1 Lazare  staff   1064 Jul 12 05:50 [0mft_strcmp.c[0m
+-rw-r--r--  1 Lazare  staff    772 Jul 12 05:50 [0mft_strcmp.o[0m
+-rw-r--r--  1 Lazare  staff   1058 Jul 12 05:50 [0mft_strcpy.c[0m
+-rw-r--r--  1 Lazare  staff    724 Jul 12 05:50 [0mft_strcpy.o[0m
+-rw-r--r--  1 Lazare  staff    986 Jul 12 05:50 [0mft_strdel.c[0m
+-rw-r--r--  1 Lazare  staff    664 Jul 12 05:50 [0mft_strdel.o[0m
+-rw-r--r--  1 Lazare  staff   1168 Jul 12 05:50 [0mft_strdup.c[0m
+-rw-r--r--  1 Lazare  staff    832 Jul 12 05:50 [0mft_strdup.o[0m
+-rw-r--r--  1 Lazare  staff   1025 Jul 12 05:50 [0mft_strequ.c[0m
+-rw-r--r--  1 Lazare  staff    720 Jul 12 05:50 [0mft_strequ.o[0m
+-rw-r--r--  1 Lazare  staff    997 Jul 12 05:50 [0mft_striter.c[0m
+-rw-r--r--  1 Lazare  staff    696 Jul 12 05:50 [0mft_striter.o[0m
+-rw-r--r--  1 Lazare  staff   1049 Jul 12 05:50 [0mft_striteri.c[0m
+-rw-r--r--  1 Lazare  staff    720 Jul 12 05:50 [0mft_striteri.o[0m
+-rw-r--r--  1 Lazare  staff   1265 Jul 12 05:50 [0mft_strjoin.c[0m
+-rw-r--r--  1 Lazare  staff    964 Jul 12 05:50 [0mft_strjoin.o[0m
+-rw-r--r--  1 Lazare  staff   1191 Jul 12 05:50 [0mft_strjoinfree.c[0m
+-rw-r--r--  1 Lazare  staff    840 Jul 12 05:50 [0mft_strjoinfree.o[0m
+-rw-r--r--  1 Lazare  staff   1395 Jul 12 05:50 [0mft_strlcat.c[0m
+-rw-r--r--  1 Lazare  staff    952 Jul 12 05:50 [0mft_strlcat.o[0m
+-rw-r--r--  1 Lazare  staff   1011 Jul 12 05:50 [0mft_strlen.c[0m
+-rw-r--r--  1 Lazare  staff    660 Jul 12 05:50 [0mft_strlen.o[0m
+-rw-r--r--  1 Lazare  staff   1226 Jul 12 05:50 [0mft_strmap.c[0m
+-rw-r--r--  1 Lazare  staff    880 Jul 12 05:50 [0mft_strmap.o[0m
+-rw-r--r--  1 Lazare  staff   1281 Jul 12 05:50 [0mft_strmapi.c[0m
+-rw-r--r--  1 Lazare  staff    904 Jul 12 05:50 [0mft_strmapi.o[0m
+-rw-r--r--  1 Lazare  staff   1109 Jul 12 05:50 [0mft_strncat.c[0m
+-rw-r--r--  1 Lazare  staff    800 Jul 12 05:50 [0mft_strncat.o[0m
+-rw-r--r--  1 Lazare  staff   1139 Jul 12 05:50 [0mft_strncmp.c[0m
+-rw-r--r--  1 Lazare  staff    840 Jul 12 05:50 [0mft_strncmp.o[0m
+-rw-r--r--  1 Lazare  staff   1128 Jul 12 05:50 [0mft_strncpy.c[0m
+-rw-r--r--  1 Lazare  staff    792 Jul 12 05:50 [0mft_strncpy.o[0m
+-rw-r--r--  1 Lazare  staff   1040 Jul 12 05:50 [0mft_strnequ.c[0m
+-rw-r--r--  1 Lazare  staff    732 Jul 12 05:50 [0mft_strnequ.o[0m
+-rw-r--r--  1 Lazare  staff   1120 Jul 12 05:50 [0mft_strnew.c[0m
+-rw-r--r--  1 Lazare  staff    772 Jul 12 05:50 [0mft_strnew.o[0m
+-rw-r--r--  1 Lazare  staff   1430 Jul 12 05:50 [0mft_strnstr.c[0m
+-rw-r--r--  1 Lazare  staff   1008 Jul 12 05:50 [0mft_strnstr.o[0m
+-rw-r--r--  1 Lazare  staff   1125 Jul 12 05:50 [0mft_strrchr.c[0m
+-rw-r--r--  1 Lazare  staff    768 Jul 12 05:50 [0mft_strrchr.o[0m
+-rw-r--r--  1 Lazare  staff   2070 Jul 12 05:50 [0mft_strsplit.c[0m
+-rw-r--r--  1 Lazare  staff   1924 Jul 12 05:50 [0mft_strsplit.o[0m
+-rw-r--r--  1 Lazare  staff   1403 Jul 12 05:50 [0mft_strstr.c[0m
+-rw-r--r--  1 Lazare  staff    996 Jul 12 05:50 [0mft_strstr.o[0m
+-rw-r--r--  1 Lazare  staff   1161 Jul 12 05:50 [0mft_strsub.c[0m
+-rw-r--r--  1 Lazare  staff    804 Jul 12 05:50 [0mft_strsub.o[0m
+-rw-r--r--  1 Lazare  staff   1380 Jul 12 05:50 [0mft_strtrim.c[0m
+-rw-r--r--  1 Lazare  staff   1128 Jul 12 05:50 [0mft_strtrim.o[0m
+-rw-r--r--  1 Lazare  staff    980 Jul 12 05:50 [0mft_tolower.c[0m
+-rw-r--r--  1 Lazare  staff    648 Jul 12 05:50 [0mft_tolower.o[0m
+-rw-r--r--  1 Lazare  staff    980 Jul 12 05:50 [0mft_toupper.c[0m
+-rw-r--r--  1 Lazare  staff    648 Jul 12 05:50 [0mft_toupper.o[0m
+-rw-r--r--  1 Lazare  staff  57880 Jul 12 05:50 [0mlibft.a[0m
+-rw-r--r--  1 Lazare  staff   3899 Jul 12 05:50 [0mlibft.h[0m
+
+../myls:
+total 119384
+-rwxr-xr-x    1 Lazare  staff     22512 Jul 24 23:01 [0;31ma.out[0m
+drwxr-xr-x    3 Lazare  staff       102 Jul 24 22:58 [0;96ma.out.dSYM[0m
+-rw-r--r--    1 Lazare  staff     32617 Jul 24 22:58 [0mallcode.txt[0m
+-rw-r--r--    1 Lazare  staff       517 Jul 24 22:57 [0mft_CMD_R.c[0m
+-rw-r--r--    1 Lazare  staff      1601 Jul 24 22:59 [0mft_CMD_l.c[0m
+-rw-r--r--    1 Lazare  staff      1031 Jul 24 22:57 [0mft_free.c[0m
+-rw-r--r--    1 Lazare  staff      1113 Jul 24 22:57 [0mft_list_reverse.c[0m
+-rwxr-xr-x    1 Lazare  staff     67820 Jul 24 22:57 [0;31mft_ls[0m
+-rw-r--r--    1 Lazare  staff      1204 Jul 24 22:58 [0mft_padding.c[0m
+-rw-r--r--    1 Lazare  staff       866 Jul 24 22:57 [0mft_place_element.c[0m
+-rw-r--r--    1 Lazare  staff       541 Jul 24 22:57 [0mft_print_normal.c[0m
+-rw-r--r--    1 Lazare  staff      2458 Jul 24 22:57 [0mft_store.c[0m
+-rw-r--r--    1 Lazare  staff       351 Jul 24 22:57 [0mft_time.c[0m
+drwxr-xr-x  136 Lazare  staff      4624 Jul 24 22:57 [0;96mlibft[0m
+-rw-r--r--    1 Lazare  staff      3941 Jul 24 22:57 [0mlibft.h[0m
+-rw-r--r--    1 Lazare  staff      1474 Jul 24 22:57 [0mls.c[0m
+-rw-r--r--    1 Lazare  staff      1935 Jul 24 22:57 [0mls.h[0m
+-rw-r--r--    1 Lazare  staff      3330 Jul 24 22:57 [0mmain.c[0m
+-rw-r--r--    1 Lazare  staff  12280967 Jul 24 22:58 [0mmyls[0m
+-rw-r--r--    1 Lazare  staff      3538 Jul 24 22:58 [0mold_cmd_l.c[0m
+-rw-r--r--    1 Lazare  staff      1303 Jul 24 22:58 [0mold_padding.c[0m
+-rw-r--r--    1 Lazare  staff      2342 Jul 24 22:58 [0mprintf_CMD_r.c[0m
+-rw-r--r--    1 Lazare  staff      1124 Jul 24 22:58 [0mtodo.txt[0m
+-rw-r--r--    1 Lazare  staff  48642725 Jul 24 22:58 [0mtruels[0m
+
+../myls/a.out.dSYM:
+total 0
+drwxr-xr-x  4 Lazare  staff  136 Jul 24 22:58 [0;96mContents[0m
+
+../myls/a.out.dSYM/Contents:
+total 8
+-rw-r--r--  1 Lazare  staff  634 Jul 24 23:01 [0mInfo.plist[0m
+drwxr-xr-x  3 Lazare  staff  102 Jul 24 22:58 [0;96mResources[0m
+
+../myls/a.out.dSYM/Contents/Resources:
+total 0
+drwxr-xr-x  3 Lazare  staff  102 Jul 24 22:58 [0;96mDWARF[0m
+
+../myls/a.out.dSYM/Contents/Resources/DWARF:
+total 80
+-rw-r--r--  1 Lazare  staff  38403 Jul 24 23:01 [0ma.out[0m
+
+../myls/libft:
+total 1152
+-rw-r--r--  1 Lazare  staff   2242 Jul 24 22:57 [0mMakefile[0m
+-rw-r--r--  1 Lazare  staff      9 Jul 24 22:57 [0mauteur[0m
+-rw-r--r--  1 Lazare  staff   1306 Jul 24 22:57 [0mft_atoi.c[0m
+-rw-r--r--  1 Lazare  staff   1004 Jul 24 22:57 [0mft_atoi.o[0m
+-rw-r--r--  1 Lazare  staff   1050 Jul 24 22:57 [0mft_bzero.c[0m
+-rw-r--r--  1 Lazare  staff    676 Jul 24 22:57 [0mft_bzero.o[0m
+-rw-r--r--  1 Lazare  staff   1052 Jul 24 22:57 [0mft_freetables.c[0m
+-rw-r--r--  1 Lazare  staff    752 Jul 24 22:57 [0mft_freetables.o[0m
+-rw-r--r--  1 Lazare  staff   1007 Jul 24 22:57 [0mft_int_size.c[0m
+-rw-r--r--  1 Lazare  staff    688 Jul 24 22:57 [0mft_int_size.o[0m
+-rw-r--r--  1 Lazare  staff   1003 Jul 24 22:57 [0mft_isalnum.c[0m
+-rw-r--r--  1 Lazare  staff    752 Jul 24 22:57 [0mft_isalnum.o[0m
+-rw-r--r--  1 Lazare  staff   1000 Jul 24 22:57 [0mft_isalpha.c[0m
+-rw-r--r--  1 Lazare  staff    672 Jul 24 22:57 [0mft_isalpha.o[0m
+-rw-r--r--  1 Lazare  staff    971 Jul 24 22:57 [0mft_isascii.c[0m
+-rw-r--r--  1 Lazare  staff    656 Jul 24 22:57 [0mft_isascii.o[0m
+-rw-r--r--  1 Lazare  staff    973 Jul 24 22:57 [0mft_isdigit.c[0m
+-rw-r--r--  1 Lazare  staff    656 Jul 24 22:57 [0mft_isdigit.o[0m
+-rw-r--r--  1 Lazare  staff    971 Jul 24 22:57 [0mft_isprint.c[0m
+-rw-r--r--  1 Lazare  staff    656 Jul 24 22:57 [0mft_isprint.o[0m
+-rw-r--r--  1 Lazare  staff   1397 Jul 24 22:57 [0mft_itoa.c[0m
+-rw-r--r--  1 Lazare  staff   1008 Jul 24 22:57 [0mft_itoa.o[0m
+-rw-r--r--  1 Lazare  staff   1013 Jul 24 22:57 [0mft_lstadd.c[0m
+-rw-r--r--  1 Lazare  staff    636 Jul 24 22:57 [0mft_lstadd.o[0m
+-rw-r--r--  1 Lazare  staff   1393 Jul 24 22:57 [0mft_lstdel.c[0m
+-rw-r--r--  1 Lazare  staff    884 Jul 24 22:57 [0mft_lstdel.o[0m
+-rw-r--r--  1 Lazare  staff   1139 Jul 24 22:57 [0mft_lstdelone.c[0m
+-rw-r--r--  1 Lazare  staff    752 Jul 24 22:57 [0mft_lstdelone.o[0m
+-rw-r--r--  1 Lazare  staff   1123 Jul 24 22:57 [0mft_lstiter.c[0m
+-rw-r--r--  1 Lazare  staff    712 Jul 24 22:57 [0mft_lstiter.o[0m
+-rw-r--r--  1 Lazare  staff   1323 Jul 24 22:57 [0mft_lstmap.c[0m
+-rw-r--r--  1 Lazare  staff    840 Jul 24 22:57 [0mft_lstmap.o[0m
+-rw-r--r--  1 Lazare  staff   1362 Jul 24 22:57 [0mft_lstnew.c[0m
+-rw-r--r--  1 Lazare  staff    888 Jul 24 22:57 [0mft_lstnew.o[0m
+-rw-r--r--  1 Lazare  staff   1086 Jul 24 22:57 [0mft_memalloc.c[0m
+-rw-r--r--  1 Lazare  staff    744 Jul 24 22:57 [0mft_memalloc.o[0m
+-rw-r--r--  1 Lazare  staff   1237 Jul 24 22:57 [0mft_memccpy.c[0m
+-rw-r--r--  1 Lazare  staff    776 Jul 24 22:57 [0mft_memccpy.o[0m
+-rw-r--r--  1 Lazare  staff   1142 Jul 24 22:57 [0mft_memchr.c[0m
+-rw-r--r--  1 Lazare  staff    748 Jul 24 22:57 [0mft_memchr.o[0m
+-rw-r--r--  1 Lazare  staff   1198 Jul 24 22:57 [0mft_memcmp.c[0m
+-rw-r--r--  1 Lazare  staff    780 Jul 24 22:57 [0mft_memcmp.o[0m
+-rw-r--r--  1 Lazare  staff   1170 Jul 24 22:57 [0mft_memcpy.c[0m
+-rw-r--r--  1 Lazare  staff    700 Jul 24 22:57 [0mft_memcpy.o[0m
+-rw-r--r--  1 Lazare  staff    985 Jul 24 22:57 [0mft_memdel.c[0m
+-rw-r--r--  1 Lazare  staff    684 Jul 24 22:57 [0mft_memdel.o[0m
+-rw-r--r--  1 Lazare  staff   1340 Jul 24 22:57 [0mft_memmove.c[0m
+-rw-r--r--  1 Lazare  staff    848 Jul 24 22:57 [0mft_memmove.o[0m
+-rw-r--r--  1 Lazare  staff   1087 Jul 24 22:57 [0mft_memset.c[0m
+-rw-r--r--  1 Lazare  staff    692 Jul 24 22:57 [0mft_memset.o[0m
+-rw-r--r--  1 Lazare  staff   1015 Jul 24 22:57 [0mft_printtables.c[0m
+-rw-r--r--  1 Lazare  staff    716 Jul 24 22:57 [0mft_printtables.o[0m
+-rw-r--r--  1 Lazare  staff    979 Jul 24 22:57 [0mft_putchar.c[0m
+-rw-r--r--  1 Lazare  staff    676 Jul 24 22:57 [0mft_putchar.o[0m
+-rw-r--r--  1 Lazare  staff    971 Jul 24 22:57 [0mft_putchar_fd.c[0m
+-rw-r--r--  1 Lazare  staff    688 Jul 24 22:57 [0mft_putchar_fd.o[0m
+-rw-r--r--  1 Lazare  staff   1018 Jul 24 22:57 [0mft_putendl.c[0m
+-rw-r--r--  1 Lazare  staff    740 Jul 24 22:57 [0mft_putendl.o[0m
+-rw-r--r--  1 Lazare  staff   1065 Jul 24 22:57 [0mft_putendl_fd.c[0m
+-rw-r--r--  1 Lazare  staff    768 Jul 24 22:57 [0mft_putendl_fd.o[0m
+-rw-r--r--  1 Lazare  staff   1087 Jul 24 22:57 [0mft_putnbr.c[0m
+-rw-r--r--  1 Lazare  staff    800 Jul 24 22:57 [0mft_putnbr.o[0m
+-rw-r--r--  1 Lazare  staff   1121 Jul 24 22:57 [0mft_putnbr_fd.c[0m
+-rw-r--r--  1 Lazare  staff    816 Jul 24 22:57 [0mft_putnbr_fd.o[0m
+-rw-r--r--  1 Lazare  staff   1039 Jul 24 22:57 [0mft_putstr.c[0m
+-rw-r--r--  1 Lazare  staff    728 Jul 24 22:57 [0mft_putstr.o[0m
+-rw-r--r--  1 Lazare  staff   1038 Jul 24 22:57 [0mft_putstr_fd.c[0m
+-rw-r--r--  1 Lazare  staff    744 Jul 24 22:57 [0mft_putstr_fd.o[0m
+-rw-r--r--  1 Lazare  staff   2085 Jul 24 22:57 [0mft_split_whitespaces.c[0m
+-rw-r--r--  1 Lazare  staff   2072 Jul 24 22:57 [0mft_split_whitespaces.o[0m
+-rw-r--r--  1 Lazare  staff   1103 Jul 24 22:57 [0mft_strcat.c[0m
+-rw-r--r--  1 Lazare  staff    748 Jul 24 22:57 [0mft_strcat.o[0m
+-rw-r--r--  1 Lazare  staff   1099 Jul 24 22:57 [0mft_strchr.c[0m
+-rw-r--r--  1 Lazare  staff    748 Jul 24 22:57 [0mft_strchr.o[0m
+-rw-r--r--  1 Lazare  staff    977 Jul 24 22:57 [0mft_strclr.c[0m
+-rw-r--r--  1 Lazare  staff    732 Jul 24 22:57 [0mft_strclr.o[0m
+-rw-r--r--  1 Lazare  staff   1064 Jul 24 22:57 [0mft_strcmp.c[0m
+-rw-r--r--  1 Lazare  staff    772 Jul 24 22:57 [0mft_strcmp.o[0m
+-rw-r--r--  1 Lazare  staff   1058 Jul 24 22:57 [0mft_strcpy.c[0m
+-rw-r--r--  1 Lazare  staff    724 Jul 24 22:57 [0mft_strcpy.o[0m
+-rw-r--r--  1 Lazare  staff    986 Jul 24 22:57 [0mft_strdel.c[0m
+-rw-r--r--  1 Lazare  staff    664 Jul 24 22:57 [0mft_strdel.o[0m
+-rw-r--r--  1 Lazare  staff   1168 Jul 24 22:57 [0mft_strdup.c[0m
+-rw-r--r--  1 Lazare  staff    832 Jul 24 22:57 [0mft_strdup.o[0m
+-rw-r--r--  1 Lazare  staff   1025 Jul 24 22:57 [0mft_strequ.c[0m
+-rw-r--r--  1 Lazare  staff    720 Jul 24 22:57 [0mft_strequ.o[0m
+-rw-r--r--  1 Lazare  staff    997 Jul 24 22:57 [0mft_striter.c[0m
+-rw-r--r--  1 Lazare  staff    696 Jul 24 22:57 [0mft_striter.o[0m
+-rw-r--r--  1 Lazare  staff   1049 Jul 24 22:57 [0mft_striteri.c[0m
+-rw-r--r--  1 Lazare  staff    720 Jul 24 22:57 [0mft_striteri.o[0m
+-rw-r--r--  1 Lazare  staff   1265 Jul 24 22:57 [0mft_strjoin.c[0m
+-rw-r--r--  1 Lazare  staff    964 Jul 24 22:57 [0mft_strjoin.o[0m
+-rw-r--r--  1 Lazare  staff   1191 Jul 24 22:57 [0mft_strjoinfree.c[0m
+-rw-r--r--  1 Lazare  staff    840 Jul 24 22:57 [0mft_strjoinfree.o[0m
+-rw-r--r--  1 Lazare  staff   1395 Jul 24 22:57 [0mft_strlcat.c[0m
+-rw-r--r--  1 Lazare  staff    952 Jul 24 22:57 [0mft_strlcat.o[0m
+-rw-r--r--  1 Lazare  staff   1011 Jul 24 22:57 [0mft_strlen.c[0m
+-rw-r--r--  1 Lazare  staff    660 Jul 24 22:57 [0mft_strlen.o[0m
+-rw-r--r--  1 Lazare  staff   1226 Jul 24 22:57 [0mft_strmap.c[0m
+-rw-r--r--  1 Lazare  staff    880 Jul 24 22:57 [0mft_strmap.o[0m
+-rw-r--r--  1 Lazare  staff   1281 Jul 24 22:57 [0mft_strmapi.c[0m
+-rw-r--r--  1 Lazare  staff    904 Jul 24 22:57 [0mft_strmapi.o[0m
+-rw-r--r--  1 Lazare  staff   1109 Jul 24 22:57 [0mft_strncat.c[0m
+-rw-r--r--  1 Lazare  staff    800 Jul 24 22:57 [0mft_strncat.o[0m
+-rw-r--r--  1 Lazare  staff   1139 Jul 24 22:57 [0mft_strncmp.c[0m
+-rw-r--r--  1 Lazare  staff    840 Jul 24 22:57 [0mft_strncmp.o[0m
+-rw-r--r--  1 Lazare  staff   1128 Jul 24 22:57 [0mft_strncpy.c[0m
+-rw-r--r--  1 Lazare  staff    792 Jul 24 22:57 [0mft_strncpy.o[0m
+-rw-r--r--  1 Lazare  staff   1040 Jul 24 22:57 [0mft_strnequ.c[0m
+-rw-r--r--  1 Lazare  staff    732 Jul 24 22:57 [0mft_strnequ.o[0m
+-rw-r--r--  1 Lazare  staff   1120 Jul 24 22:57 [0mft_strnew.c[0m
+-rw-r--r--  1 Lazare  staff    772 Jul 24 22:57 [0mft_strnew.o[0m
+-rw-r--r--  1 Lazare  staff   1430 Jul 24 22:57 [0mft_strnstr.c[0m
+-rw-r--r--  1 Lazare  staff   1008 Jul 24 22:57 [0mft_strnstr.o[0m
+-rw-r--r--  1 Lazare  staff   1125 Jul 24 22:57 [0mft_strrchr.c[0m
+-rw-r--r--  1 Lazare  staff    768 Jul 24 22:57 [0mft_strrchr.o[0m
+-rw-r--r--  1 Lazare  staff   2070 Jul 24 22:57 [0mft_strsplit.c[0m
+-rw-r--r--  1 Lazare  staff   1924 Jul 24 22:57 [0mft_strsplit.o[0m
+-rw-r--r--  1 Lazare  staff   1403 Jul 24 22:57 [0mft_strstr.c[0m
+-rw-r--r--  1 Lazare  staff    996 Jul 24 22:57 [0mft_strstr.o[0m
+-rw-r--r--  1 Lazare  staff   1161 Jul 24 22:57 [0mft_strsub.c[0m
+-rw-r--r--  1 Lazare  staff    804 Jul 24 22:57 [0mft_strsub.o[0m
+-rw-r--r--  1 Lazare  staff   1380 Jul 24 22:57 [0mft_strtrim.c[0m
+-rw-r--r--  1 Lazare  staff   1128 Jul 24 22:57 [0mft_strtrim.o[0m
+-rw-r--r--  1 Lazare  staff    980 Jul 24 22:57 [0mft_tolower.c[0m
+-rw-r--r--  1 Lazare  staff    648 Jul 24 22:57 [0mft_tolower.o[0m
+-rw-r--r--  1 Lazare  staff    980 Jul 24 22:57 [0mft_toupper.c[0m
+-rw-r--r--  1 Lazare  staff    648 Jul 24 22:57 [0mft_toupper.o[0m
+-rw-r--r--  1 Lazare  staff  57880 Jul 24 22:57 [0mlibft.a[0m
+-rw-r--r--  1 Lazare  staff   3899 Jul 24 22:57 [0mlibft.h[0m
