@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/28 14:14:42 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/07/04 02:47:53 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/07/26 15:01:59 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,17 @@ static int 		ft_stock_commands(char command, int command_options);
 
 static void      ft_send_files_to_ls(char **folder, int command_options)
 {
-	struct stat *buffstatt;
+//	struct stat *buffstatt;
 
 	if (*folder && !(ft_strcmp(*folder, "--")))
 		folder++;
 	while (*folder)
 	{
-		buffstatt = malloc(sizeof(stat));
-		if (!(stat(*folder, buffstatt)))
+//		buffstatt = malloc(sizeof(stat));
+//		if (!(stat(*folder, buffstatt)))
 			ls(*folder, command_options);
-		if (buffstatt)
-			free(buffstatt);
+//		if (buffstatt)
+//			free(buffstatt);
 		folder++;
 	}
 }

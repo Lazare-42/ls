@@ -78,9 +78,8 @@ void	ft_print_name(unsigned char c, char *name, int st_mode)
 	}
 	else
 	{
-		ft_putstr(" \e[0m");
+		ft_putchar(' ');
 		ft_putstr(name);
-		ft_putstr("\e[0m");
 	}
 }
 
