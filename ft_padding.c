@@ -9,11 +9,12 @@ void	ft_put_whites(int max_str_len,int  fillup, int options)
 {
 	if (options == 1 || options == 4)
 		fillup = ft_strlen(ft_itoa(fillup));
-	while (fillup <= max_str_len)
+	while (fillup < max_str_len)
 	{
 		ft_putchar(' ');
 		fillup++;
 	}
+	(options != 3) ? ft_putchar(' ') : 0;
 	if (options != 1 && options != 3)
 		ft_putchar(' ');
 }

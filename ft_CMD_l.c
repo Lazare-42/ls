@@ -53,7 +53,7 @@ void    ft_print_GRP_USR(t_ls *stock, int *max_size)
 		ft_putstr(grp->gr_name);
 	else
 		ft_putstr(strerror(errno));
-	//ft_put_whites(max_size[2], ft_strlen(grp->gr_name), 3);
+	ft_put_whites(max_size[2], ft_strlen(grp->gr_name), 3);
 }
 
 void	ft_print_name(unsigned char c, char *name, int st_mode)

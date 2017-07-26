@@ -27,11 +27,6 @@ t_ls *ft_place_elem(t_ls *stock, t_ls *new, int options)
 	t_ls	*check;
 
 	check = stock;
-	if (!(options & CMD_a) && new->name[0] == '.')
-	{
-		ft_memdel((void**)&new);
-		return (stock);
-	}
 	if (!(stock))
 		return (stock = new);
 	if (options & CMD_t)

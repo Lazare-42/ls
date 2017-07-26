@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/10 14:43:46 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/07/12 08:42:08 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/07/26 14:35:50 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,11 @@ void	ls(char *name, int options)
 	if (!(dir = opendir((const char *)name)))
 		return ;
 	stock = (options & CMD_t) ? ft_store(name, dir,  options) : ft_store(name, dir,  options);
-	(options & CMD_r) ? ft_CMD_r(&(stock)) : stock;
-	(options & CMD_l) ? ft_CMD_l(stock, name) : ft_print_normal(stock);
+	(stock) ? ((options & CMD_r) ? ft_CMD_r(&(stock)) : stock) : 0;
+	(stock) ? ((options & CMD_l) ? ft_CMD_l(stock, name) : ft_print_normal(stock)) : 0;
 	if (dir)
 		closedir(dir);
-	ft_putchar('\n');
-	(options & CMD_R) ? ft_CMD_R(stock, name, options) : options;
+	(stock) ? ft_putchar('\n') : 0;
+	(stock) ? ((options & CMD_R) ? ft_CMD_R(stock, name, options) : 0) : 
 	ft_free(&stock);
 }
