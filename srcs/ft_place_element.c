@@ -1,5 +1,4 @@
 #include "ls.h"
-#include "libft.h"
 
 t_ls *ft_place_elem_according_to_time(t_ls *stock, t_ls *new)
 {

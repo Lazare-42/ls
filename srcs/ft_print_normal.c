@@ -1,5 +1,4 @@
 #include "ls.h"
-#include "libft.h"
 
 int	ft_longest_name(t_ls *stock)
 {

@@ -1,1 +1,0 @@
- gwc -g -I libft main.c libft/libft.a ls.c ft_free.c ft_list_reverse.c ft_print_normal.c ft_CMD_l.c ft_store.c ft_place_element.c ft_padding.c ft_CMD_R.c

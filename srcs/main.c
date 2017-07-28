@@ -11,25 +11,23 @@
 /* ************************************************************************** */
 
 #include "ls.h"
-#include "libft.h"
 
 static void			ft_print_usage_error(char error);
 static int 		ft_stock_commands(char command, int command_options);
 
-static int		ft_check_file_errors(char *folder, int print_option)
+static int		ft_check_file_errors(char *folder, int command_options)
 {
 	struct stat buffstatt;
 
 	if (lstat(folder, &buffstatt))
 	{
-		if (print_option)
-		{
-		ft_putstr("ft_ls: ");
-		ft_putstr(folder);
-		ft_putstr(": No such file or directory\n");
-		}
-		return (0);
+			ft_print_errors(folder);
+			return (0);
 	}
+	if (buffstatt.st_mode & S_IFDIR)
+		ls(folder, command_options, 1);
+	else
+		ls(folder, command_options, 0);
 	return (1);
 }
 
@@ -85,11 +83,11 @@ static int 		ft_stock_commands(char command, int command_options)
 
 static void			ft_print_usage_error(char error)
 {
-	ft_putstr("ls: illegal option -- ");
-	ft_putchar(error);
-	ft_putchar('\n');
-	ft_putstr("usage: ls [-lRart] [file ...]");
-	ft_putchar('\n');
+	ft_putstr_fd("./ft_ls: illegal option -- ", 2);
+	ft_putchar_fd(error, 2);
+	ft_putchar_fd('\n', 2);
+	ft_putstr_fd("usage: ./ft_ls [-lRart] [file ...]", 2);
+	ft_putchar_fd('\n', 2);
 }
 
 int				main(int ac, char **av)
@@ -114,15 +112,9 @@ int				main(int ac, char **av)
 			ft_check_file_errors(*tmp, 1);
 			tmp++;
 		}
-		while (*av)
-		{
-			if (ft_check_file_errors(*av, 0))
-				ls(*av, command_options);
-			av++;
-		}
 		return (0);
 	}
 	else
-		ls(".", command_options);
+		ls(".", command_options, 1);
 	return (0);
 }

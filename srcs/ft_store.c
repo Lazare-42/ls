@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "ls.h"
-#include "libft.h"
 #include <sys/xattr.h>
 #include <pwd.h>
 #include <time.h>
@@ -25,14 +24,13 @@ char	*find_path(char *name, const char *foldername)
 	path = ft_strjoinfree(&path, &name, 'L');
 	return (path);
 }
-
 void	ft_print_errors(char *name)
 {
-		ft_putstr("ft_ls: ");
-		ft_putstr(name);
-		ft_putstr(": ");
-		ft_putstr(strerror(errno));
-		ft_putchar('\n');
+		ft_putstr_fd("ft_ls: ", 2);
+		ft_putstr_fd(name, 2);
+		ft_putstr_fd(": ", 2);
+		ft_putstr_fd(strerror(errno), 2);
+		ft_putchar_fd('\n', 2);
 }
 
 static t_ls	*ft_new_elem(char *name, const char *foldername, t_ls *stock, int time)
@@ -46,15 +44,22 @@ static t_ls	*ft_new_elem(char *name, const char *foldername, t_ls *stock, int ti
 		return (NULL);
 	new->next = NULL;
 	new->name = ft_strdup(name);
-	path = find_path(name, foldername);
+	if (foldername)
+		path = find_path(name, foldername);
+	else
+		path = name;
 	if (lstat(path, &(new->stat)))
 	{
 		ft_strdel(&path);
 		ft_print_errors(new->name);
 		return (NULL);
 	}
-	ft_strdel(&path);
-	return (ft_place_elem(stock, new, time));
+	if (foldername)
+	{
+		ft_strdel(&path);
+		return (ft_place_elem(stock, new, time));
+	}
+	return (new);
 }
 
 t_ls	*ft_store(char *foldername, DIR *dir, int time)
@@ -73,5 +78,7 @@ t_ls	*ft_store(char *foldername, DIR *dir, int time)
 				stock = ft_new_elem(dent->d_name, foldername, stock, time);
 		}
 	}
+	else
+		stock = ft_new_elem(foldername, NULL, stock, time); 
 	return (stock);
 }

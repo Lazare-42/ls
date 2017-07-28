@@ -1,9 +1,6 @@
 //ligne 52 cas gu getgrgid nuul a gerer
 
-
-
 #include "ls.h"
-#include "libft.h"
 #include <sys/xattr.h> // for extended file attributes impression (@)
 #include <pwd.h> // for getpwuid
 #include <grp.h> // for getgrgido
@@ -50,10 +47,13 @@ void    ft_print_GRP_USR(t_ls *stock, int *max_size)
 			ft_strlen(getpwuid(stock->stat.st_uid)->pw_name), 2);
 	grp = getgrgid(stock->stat.st_gid);
 	if (grp)
+	{
 		ft_putstr(grp->gr_name);
-	else
-		ft_putstr(strerror(errno));
-	ft_put_whites(max_size[2], ft_strlen(grp->gr_name), 3);
+		ft_put_whites(max_size[2], ft_strlen(grp->gr_name), 3);
+		return;
+	}
+	ft_putstr(strerror(errno));
+	ft_put_whites(max_size[2], ft_strlen(strerror(errno)), 3);
 }
 
 void	ft_print_name(unsigned char c, char *name, int st_mode)
@@ -94,7 +94,7 @@ static void		print_lnkabout(char *fpath)
 	ft_putstr(buf);
 }
 
-int		ft_CMD_l(t_ls *tmp, char *foldername)
+int		ft_CMD_l(t_ls *tmp, char *foldername, int file_mode)
 {
 	int  *max_size;
 	time_t local_time;
@@ -105,10 +105,9 @@ int		ft_CMD_l(t_ls *tmp, char *foldername)
 	t_ls *stock;
 
 	stock = tmp;
-	max_size = ft_max_size(stock);
+	max_size = ft_max_size(stock, file_mode);
 	while (stock)
 	{
-		ft_putchar('\n');
 		path = find_path(stock->name, foldername);
 		c = ft_print_rights(stock, path);
 		ft_print_GRP_USR(stock, max_size);
@@ -120,8 +119,9 @@ int		ft_CMD_l(t_ls *tmp, char *foldername)
 		ft_print_name(c, stock->name, stock->stat.st_mode);
 		if (S_ISLNK(stock->stat.st_mode))
 			print_lnkabout(path);
-
-			stock = stock->next;
+		if (stock->next)
+			ft_putchar('\n');
+		stock = stock->next;
 	}
 	return(1);
 }

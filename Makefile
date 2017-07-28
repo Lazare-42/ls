@@ -12,15 +12,25 @@
 
 NAME = ft_ls
 
-SRC = ft_CMD_r.c ft_free.c ft_list_reverse.c ft_place_element.c ft_print_normal.c ft_store.c ls.c main.c ft_CMD_l.c ft_padding.c
+INCLUDES = includes/
 
-OBJECT = $(SRC:.c=.o)
+SRC = srcs/ft_CMD_r.c srcs/main.c srcs/ft_free.c srcs/ft_list_reverse.c srcs/ft_place_element.c srcs/ft_print_normal.c srcs/ft_store.c srcs/ls.c srcs/main.c srcs/ft_CMD_l.c srcs/ft_padding.c srcs/ft_print_normal.c
+
+OBJECT = *.o 
 
 all: $(NAME)
 
 $(NAME):
 	make -C libft/ 
-	gcc -Wall -Wextra -Werror -I libft -c $(SRC)
-	gcc -Wall -Wextra -Werror -I libft $(OBJECT) -L libft -lft -o $(NAME)
+	gcc -Wall -Wextra -Werror -g  -I $(INCLUDES)  -c $(SRC)
+	gcc -Wall -Wextra -Werror -I $(INCLUDES) $(OBJECT) -L libft -lft -o $(NAME)
 
+clean:
+		make clean -C libft/
+		/bin/rm -f $(OBJECT)
 
+fclean: clean
+		make fclean -C libft/ 
+		/bin/rm -f $(NAME)
+
+re: fclean all
