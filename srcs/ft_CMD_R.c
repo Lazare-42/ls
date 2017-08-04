@@ -20,7 +20,7 @@ void	ft_CMD_R(t_ls *stock,char *name, int options)
 			ft_putchar('\n');
 			ft_putstr(new_name);
 			ft_putstr(":");
-			ls(new_name, options, 1, 0);
+			ls(new_name, options, 1);
 		}
 		if (new_name)
 			ft_bzero(new_name, ft_strlen(new_name));

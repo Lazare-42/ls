@@ -12,7 +12,7 @@
 
 #include "ls.h"
 
-void	ls(char *name, int options, int file_mode, int first)
+void	ls(char *name, int options, int file_mode)
 {
 	t_ls *stock;
 	DIR *dir;
@@ -27,7 +27,6 @@ void	ls(char *name, int options, int file_mode, int first)
 	(stock) ? ((options & CMD_l) ? ft_CMD_l(stock, name, file_mode) : ft_print_normal(stock)) : 0;
 	if (dir)
 		closedir(dir);
-	(stock && file_mode && first) ? ft_putchar('\n') : 0;
 	(stock) ? ((options & CMD_R) ? ft_CMD_R(stock, name, options) : 0) : 
 	ft_free(&stock);
 }

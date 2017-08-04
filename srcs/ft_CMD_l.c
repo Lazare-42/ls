@@ -119,8 +119,7 @@ int		ft_CMD_l(t_ls *tmp, char *foldername, int file_mode)
 		ft_print_name(c, stock->name, stock->stat.st_mode);
 		if (S_ISLNK(stock->stat.st_mode))
 			print_lnkabout(path);
-		if (stock->next)
-			ft_putchar('\n');
+		ft_putchar('\n');
 		stock = stock->next;
 	}
 	return(1);

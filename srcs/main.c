@@ -31,21 +31,18 @@ static void ft_send_files_to_ls(char **folder, int command_options)
 {
 	struct stat buffstatt;
 	char **name;
-	int i;
 	int j;
 
-	i = 0;
 	j = 0;
 	name = folder;
 	++name;
-	(name) ? i = 1 : 0;
 	name = folder;
 	while (folder && *folder)
 	{
 		if (!(lstat(*folder, &buffstatt)))
 		{
 			if (!(buffstatt.st_mode & S_IFDIR))
-				ls(*folder, command_options, 0, 0);
+				ls(*folder, command_options, 0);
 		}
 		++folder;
 	}
@@ -54,10 +51,7 @@ static void ft_send_files_to_ls(char **folder, int command_options)
 		if (!(lstat(*name, &buffstatt)))
 		{
 			if (buffstatt.st_mode & S_IFDIR)
-			{
-				(i) ? ft_putchar('\n'), ft_putstr(*name), ft_putchar(':') : 0;
-				ls(*name, command_options, 1, j);
-			}
+				ls(*name, command_options, 1);
 		}
 		j = 1;
 		++name;
@@ -149,6 +143,6 @@ int				main(int ac, char **av)
 		return (0);
 	}
 	else
-		ls(".", command_options, 1, 1);
+		ls(".", command_options, 1);
 	return (0);
 }

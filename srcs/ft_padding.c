@@ -54,6 +54,6 @@ int	*ft_max_size(t_ls *stock, int file_mode)
 	}
 	max[0] = ft_strlen(ft_itoa(max[0]));
 	max[3] = ft_strlen(ft_itoa(max[3]));
-	(file_mode) ? ft_putchar('\n'), ft_putstr("total "), ft_putnbr(k), ft_putchar('\n') : 0;
+	(file_mode) ? ft_putstr("total "), ft_putnbr(k), ft_putchar('\n') : 0;
 	return (max);
 }
