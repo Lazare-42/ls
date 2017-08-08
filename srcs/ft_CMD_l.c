@@ -98,14 +98,15 @@ int		ft_CMD_l(t_ls *tmp, char *foldername, int file_mode)
 {
 	int  *max_size;
 	time_t local_time;
-	char *file_time;
 	char *path;
 	char c;
-	local_time = time(&local_time);
 	t_ls *stock;
 
 	stock = tmp;
 	max_size = ft_max_size(stock, file_mode);
+	local_time = time(&local_time);
+	if (!stock)
+			ft_putchar('\n');
 	while (stock)
 	{
 		path = find_path(stock->name, foldername);
@@ -114,13 +115,15 @@ int		ft_CMD_l(t_ls *tmp, char *foldername, int file_mode)
 		ft_put_whites(max_size[3], stock->stat.st_size, 4);
 		ft_putnbr((int)stock->stat.st_size);
 		ft_putchar(' ');
-		file_time = ctime(&(stock->stat.st_mtime));
-		(((int)local_time - (int)stock->stat.st_mtime) > 15778800) ? ft_putstr(ft_strsub(file_time, 4, 7)), ft_putstr(ft_strsub(&file_time[19], 0, 5)) : ft_putstr(ft_strsub(file_time, 4, 12));
+		ft_print_time(stock, local_time);
 		ft_print_name(c, stock->name, stock->stat.st_mode);
 		if (S_ISLNK(stock->stat.st_mode))
 			print_lnkabout(path);
-		ft_putchar('\n');
+		if (stock->next)
+			ft_putchar('\n');
 		stock = stock->next;
+		ft_memdel((void**)&path);
 	}
+	ft_memdel((void**)&max_size);
 	return(1);
 }

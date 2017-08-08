@@ -18,8 +18,8 @@ void	ft_free(t_ls **stock)
 	while (*stock)
 	{
 		tmp = (*stock)->next;
-		free (*stock);
-		*stock = NULL;
+		free((*stock)->name);
+		ft_memdel((void**)stock);
 		*stock = tmp;
 	}
 }

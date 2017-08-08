@@ -11,6 +11,7 @@
 # **************************************************************************** #
 
 NAME = libft.a
+
 SRC = ft_atoi.c \
 	  ft_bzero.c \
 	  ft_freetables.c \
@@ -77,16 +78,22 @@ SRC = ft_atoi.c \
 
 OBJECT = $(SRC:.c=.o)
 
+CLEAN = /bin/rm -f
+
+CC = gcc -Wall -Wextra -Werror -c 
+
+ARCH = ar rc
+
 all: $(NAME)
 
 $(NAME):  
-	gcc -Wall -Wextra -Werror -c $(SRC)
-	ar rc $(NAME) $(OBJECT)
+	@- $(CC) $(SRC)
+	@- $(ARCH) $(NAME) $(OBJECT)
 
 clean: 
-	/bin/rm -f $(OBJECT)
+	@-$(CLEAN) $(OBJECT)
 
 fclean: clean
-	/bin/rm -f $(NAME)
+	@-$(CLEAN) $(NAME)
 
 re: fclean all

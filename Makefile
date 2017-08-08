@@ -14,23 +14,35 @@ NAME = ft_ls
 
 INCLUDES = includes/
 
-SRC = srcs/ft_CMD_r.c srcs/main.c srcs/ft_free.c srcs/ft_list_reverse.c srcs/ft_place_element.c srcs/ft_print_normal.c srcs/ft_store.c srcs/ls.c srcs/main.c srcs/ft_CMD_l.c srcs/ft_padding.c srcs/ft_print_normal.c
+SRC =srcs/ft_CMD_R.c  srcs/ft_list_reverse.c  srcs/ft_print_normal.c  srcs/main.c srcs/ft_CMD_l.c srcs/ft_padding.c srcs/ft_print_time.c srcs/ft_find_path.c srcs/ft_place_element.c srcs/ft_store.c srcs/ft_free.c srcs/ft_print_errors.c srcs/ls.c
 
-OBJECT = *.o 
+OBJECT = $(notdir $(SRC:.c=.o)) 
+
+CC = gcc -Wall -Wextra -Werror -g -I
+
+CLEAN = /bin/rm -f
+
+OK = echo "\033[32m OK ✓ \033[0m"
 
 all: $(NAME)
 
 $(NAME):
-	make -C libft/ 
-	gcc -Wall -Wextra -Werror -g  -I $(INCLUDES)  -c $(SRC)
-	gcc -Wall -Wextra -Werror -I $(INCLUDES) $(OBJECT) -L libft -lft -o $(NAME)
+	@-make -C libft/ 
+	@echo "Compiling $@ ..."
+	@-$(CC) $(INCLUDES)  -c $(SRC)
+	@-$(CC) $(INCLUDES) $(OBJECT) -L libft -lft -o $(NAME)
+	@$(OK)
 
 clean:
-		make clean -C libft/
-		/bin/rm -f $(OBJECT)
+		@echo "Cleaning object files ..."
+		@-make clean -C libft/
+		@-$(CLEAN) $(OBJECT)
+		@$(OK)
 
 fclean: clean
-		make fclean -C libft/ 
-		/bin/rm -f $(NAME)
+		@echo "Deleting executables ..."
+		@-make fclean -C libft/ 
+		@-$(CLEAN) $(NAME)
+		@$(OK)
 
 re: fclean all

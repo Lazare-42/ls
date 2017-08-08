@@ -6,8 +6,15 @@
 
 void	ft_put_whites(int max_str_len,int  fillup, int options)
 {
+	char *tmp;
+
+	tmp = NULL;
 	if (options == 1 || options == 4)
-		fillup = ft_strlen(ft_itoa(fillup));
+	{
+		tmp = ft_itoa(fillup);
+		fillup = ft_strlen(tmp);
+		ft_strdel(&tmp);
+	}
 	while (fillup < max_str_len)
 	{
 		ft_putchar(' ');
@@ -27,18 +34,13 @@ int *ft_new_int_tab(int *new)
 	return (new);
 }
 
-int	*ft_max_size(t_ls *stock, int file_mode)
+int *ft_fillup_val(t_ls *tmp, int *max, int file_mode)
 {
-	int *max;
 	int val;
 	struct group *grp;
-	t_ls *tmp;
 	int k;
 
 	k = 0;
-	max = malloc(sizeof(int) * 4);
-	max = ft_new_int_tab(max);
-	tmp = stock;
 	while (tmp)
 	{
 		(tmp->stat.st_nlink > max[0]) ? max[0] = tmp->stat.st_nlink : max[0];
@@ -52,8 +54,27 @@ int	*ft_max_size(t_ls *stock, int file_mode)
 		k = k + tmp->stat.st_blocks;
 		tmp = tmp->next;
 	}
-	max[0] = ft_strlen(ft_itoa(max[0]));
-	max[3] = ft_strlen(ft_itoa(max[3]));
 	(file_mode) ? ft_putstr("total "), ft_putnbr(k), ft_putchar('\n') : 0;
+	return (max);
+}
+
+
+int	*ft_max_size(t_ls *stock, int file_mode)
+{
+	t_ls *tmp;
+	int *max;
+	char *len;
+
+	tmp = NULL;
+	max = malloc(sizeof(int) * 4);
+	max = ft_new_int_tab(max);
+	tmp = stock;
+	max = ft_fillup_val(tmp, max, file_mode);
+	len = ft_itoa(max[0]);
+	max[0] = ft_strlen(len);
+	ft_strdel(&len);
+	len = ft_itoa(max[3]);
+	max[3] = ft_strlen(len);
+	ft_strdel(&len);
 	return (max);
 }

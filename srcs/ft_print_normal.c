@@ -56,7 +56,6 @@ void ft_print_normal(t_ls *stock)
 	{
 		if (tmp->name)
 			ft_print_simple(tmp->name, tmp->stat.st_mode);
-
 		j = (int)ft_strlen(tmp->name);
 		while (j < i)
 		{

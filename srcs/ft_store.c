@@ -16,23 +16,6 @@
 #include <time.h>
 #include "ls.h"
 
-char	*find_path(char *name, const char *foldername)
-{
-	char *path;
-
-	path = ft_strjoin((char*)foldername, "/");
-	path = ft_strjoinfree(&path, &name, 'L');
-	return (path);
-}
-void	ft_print_errors(char *name)
-{
-		ft_putstr_fd("ft_ls: ", 2);
-		ft_putstr_fd(name, 2);
-		ft_putstr_fd(": ", 2);
-		ft_putstr_fd(strerror(errno), 2);
-		ft_putchar_fd('\n', 2);
-}
-
 static t_ls	*ft_new_elem(char *name, const char *foldername, t_ls *stock, int time)
 {
 	t_ls *new;
@@ -45,7 +28,7 @@ static t_ls	*ft_new_elem(char *name, const char *foldername, t_ls *stock, int ti
 	new->next = NULL;
 	new->name = ft_strdup(name);
 	if (foldername)
-		path = find_path(name, foldername);
+		path = find_path(name, (char*)foldername);
 	else
 		path = name;
 	if (lstat(path, &(new->stat)))

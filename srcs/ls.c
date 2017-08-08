@@ -24,9 +24,11 @@ void	ls(char *name, int options, int file_mode)
 	}
 	stock = ft_store(name, dir,  options);
 	(stock) ? ((options & CMD_r) ? ft_CMD_r(&(stock)) : stock) : 0;
-	(stock) ? ((options & CMD_l) ? ft_CMD_l(stock, name, file_mode) : ft_print_normal(stock)) : 0;
+	(stock) ? ((options & CMD_l) ? 
+			ft_CMD_l(stock, name, file_mode) : ft_print_normal(stock)) : 0;
+	(options & CMD_l) ? (!(options & CMD_R)) ? ft_putchar('\n') : 0 : 0;
 	if (dir)
 		closedir(dir);
-	(stock) ? ((options & CMD_R) ? ft_CMD_R(stock, name, options) : 0) : 
+	(stock) ? ((options & CMD_R) ? ft_CMD_R(stock, name, options) : 0) : 0;  
 	ft_free(&stock);
 }
