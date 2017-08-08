@@ -14,7 +14,10 @@ NAME = ft_ls
 
 INCLUDES = includes/
 
-SRC =srcs/ft_CMD_R.c  srcs/ft_list_reverse.c  srcs/ft_print_normal.c  srcs/main.c srcs/ft_CMD_l.c srcs/ft_padding.c srcs/ft_print_time.c srcs/ft_find_path.c srcs/ft_place_element.c srcs/ft_store.c srcs/ft_free.c srcs/ft_print_errors.c srcs/ls.c
+SRC =srcs/ft_CMD_R.c  srcs/ft_list_reverse.c  srcs/ft_print_normal.c  \
+	 srcs/main.c srcs/ft_CMD_l.c srcs/ft_padding.c srcs/ft_print_time.c \
+	 srcs/ft_find_path.c srcs/ft_place_element.c srcs/ft_store.c srcs/ft_free.c\
+	 srcs/ft_print_errors.c srcs/ls.c
 
 OBJECT = $(notdir $(SRC:.c=.o)) 
 

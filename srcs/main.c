@@ -12,17 +12,20 @@
 
 #include "ls.h"
 
-static void			ft_print_usage_error(char error);
 static int 		ft_stock_commands(char command, int command_options);
 
-static int		ft_check_file_errors(char *folder)
+static int		ft_check_file_errors(char **folder)
 {
 	struct stat buffstatt;
 
-	if (lstat(folder, &buffstatt))
+	while (folder && *folder)
 	{
-		ft_print_errors(folder);
-		return (0);
+		if (lstat(*folder, &buffstatt))
+		{
+			ft_print_errors(*folder);
+			return (0);
+		}
+		folder++;
 	}
 	return (1);
 }
@@ -33,9 +36,10 @@ static void ft_send_files_to_ls(char **folder, int command_options)
 	char **name;
 	int j;
 
-	j = 0;
 	name = folder;
-	++name;
+	j = 0;
+	name++;
+	(*name) ? j = 1 :0;
 	name = folder;
 	while (folder && *folder)
 	{
@@ -51,9 +55,11 @@ static void ft_send_files_to_ls(char **folder, int command_options)
 		if (!(lstat(*name, &buffstatt)))
 		{
 			if (buffstatt.st_mode & S_IFDIR)
+			{
+				(j) ? ft_putchar('\n'), ft_putstr(*name), ft_putstr(":\n") : 0;
 				ls(*name, command_options, 1);
+			}
 		}
-		j = 1;
 		++name;
 	}
 }
@@ -108,15 +114,6 @@ static int 		ft_stock_commands(char command, int command_options)
 	return (command_options);
 }
 
-static void			ft_print_usage_error(char error)
-{
-	ft_putstr_fd("./ft_ls: illegal option -- ", 2);
-	ft_putchar_fd(error, 2);
-	ft_putchar_fd('\n', 2);
-	ft_putstr_fd("usage: ./ft_ls [-lRart] [file ...]", 2);
-	ft_putchar_fd('\n', 2);
-}
-
 int				main(int ac, char **av)
 {
 	int command_options;
@@ -134,11 +131,7 @@ int				main(int ac, char **av)
 	if (*av)
 	{
 		tmp = av;
-		while (*tmp)
-		{
-			ft_check_file_errors(*tmp);
-			tmp++;
-		}
+		ft_check_file_errors(tmp);
 		ft_send_files_to_ls(av, command_options);
 		return (0);
 	}
