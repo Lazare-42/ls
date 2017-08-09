@@ -6,7 +6,7 @@
 #include <grp.h> // for getgrgido
 #include <time.h> //self_explanatory
 
-char 	ft_print_rights(t_ls *stock, char *path)
+void	ft_print_rights(t_ls *stock, char *path)
 {
 	int attributes;
 	acl_t acl;
@@ -32,7 +32,6 @@ char 	ft_print_rights(t_ls *stock, char *path)
 	ft_putchar( (stock->stat.st_mode & S_IXOTH) ? 'x' : '-');
 	(attributes) ? ft_putchar('@') : (acl) ? ft_putchar('+') : ft_putchar(' ');
 	(acl) ? acl_free((void*)acl) : 0;
-	return (c);
 }
 
 void    ft_print_GRP_USR(t_ls *stock, int *max_size)
@@ -56,33 +55,6 @@ void    ft_print_GRP_USR(t_ls *stock, int *max_size)
 	ft_put_whites(max_size[2], ft_strlen(strerror(errno)), 3);
 }
 
-void	ft_print_name(unsigned char c, char *name, int st_mode)
-{
-	if (c == 'd')
-	{
-		ft_putstr(" \e[0;96m");
-		ft_putstr(name);
-		ft_putstr("\e[0m");
-	}
-	else if (c == 'l')
-	{
-		ft_putstr(" \033[0;35m");
-		ft_putstr(name);
-		ft_putstr("\e[0m");
-	}
-	else if (st_mode & S_IXUSR)
-	{
-		ft_putstr(" \033[0;31m");
-		ft_putstr(name);
-		ft_putstr("\e[0m");
-	}
-	else
-	{
-		ft_putchar(' ');
-		ft_putstr(name);
-	}
-}
-
 static void		print_lnkabout(char *fpath)
 {
 	int		path_size;
@@ -99,7 +71,6 @@ int		ft_CMD_l(t_ls *tmp, char *foldername, int file_mode)
 	int  *max_size;
 	time_t local_time;
 	char *path;
-	char c;
 	t_ls *stock;
 
 	stock = tmp;
@@ -110,13 +81,13 @@ int		ft_CMD_l(t_ls *tmp, char *foldername, int file_mode)
 	while (stock)
 	{
 		path = find_path(stock->name, foldername);
-		c = ft_print_rights(stock, path);
+		ft_print_rights(stock, path);
 		ft_print_GRP_USR(stock, max_size);
 		ft_put_whites(max_size[3], stock->stat.st_size, 4);
 		ft_putnbr((int)stock->stat.st_size);
 		ft_putchar(' ');
 		ft_print_time(stock, local_time);
-		ft_print_name(c, stock->name, stock->stat.st_mode);
+		ft_print_name(stock->name, stock->stat.st_mode);
 		if (S_ISLNK(stock->stat.st_mode))
 			print_lnkabout(path);
 		if (stock->next)
