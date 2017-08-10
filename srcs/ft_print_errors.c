@@ -14,6 +14,6 @@ void			ft_print_usage_error(char error)
 	ft_putstr_fd("./ft_ls: illegal option -- ", 2);
 	ft_putchar_fd(error, 2);
 	ft_putchar_fd('\n', 2);
-	ft_putstr_fd("usage: ./ft_ls [-lRartufgSU] [file ...]", 2);
+	ft_putstr_fd("usage: ./ft_ls [-lRartufgSU1] [file ...]", 2);
 	ft_putchar_fd('\n', 2);
 }

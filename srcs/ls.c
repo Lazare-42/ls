@@ -27,12 +27,14 @@ void	ls(char *name, int options, int file_mode)
 	}
 	stock = ft_store(name, dir,  options);
 	(options & CMD_r) ? ft_CMD_r(&(stock)) : 0;;
-	((options & CMD_l && (!(options & CMD_g)))) ? ft_CMD_l(stock, name, file_mode), i = 0 : 0;
+	((options & CMD_l && (!(options & CMD_g)))) ? 
+		ft_CMD_l(stock, name, file_mode), i = 0 : 0;
 	(options & CMD_g ) ? ft_CMD_g(stock, name, file_mode), i = 0 : 0;
-	(i) ? ft_print_normal(stock) : 0;
-	((options & CMD_l || options & CMD_g) && (!(options & CMD_R))) ? ft_putchar('\n') : 0;
-	if (dir)
-		closedir(dir);
+	(i && (!(options & CMD_1))) ? ft_print_normal(stock) : 0;
+	(i && (options & CMD_1)) ? ft_CMD_1(stock) : 0;
+	((options & CMD_l || options & CMD_g) && (!(options & CMD_R))) ? 
+		ft_putchar('\n') : 0;
+	(dir) ? closedir(dir) : 0;
 	(stock) ? ((options & CMD_R) ? ft_CMD_R(stock, name, options) : 0) : 0;  
 	ft_free(&stock);
 }

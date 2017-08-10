@@ -12,22 +12,23 @@
 
 #include "ls.h"
 
-static int 		ft_stock_commands(char command, int command_options);
 
-static int		ft_check_file_errors(char **folder)
+static void ft_send_folders_to_ls(char **name, int command_options, int j)
 {
 	struct stat buffstatt;
-
-	while (folder && *folder)
+	while (name && *name)
 	{
-		if (lstat(*folder, &buffstatt))
+		if (!(lstat(*name, &buffstatt)))
 		{
-			ft_print_errors(*folder);
-			return (0);
+			if (buffstatt.st_mode & S_IFDIR)
+			{
+				(j) ? ft_putstr(*name), ft_putstr(":\n") : 0;
+				ls(*name, command_options, 1);
+			}
 		}
-		folder++;
+		++name;
+		(j && *name) ? ft_putchar('\n') : 0;
 	}
-	return (1);
 }
 
 static void ft_send_files_to_ls(char **folder, int command_options)
@@ -50,78 +51,7 @@ static void ft_send_files_to_ls(char **folder, int command_options)
 		}
 		++folder;
 	}
-	while (name && *name)
-	{
-		if (!(lstat(*name, &buffstatt)))
-		{
-			if (buffstatt.st_mode & S_IFDIR)
-			{
-				(j) ? ft_putstr(*name), ft_putstr(":\n") : 0;
-				ls(*name, command_options, 1);
-			}
-		}
-		++name;
-		(j && *name) ? ft_putchar('\n') : 0;
-	}
-}
-
-static int				ft_check_usage(char ***av)
-{
-	int	command_options;
-
-	command_options = 0;
-	++*av;
-	while (*av)
-	{
-		if (**av && ***av == '-')
-		{
-			if (**av && *(**av + 1) == '-')
-				return (command_options);
-			++**av;
-			while (***av)
-			{
-				if (ft_stock_commands(***av, command_options))
-					command_options = ft_stock_commands(***av, command_options);
-				else
-					return (-1);
-				++**av;
-			}
-		}
-		else
-			return (command_options); 
-		++*av;
-	}
-	return (command_options);
-}
-
-static int 		ft_stock_commands(char command, int command_options)
-{
-	if (command == 'l' || command == 'R' || command == 'a'
-			|| command == 'r' || command == 't' || command == 'u'
-		|| command == 'f' || command == 'g' || command == 'S' || command == 'U')
-	{
-		if (command == 'l')
-			command_options = command_options | CMD_l;
-		if (command == 'R')
-			command_options = command_options | CMD_R;
-		if (command == 'a' || command == 'f')
-			command_options = command_options | CMD_a;
-		if (command == 'r')
-			command_options = command_options | CMD_r;
-		if (command == 't')
-			command_options = command_options | CMD_t;
-		if (command == 'u')
-			command_options = command_options | CMD_u;
-		if (command == 'g')
-			command_options = command_options | CMD_g;
-		if (command == 'S')
-			command_options = command_options | CMD_S;
-		if (command == 'U')
-			command_options = command_options | CMD_U;
-	}
-	else 
-		return (0);
-	return (command_options);
+	ft_send_folders_to_ls(name,command_options, j);
 }
 
 int				main(int ac, char **av)

@@ -33,6 +33,7 @@
 #define CMD_g 64 
 #define CMD_S 128 
 #define CMD_U 256 
+#define CMD_1 512
 
 
 typedef struct		s_ls
@@ -50,6 +51,7 @@ void	ft_print_usage_error(char error);
 void	ft_print_name(char *name, int st_mode);
 t_ls	*ft_advance_stock_if_no_a(t_ls *stock);
 void	ft_CMD_r(t_ls **begin_list);
+void	ft_CMD_1(t_ls *stock);
 void	ft_CMD_t(t_ls **stock);
 int		ft_CMD_l(t_ls *stock, char *foldername, int file_mode);
 int		ft_CMD_g(t_ls *stock, char *foldername, int file_mode);
@@ -62,10 +64,16 @@ void	ft_put_whites(int max_str_len, int fillup, int options);
 void	ft_print_errors(char *name);
 void	ft_print_time(t_ls *tmp, time_t local_time);
 char	*find_path(char *name, char *foldername);
-char   ft_mode(int mode);
+char	ft_mode(int mode);
 void	ft_print_rights(t_ls *stock, char *path);
 void    ft_print_GRP_USR(t_ls *stock, int *max_size);
-void		print_lnkabout(char *fpath);
+void	print_lnkabout(char *fpath);
+int		ft_check_usage(char ***av);
+int		ft_check_file_errors(char **folder);
+int 	ft_stock_commands(char command, int command_options);
+void    ft_print_GRP_USR(t_ls *stock, int *max_size);
+void	print_lnkabout(char *fpath);
+void	ft_print_rights(t_ls *stock, char *path);
 
 
 #endif

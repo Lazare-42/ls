@@ -27,10 +27,8 @@ static t_ls	*ft_new_elem(char *name, const char *foldername, t_ls *stock, int so
 		return (NULL);
 	new->next = NULL;
 	new->name = ft_strdup(name);
-	if (foldername)
-		path = find_path(name, (char*)foldername);
-	else
-		path = name;
+	(foldername) ? path = find_path(name, (char*)foldername) : 0;
+	(!(foldername)) ? path = name : 0;
 	if (lstat(path, &(new->stat)))
 	{
 		ft_strdel(&path);

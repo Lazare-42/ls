@@ -1,8 +1,4 @@
-//ligne 52 cas gu getgrgid nuul a gerer
-
 #include "ls.h"
-#include <sys/xattr.h> // for extended file attributes impression (@)
-#include <pwd.h> // for getpwuid
 #include <grp.h> // for getgrgido
 #include <time.h> //self_explanatory
 
