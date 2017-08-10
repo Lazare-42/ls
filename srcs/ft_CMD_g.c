@@ -1,45 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_cmd_l.c                                         :+:      :+:    :+:   */
+/*   ft_cmd_g.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/10 15:30:17 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 17:06:39 by lazrossi         ###   ########.fr       */
+/*   Created: 2017/08/10 15:44:10 by lazrossi          #+#    #+#             */
+/*   Updated: 2017/08/10 17:07:02 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
-#include <sys/xattr.h>
-#include <pwd.h>
 #include <grp.h>
 #include <time.h>
 
-char	ft_mode(int mode)
+static void	ft_print_grp(t_ls *stock, int *max_size)
 {
-	char c;
+	struct group *grp;
 
-	if (S_ISREG(mode))
-		c = '-';
-	else if (S_ISDIR(mode))
-		c = 'd';
-	else if (S_ISBLK(mode))
-		c = 'b';
-	else if (S_ISCHR(mode))
-		c = 'c';
-	else if (S_ISFIFO(mode))
-		c = 'p';
-	else if (S_ISLNK(mode))
-		c = 'l';
-	else if (S_ISSOCK(mode))
-		c = 's';
-	else
-		(c = '?');
-	return (c);
+	ft_put_whites(max_size[0], stock->stat.st_nlink, 1);
+	ft_putnbr(stock->stat.st_nlink);
+	ft_putchar(' ');
+	grp = getgrgid(stock->stat.st_gid);
+	if (grp)
+	{
+		ft_putstr(grp->gr_name);
+		ft_put_whites(max_size[2], ft_strlen(grp->gr_name), 3);
+		ft_put_whites(max_size[3], stock->stat.st_size, 4);
+		ft_putnbr((int)stock->stat.st_size);
+		ft_putchar(' ');
+		return ;
+	}
+	ft_putstr(strerror(errno));
+	ft_put_whites(max_size[2], ft_strlen(strerror(errno)), 3);
 }
 
-int		ft_cmd_l(t_ls *tmp, char *foldername, int file_mode)
+int			ft_cmd_g(t_ls *tmp, char *foldername, int file_mode)
 {
 	int		*max_size;
 	time_t	local_time;
@@ -54,7 +50,7 @@ int		ft_cmd_l(t_ls *tmp, char *foldername, int file_mode)
 	{
 		path = find_path(stock->name, foldername);
 		ft_print_rights(stock, path);
-		ft_print_grp_usr(stock, max_size);
+		ft_print_grp(stock, max_size);
 		ft_print_time(stock, local_time);
 		ft_putchar(' ');
 		ft_print_name(stock->name, stock->stat.st_mode);

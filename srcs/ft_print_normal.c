@@ -1,9 +1,22 @@
-#include "ls.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_normal.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/08/10 14:03:25 by lazrossi          #+#    #+#             */
+/*   Updated: 2017/08/10 14:05:44 by lazrossi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int	ft_longest_name(t_ls *stock)
+#include "ls.h"
+#include <sys/ioctl.h>
+
+int		ft_longest_name(t_ls *stock)
 {
-	int i;
-	t_ls *tmp;
+	int		i;
+	t_ls	*tmp;
 
 	i = 0;
 	tmp = stock;
@@ -15,55 +28,30 @@ int	ft_longest_name(t_ls *stock)
 	return (i);
 }
 
-void	ft_print_simple(char *name, int st_mode)
+void	ft_print_normal(t_ls *stock)
 {
-	if (S_ISDIR(st_mode))
-	{
-		ft_putstr(" \e[0;96m");
-		ft_putstr(name);
-		ft_putstr("\e[0m");
-	}
-	else if (S_ISLNK(st_mode))
-	{
-		ft_putstr(" \033[0;35m");
-		ft_putstr(name);
-		ft_putstr("\e[0m");
-	}
-	else if (st_mode & S_IXUSR)
-	{
-		ft_putstr(" \033[0;31m");
-		ft_putstr(name);
-		ft_putstr("\e[0m");
-	}
-	else
-	{
-		ft_putstr(" \e[0m");
-		ft_putstr(name);
-		ft_putstr("\e[0m");
-	}
-}
-
-void ft_print_normal(t_ls *stock)
-{
-	t_ls *tmp;
-	int i;
-	int j;
+	t_ls			*tmp;
+	struct winsize	max;
+	int				i;
+	int				maxx;
+	int				j;
 
 	j = 0;
+	maxx = 0;
 	i = ft_longest_name(stock);
 	tmp = stock;
+	ioctl(1, TIOCGWINSZ, &max);
 	while (tmp)
 	{
-		if (tmp->name)
-			ft_print_simple(tmp->name, tmp->stat.st_mode);
-
 		j = (int)ft_strlen(tmp->name);
-		while (j < i)
-		{
+		maxx += j;
+		(maxx >= max.ws_col) ? ft_putchar('\n') : 0;
+		(maxx >= max.ws_col) ? maxx = j : 0;
+		ft_print_name(tmp->name, tmp->stat.st_mode);
+		while (j++ <= i && ++maxx < max.ws_col && tmp->next)
 			ft_putchar(' ');
-			j++;
-		}
-		ft_putchar(' ');
+		if (!(tmp->next))
+			ft_putchar('\n');
 		tmp = tmp->next;
 	}
 }

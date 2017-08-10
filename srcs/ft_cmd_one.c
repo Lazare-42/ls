@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_errors.c                                  :+:      :+:    :+:   */
+/*   ft_cmd_one.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/10 13:58:26 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 13:58:42 by lazrossi         ###   ########.fr       */
+/*   Created: 2017/08/10 13:35:50 by lazrossi          #+#    #+#             */
+/*   Updated: 2017/08/10 13:36:10 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
 
-void	ft_print_errors(char *name)
+void	ft_cmd_1(t_ls *stock)
 {
-	ft_putstr_fd("ft_ls: ", 2);
-	ft_putstr_fd(name, 2);
-	ft_putstr_fd(": ", 2);
-	ft_putstr_fd(strerror(errno), 2);
-	ft_putchar_fd('\n', 2);
-}
+	t_ls *tmp;
 
-void	ft_print_usage_error(char error)
-{
-	ft_putstr_fd("./ft_ls: illegal option -- ", 2);
-	ft_putchar_fd(error, 2);
-	ft_putchar_fd('\n', 2);
-	ft_putstr_fd("usage: ./ft_ls [-lRartufgSU1] [file ...]", 2);
-	ft_putchar_fd('\n', 2);
+	tmp = stock;
+	while (tmp)
+	{
+		ft_print_name(tmp->name, tmp->stat.st_mode);
+		ft_putchar('\n');
+		tmp = tmp->next;
+	}
 }

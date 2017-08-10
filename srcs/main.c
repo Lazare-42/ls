@@ -6,127 +6,59 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/28 14:14:42 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/07/26 20:03:16 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/10 14:22:34 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
 
-static void			ft_print_usage_error(char error);
-static int 		ft_stock_commands(char command, int command_options);
-
-static int		ft_check_file_errors(char *folder)
+static	void	ft_send_folders_to_ls(char **name, int command_options, int j)
 {
 	struct stat buffstatt;
 
-	if (lstat(folder, &buffstatt))
-	{
-		ft_print_errors(folder);
-		return (0);
-	}
-	return (1);
-}
-
-static void ft_send_files_to_ls(char **folder, int command_options)
-{
-	struct stat buffstatt;
-	char **name;
-	int i;
-	int j;
-
-	i = 0;
-	j = 0;
-	name = folder;
-	++name;
-	(name) ? i = 1 : 0;
-	name = folder;
-	while (folder && *folder)
-	{
-		if (!(lstat(*folder, &buffstatt)))
-		{
-			if (!(buffstatt.st_mode & S_IFDIR))
-				ls(*folder, command_options, 0, 0);
-		}
-		++folder;
-	}
 	while (name && *name)
 	{
 		if (!(lstat(*name, &buffstatt)))
 		{
 			if (buffstatt.st_mode & S_IFDIR)
 			{
-				(i) ? ft_putchar('\n'), ft_putstr(*name), ft_putchar(':') : 0;
-				ls(*name, command_options, 1, j);
+				(j) ? ft_putstr(*name) : 0;
+				(j) ? ft_putstr(":\n") : 0;
+				ls(*name, command_options, 1);
 			}
 		}
-		j = 1;
 		++name;
+		(j && *name) ? ft_putchar('\n') : 0;
 	}
 }
 
-static int				ft_check_usage(char ***av)
+static	void	ft_send_files_to_ls(char **folder, int command_options)
 {
-	int	command_options;
+	struct stat	buffstatt;
+	char		**name;
+	int			j;
 
-	command_options = 0;
-	++*av;
-	while (*av)
+	name = folder;
+	j = 0;
+	name++;
+	(*name) ? j = 1 : 0;
+	name = folder;
+	while (folder && *folder)
 	{
-		if (**av && ***av == '-')
+		if (!(lstat(*folder, &buffstatt)))
 		{
-			if (**av && *(**av + 1) == '-')
-				return (command_options);
-			++**av;
-			while (***av)
-			{
-				if (ft_stock_commands(***av, command_options))
-					command_options = ft_stock_commands(***av, command_options);
-				else
-					return (-1);
-				++**av;
-			}
+			if (!(buffstatt.st_mode & S_IFDIR))
+				ls(*folder, command_options, 0);
 		}
-		else
-			return (command_options); 
-		++*av;
+		++folder;
 	}
-	return (command_options);
-}
-
-static int 		ft_stock_commands(char command, int command_options)
-{
-	if (command == 'l' || command == 'R' || command == 'a'
-			|| command == 'r' || command == 't')
-	{
-		if (command == 'l')
-			command_options = command_options | CMD_l;
-		if (command == 'R')
-			command_options = command_options | CMD_R;
-		if (command == 'a')
-			command_options = command_options | CMD_a;
-		if (command == 'r')
-			command_options = command_options | CMD_r;
-		if (command == 't')
-			command_options = command_options | CMD_t;
-	}
-	else 
-		return (0);
-	return (command_options);
-}
-
-static void			ft_print_usage_error(char error)
-{
-	ft_putstr_fd("./ft_ls: illegal option -- ", 2);
-	ft_putchar_fd(error, 2);
-	ft_putchar_fd('\n', 2);
-	ft_putstr_fd("usage: ./ft_ls [-lRart] [file ...]", 2);
-	ft_putchar_fd('\n', 2);
+	ft_send_folders_to_ls(name, command_options, j);
 }
 
 int				main(int ac, char **av)
 {
-	int command_options;
-	char **tmp;
+	int		command_options;
+	char	**tmp;
 
 	command_options = 0;
 	ac++;
@@ -140,15 +72,11 @@ int				main(int ac, char **av)
 	if (*av)
 	{
 		tmp = av;
-		while (*tmp)
-		{
-			ft_check_file_errors(*tmp);
-			tmp++;
-		}
+		ft_check_file_errors(tmp);
 		ft_send_files_to_ls(av, command_options);
 		return (0);
 	}
 	else
-		ls(".", command_options, 1, 1);
+		ls(".", command_options, 1);
 	return (0);
 }

@@ -1,32 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ls_reverse.c                                  :+:      :+:    :+:   */
+/*   ft_find_path.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/28 16:14:10 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/03/30 10:30:09 by lazrossi         ###   ########.fr       */
+/*   Created: 2017/08/10 13:43:36 by lazrossi          #+#    #+#             */
+/*   Updated: 2017/08/10 13:43:37 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
 
-void	ft_CMD_r(t_ls **begin_list)
+char	*find_path(char *name, char *foldername)
 {
-	t_ls*list;
-	t_ls*q;
-	t_ls*p;
+	char *path;
 
-	list = *begin_list;
-	p = NULL;
-	q = NULL;
-	while (list)
-	{
-		p = list;
-		list = list->next;
-		p->next = q;
-		q = p;
-	}
-	*begin_list = p;
+	path = ft_strjoin(foldername, "/");
+	path = ft_strjoinfree(&path, &name, 'L');
+	return (path);
 }
