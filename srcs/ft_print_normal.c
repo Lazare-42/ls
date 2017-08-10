@@ -32,11 +32,7 @@ void ft_print_normal(t_ls *stock)
 	{
 		j = (int)ft_strlen(tmp->name);
 		maxx += j;
-		if (maxx >= max.ws_col)
-		{
-			ft_putchar('\n');
-			maxx = j;
-		}
+		(maxx >= max.ws_col) ? ft_putchar('\n'),maxx = j : 0;
 		ft_print_name(tmp->name, tmp->stat.st_mode);
 		while (j++ <= i && ++maxx < max.ws_col && tmp->next)
 			ft_putchar(' ');

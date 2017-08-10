@@ -56,11 +56,12 @@ static void ft_send_files_to_ls(char **folder, int command_options)
 		{
 			if (buffstatt.st_mode & S_IFDIR)
 			{
-				(j) ? ft_putchar('\n'), ft_putstr(*name), ft_putstr(":\n") : 0;
+				(j) ? ft_putstr(*name), ft_putstr(":\n") : 0;
 				ls(*name, command_options, 1);
 			}
 		}
 		++name;
+		(j && *name) ? ft_putchar('\n') : 0;
 	}
 }
 
@@ -96,18 +97,27 @@ static int				ft_check_usage(char ***av)
 static int 		ft_stock_commands(char command, int command_options)
 {
 	if (command == 'l' || command == 'R' || command == 'a'
-			|| command == 'r' || command == 't')
+			|| command == 'r' || command == 't' || command == 'u'
+		|| command == 'f' || command == 'g' || command == 'S' || command == 'U')
 	{
 		if (command == 'l')
 			command_options = command_options | CMD_l;
 		if (command == 'R')
 			command_options = command_options | CMD_R;
-		if (command == 'a')
+		if (command == 'a' || command == 'f')
 			command_options = command_options | CMD_a;
 		if (command == 'r')
 			command_options = command_options | CMD_r;
 		if (command == 't')
 			command_options = command_options | CMD_t;
+		if (command == 'u')
+			command_options = command_options | CMD_u;
+		if (command == 'g')
+			command_options = command_options | CMD_g;
+		if (command == 'S')
+			command_options = command_options | CMD_S;
+		if (command == 'U')
+			command_options = command_options | CMD_U;
 	}
 	else 
 		return (0);

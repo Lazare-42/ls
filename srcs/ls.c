@@ -17,16 +17,20 @@ void	ls(char *name, int options, int file_mode)
 	t_ls *stock;
 	DIR *dir;
 	dir = NULL;
+	int i;
+
+	i = 1;
 	if (file_mode && !(dir = opendir((const char *)name)))
 	{
 		ft_print_errors(name);
 		return ;
 	}
 	stock = ft_store(name, dir,  options);
-	(stock) ? ((options & CMD_r) ? ft_CMD_r(&(stock)) : stock) : 0;
-	(stock) ? ((options & CMD_l) ? 
-			ft_CMD_l(stock, name, file_mode) : ft_print_normal(stock)) : 0;
-	(options & CMD_l) ? (!(options & CMD_R)) ? ft_putchar('\n') : 0 : 0;
+	(options & CMD_r) ? ft_CMD_r(&(stock)) : 0;;
+	((options & CMD_l && (!(options & CMD_g)))) ? ft_CMD_l(stock, name, file_mode), i = 0 : 0;
+	(options & CMD_g ) ? ft_CMD_g(stock, name, file_mode), i = 0 : 0;
+	(i) ? ft_print_normal(stock) : 0;
+	((options & CMD_l || options & CMD_g) && (!(options & CMD_R))) ? ft_putchar('\n') : 0;
 	if (dir)
 		closedir(dir);
 	(stock) ? ((options & CMD_R) ? ft_CMD_R(stock, name, options) : 0) : 0;  

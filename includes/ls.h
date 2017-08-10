@@ -29,6 +29,10 @@
 #define CMD_a 4
 #define CMD_r 8
 #define CMD_t 16
+#define CMD_u 32 
+#define CMD_g 64 
+#define CMD_S 128 
+#define CMD_U 256 
 
 
 typedef struct		s_ls
@@ -40,7 +44,7 @@ typedef struct		s_ls
 
 void	ft_ls(char *foldername, int options);
 void	ls(char *name, int options, int file_mode);
-t_ls	*ft_store(char *foldername, DIR *dir, int options);
+t_ls	*ft_store(char *foldername, DIR *dir, int sort_options);
 void	ft_print_normal(t_ls *stock);
 void	ft_print_usage_error(char error);
 void	ft_print_name(char *name, int st_mode);
@@ -48,14 +52,20 @@ t_ls	*ft_advance_stock_if_no_a(t_ls *stock);
 void	ft_CMD_r(t_ls **begin_list);
 void	ft_CMD_t(t_ls **stock);
 int		ft_CMD_l(t_ls *stock, char *foldername, int file_mode);
+int		ft_CMD_g(t_ls *stock, char *foldername, int file_mode);
 void	ft_CMD_R(t_ls *stock, char *name, int options);
 void	ft_free(t_ls **stock);
-t_ls	*ft_place_elem(t_ls *stock, t_ls *new, int time);
+t_ls	*ft_place_elem(t_ls *stock, t_ls *new, int sort_options);
 void	ft_time(t_ls *stock);
 int		*ft_max_size(t_ls *stock, int file_mode);
 void	ft_put_whites(int max_str_len, int fillup, int options);
 void	ft_print_errors(char *name);
 void	ft_print_time(t_ls *tmp, time_t local_time);
 char	*find_path(char *name, char *foldername);
+char   ft_mode(int mode);
+void	ft_print_rights(t_ls *stock, char *path);
+void    ft_print_GRP_USR(t_ls *stock, int *max_size);
+void		print_lnkabout(char *fpath);
+
 
 #endif

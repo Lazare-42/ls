@@ -6,6 +6,29 @@
 #include <grp.h> // for getgrgido
 #include <time.h> //self_explanatory
 
+char   ft_mode(int mode)
+{
+	char c;
+
+	if (S_ISREG(mode))
+		c = '-';
+	else if (S_ISDIR(mode))
+		c = 'd';
+	else if (S_ISBLK(mode))
+		c = 'b';
+	else if (S_ISCHR(mode))
+		c = 'c';
+	else if (S_ISFIFO(mode))
+		c = 'p';
+	else if (S_ISLNK(mode))
+		c = 'l';
+	else if (S_ISSOCK(mode))
+		c = 's';
+	else 
+		(c = '?');
+	return (c);
+}
+
 void	ft_print_rights(t_ls *stock, char *path)
 {
 	int attributes;
@@ -16,10 +39,7 @@ void	ft_print_rights(t_ls *stock, char *path)
 	mode = stock->stat.st_mode;
 	attributes = listxattr(path, NULL, stock->stat.st_size, XATTR_NOFOLLOW);
 	acl = acl_get_file(path, ACL_TYPE_EXTENDED);
-	(S_ISREG(stock->stat.st_mode)) ? c = '-' : (S_ISDIR(mode)) ? c = 'd' : 
-		(S_ISBLK(mode)) ? c = 'b' : (S_ISCHR(mode)) ? c = 'c' : (S_ISFIFO(mode))? 
-		c = 'p' : (S_ISLNK(mode)) ? c = 'l' : (S_ISSOCK(mode)) ? c = 's' : (c = '?')
-		;
+	c = ft_mode(mode);
 	ft_putchar (c);
 	ft_putchar( (stock->stat.st_mode & S_IRUSR) ? 'r' : '-');
 	ft_putchar( (stock->stat.st_mode & S_IWUSR) ? 'w' : '-');
@@ -55,7 +75,7 @@ void    ft_print_GRP_USR(t_ls *stock, int *max_size)
 	ft_put_whites(max_size[2], ft_strlen(strerror(errno)), 3);
 }
 
-static void		print_lnkabout(char *fpath)
+void		print_lnkabout(char *fpath)
 {
 	int		path_size;
 	char	buf[1024];
@@ -87,6 +107,7 @@ int		ft_CMD_l(t_ls *tmp, char *foldername, int file_mode)
 		ft_putnbr((int)stock->stat.st_size);
 		ft_putchar(' ');
 		ft_print_time(stock, local_time);
+		ft_putchar(' ');
 		ft_print_name(stock->name, stock->stat.st_mode);
 		if (S_ISLNK(stock->stat.st_mode))
 			print_lnkabout(path);

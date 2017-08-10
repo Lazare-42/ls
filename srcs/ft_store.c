@@ -16,7 +16,7 @@
 #include <time.h>
 #include "ls.h"
 
-static t_ls	*ft_new_elem(char *name, const char *foldername, t_ls *stock, int time)
+static t_ls	*ft_new_elem(char *name, const char *foldername, t_ls *stock, int sort_options)
 {
 	t_ls *new;
 	char *path;
@@ -40,12 +40,12 @@ static t_ls	*ft_new_elem(char *name, const char *foldername, t_ls *stock, int ti
 	if (foldername)
 	{
 		ft_strdel(&path);
-		return (ft_place_elem(stock, new, time));
+		return (ft_place_elem(stock, new, sort_options));
 	}
 	return (new);
 }
 
-t_ls	*ft_store(char *foldername, DIR *dir, int time)
+t_ls	*ft_store(char *foldername, DIR *dir, int sort_options)
 {
 	t_ls			*stock;
 	struct dirent 	*dent;
@@ -55,13 +55,13 @@ t_ls	*ft_store(char *foldername, DIR *dir, int time)
 	{
 		while ((dir && (dent = readdir(dir))))
 		{
-			if (!(time & CMD_a) && dent->d_name[0] == '.')
+			if (!(sort_options & CMD_a) && dent->d_name[0] == '.')
 				dent = NULL;
 			if (dent)
-				stock = ft_new_elem(dent->d_name, foldername, stock, time);
+				stock = ft_new_elem(dent->d_name, foldername, stock, sort_options);
 		}
 	}
 	else
-		stock = ft_new_elem(foldername, NULL, stock, time); 
+		stock = ft_new_elem(foldername, NULL, stock, sort_options); 
 	return (stock);
 }
