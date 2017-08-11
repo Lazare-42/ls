@@ -39,7 +39,8 @@ typedef struct		s_ls
 {
 	char			*name;
 	struct stat		stat;
-	struct s_ls		*next;
+	struct s_ls		*right;
+	struct s_ls		*left;
 }					t_ls;
 
 void				ft_ls(char *foldername, int options);
