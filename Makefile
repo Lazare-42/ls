@@ -6,7 +6,7 @@
 #    By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/07/26 20:03:26 by lazrossi          #+#    #+#              #
-#    Updated: 2017/08/10 17:32:46 by lazrossi         ###   ########.fr        #
+#    Updated: 2017/08/11 15:09:24 by lazrossi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,20 +32,20 @@ all: $(NAME)
 
 $(NAME):
 	@-make -C libft/ 
-	@echo "Compiling $@ ..."
 	@-$(CC) $(INCLUDES)  -c $(SRC)
+	@echo "Compiling $@ ..."
 	@-$(CC) $(INCLUDES) $(OBJECT) -L libft -lft -o $(NAME)
 	@$(OK)
 
 clean:
-		@echo "Cleaning object files ..."
 		@-make clean -C libft/
+		@echo "Cleaning ft_ls object files ..."
 		@-$(CLEAN) $(OBJECT)
 		@$(OK)
 
 fclean: clean
-		@echo "Deleting executables ..."
 		@-make fclean -C libft/ 
+		@echo "Deleting ft_ls executables ..."
 		@-$(CLEAN) $(NAME)
 		@$(OK)
 

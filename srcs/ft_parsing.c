@@ -6,11 +6,20 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:50:16 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 16:54:05 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/11 16:52:41 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
+
+static int	ft_check_abnormal_usage(char ***av)
+{
+	if (**av && (!*(**av + 1)))
+		return (0);
+	if (**av && *(**av + 1) == '-')
+		return (0);
+	return (1);
+}
 
 int		ft_check_usage(char ***av)
 {
@@ -20,10 +29,10 @@ int		ft_check_usage(char ***av)
 	++*av;
 	while (*av)
 	{
+		if (!(ft_check_abnormal_usage(av)))
+			return (0);
 		if (**av && ***av == '-')
 		{
-			if (**av && *(**av + 1) == '-')
-				return (command_options);
 			++**av;
 			while (***av)
 			{
@@ -41,15 +50,15 @@ int		ft_check_usage(char ***av)
 	return (command_options);
 }
 
-int		ft_check_file_errors(char **folder)
+int		ft_check_file_errors(char *folder)
 {
 	struct stat buffstatt;
 
-	while (folder && *folder)
+	while (folder)
 	{
-		if (lstat(*folder, &buffstatt))
+		if (lstat(folder, &buffstatt))
 		{
-			ft_print_errors(*folder);
+			ft_print_errors(folder);
 			return (0);
 		}
 		folder++;

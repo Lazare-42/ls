@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/19 17:14:32 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 17:06:09 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/11 15:48:43 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ void				ft_print_rights(t_ls *stock, char *path);
 void				ft_print_grp_usr(t_ls *stock, int *max_size);
 void				print_lnkabout(char *fpath);
 int					ft_check_usage(char ***av);
-int					ft_check_file_errors(char **folder);
+int					ft_check_file_errors(char *folder);
 int					ft_stock_commands(char command, int command_options);
 void				ft_print_grp_usr(t_ls *stock, int *max_size);
 void				print_lnkabout(char *fpath);
