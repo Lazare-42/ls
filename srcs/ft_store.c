@@ -16,17 +16,17 @@
 #include <time.h>
 #include "ls.h"
 
-static t_ls		*ft_new_elem(char *name, const char *foldername,
-		t_ls *stock, int sort_options)
+t_ls		*ft_new_elem(char *name, const char *foldername)
 {
 	t_ls *new;
 	char *path;
 
 	if (!(name))
-		return (stock);
+		return (NULL);
 	if (!(new = malloc(sizeof(t_ls))))
 		return (NULL);
-	new->next = NULL;
+	new->left = NULL;
+	new->right = NULL;
 	new->name = ft_strdup(name);
 	(foldername) ? path = find_path(name, (char*)foldername) : 0;
 	(!(foldername)) ? path = name : 0;
@@ -37,10 +37,7 @@ static t_ls		*ft_new_elem(char *name, const char *foldername,
 		return (NULL);
 	}
 	if (foldername)
-	{
 		ft_strdel(&path);
-		return (ft_place_elem(stock, new, sort_options));
-	}
 	return (new);
 }
 
@@ -57,11 +54,10 @@ t_ls			*ft_store(char *foldername, DIR *dir, int sort_options)
 			if (!(sort_options & CMD_A) && dent->d_name[0] == '.')
 				dent = NULL;
 			if (dent)
-				stock = ft_new_elem(dent->d_name,
-						foldername, stock, sort_options);
+				stock = ft_place_elem(&stock, dent->d_name, foldername);
 		}
 	}
 	else
-		stock = ft_new_elem(foldername, NULL, stock, sort_options);
+		stock = ft_place_elem(&stock, NULL, foldername);
 	return (stock);
 }

@@ -22,7 +22,7 @@ SRC =srcs/ft_cmd_r.c srcs/ft_print_normal.c  srcs/ft_list_operations.c \
 
 OBJECT = $(notdir $(SRC:.c=.o)) 
 
-CC = gcc -Wall -Wextra -Werror -I
+CC = gcc -Wall -Wextra -Werror -g -I
 
 CLEAN = /bin/rm -f
 

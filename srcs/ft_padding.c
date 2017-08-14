@@ -46,14 +46,14 @@ int		*ft_new_int_tab(int *new)
 	return (new);
 }
 
-int		*ft_fillup_val(t_ls *tmp, int *max, int file_mode)
+int		*ft_fillup_val(t_ls *stock, int *max)
 {
 	int				val;
+	t_ls			*tmp;
 	struct group	*grp;
-	int				k;
 
-	k = 0;
-	while (tmp)
+	tmp = stock;
+	if (tmp)
 	{
 		(tmp->stat.st_nlink > max[0]) ? max[0] = tmp->stat.st_nlink : max[0];
 		val = ft_strlen(getpwuid(tmp->stat.st_uid)->pw_name);
@@ -61,31 +61,27 @@ int		*ft_fillup_val(t_ls *tmp, int *max, int file_mode)
 		grp = getgrgid(tmp->stat.st_gid);
 		(grp) ? val = ((int)ft_strlen(grp->gr_name)) : 0;
 		(val > max[2]) ? max[2] = val : max[2];
-		((int)tmp->stat.st_size > max[3]) ?
-			max[3] = (int)tmp->stat.st_size : max[3];
-		k = k + tmp->stat.st_blocks;
-		tmp = tmp->next;
-	}
-	if (file_mode)
-	{
-		ft_putstr("total ");
-		ft_putnbr(k);
-		ft_putchar('\n');
+		((int)tmp->stat.st_size > max[3]) ? max[3] = (int)tmp->stat.st_size : max[3];
+		if (tmp->right)
+			max = ft_fillup_val(tmp->right, max);
+		if (tmp->left)
+			max = ft_fillup_val(tmp->left, max);
 	}
 	return (max);
 }
 
-int		*ft_max_size(t_ls *stock, int file_mode)
+int		*ft_max_size(t_ls *stock)
 {
-	t_ls	*tmp;
 	int		*max;
 	char	*len;
+	t_ls	*tmp;
 
-	tmp = NULL;
+		
+	tmp = stock;
+
 	max = malloc(sizeof(int) * 4);
 	max = ft_new_int_tab(max);
-	tmp = stock;
-	max = ft_fillup_val(tmp, max, file_mode);
+//	max = ft_fillup_val(stock, max);
 	len = ft_itoa(max[0]);
 	max[0] = ft_strlen(len);
 	ft_strdel(&len);

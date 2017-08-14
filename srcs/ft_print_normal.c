@@ -23,7 +23,7 @@ int		ft_longest_name(t_ls *stock)
 	while (tmp)
 	{
 		i = ((int)ft_strlen(tmp->name) > i) ? (int)ft_strlen(tmp->name) : i;
-		tmp = tmp->next;
+		tmp = tmp->left;
 	}
 	return (i);
 }
@@ -41,17 +41,19 @@ void	ft_print_normal(t_ls *stock)
 	i = ft_longest_name(stock);
 	tmp = stock;
 	ioctl(1, TIOCGWINSZ, &max);
-	while (tmp)
+	if (tmp)
 	{
 		j = (int)ft_strlen(tmp->name);
 		maxx += j;
 		(maxx >= max.ws_col) ? ft_putchar('\n') : 0;
 		(maxx >= max.ws_col) ? maxx = j : 0;
 		ft_print_name(tmp->name, tmp->stat.st_mode);
-		while (j++ <= i && ++maxx < max.ws_col && tmp->next)
+		while (j++ <= i && ++maxx < max.ws_col && tmp->left)
 			ft_putchar(' ');
-		if (!(tmp->next))
-			ft_putchar('\n');
-		tmp = tmp->next;
+		ft_putchar('\n');
+		if (tmp->left)
+			ft_print_normal(tmp->left);
+		if (tmp->right)
+			ft_print_normal(tmp->right);
 	}
 }

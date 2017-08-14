@@ -20,6 +20,7 @@ static	void	ft_print_and_send(char *name,
 	add_slash = ft_strjoin(name, "/");
 	new_name = ft_strjoin(add_slash, stock->name);
 	ft_putchar('\n');
+	ft_putchar('\n');
 	ft_putstr(new_name);
 	ft_putstr(":");
 	ft_putchar('\n');
@@ -32,19 +33,17 @@ void			ft_cmd_r(t_ls *stock, char *name, int options)
 {
 	t_ls	*tmp;
 	char	*new_name;
-	int		i;
 
-	i = 1;
 	new_name = NULL;
 	tmp = stock;
-	while (tmp)
+	if (tmp)
 	{
-		if (i)
-			ft_putchar('\n');
 		if (S_ISDIR(tmp->stat.st_mode) && ft_strcmp("..", tmp->name)
 				&& ft_strcmp(".", tmp->name))
 			ft_print_and_send(name, options, tmp, new_name);
-		tmp = tmp->next;
-		i = 0;
+		if (tmp->left)
+			ft_cmd_r(tmp->left, name, options);
+		if (tmp->right)
+			ft_cmd_r(tmp->right, name, options);
 	}
 }

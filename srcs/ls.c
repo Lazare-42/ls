@@ -15,6 +15,7 @@
 void	ls(char *name, int options, int file_mode)
 {
 	t_ls	*stock;
+	t_ls    *tmp;
 	DIR		*dir;
 	int		i;
 
@@ -27,8 +28,9 @@ void	ls(char *name, int options, int file_mode)
 	}
 	stock = ft_store(name, dir, options);
 	(options & CMD_REVERSE) ? ft_cmd_reverse(&(stock)) : 0;
+	tmp = stock;
 	((options & CMD_L && (!(options & CMD_G)))) ?
-		ft_cmd_l(stock, name, file_mode) : 0;
+		ft_cmd_l(tmp, name) : 0;
 	((options & CMD_L && (!(options & CMD_G)))) ? i = 0 : 0;
 	(options & CMD_G) ? i = 0 : 0;
 	(options & CMD_G) ? ft_cmd_g(stock, name, file_mode) : 0;

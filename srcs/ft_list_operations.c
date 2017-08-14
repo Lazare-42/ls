@@ -18,7 +18,7 @@ void	ft_free(t_ls **stock)
 
 	while (*stock)
 	{
-		tmp = (*stock)->next;
+		tmp = (*stock)->left;
 		free((*stock)->name);
 		ft_memdel((void**)stock);
 		*stock = tmp;
@@ -37,8 +37,8 @@ void	ft_cmd_reverse(t_ls **begin_list)
 	while (list)
 	{
 		p = list;
-		list = list->next;
-		p->next = q;
+		list = list->left;
+		p->left = q;
 		q = p;
 	}
 	*begin_list = p;

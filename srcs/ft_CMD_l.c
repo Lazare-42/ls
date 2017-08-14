@@ -39,18 +39,17 @@ char	ft_mode(int mode)
 	return (c);
 }
 
-int		ft_cmd_l(t_ls *tmp, char *foldername, int file_mode)
+
+int		ft_cmd_ll(t_ls *stock, char *foldername, int *max_size)
 {
-	int		*max_size;
 	time_t	local_time;
 	char	*path;
-	t_ls	*stock;
+	t_ls	*tmp;
 
-	stock = tmp;
-	max_size = ft_max_size(stock, file_mode);
+	tmp = stock;
 	local_time = time(&local_time);
 	(!stock) ? ft_putchar('\n') : 0;
-	while (stock)
+	if (tmp)
 	{
 		path = find_path(stock->name, foldername);
 		ft_print_rights(stock, path);
@@ -59,10 +58,26 @@ int		ft_cmd_l(t_ls *tmp, char *foldername, int file_mode)
 		ft_putchar(' ');
 		ft_print_name(stock->name, stock->stat.st_mode);
 		(S_ISLNK(stock->stat.st_mode)) ? print_lnkabout(path) : 0;
-		(stock->next) ? ft_putchar('\n') : 0;
-		stock = stock->next;
+		if (tmp->left)
+		{
+			ft_putchar('\n');
+			(ft_cmd_l(tmp->left, foldername));
+		}
+		if (tmp->right)
+		{
+			ft_putchar('\n');
+			(ft_cmd_l(tmp->right, foldername));
+		}
 		ft_memdel((void**)&path);
 	}
+	return (1);
+}
+int		ft_cmd_l(t_ls *stock, char *foldername)
+{
+	int		*max_size;
+
+	max_size = ft_max_size(stock);
+	ft_cmd_ll(stock, foldername, max_size);
 	ft_memdel((void**)&max_size);
 	return (1);
 }

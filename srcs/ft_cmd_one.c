@@ -21,6 +21,6 @@ void	ft_cmd_1(t_ls *stock)
 	{
 		ft_print_name(tmp->name, tmp->stat.st_mode);
 		ft_putchar('\n');
-		tmp = tmp->next;
+		tmp = tmp->left;
 	}
 }

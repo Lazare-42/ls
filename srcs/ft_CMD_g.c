@@ -42,8 +42,9 @@ int			ft_cmd_g(t_ls *tmp, char *foldername, int file_mode)
 	char	*path;
 	t_ls	*stock;
 
+	file_mode++;
 	stock = tmp;
-	max_size = ft_max_size(stock, file_mode);
+	max_size = ft_max_size(stock);
 	local_time = time(&local_time);
 	(!stock) ? ft_putchar('\n') : 0;
 	while (stock)
@@ -55,8 +56,8 @@ int			ft_cmd_g(t_ls *tmp, char *foldername, int file_mode)
 		ft_putchar(' ');
 		ft_print_name(stock->name, stock->stat.st_mode);
 		(S_ISLNK(stock->stat.st_mode)) ? print_lnkabout(path) : 0;
-		(stock->next) ? ft_putchar('\n') : 0;
-		stock = stock->next;
+		(stock->left) ? ft_putchar('\n') : 0;
+		stock = stock->left;
 		ft_memdel((void**)&path);
 	}
 	ft_memdel((void**)&max_size);

@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/28 14:14:42 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/11 16:33:39 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/10 14:22:34 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ static	void	ft_send_files_to_ls(char **folder, int command_options)
 int				main(int ac, char **av)
 {
 	int		command_options;
-	char	*tmp;
+	char	**tmp;
 
 	command_options = 0;
 	ac++;
@@ -71,13 +71,10 @@ int				main(int ac, char **av)
 		av++;
 	if (*av)
 	{
-		while (*av)
-		{
-			tmp = *av;
-			if (ft_check_file_errors(tmp))
-				ft_send_files_to_ls(av, command_options);
-			av++;
-		}
+		tmp = av;
+		ft_check_file_errors(tmp);
+		ft_send_files_to_ls(av, command_options);
+		return (0);
 	}
 	else
 		ls(".", command_options, 1);
