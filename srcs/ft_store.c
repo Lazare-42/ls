@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/04 01:51:31 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 16:44:08 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/17 20:33:04 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ t_ls		*ft_new_elem(char *name, const char *foldername)
 		return (NULL);
 	new->left = NULL;
 	new->right = NULL;
+	new->color = 0;
 	new->name = ft_strdup(name);
 	(foldername) ? path = find_path(name, (char*)foldername) : 0;
 	(!(foldername)) ? path = name : 0;
@@ -53,11 +54,19 @@ t_ls			*ft_store(char *foldername, DIR *dir, int sort_options)
 		{
 			if (!(sort_options & CMD_A) && dent->d_name[0] == '.')
 				dent = NULL;
-			if (dent)
-				stock = ft_place_elem(&stock, dent->d_name, foldername);
+			if (dent && !stock)
+			{
+				stock = ft_new_elem(dent->d_name, foldername);
+				stock->color = 1;
+			}
+			else if (dent)
+			{
+				if (!ft_place_elem(stock, dent->d_name, foldername))
+					ft_rotate(&stock, dent->d_name, foldername);
+			}
 		}
 	}
 	else
-		stock = ft_place_elem(&stock, NULL, foldername);
+		stock =	ft_new_elem(NULL, foldername);
 	return (stock);
 }

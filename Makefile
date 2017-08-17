@@ -6,7 +6,7 @@
 #    By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/07/26 20:03:26 by lazrossi          #+#    #+#              #
-#    Updated: 2017/08/11 15:09:24 by lazrossi         ###   ########.fr        #
+#    Updated: 2017/08/17 20:30:11 by lazrossi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,8 @@ SRC =srcs/ft_cmd_r.c srcs/ft_print_normal.c  srcs/ft_list_operations.c \
 	 srcs/main.c srcs/ft_cmd_l.c srcs/ft_padding.c srcs/ft_print_info.c \
 	 srcs/ft_find_path.c srcs/ft_place_element.c srcs/ft_store.c \
 	 srcs/ft_print_errors.c srcs/ls.c  srcs/ft_cmd_g.c srcs/ft_parsing.c \
-	 srcs/ft_cmd_ONE.c
+	 srcs/ft_cmd_ONE.c \
+	 srcs/rotate.c
 
 OBJECT = $(notdir $(SRC:.c=.o)) 
 

@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/19 17:14:32 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 17:06:09 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/17 20:27:37 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ typedef struct		s_ls
 {
 	char			*name;
 	struct stat		stat;
+	int				color;
 	struct s_ls		*left;
 	struct s_ls		*right;
 }					t_ls;
@@ -57,7 +58,7 @@ int					ft_cmd_l(t_ls *stock, char *foldername);
 int					ft_cmd_g(t_ls *stock, char *foldername, int file_mode);
 void				ft_cmd_r(t_ls *stock, char *name, int options);
 void				ft_free(t_ls **stock);
-t_ls				*ft_place_elem(t_ls **stock, char *name, const char *foldername);
+int					ft_place_elem(t_ls *stock, char *name, const char *foldername);
 void				ft_time(t_ls *stock);
 int					*ft_max_size(t_ls *stock);
 void				ft_put_whites(int max_str_len, int fillup, int options);
@@ -75,5 +76,7 @@ void				ft_print_grp_usr(t_ls *stock, int *max_size);
 void				print_lnkabout(char *fpath);
 void				ft_print_rights(t_ls *stock, char *path);
 t_ls				*ft_new_elem(char *name, const char *foldername);
+void				ft_rotate(t_ls **stock, char *name, const char *foldername);
+
 
 #endif
