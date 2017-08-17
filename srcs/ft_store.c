@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/04 01:51:31 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/17 20:33:04 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/17 22:26:53 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,16 +57,22 @@ t_ls			*ft_store(char *foldername, DIR *dir, int sort_options)
 			if (dent && !stock)
 			{
 				stock = ft_new_elem(dent->d_name, foldername);
-				stock->color = 1;
+				if (stock)
+					stock->color = 1;
 			}
 			else if (dent)
 			{
 				if (!ft_place_elem(stock, dent->d_name, foldername))
+				{
 					ft_rotate(&stock, dent->d_name, foldername);
+				}
 			}
 		}
 	}
 	else
+	{
+
 		stock =	ft_new_elem(NULL, foldername);
+	}
 	return (stock);
 }
