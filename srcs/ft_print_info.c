@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 15:37:13 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 17:07:24 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/18 16:19:25 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,9 +94,9 @@ void	ft_print_grp_usr(t_ls *stock, int *max_size)
 {
 	struct group *grp;
 
-	ft_put_whites(max_size[0], stock->stat.st_nlink, 1);
-	ft_putnbr(stock->stat.st_nlink);
 	ft_putchar(' ');
+	ft_putnbr(stock->stat.st_nlink);
+	ft_put_whites(max_size[0], stock->stat.st_nlink, 1);
 	ft_putstr(getpwuid(stock->stat.st_uid)->pw_name);
 	ft_put_whites(max_size[1],
 			ft_strlen(getpwuid(stock->stat.st_uid)->pw_name), 2);

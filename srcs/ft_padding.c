@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:45:32 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/18 15:21:06 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/18 16:20:03 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,13 +55,13 @@ int		*ft_fillup_val(t_ls *stock, int *max)
 	tmp = stock;
 	if (tmp)
 	{
-		(tmp->stat.st_nlink > max[0]) ? max[0] = tmp->stat.st_nlink : max[0];
+		(tmp->stat.st_nlink > max[0]) ? max[0] = tmp->stat.st_nlink : 0;
 		val = ft_strlen(getpwuid(tmp->stat.st_uid)->pw_name);
-		(val > max[1]) ? max[1] = val : max[1];
+		(val > max[1]) ? max[1] = val : 0;
 		grp = getgrgid(tmp->stat.st_gid);
 		(grp) ? val = ((int)ft_strlen(grp->gr_name)) : 0;
-		(val > max[2]) ? max[2] = val : max[2];
-		((int)tmp->stat.st_size > max[3]) ? max[3] = (int)tmp->stat.st_size : max[3];
+		(val > max[2]) ? max[2] = val : 0;
+		((int)tmp->stat.st_size > max[3]) ? max[3] = (int)tmp->stat.st_size : 0;
 	}
 	return (max);
 }
@@ -74,7 +74,7 @@ int		*ft_max_size(t_ls *stock, int *max)
 
 	tmp = stock;
 	//	(!max) ? max = ft_memalloc(sizeof(int) * 4) : 0;
-	max = malloc(sizeof(int) * 4);
+	max = malloc(sizeof(int) * 7);
 	max = ft_new_int_tab(max);
 	max = ft_fillup_val(stock, max);
 	len = ft_itoa(max[0]);
