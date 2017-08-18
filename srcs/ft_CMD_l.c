@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 15:30:17 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 17:06:39 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/18 15:27:43 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,12 +61,12 @@ int		ft_cmd_ll(t_ls *stock, char *foldername, int *max_size)
 		if (tmp->left)
 		{
 			ft_putchar('\n');
-			(ft_cmd_l(tmp->left, foldername));
+			(ft_cmd_ll(tmp->left, foldername, max_size));
 		}
 		if (tmp->right)
 		{
 			ft_putchar('\n');
-			(ft_cmd_l(tmp->right, foldername));
+			(ft_cmd_ll(tmp->right, foldername, max_size));
 		}
 		ft_memdel((void**)&path);
 	}
