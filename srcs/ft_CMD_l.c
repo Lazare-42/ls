@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 15:30:17 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/18 15:35:28 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/18 16:33:35 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,17 +39,16 @@ char	ft_mode(int mode)
 	return (c);
 }
 
-
-int		ft_cmd_ll(t_ls *stock, char *foldername, int *max_size)
+int		ft_cmd_l(t_ls *tmp, char *foldername, int *max_size)
 {
 	time_t	local_time;
 	char	*path;
-	t_ls	*tmp;
+	t_ls	*stock;
 
-	tmp = stock;
+	stock = tmp;
 	local_time = time(&local_time);
 	(!stock) ? ft_putchar('\n') : 0;
-	if (tmp)
+	if (stock)
 	{
 		path = find_path(stock->name, foldername);
 		ft_print_rights(stock, path);
@@ -58,23 +57,12 @@ int		ft_cmd_ll(t_ls *stock, char *foldername, int *max_size)
 		ft_putchar(' ');
 		ft_print_name(stock->name, stock->stat.st_mode);
 		(S_ISLNK(stock->stat.st_mode)) ? print_lnkabout(path) : 0;
-		if (tmp->left)
-		{
 			ft_putchar('\n');
-			(ft_cmd_ll(tmp->left, foldername, max_size));
-		}
-		if (tmp->right)
-		{
-			ft_putchar('\n');
-			(ft_cmd_ll(tmp->right, foldername, max_size));
-		}
+		if (stock->left)
+			ft_cmd_l(stock->left, foldername, max_size);
+		if (stock->right)
+			ft_cmd_l(stock->right, foldername, max_size);
 		ft_memdel((void**)&path);
 	}
-	return (1);
-}
-
-int		ft_cmd_l(t_ls *stock, char *foldername, int *max_size)
-{
-	ft_cmd_ll(stock, foldername, max_size);
 	return (1);
 }
