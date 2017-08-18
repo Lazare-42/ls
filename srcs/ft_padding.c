@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:45:32 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 13:49:52 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/18 15:21:06 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,15 @@ void	ft_put_whites(int max_str_len, int fillup, int options)
 		ft_putchar(' ');
 }
 
+int		*ft_new_int_tab(int *new)
+{
+	new[0] = 0;
+	new[1] = 0;
+	new[2] = 0;
+	new[3] = 0;
+	return (new);
+}
+
 int		*ft_fillup_val(t_ls *stock, int *max)
 {
 	int				val;
@@ -62,9 +71,11 @@ int		*ft_max_size(t_ls *stock, int *max)
 	char	*len;
 	t_ls	*tmp;
 
-		
+
 	tmp = stock;
-	(!max) ? max = ft_memalloc(sizeof(int) * 4) : 0;
+	//	(!max) ? max = ft_memalloc(sizeof(int) * 4) : 0;
+	max = malloc(sizeof(int) * 4);
+	max = ft_new_int_tab(max);
 	max = ft_fillup_val(stock, max);
 	len = ft_itoa(max[0]);
 	max[0] = ft_strlen(len);
