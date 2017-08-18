@@ -16,7 +16,7 @@
 #include <time.h>
 #include "ls.h"
 
-t_ls		*ft_new_elem(char *name, const char *foldername)
+t_ls		*ft_new_elem(char *name, const char *foldername, int **max_padding)
 {
 	t_ls *new;
 	char *path;
@@ -37,42 +37,36 @@ t_ls		*ft_new_elem(char *name, const char *foldername)
 		ft_print_errors(new->name);
 		return (NULL);
 	}
+	*max_padding = ft_max_size(new, *max_padding);
 	if (foldername)
 		ft_strdel(&path);
 	return (new);
 }
 
-t_ls			*ft_store(char *foldername, DIR *dir, int sort_options)
+int *ft_store(char *foldername, DIR *dir, int sort_options, t_ls **stock )
 {
-	t_ls			*stock;
 	struct dirent	*dent;
+	int				*max;
 
-	stock = NULL;
 	if (dir != NULL)
 	{
 		while ((dir && (dent = readdir(dir))))
 		{
 			if (!(sort_options & CMD_A) && dent->d_name[0] == '.')
 				dent = NULL;
-			if (dent && !stock)
+			if (dent && !(*stock))
 			{
-				stock = ft_new_elem(dent->d_name, foldername);
-				if (stock)
-					stock->color = 1;
+				(*stock) = ft_new_elem(dent->d_name, foldername, &max);
+				((*stock)) ? (*stock)->color = 1 : 0;
 			}
 			else if (dent)
 			{
-				if (!ft_place_elem(stock, dent->d_name, foldername))
-				{
-					ft_rotate(&stock, dent->d_name, foldername);
-				}
+				if (!ft_place_elem((*stock), dent->d_name, foldername, &max))
+					ft_rotate(&(*stock), dent->d_name, foldername);
 			}
 		}
 	}
 	else
-	{
-
-		stock =	ft_new_elem(NULL, foldername);
-	}
-	return (stock);
+		(*stock) =	ft_new_elem(NULL, foldername, &max);
+	return (max);
 }

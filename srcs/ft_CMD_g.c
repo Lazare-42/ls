@@ -14,7 +14,7 @@
 #include <grp.h>
 #include <time.h>
 
-static void	ft_print_grp(t_ls *stock, int *max_size)
+void	ft_print_grp(t_ls *stock, int *max_size)
 {
 	struct group *grp;
 
@@ -37,21 +37,21 @@ static void	ft_print_grp(t_ls *stock, int *max_size)
 
 int			ft_cmd_g(t_ls *tmp, char *foldername, int file_mode)
 {
-	int		*max_size;
+	//int		*max_size;
 	time_t	local_time;
 	char	*path;
 	t_ls	*stock;
 
 	file_mode++;
 	stock = tmp;
-	max_size = ft_max_size(stock);
+	//max_size = ft_max_size(stock);
 	local_time = time(&local_time);
 	(!stock) ? ft_putchar('\n') : 0;
 	while (stock)
 	{
 		path = find_path(stock->name, foldername);
 		ft_print_rights(stock, path);
-		ft_print_grp(stock, max_size);
+		//ft_print_grp(stock, max_size);
 		ft_print_time(stock, local_time);
 		ft_putchar(' ');
 		ft_print_name(stock->name, stock->stat.st_mode);
@@ -60,6 +60,6 @@ int			ft_cmd_g(t_ls *tmp, char *foldername, int file_mode)
 		stock = stock->left;
 		ft_memdel((void**)&path);
 	}
-	ft_memdel((void**)&max_size);
+	//ft_memdel((void**)&max_size);
 	return (1);
 }

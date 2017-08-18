@@ -61,22 +61,20 @@ int		ft_cmd_ll(t_ls *stock, char *foldername, int *max_size)
 		if (tmp->left)
 		{
 			ft_putchar('\n');
-			(ft_cmd_l(tmp->left, foldername));
+			(ft_cmd_ll(tmp->left, foldername, max_size));
 		}
 		if (tmp->right)
 		{
 			ft_putchar('\n');
-			(ft_cmd_l(tmp->right, foldername));
+			(ft_cmd_ll(tmp->right, foldername, max_size));
 		}
 		ft_memdel((void**)&path);
 	}
 	return (1);
 }
-int		ft_cmd_l(t_ls *stock, char *foldername)
-{
-	int		*max_size;
 
-	max_size = ft_max_size(stock);
+int		ft_cmd_l(t_ls *stock, char *foldername, int *max_size)
+{
 	ft_cmd_ll(stock, foldername, max_size);
 	ft_memdel((void**)&max_size);
 	return (1);

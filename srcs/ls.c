@@ -18,19 +18,21 @@ void	ls(char *name, int options, int file_mode)
 	t_ls    *tmp;
 	DIR		*dir;
 	int		i;
+	int		*max;
 
 	i = 1;
 	dir = NULL;
+	stock = NULL;;
 	if (file_mode && !(dir = opendir((const char *)name)))
 	{
 		ft_print_errors(name);
 		return ;
 	}
-	stock = ft_store(name, dir, options);
+	max = ft_store(name, dir, options, &stock);
 	(options & CMD_REVERSE) ? ft_cmd_reverse(&(stock)) : 0;
 	tmp = stock;
 	((options & CMD_L && (!(options & CMD_G)))) ?
-		ft_cmd_l(tmp, name) : 0;
+		ft_cmd_l(tmp, name, max) : 0;
 	((options & CMD_L && (!(options & CMD_G)))) ? i = 0 : 0;
 	(options & CMD_G) ? i = 0 : 0;
 	(options & CMD_G) ? ft_cmd_g(stock, name, file_mode) : 0;

@@ -12,31 +12,31 @@
 
 #include "ls.h"
 
-int		ft_place_elem(t_ls *stock, char *name, const char *foldername)
+int		ft_place_elem(t_ls *stock, char *name, const char *foldername, int **max)
 {
 	if (ft_strcmp(stock->name, name) > 0)
 	{
 		if (!stock->left)
 		{
-			stock->left = ft_new_elem(name, foldername); 
+			stock->left = ft_new_elem(name, foldername, max); 
 			if (stock->color == 0)
 				return (0);
 			return (1);
 		}
 		else
-			return (ft_place_elem(stock->left, name, foldername));
+			return (ft_place_elem(stock->left, name, foldername, max));
 	}
 	else if (ft_strcmp(stock->name, name) < 0)
 	{
 		if (!stock->right)
 		{
-			stock->right = ft_new_elem(name, foldername); 
+			stock->right = ft_new_elem(name, foldername, max); 
 			if (stock->color == 0)
 				return (0);
 			return (1);
 		}
 		else
-			return (ft_place_elem(stock->right, name, foldername));
+			return (ft_place_elem(stock->right, name, foldername, max));
 	}
 	return (1);
 }

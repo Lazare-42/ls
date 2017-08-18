@@ -46,7 +46,7 @@ typedef struct		s_ls
 
 void				ft_ls(char *foldername, int options);
 void				ls(char *name, int options, int file_mode);
-t_ls				*ft_store(char *foldername, DIR *dir, int sort_options);
+int					*ft_store(char *foldername, DIR *dir, int sort_options, t_ls **stock);
 void				ft_print_normal(t_ls *stock);
 void				ft_print_usage_error(char error);
 void				ft_print_name(char *name, int st_mode);
@@ -54,13 +54,13 @@ t_ls				*ft_advance_stock_if_no_a(t_ls *stock);
 void				ft_cmd_reverse(t_ls **begin_list);
 void				ft_cmd_1(t_ls *stock);
 void				ft_cmd_t(t_ls **stock);
-int					ft_cmd_l(t_ls *stock, char *foldername);
+int					ft_cmd_l(t_ls *stock, char *foldername, int *max_size);
 int					ft_cmd_g(t_ls *stock, char *foldername, int file_mode);
 void				ft_cmd_r(t_ls *stock, char *name, int options);
 void				ft_free(t_ls **stock);
-int					ft_place_elem(t_ls *stock, char *name, const char *foldername);
+int					ft_place_elem(t_ls *stock, char *name, const char *foldername, int **max);
 void				ft_time(t_ls *stock);
-int					*ft_max_size(t_ls *stock);
+int					*ft_max_size(t_ls *stock, int *max);
 void				ft_put_whites(int max_str_len, int fillup, int options);
 void				ft_print_errors(char *name);
 void				ft_print_time(t_ls *tmp, time_t local_time);
@@ -75,7 +75,7 @@ int					ft_stock_commands(char command, int command_options);
 void				ft_print_grp_usr(t_ls *stock, int *max_size);
 void				print_lnkabout(char *fpath);
 void				ft_print_rights(t_ls *stock, char *path);
-t_ls				*ft_new_elem(char *name, const char *foldername);
+t_ls				*ft_new_elem(char *name, const char *foldername, int  **max_padding);
 void				ft_rotate(t_ls **stock, char *name, const char *foldername);
 
 

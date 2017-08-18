@@ -37,15 +37,6 @@ void	ft_put_whites(int max_str_len, int fillup, int options)
 		ft_putchar(' ');
 }
 
-int		*ft_new_int_tab(int *new)
-{
-	new[0] = 0;
-	new[1] = 0;
-	new[2] = 0;
-	new[3] = 0;
-	return (new);
-}
-
 int		*ft_fillup_val(t_ls *stock, int *max)
 {
 	int				val;
@@ -62,26 +53,19 @@ int		*ft_fillup_val(t_ls *stock, int *max)
 		(grp) ? val = ((int)ft_strlen(grp->gr_name)) : 0;
 		(val > max[2]) ? max[2] = val : max[2];
 		((int)tmp->stat.st_size > max[3]) ? max[3] = (int)tmp->stat.st_size : max[3];
-		if (tmp->right)
-			max = ft_fillup_val(tmp->right, max);
-		if (tmp->left)
-			max = ft_fillup_val(tmp->left, max);
 	}
 	return (max);
 }
 
-int		*ft_max_size(t_ls *stock)
+int		*ft_max_size(t_ls *stock, int *max)
 {
-	int		*max;
 	char	*len;
 	t_ls	*tmp;
 
 		
 	tmp = stock;
-
-	max = malloc(sizeof(int) * 4);
-	max = ft_new_int_tab(max);
-//	max = ft_fillup_val(stock, max);
+	(!max) ? max = ft_memalloc(sizeof(int) * 4) : 0;
+	max = ft_fillup_val(stock, max);
 	len = ft_itoa(max[0]);
 	max[0] = ft_strlen(len);
 	ft_strdel(&len);
