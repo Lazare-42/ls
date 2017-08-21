@@ -1,6 +1,4 @@
 /* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
 /*   ft_padding.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
@@ -37,15 +35,6 @@ void	ft_put_whites(int max_str_len, int fillup, int options)
 		ft_putchar(' ');
 }
 
-int		*ft_new_int_tab(int *new)
-{
-	new[0] = 0;
-	new[1] = 0;
-	new[2] = 0;
-	new[3] = 0;
-	return (new);
-}
-
 int		*ft_fillup_val(t_ls *tmp, int *max)
 {
 	int				val;
@@ -55,15 +44,15 @@ int		*ft_fillup_val(t_ls *tmp, int *max)
 	k = 0;
 	if (tmp)
 	{
-		(tmp->stat.st_nlink > max[0]) ? max[0] = tmp->stat.st_nlink : max[0];
+		(tmp->stat.st_nlink > max[0]) ? max[0] = tmp->stat.st_nlink : 0;
 		val = ft_strlen(getpwuid(tmp->stat.st_uid)->pw_name);
-		(val > max[1]) ? max[1] = val : max[1];
+		(val > max[1]) ? max[1] = val : 0;
 		grp = getgrgid(tmp->stat.st_gid);
 		(grp) ? val = ((int)ft_strlen(grp->gr_name)) : 0;
-		(val > max[2]) ? max[2] = val : max[2];
+		(val > max[2]) ? max[2] = val : 0;
 		((int)tmp->stat.st_size > max[3]) ?
-			max[3] = (int)tmp->stat.st_size : max[3];
-		k = k + tmp->stat.st_blocks;
+			max[3] = (int)tmp->stat.st_size : 0;
+		max[4] = max[4] + tmp->stat.st_blocks;
 	}
 	return (max);
 }
@@ -71,18 +60,9 @@ int		*ft_fillup_val(t_ls *tmp, int *max)
 int		*ft_max_size(t_ls *stock, int *max)
 {
 	t_ls	*tmp;
-	char	*len;
 
 	tmp = NULL;
-	max = malloc(sizeof(int) * 4);
-	max = ft_new_int_tab(max);
 	tmp = stock;
 	max = ft_fillup_val(tmp, max);
-	len = ft_itoa(max[0]);
-	max[0] = ft_strlen(len);
-	ft_strdel(&len);
-	len = ft_itoa(max[3]);
-	max[3] = ft_strlen(len);
-	ft_strdel(&len);
 	return (max);
 }

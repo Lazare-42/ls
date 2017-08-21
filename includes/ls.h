@@ -54,7 +54,7 @@ t_ls				*ft_advance_stock_if_no_a(t_ls *stock);
 void				ft_cmd_reverse(t_ls **begin_list);
 void				ft_cmd_1(t_ls *stock);
 void				ft_cmd_t(t_ls **stock);
-int					ft_cmd_l(t_ls *stock, char *foldername, int *max_size);
+int					ft_cmd_l(t_ls *stock, char *foldername, int *max_size, int first);
 int					ft_cmd_g(t_ls *stock, char *foldername, int file_mode);
 void				ft_cmd_r(t_ls *stock, char *name, int options);
 void				ft_free(t_ls **stock);

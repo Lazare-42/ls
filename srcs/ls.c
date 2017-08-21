@@ -12,6 +12,19 @@
 
 #include "ls.h"
 
+int		*ft_adapt_padding_size(int *max)
+{
+	char	*len;
+
+	len = ft_itoa(max[0]);
+	max[0] = ft_strlen(len);
+	ft_strdel(&len);
+	len = ft_itoa(max[3]);
+	max[3] = ft_strlen(len);
+	ft_strdel(&len);
+	return (max);
+}
+
 void	ls(char *name, int options, int file_mode)
 {
 	t_ls	*stock;
@@ -31,8 +44,9 @@ void	ls(char *name, int options, int file_mode)
 	max = ft_store(name, dir, options, &stock);
 	(options & CMD_REVERSE) ? ft_cmd_reverse(&(stock)) : 0;
 	tmp = stock;
+	max = ft_adapt_padding_size(max);
 	((options & CMD_L && (!(options & CMD_G)))) ?
-		ft_cmd_l(tmp, name, max) : 0;
+		ft_cmd_l(tmp, name, max, 1) : 0;
 	((options & CMD_L && (!(options & CMD_G)))) ? i = 0 : 0;
 	(options & CMD_G) ? i = 0 : 0;
 	(options & CMD_G) ? ft_cmd_g(stock, name, file_mode) : 0;

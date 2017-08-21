@@ -43,11 +43,23 @@ t_ls		*ft_new_elem(char *name, const char *foldername, int **max_padding)
 	return (new);
 }
 
+int		*ft_new_int_tab(int *new)
+{
+	new[0] = 0;
+	new[1] = 0;
+	new[2] = 0;
+	new[3] = 0;
+	new[4] = 0;
+	return (new);
+}
+
 int *ft_store(char *foldername, DIR *dir, int sort_options, t_ls **stock )
 {
 	struct dirent	*dent;
 	int				*max;
 
+	max = malloc(sizeof(int) * 5);
+	max = ft_new_int_tab(max);
 	if (dir != NULL)
 	{
 		while ((dir && (dent = readdir(dir))))
