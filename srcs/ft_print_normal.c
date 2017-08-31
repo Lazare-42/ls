@@ -6,54 +6,46 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 14:03:25 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 14:05:44 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/31 05:36:50 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
 #include <sys/ioctl.h>
+#include <stdio.h>
 
-int		ft_longest_name(t_ls *stock)
+void	ft_proper_print(t_ls *tmp, int max_ws_col, int max_stock_val, int *total_written)
 {
-	int		i;
-	t_ls	*tmp;
+	int i;
 
-	i = 0;
-	tmp = stock;
-	while (tmp)
+	i = max_stock_val;
+	if (tmp && tmp->name)
 	{
-		i = ((int)ft_strlen(tmp->name) > i) ? (int)ft_strlen(tmp->name) : i;
-		tmp = tmp->left;
+		*total_written += max_stock_val + max_stock_val;
+		(*total_written >= max_ws_col) ? ft_putchar('\n') : 0;
+		(*total_written >= max_ws_col) ? *total_written = 0 : 0;
+		ft_print_name(tmp->name, tmp->stat.st_mode);		
+		while (i-- - tmp->name_len >= 0)
+			ft_putchar(' ');
+		if (tmp->left)
+			ft_proper_print(tmp->left, max_ws_col, max_stock_val, total_written);
+		if (tmp->right)
+			ft_proper_print(tmp->right, max_ws_col, max_stock_val, total_written);
 	}
-	return (i);
 }
 
-void	ft_print_normal(t_ls *stock)
+
+void	ft_print_normal(t_ls *stock, int max_stock_val)
 {
 	t_ls			*tmp;
 	struct winsize	max;
-	int				i;
-	int				maxx;
-	int				j;
+	int				maxx_ws_col;
+	int 			total_written;
 
-	j = 0;
-	maxx = 0;
-	i = ft_longest_name(stock);
 	tmp = stock;
 	ioctl(1, TIOCGWINSZ, &max);
-	if (tmp)
-	{
-		j = (int)ft_strlen(tmp->name);
-		maxx += j;
-		(maxx >= max.ws_col) ? ft_putchar('\n') : 0;
-		(maxx >= max.ws_col) ? maxx = j : 0;
-		ft_print_name(tmp->name, tmp->stat.st_mode);
-		while (j++ <= i && ++maxx < max.ws_col && tmp->left)
-			ft_putchar(' ');
-		ft_putchar('\n');
-		if (tmp->left)
-			ft_print_normal(tmp->left);
-		if (tmp->right)
-			ft_print_normal(tmp->right);
-	}
+	maxx_ws_col = max.ws_col;
+	total_written = 0;
+	ft_proper_print(tmp, maxx_ws_col, max_stock_val, &total_written);
+	//ft_putchar('\n');
 }

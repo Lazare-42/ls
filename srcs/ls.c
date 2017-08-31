@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/10 14:43:46 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 19:59:58 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/31 05:58:21 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,17 +44,18 @@ void	ls(char *name, int options, int file_mode)
 	max = ft_store(name, dir, options, &stock);
 	(options & CMD_REVERSE) ? ft_cmd_reverse(&(stock)) : 0;
 	tmp = stock;
-	max = ft_adapt_padding_size(max);
+	((options & CMD_G) || (options & CMD_L)) ? max = ft_adapt_padding_size(max) : 0;
 	((options & CMD_L && (!(options & CMD_G)))) ?
 		ft_cmd_l(tmp, name, max, 1) : 0;
 	((options & CMD_L && (!(options & CMD_G)))) ? i = 0 : 0;
-	(options & CMD_G) ? i = 0 : 0;
-	(options & CMD_G) ? ft_cmd_g(stock, name, file_mode) : 0;
-	(i && (!(options & CMD_1))) ? ft_print_normal(stock) : 0;
+	(options & CMD_G) ? i = 1 : 0;
+	(options & CMD_G) ?  ft_cmd_l(tmp, name, max, 1): 0;
+	(i && (!(options & CMD_1))) ? ft_print_normal(stock, max[0]) : 0;
 	(i && (options & CMD_1)) ? ft_cmd_1(stock) : 0;
 	((options & CMD_L || options & CMD_G) && (!(options & CMD_R))) ?
 		ft_putchar('\n') : 0;
 	(dir) ? closedir(dir) : 0;
+	ft_putchar('\n');
 	((options & CMD_R) ? ft_cmd_r(stock, name, options) : 0);
 	ft_free(&stock);
 }

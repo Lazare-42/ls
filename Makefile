@@ -6,7 +6,7 @@
 #    By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/07/26 20:03:26 by lazrossi          #+#    #+#              #
-#    Updated: 2017/08/17 22:28:37 by lazrossi         ###   ########.fr        #
+#    Updated: 2017/08/31 05:07:42 by lazrossi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,9 +29,9 @@ CLEAN = /bin/rm -f
 
 OK = echo "\033[32m OK ✓ \033[0m"
 
-all: $(NAME)
+all: Makefile $(NAME)
 
-$(NAME):
+$(NAME): 
 	@-make -C libft/ 
 	@-$(CC) $(INCLUDES)  -c $(SRC)
 	@echo "Compiling $@ ..."

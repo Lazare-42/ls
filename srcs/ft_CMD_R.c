@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:41:23 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 13:43:13 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/31 05:45:07 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ static	void	ft_print_and_send(char *name,
 
 	add_slash = ft_strjoin(name, "/");
 	new_name = ft_strjoin(add_slash, stock->name);
-	ft_putchar('\n');
 	ft_putchar('\n');
 	ft_putstr(new_name);
 	ft_putstr(":");

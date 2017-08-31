@@ -35,34 +35,37 @@ void	ft_put_whites(int max_str_len, int fillup, int options)
 		ft_putchar(' ');
 }
 
-int		*ft_fillup_val(t_ls *tmp, int *max)
+int		*ft_fillup_val(t_ls *stock, int *max, int sort_options)
 {
 	int				val;
 	struct group	*grp;
 	int				k;
 
 	k = 0;
-	if (tmp)
+	if (stock && ((sort_options & CMD_L) || (sort_options & CMD_G)))
 	{
-		(tmp->stat.st_nlink > max[0]) ? max[0] = tmp->stat.st_nlink : 0;
-		val = ft_strlen(getpwuid(tmp->stat.st_uid)->pw_name);
+		(stock->stat.st_nlink > max[0]) ? max[0] = stock->stat.st_nlink : 0;
+		val = ft_strlen(getpwuid(stock->stat.st_uid)->pw_name);
 		(val > max[1]) ? max[1] = val : 0;
-		grp = getgrgid(tmp->stat.st_gid);
+		grp = getgrgid(stock->stat.st_gid);
 		(grp) ? val = ((int)ft_strlen(grp->gr_name)) : 0;
 		(val > max[2]) ? max[2] = val : 0;
-		((int)tmp->stat.st_size > max[3]) ?
-			max[3] = (int)tmp->stat.st_size : 0;
-		max[4] = max[4] + tmp->stat.st_blocks;
+		((int)stock->stat.st_size > max[3]) ?
+			max[3] = (int)stock->stat.st_size : 0;
+		max[4] = max[4] + stock->stat.st_blocks;
+		stock->name_len = 0; 
+	}
+	else
+	{
+		stock->name_len = ft_strlen(stock->name);
+		(stock->name_len > max[0]) ? max[0] = stock->name_len : 0; 
 	}
 	return (max);
 }
 
-int		*ft_max_size(t_ls *stock, int *max)
+int		*ft_max_size(t_ls *stock, int *max, int sort_options)
 {
-	t_ls	*tmp;
 
-	tmp = NULL;
-	tmp = stock;
-	max = ft_fillup_val(tmp, max);
+	max = ft_fillup_val(stock, max, sort_options);
 	return (max);
 }

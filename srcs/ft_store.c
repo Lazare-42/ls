@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/04 01:51:31 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/17 22:26:53 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/08/31 01:47:31 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <time.h>
 #include "ls.h"
 
-t_ls		*ft_new_elem(char *name, const char *foldername, int **max_padding)
+t_ls		*ft_new_elem(char *name, const char *foldername, int **max_padding, int sort_options)
 {
 	t_ls *new;
 	char *path;
@@ -37,7 +37,7 @@ t_ls		*ft_new_elem(char *name, const char *foldername, int **max_padding)
 		ft_print_errors(new->name);
 		return (NULL);
 	}
-	*max_padding = ft_max_size(new, *max_padding);
+	*max_padding = ft_max_size(new, *max_padding, sort_options);
 	if (foldername)
 		ft_strdel(&path);
 	return (new);
@@ -53,7 +53,7 @@ int		*ft_new_int_tab(int *new)
 	return (new);
 }
 
-int *ft_store(char *foldername, DIR *dir, int sort_options, t_ls **stock )
+int *ft_store(char *foldername, DIR *dir, int sort_options, t_ls **stock)
 {
 	struct dirent	*dent;
 	int				*max;
@@ -68,17 +68,17 @@ int *ft_store(char *foldername, DIR *dir, int sort_options, t_ls **stock )
 				dent = NULL;
 			if (dent && !(*stock))
 			{
-				(*stock) = ft_new_elem(dent->d_name, foldername, &max);
+				(*stock) = ft_new_elem(dent->d_name, foldername, &max, sort_options);
 				((*stock)) ? (*stock)->color = 1 : 0;
 			}
 			else if (dent)
 			{
-				if (!ft_place_elem((*stock), dent->d_name, foldername, &max))
+				if (!ft_place_elem((*stock), dent->d_name, foldername, &max, sort_options))
 					ft_rotate(&(*stock), dent->d_name, foldername);
 			}
 		}
 	}
 	else
-		(*stock) =	ft_new_elem(NULL, foldername, &max);
+		(*stock) =	ft_new_elem(NULL, foldername, &max, sort_options);
 	return (max);
 }
