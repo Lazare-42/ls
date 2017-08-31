@@ -48,14 +48,14 @@ void	ls(char *name, int options, int file_mode)
 	((options & CMD_L && (!(options & CMD_G)))) ?
 		ft_cmd_l(tmp, name, max, 1) : 0;
 	((options & CMD_L && (!(options & CMD_G)))) ? i = 0 : 0;
-	(options & CMD_G) ? i = 1 : 0;
-	(options & CMD_G) ?  ft_cmd_l(tmp, name, max, 1): 0;
+	(options & CMD_G) ? i = 0 : 0;
+	(options & CMD_G) ?  ft_cmd_g(tmp, name, max, 1): 0;
 	(i && (!(options & CMD_1))) ? ft_print_normal(stock, max[0]) : 0;
 	(i && (options & CMD_1)) ? ft_cmd_1(stock) : 0;
 	((options & CMD_L || options & CMD_G) && (!(options & CMD_R))) ?
 		ft_putchar('\n') : 0;
 	(dir) ? closedir(dir) : 0;
-	ft_putchar('\n');
+	((options & CMD_R)) ? ft_putchar('\n') : 0;
 	((options & CMD_R) ? ft_cmd_r(stock, name, options) : 0);
 	ft_free(&stock);
 }
