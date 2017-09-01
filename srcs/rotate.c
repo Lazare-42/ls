@@ -42,7 +42,7 @@ void	ft_rotate(t_ls **stock, t_ls *new_stock, int sort_options)
 		*stock = y;
 		return;
 	}
-	else if (ft_sort_by_options(*stock, new_stock, sort_options) < 0)
+	else if (ft_sort_by_options(*stock, new_stock, sort_options) <= 0)
 		ft_rotate(&(*stock)->left, new_stock, sort_options);
 	else 
 		ft_rotate(&(*stock)->right, new_stock, sort_options);

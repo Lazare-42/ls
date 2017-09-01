@@ -25,7 +25,7 @@ int		ft_sort_by_options(t_ls *stock, t_ls *next_stock, int sort_options)
 		else if (sort_options & CMD_U)
 			return (stock->stat.st_birthtimespec.tv_sec - next_stock->stat.st_birthtimespec.tv_sec);
 		else
-			return (ft_strcmp(stock->name, next_stock->name));
+			return (ft_strcmp(next_stock->name, stock->name));
 	}
 	else
 		if (sort_options & CMD_T)
@@ -37,7 +37,7 @@ int		ft_sort_by_options(t_ls *stock, t_ls *next_stock, int sort_options)
 		else if (sort_options & CMD_U)
 			return (next_stock->stat.st_birthtimespec.tv_sec - stock->stat.st_birthtimespec.tv_sec);
 		else
-			return (ft_strcmp(next_stock->name, stock->name));
+			return (ft_strcmp(stock->name, next_stock->name));
 }
 
 int		ft_place_elem(t_ls *stock, t_ls *next_stock,
