@@ -1,4 +1,4 @@
-NAME = ft_ls
+NAME = ./ft_ls
 
 SOURCES = ./ft_CMD_g.c \
 ./ft_CMD_l.c \
@@ -27,21 +27,23 @@ LNCURSES = -lncurses
 CC = clang
 SRCS = $(addprefix $(SDIR)/, $(SOURCES:.c=.c))
 OBJS = $(addprefix $(ODIR)/, $(SOURCES:.c=.o))
-OK = echo 033[32m OK ✓ 033[0m
+OK = echo "[32m OK ✓ [0m"
 
 all: lib mkbin $(NAME)
 
 lib:
-	make -C $(LIBDIR)
+	@echo "Compiling libft ..."
+	@-make -C $(LIBDIR)
+	@$(OK)
 
 mkbin:
 	@mkdir -p $(ODIR)
 
 
 $(NAME): $(OBJS)
-	@echo "Compiling ft_ls ..."
+	@echo "Compiling ./ft_ls ..."
 	@-$(CC) $(CFLAGS) $(CDEBUG) -o $(NAME) $(OBJS) -I$(INCDIR) $(LDFLAGS) $(LNCURSES)
-	@$(OK) Makefile
+	@$(OK)
 
 $(ODIR)/%.o : $(SDIR)/%.c
 	$(CC) $(CFLAGS) $(CDEBUG) -c -o $@ $< -I$(INCDIR)
