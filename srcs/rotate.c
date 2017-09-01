@@ -1,5 +1,6 @@
 #include "ls.h"
-void	ft_rotate(t_ls **stock, char *name, const char *foldername)
+
+void	ft_rotate(t_ls **stock, t_ls *new_stock, int sort_options)
 {
 	t_ls	*y;
 	t_ls	*x;
@@ -41,8 +42,8 @@ void	ft_rotate(t_ls **stock, char *name, const char *foldername)
 		*stock = y;
 		return;
 	}
-	else if (ft_strcmp((*stock)->name, name) > 0)
-		ft_rotate(&(*stock)->left, name, foldername);
-	else if (ft_strcmp((*stock)->name, name) > 0)
-		ft_rotate(&(*stock)->right, name, foldername);
+	else if (ft_sort_by_options(*stock, new_stock, sort_options))
+		ft_rotate(&(*stock)->left, new_stock, sort_options);
+	else 
+		ft_rotate(&(*stock)->right, new_stock, sort_options);
 }

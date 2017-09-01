@@ -1,3 +1,7 @@
-COMMAND	BIT_OPERATOR	STOCK_INFORMATION 
--t		
+COMMAND	NAME	BIT_OPERATOR	STOCK_INFORMATION
+./ft_ls -lR /  17.38s user 53.85s system 70% cpu 1:40.64 total
 
+-t		time_md	CMD_T			st_mtime
+-u		time_ac	CMD_LASR_ACCESS		st_atime
+-S		size	CMD_S			st_size (off_t)
+-U		create	CMD_U			st_birthime

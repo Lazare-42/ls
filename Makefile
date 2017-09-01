@@ -23,7 +23,7 @@ SRC =srcs/ft_cmd_r.c srcs/ft_print_normal.c  srcs/ft_list_operations.c \
 
 OBJECT = $(notdir $(SRC:.c=.o)) 
 
-CC = gcc -Wall -Wextra -Werror -g -I
+CC = gcc -Wall -Wextra -Werror -g -fsanitize=address -I
 
 CLEAN = /bin/rm -f
 
@@ -51,3 +51,5 @@ fclean: clean
 		@$(OK)
 
 re: fclean all
+
+new: fclean all clean

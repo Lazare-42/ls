@@ -24,7 +24,7 @@ t_ls		*ft_new_elem(char *name, const char *foldername, int **max_padding, int so
 	if (!(name))
 		return (NULL);
 	if (!(new = malloc(sizeof(t_ls))))
-		return (NULL);
+		exit(1) ; 
 	new->left = NULL;
 	new->right = NULL;
 	new->color = 0;
@@ -56,6 +56,7 @@ int		*ft_new_int_tab(int *new)
 int *ft_store(char *foldername, DIR *dir, int sort_options, t_ls **stock)
 {
 	struct dirent	*dent;
+	t_ls			*new_stock;
 	int				*max;
 
 	max = malloc(sizeof(int) * 5);
@@ -73,8 +74,9 @@ int *ft_store(char *foldername, DIR *dir, int sort_options, t_ls **stock)
 			}
 			else if (dent)
 			{
-				if (!ft_place_elem((*stock), dent->d_name, foldername, &max, sort_options))
-					ft_rotate(&(*stock), dent->d_name, foldername);
+				new_stock = ft_new_elem(dent->d_name, foldername, &max, sort_options);
+				if (!ft_place_elem((*stock), new_stock, foldername, &max, sort_options))
+					ft_rotate(stock, new_stock, sort_options);
 			}
 		}
 	}

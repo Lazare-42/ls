@@ -59,7 +59,7 @@ int					ft_cmd_l(t_ls *stock, char *foldername, int *max_size, int first);
 int		ft_cmd_g(t_ls *tmp, char *foldername, int *max_size, int first);
 void				ft_cmd_r(t_ls *stock, char *name, int options);
 void				ft_free(t_ls **stock);
-int					ft_place_elem(t_ls *stock, char *name, const char *foldername, int **max, int sort_options);
+int					ft_place_elem(t_ls *stock, t_ls *next_stock, const char *foldername, int **max, int sort_options);
 void				ft_time(t_ls *stock);
 int					*ft_max_size(t_ls *stock, int *max, int sort_options);
 void				ft_put_whites(int max_str_len, int fillup, int options);
@@ -77,7 +77,8 @@ void				ft_print_grp_usr(t_ls *stock, int *max_size);
 void				print_lnkabout(char *fpath);
 void				ft_print_rights(t_ls *stock, char *path);
 t_ls				*ft_new_elem(char *name, const char *foldername, int  **max_padding, int sort_options);
-void				ft_rotate(t_ls **stock, char *name, const char *foldername);
+void				ft_rotate(t_ls **stock, t_ls *new_stock, int sort_options); 
+int		ft_sort_by_options(t_ls *stock, t_ls *next_stock, int sort_options);
 
 
 #endif
