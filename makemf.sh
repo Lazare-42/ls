@@ -13,12 +13,13 @@ if [[ $REPLY =~ ^[Yy]$ ]] ; then
 	echo "ODIR = bin" >> Makefile
 	echo "CFLAGS = -Wall -Wextra -Werror" >> Makefile
 	echo "CDEBUG = -fno-omit-frame-pointer -fsanitize=address -g" >> Makefile
-	echo "INCDIR = include" >> Makefile
+	echo "INCDIR = includes" >> Makefile
 	echo "LDFLAGS = -L\$(LIBDIR) -lft" >> Makefile
 	echo "LNCURSES = -lncurses" >> Makefile
 	echo "CC = clang" >> Makefile
 	echo "SRCS = \$(addprefix \$(SDIR)/, \$(SOURCES:.c=.c))" >> Makefile
 	echo "OBJS = \$(addprefix \$(ODIR)/, \$(SOURCES:.c=.o))" >> Makefile
+	echo "OK = echo "\033[32m OK ✓ \033[0m"" >> Makefile
 	echo >> Makefile
 	echo "all: lib mkbin \$(NAME)" >> Makefile
 	echo >> Makefile
@@ -31,7 +32,9 @@ if [[ $REPLY =~ ^[Yy]$ ]] ; then
 	echo "$dir" >> Makefile
 	echo >> Makefile
 	echo "\$(NAME): \$(OBJS)" >> Makefile
-	echo "	\$(CC) \$(CFLAGS) \$(CDEBUG) -o \$(NAME) \$(OBJS) -I\$(INCDIR) \$(LDFLAGS) \$(LNCURSES)" >> Makefile
+	echo "	@echo \"Compiling $@ ...\"" >> Makefile
+	echo "	@-\$(CC) \$(CFLAGS) \$(CDEBUG) -o \$(NAME) \$(OBJS) -I\$(INCDIR) \$(LDFLAGS) \$(LNCURSES)" >> Makefile
+	echo "	@\$(OK)" Makefile >> Makefile
 	echo >> Makefile
 	echo "\$(ODIR)/%.o : \$(SDIR)/%.c" >> Makefile
 	echo "	\$(CC) \$(CFLAGS) \$(CDEBUG) -c -o \$@ \$< -I\$(INCDIR)" >> Makefile

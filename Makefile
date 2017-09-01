@@ -27,6 +27,7 @@ LNCURSES = -lncurses
 CC = clang
 SRCS = $(addprefix $(SDIR)/, $(SOURCES:.c=.c))
 OBJS = $(addprefix $(ODIR)/, $(SOURCES:.c=.o))
+OK = echo 033[32m OK ✓ 033[0m
 
 all: lib mkbin $(NAME)
 
@@ -38,7 +39,9 @@ mkbin:
 
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) $(CDEBUG) -o $(NAME) $(OBJS) -I$(INCDIR) $(LDFLAGS) $(LNCURSES)
+	@echo "Compiling ft_ls ..."
+	@-$(CC) $(CFLAGS) $(CDEBUG) -o $(NAME) $(OBJS) -I$(INCDIR) $(LDFLAGS) $(LNCURSES)
+	@$(OK) Makefile
 
 $(ODIR)/%.o : $(SDIR)/%.c
 	$(CC) $(CFLAGS) $(CDEBUG) -c -o $@ $< -I$(INCDIR)
