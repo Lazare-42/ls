@@ -6,11 +6,12 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:55:44 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/01 14:13:53 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/01 14:50:52 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
+#include <stdio.h>
 
 int		ft_sort_by_options(t_ls *stock, t_ls *next_stock, int sort_options)
 {
@@ -26,10 +27,7 @@ int		ft_sort_by_options(t_ls *stock, t_ls *next_stock, int sort_options)
 			return (stock->stat.st_birthtimespec.tv_sec - next_stock->stat.st_birthtimespec.tv_sec);
 		else
 		{
-			ft_putstr(next_stock->name);
-			ft_putchar(' ');
-			ft_putstr(stock->name);
-			ft_putchar('\n');
+			printf("%s - %s\t%d\n", next_stock->name,stock->name ,ft_strcmp(next_stock->name, stock->name));
 			return (ft_strcmp(next_stock->name, stock->name));
 		}
 	}
@@ -44,10 +42,7 @@ int		ft_sort_by_options(t_ls *stock, t_ls *next_stock, int sort_options)
 			return (next_stock->stat.st_birthtimespec.tv_sec - stock->stat.st_birthtimespec.tv_sec);
 		else
 		{
-			ft_putstr(stock->name);
-			ft_putchar(' ');
-			ft_putstr(next_stock->name);
-			ft_putchar('\n');
+			printf("%d\n", ft_strcmp(next_stock->name, stock->name));
 			return (ft_strcmp(stock->name, next_stock->name));
 		}
 }

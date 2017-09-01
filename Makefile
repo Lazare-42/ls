@@ -6,7 +6,7 @@
 #    By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/07/26 20:03:26 by lazrossi          #+#    #+#              #
-#    Updated: 2017/08/31 05:07:42 by lazrossi         ###   ########.fr        #
+#    Updated: 2017/09/01 14:43:02 by lazrossi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ SRC =srcs/ft_cmd_r.c srcs/ft_print_normal.c  srcs/ft_list_operations.c \
 
 OBJECT = $(notdir $(SRC:.c=.o)) 
 
-CC = gcc -Wall -Wextra -Werror -I
+CC = gcc -Wall -Wextra -Werror -fsanitize=address -I 
 
 CLEAN = /bin/rm -f
 
