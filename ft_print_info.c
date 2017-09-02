@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 15:37:13 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 01:43:05 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 16:04:47 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,30 +37,6 @@ void	ft_print_time(t_ls *stock, time_t local_time)
 	tmp = ft_strsub(file_time, 4, 12);
 	ft_putstr(tmp);
 	ft_strdel(&tmp);
-}
-
-void	ft_print_name(char *name, int st_mode)
-{
-	if (S_ISDIR(st_mode))
-	{
-		ft_putstr("\e[0;96m");
-		ft_putstr(name);
-		ft_putstr("\e[0m");
-	}
-	else if (S_ISLNK(st_mode))
-	{
-		ft_putstr("\033[0;35m");
-		ft_putstr(name);
-		ft_putstr("\e[0m");
-	}
-	else if (st_mode & S_IXUSR)
-	{
-		ft_putstr("\033[0;31m");
-		ft_putstr(name);
-		ft_putstr("\e[0m");
-	}
-	else
-		ft_putstr(name);
 }
 
 void	ft_print_rights(t_ls *stock, char *path)

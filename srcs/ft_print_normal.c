@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 14:03:25 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 05:09:38 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 15:59:17 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,30 @@ void	ft_proper_print(t_ls *tmp, int max_ws_col,
 			ft_proper_print(tmp->right,
 					max_ws_col, max_stock_val, total_written);
 	}
+}
+
+void	ft_print_name(char *name, int st_mode)
+{
+	if (S_ISDIR(st_mode))
+	{
+		ft_putstr("\e[0;96m");
+		ft_putstr(name);
+		ft_putstr("\e[0m");
+	}
+	else if (S_ISLNK(st_mode))
+	{
+		ft_putstr("\033[0;35m");
+		ft_putstr(name);
+		ft_putstr("\e[0m");
+	}
+	else if (st_mode & S_IXUSR)
+	{
+		ft_putstr("\033[0;31m");
+		ft_putstr(name);
+		ft_putstr("\e[0m");
+	}
+	else
+		ft_putstr(name);
 }
 
 void	ft_print_normal(t_ls *stock, int max_stock_val)

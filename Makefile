@@ -10,7 +10,7 @@ SOURCES = ./ft_cmd_g.c \
 ./ft_parsing.c \
 ./ft_place_element.c \
 ./ft_print_errors.c \
-./ft_print_info.c \
+./ft_print_info2.c \
 ./ft_print_normal.c \
 ./ft_store.c \
 ./ls.c \
@@ -21,7 +21,7 @@ LIBDIR = libft
 SDIR = srcs
 ODIR = bin
 CFLAGS = -Wall -Wextra -Werror
-CDEBUG = -fno-omit-frame-pointer
+CDEBUG = -fno-omit-frame-pointer -fsanitize=address -g
 INCDIR = includes
 LDFLAGS = -L$(LIBDIR) -lft
 LNCURSES = -lncurses
