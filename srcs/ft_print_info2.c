@@ -65,13 +65,16 @@ void	ft_print_rights(t_ls *stock, char *path)
 	acl_t	acl;
 	char	c;
 	int		mode;
+	char	*exec_rights;
 
+	exec_rights = NULL;
 	mode = stock->stat.st_mode;
 	attributes = listxattr(path, NULL, 0, XATTR_NOFOLLOW);
 	acl = acl_get_file(path, ACL_TYPE_EXTENDED);
 	c = ft_mode(mode);
 	ft_putchar(c);
-	ft_putstr(ft_get_rights(stock->stat.st_mode));
+	exec_rights = ft_get_rights(stock->stat.st_mode);
+	(exec_rights) ? free(exec_rights) : 0;
 	(attributes) ? ft_putchar('@') : 0;
 	(acl && (!(attributes))) ? ft_putchar('+') : 0;
 	((!acl) && (!attributes)) ? ft_putchar(' ') : 0;
