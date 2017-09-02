@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:41:23 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 13:43:13 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 01:40:20 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ static	void	ft_print_and_send(char *name,
 
 	add_slash = ft_strjoin(name, "/");
 	new_name = ft_strjoin(add_slash, stock->name);
-	ft_putchar('\n');
 	ft_putchar('\n');
 	ft_putstr(new_name);
 	ft_putstr(":");
@@ -38,11 +37,11 @@ void			ft_cmd_r(t_ls *stock, char *name, int options)
 	tmp = stock;
 	if (tmp)
 	{
+		if (tmp->left)
+			ft_cmd_r(tmp->left, name, options);
 		if (S_ISDIR(tmp->stat.st_mode) && ft_strcmp("..", tmp->name)
 				&& ft_strcmp(".", tmp->name))
 			ft_print_and_send(name, options, tmp, new_name);
-		if (tmp->left)
-			ft_cmd_r(tmp->left, name, options);
 		if (tmp->right)
 			ft_cmd_r(tmp->right, name, options);
 	}

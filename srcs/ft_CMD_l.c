@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 15:30:17 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 17:06:39 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 17:26:48 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <grp.h>
 #include <time.h>
 
-char	ft_mode(int mode)
+char		ft_mode(int mode)
 {
 	char c;
 
@@ -39,45 +39,42 @@ char	ft_mode(int mode)
 	return (c);
 }
 
-
-int		ft_cmd_ll(t_ls *stock, char *foldername, int *max_size)
+static void	ft_print(t_ls *stock, char *foldername,
+		int *max_size, int file_mode)
 {
 	time_t	local_time;
 	char	*path;
-	t_ls	*tmp;
 
-	tmp = stock;
 	local_time = time(&local_time);
-	(!stock) ? ft_putchar('\n') : 0;
-	if (tmp)
+	if (stock)
 	{
-		path = find_path(stock->name, foldername);
+		if (stock->left)
+			ft_print(stock->left, foldername, max_size, file_mode);
+		(file_mode) ? ft_putchar('\n') : 0;
+		path = (ft_strcmp(stock->name, foldername)) ?
+			find_path(stock->name, foldername) : foldername;
 		ft_print_rights(stock, path);
 		ft_print_grp_usr(stock, max_size);
 		ft_print_time(stock, local_time);
 		ft_putchar(' ');
 		ft_print_name(stock->name, stock->stat.st_mode);
 		(S_ISLNK(stock->stat.st_mode)) ? print_lnkabout(path) : 0;
-		if (tmp->left)
-		{
-			ft_putchar('\n');
-			(ft_cmd_l(tmp->left, foldername));
-		}
-		if (tmp->right)
-		{
-			ft_putchar('\n');
-			(ft_cmd_l(tmp->right, foldername));
-		}
-		ft_memdel((void**)&path);
+		(ft_strcmp(stock->name, foldername)) ? ft_memdel((void**)&path) : 0;
+		if (stock->right)
+			ft_print(stock->right, foldername, max_size, file_mode);
 	}
-	return (1);
 }
-int		ft_cmd_l(t_ls *stock, char *foldername)
-{
-	int		*max_size;
 
-	max_size = ft_max_size(stock);
-	ft_cmd_ll(stock, foldername, max_size);
-	ft_memdel((void**)&max_size);
+int			ft_cmd_l(t_ls *tmp, char *foldername, int *max_size, int file_mode)
+{
+	t_ls *stock;
+
+	stock = tmp;
+	if (file_mode)
+	{
+		ft_putstr("total ");
+		ft_putnbr(max_size[4]);
+	}
+	ft_print(stock, foldername, max_size, file_mode);
 	return (1);
 }

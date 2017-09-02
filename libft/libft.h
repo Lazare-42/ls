@@ -24,6 +24,7 @@ typedef	struct		s_list
 
 void				ft_putstr(char *str);
 char				*ft_itoa(int nbr);
+void				ft_printtables(char **str);
 int					ft_atoi(const char *str);
 void				ft_putchar(char c);
 char				*ft_strdup(const char *s1);

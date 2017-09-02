@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/10 13:45:32 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 13:49:52 by lazrossi         ###   ########.fr       */
+/*   Created: 2017/09/02 04:21:09 by lazrossi          #+#    #+#             */
+/*   Updated: 2017/09/02 04:21:49 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,56 +37,36 @@ void	ft_put_whites(int max_str_len, int fillup, int options)
 		ft_putchar(' ');
 }
 
-int		*ft_new_int_tab(int *new)
-{
-	new[0] = 0;
-	new[1] = 0;
-	new[2] = 0;
-	new[3] = 0;
-	return (new);
-}
-
-int		*ft_fillup_val(t_ls *stock, int *max)
+int		*ft_fillup_val(t_ls *stock, int *max, int sort_options)
 {
 	int				val;
-	t_ls			*tmp;
 	struct group	*grp;
+	int				k;
 
-	tmp = stock;
-	if (tmp)
+	k = 0;
+	if (stock && ((sort_options & CMD_L) || (sort_options & CMD_G)))
 	{
-		(tmp->stat.st_nlink > max[0]) ? max[0] = tmp->stat.st_nlink : max[0];
-		val = ft_strlen(getpwuid(tmp->stat.st_uid)->pw_name);
-		(val > max[1]) ? max[1] = val : max[1];
-		grp = getgrgid(tmp->stat.st_gid);
+		(stock->stat.st_nlink > max[0]) ? max[0] = stock->stat.st_nlink : 0;
+		val = ft_strlen(getpwuid(stock->stat.st_uid)->pw_name);
+		(val > max[1]) ? max[1] = val : 0;
+		grp = getgrgid(stock->stat.st_gid);
 		(grp) ? val = ((int)ft_strlen(grp->gr_name)) : 0;
-		(val > max[2]) ? max[2] = val : max[2];
-		((int)tmp->stat.st_size > max[3]) ? max[3] = (int)tmp->stat.st_size : max[3];
-		if (tmp->right)
-			max = ft_fillup_val(tmp->right, max);
-		if (tmp->left)
-			max = ft_fillup_val(tmp->left, max);
+		(val > max[2]) ? max[2] = val : 0;
+		((int)stock->stat.st_size > max[3]) ?
+			max[3] = (int)stock->stat.st_size : 0;
+		max[4] = max[4] + stock->stat.st_blocks;
+		stock->name_len = 0;
+	}
+	else
+	{
+		stock->name_len = ft_strlen(stock->name);
+		(stock->name_len > max[0]) ? max[0] = stock->name_len : 0;
 	}
 	return (max);
 }
 
-int		*ft_max_size(t_ls *stock)
+int		*ft_max_size(t_ls *stock, int *max, int sort_options)
 {
-	int		*max;
-	char	*len;
-	t_ls	*tmp;
-
-		
-	tmp = stock;
-
-	max = malloc(sizeof(int) * 4);
-	max = ft_new_int_tab(max);
-//	max = ft_fillup_val(stock, max);
-	len = ft_itoa(max[0]);
-	max[0] = ft_strlen(len);
-	ft_strdel(&len);
-	len = ft_itoa(max[3]);
-	max[3] = ft_strlen(len);
-	ft_strdel(&len);
+	max = ft_fillup_val(stock, max, sort_options);
 	return (max);
 }
