@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/28 14:14:42 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 05:21:35 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 18:14:00 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,8 @@ int				main(int ac, char **av)
 {
 	int		command_options;
 	char	**tmp;
+	int i;
+	i =0;
 
 	command_options = 0;
 	ac++;

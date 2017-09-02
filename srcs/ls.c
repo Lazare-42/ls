@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/10 14:43:46 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 05:20:14 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 18:14:29 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,4 +65,6 @@ void	ls(char *name, int options, int file_mode)
 	pursue_ls(name, options, max, tmp);
 	(dir) ? closedir(dir) : 0;
 	ft_free(&stock);
+	while (1)
+		tmp = stock;
 }
