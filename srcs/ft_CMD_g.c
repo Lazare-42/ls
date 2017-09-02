@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 15:30:17 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 17:20:16 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 17:27:37 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,8 @@ void		ft_print(t_ls *stock, char *foldername, int *max_size,
 		if (stock->left)
 			ft_print(stock->left, foldername, max_size, file_mode);
 		(file_mode) ? ft_putchar('\n') : 0;
-		path = (ft_strcmp(foldername, stock->name)) ? find_path(stock->name, foldername) : foldername;
+		path = (ft_strcmp(foldername, stock->name)) ?
+			find_path(stock->name, foldername) : foldername;
 		ft_print_rights(stock, path);
 		ft_print_grp(stock, max_size);
 		ft_print_time(stock, local_time);

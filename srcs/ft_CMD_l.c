@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 15:30:17 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 17:18:42 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 17:26:48 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,14 +51,15 @@ static void	ft_print(t_ls *stock, char *foldername,
 		if (stock->left)
 			ft_print(stock->left, foldername, max_size, file_mode);
 		(file_mode) ? ft_putchar('\n') : 0;
-		path = (ft_strcmp(stock->name, foldername)) ? find_path(stock->name, foldername) : foldername;
+		path = (ft_strcmp(stock->name, foldername)) ?
+			find_path(stock->name, foldername) : foldername;
 		ft_print_rights(stock, path);
 		ft_print_grp_usr(stock, max_size);
 		ft_print_time(stock, local_time);
 		ft_putchar(' ');
 		ft_print_name(stock->name, stock->stat.st_mode);
 		(S_ISLNK(stock->stat.st_mode)) ? print_lnkabout(path) : 0;
-	(ft_strcmp(stock->name, foldername)) ?	ft_memdel((void**)&path) : 0;
+		(ft_strcmp(stock->name, foldername)) ? ft_memdel((void**)&path) : 0;
 		if (stock->right)
 			ft_print(stock->right, foldername, max_size, file_mode);
 	}
