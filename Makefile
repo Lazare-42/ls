@@ -1,55 +1,60 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2017/07/26 20:03:26 by lazrossi          #+#    #+#              #
-#    Updated: 2017/09/01 14:43:02 by lazrossi         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME = ft_ls
 
-INCLUDES = includes/
+SOURCES = ./ft_cmd_g.c \
+./ft_cmd_l.c \
+./ft_cmd_one.c \
+./ft_cmd_r.c \
+./ft_find_path.c \
+./ft_list_operations.c \
+./ft_padding.c \
+./ft_parsing.c \
+./ft_place_element.c \
+./ft_print_errors.c \
+./ft_print_info.c \
+./ft_print_normal.c \
+./ft_store.c \
+./ls.c \
+./main.c \
+./rotate.c 
 
-SRC =srcs/ft_cmd_r.c srcs/ft_print_normal.c  srcs/ft_list_operations.c \
-	 srcs/main.c srcs/ft_cmd_l.c srcs/ft_padding.c srcs/ft_print_info.c \
-	 srcs/ft_find_path.c srcs/ft_place_element.c srcs/ft_store.c \
-	 srcs/ft_print_errors.c srcs/ls.c  srcs/ft_cmd_g.c srcs/ft_parsing.c \
-	 srcs/ft_cmd_ONE.c \
-	 srcs/rotate.c
+LIBDIR = libft
+SDIR = srcs
+ODIR = bin
+CFLAGS = -Wall -Wextra -Werror
+CDEBUG = -fno-omit-frame-pointer
+INCDIR = includes
+LDFLAGS = -L$(LIBDIR) -lft
+LNCURSES = -lncurses
+CC = clang
+SRCS = $(addprefix $(SDIR)/, $(SOURCES:.c=.c))
+OBJS = $(addprefix $(ODIR)/, $(SOURCES:.c=.o))
+OK = echo "[32m OK ✓ [0m"
 
-OBJECT = $(notdir $(SRC:.c=.o)) 
+all: lib mkbin $(NAME)
 
-CC = gcc -Wall -Wextra -Werror -fsanitize=address -I 
-
-CLEAN = /bin/rm -f
-
-OK = echo "\033[32m OK ✓ \033[0m"
-
-all: Makefile $(NAME)
-
-$(NAME): 
-	@-make -C libft/ 
-	@-$(CC) $(INCLUDES)  -c $(SRC)
-	@echo "Compiling $@ ..."
-	@-$(CC) $(INCLUDES) $(OBJECT) -L libft -lft -o $(NAME)
+lib:
+	@echo "Compiling libft ..."
+	@-make -C $(LIBDIR)
 	@$(OK)
 
+mkbin:
+	@mkdir -p $(ODIR)
+
+
+$(NAME): $(OBJS)
+	@echo "Compiling ft_ls ..."
+	@-$(CC) $(CFLAGS) $(CDEBUG) -o $(NAME) $(OBJS) -I$(INCDIR) $(LDFLAGS) $(LNCURSES)
+	@$(OK)
+
+$(ODIR)/%.o : $(SDIR)/%.c
+	$(CC) $(CFLAGS) $(CDEBUG) -c -o $@ $< -I$(INCDIR)
+
 clean:
-		@-make clean -C libft/
-		@echo "Cleaning ft_ls object files ..."
-		@-$(CLEAN) $(OBJECT)
-		@$(OK)
+	@/bin/rm -rf $(ODIR)
+	@make -C $(LIBDIR) clean
 
 fclean: clean
-		@-make fclean -C libft/ 
-		@echo "Deleting ft_ls executables ..."
-		@-$(CLEAN) $(NAME)
-		@$(OK)
+	@/bin/rm -rf $(NAME)
+	@make -C $(LIBDIR) fclean
 
 re: fclean all
-
-new: fclean all clean

@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/10 14:43:46 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 03:11:36 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 05:20:14 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,17 +25,30 @@ int		*ft_adapt_padding_size(int *max)
 	return (max);
 }
 
+void	pursue_ls(char *name, int options, int *max, t_ls *tmp)
+{
+	int		i;
+
+	i = 1;
+	((options & CMD_L && (!(options & CMD_G)))) ? i = 0 : 0;
+	(options & CMD_G) ? i = 0 : 0;
+	(i && (!(options & CMD_1))) ? ft_print_normal(tmp, max[0]) : 0;
+	(i && (options & CMD_1)) ? ft_cmd_1(tmp) : 0;
+	((options & CMD_L || options & CMD_G) && (!(options & CMD_R))) ?
+		ft_putchar('\n') : 0;
+	((options & CMD_R)) ? ft_putchar('\n') : 0;
+	((options & CMD_R) ? ft_cmd_r(tmp, name, options) : 0);
+}
+
 void	ls(char *name, int options, int file_mode)
 {
 	t_ls	*stock;
-	t_ls    *tmp;
+	t_ls	*tmp;
 	DIR		*dir;
-	int		i;
 	int		*max;
 
-	i = 1;
 	dir = NULL;
-	stock = NULL;;
+	stock = NULL;
 	if (file_mode && !(dir = opendir((const char *)name)))
 	{
 		ft_print_errors(name);
@@ -44,18 +57,12 @@ void	ls(char *name, int options, int file_mode)
 	max = ft_store(name, dir, options, &stock);
 	(options & CMD_REVERSE) ? ft_cmd_reverse(&(stock)) : 0;
 	tmp = stock;
-	((options & CMD_G) || (options & CMD_L)) ? max = ft_adapt_padding_size(max) : 0;
+	((options & CMD_G) ||
+	(options & CMD_L)) ? max = ft_adapt_padding_size(max) : 0;
 	((options & CMD_L && (!(options & CMD_G)))) ?
 		ft_cmd_l(tmp, name, max, file_mode) : 0;
-	((options & CMD_L && (!(options & CMD_G)))) ? i = 0 : 0;
-	(options & CMD_G) ? i = 0 : 0;
-	(options & CMD_G) ?  ft_cmd_g(tmp, name, max, 1): 0;
-	(i && (!(options & CMD_1))) ? ft_print_normal(stock, max[0]) : 0;
-	(i && (options & CMD_1)) ? ft_cmd_1(stock) : 0;
-	((options & CMD_L || options & CMD_G) && (!(options & CMD_R))) ?
-		ft_putchar('\n') : 0;
+	(options & CMD_G) ? ft_cmd_g(tmp, name, max, file_mode) : 0;
+	pursue_ls(name, options, max, tmp);
 	(dir) ? closedir(dir) : 0;
-	((options & CMD_R)) ? ft_putchar('\n') : 0;
-	((options & CMD_R) ? ft_cmd_r(stock, name, options) : 0);
 	ft_free(&stock);
 }

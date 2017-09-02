@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/04 01:51:31 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 03:24:20 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 05:35:11 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 #include <time.h>
 #include "ls.h"
 
-t_ls		*ft_new_elem(char *name, const char *foldername, int **max_padding, int sort_options)
+t_ls	*ft_new_elem(char *name, const char *foldername,
+		int **max_padding, int sort_options)
 {
 	t_ls *new;
 	char *path;
@@ -24,7 +25,7 @@ t_ls		*ft_new_elem(char *name, const char *foldername, int **max_padding, int so
 	if (!(name))
 		return (NULL);
 	if (!(new = malloc(sizeof(t_ls))))
-		exit(1) ; 
+		exit(1);
 	new->left = NULL;
 	new->right = NULL;
 	new->color = 0;
@@ -43,44 +44,36 @@ t_ls		*ft_new_elem(char *name, const char *foldername, int **max_padding, int so
 	return (new);
 }
 
-int		*ft_new_int_tab(int *new)
-{
-	new[0] = 0;
-	new[1] = 0;
-	new[2] = 0;
-	new[3] = 0;
-	new[4] = 0;
-	return (new);
-}
-
-int *ft_store(char *foldername, DIR *dir, int sort_options, t_ls **stock)
+int		*ft_store(char *foldername, DIR *dir, int sort_options, t_ls **stock)
 {
 	struct dirent	*dent;
 	t_ls			*new_stock;
 	int				*max;
 
 	if (!(max = (int*)ft_memalloc(sizeof(int) * 5)))
-		exit (1);
+		exit(1);
 	if (dir != NULL)
 	{
 		while ((dir && (dent = readdir(dir))))
 		{
-			if (!(sort_options & CMD_A) && dent->d_name[0] == '.')
-				dent = NULL;
+			(!(sort_options & CMD_A) && dent->d_name[0] == '.') ?
+				dent = NULL : 0; 
 			if (dent && !(*stock))
 			{
-				(*stock) = ft_new_elem(dent->d_name, foldername, &max, sort_options);
+				(*stock) = ft_new_elem(dent->d_name, foldername,
+						&max, sort_options);
 				((*stock)) ? (*stock)->color = 1 : 0;
 			}
 			else if (dent)
 			{
-				new_stock = ft_new_elem(dent->d_name, foldername, &max, sort_options);
-				if (!(ft_place_elem((*stock), new_stock, foldername, &max, sort_options)))
+				new_stock = ft_new_elem(dent->d_name, foldername,
+						&max, sort_options);
+				if (!(ft_place_elem((*stock), new_stock, &max, sort_options)))
 					ft_rotate(stock, new_stock, sort_options);
 			}
 		}
 	}
 	else
-		(*stock) =	ft_new_elem(foldername, NULL, &max, sort_options);
+		(*stock) = ft_new_elem(foldername, NULL, &max, sort_options);
 	return (max);
 }

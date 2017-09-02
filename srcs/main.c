@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/28 14:14:42 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 03:01:02 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 05:21:35 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ static	void	ft_send_folders_to_ls(char **name, int command_options, int j)
 			}
 		}
 		++name;
-//		(j && *name) ? ft_putchar('\n') : 0;
 	}
 }
 

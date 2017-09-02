@@ -19,21 +19,24 @@ if [[ $REPLY =~ ^[Yy]$ ]] ; then
 	echo "CC = clang" >> Makefile
 	echo "SRCS = \$(addprefix \$(SDIR)/, \$(SOURCES:.c=.c))" >> Makefile
 	echo "OBJS = \$(addprefix \$(ODIR)/, \$(SOURCES:.c=.o))" >> Makefile
-	echo "OK = echo "\033[32 m OK ✓ \033[0m"" >> Makefile
+	echo "OK = echo \"\033[32m OK ✓ \033[0m\"" >> Makefile
 	echo >> Makefile
 	echo "all: lib mkbin \$(NAME)" >> Makefile
 	echo >> Makefile
 	echo "lib:" >> Makefile
-	echo "	make -C \$(LIBDIR)" >> Makefile
+	echo "	@echo \"Compiling libft ...\"" >> Makefile
+	echo "	@-make -C \$(LIBDIR)" >> Makefile
+	echo "	@\$(OK)"  >> Makefile
 	echo >> Makefile
 	echo "mkbin:" >> Makefile
 	echo "	@mkdir -p \$(ODIR)" >> Makefile
 	dir=$(find srcs -type d | sed "s/^srcs//g" | sed '1d' | sed "s/^/\\\t@\/bin\/mkdir -p \$(ODIR)/g")
 	echo "$dir" >> Makefile
 	echo >> Makefile
-	echo "\$(NAME): \$(OBJS)" >> Makefile
-	echo "@echo "Compiling... $@...."" >> Makefile
-	echo "@-\$(CC) \$(CFLAGS) \$(CDEBUG) -o \$(NAME) \$(OBJS) -I\$(INCDIR) \$(LDFLAGS) \$(LNCURSES)" >> Makefile
+ 	echo "\$(NAME): \$(OBJS)" >> Makefile
+	echo "	@echo \"Compiling $@ ...\"" >> Makefile
+	echo "	@-\$(CC) \$(CFLAGS) \$(CDEBUG) -o \$(NAME) \$(OBJS) -I\$(INCDIR) \$(LDFLAGS) \$(LNCURSES)" >> Makefile
+	echo "	@\$(OK)"  >> Makefile
 	echo >> Makefile
 	echo "\$(ODIR)/%.o : \$(SDIR)/%.c" >> Makefile
 	echo "	\$(CC) \$(CFLAGS) \$(CDEBUG) -c -o \$@ \$< -I\$(INCDIR)" >> Makefile

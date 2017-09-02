@@ -6,7 +6,7 @@
 #    By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/27 14:56:05 by lazrossi          #+#    #+#              #
-#    Updated: 2017/08/11 15:05:56 by lazrossi         ###   ########.fr        #
+#    Updated: 2017/04/26 11:41:57 by lazrossi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,24 +84,16 @@ CC = gcc -Wall -Wextra -Werror -c
 
 ARCH = ar rc
 
-OK = echo "\033[32m OK ✓ \033[0m"
-
 all: $(NAME)
 
 $(NAME):  
-	@echo "Compiling $@ ..."
 	@- $(CC) $(SRC)
 	@- $(ARCH) $(NAME) $(OBJECT)
-	@$(OK)
 
-clean:
-	@echo "Cleaning libft object files ..."
+clean: 
 	@-$(CLEAN) $(OBJECT)
-	@$(OK)
 
 fclean: clean
-	@echo "Deleting libft.a library ..."
 	@-$(CLEAN) $(NAME)
-	@$(OK)
 
 re: fclean all

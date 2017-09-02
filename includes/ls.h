@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/19 17:14:32 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 03:06:12 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 04:53:48 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int					ft_cmd_l(t_ls *stock, char *foldername, int *max_size, int file_mode);
 int		ft_cmd_g(t_ls *tmp, char *foldername, int *max_size, int first);
 void				ft_cmd_r(t_ls *stock, char *name, int options);
 void				ft_free(t_ls **stock);
-int					ft_place_elem(t_ls *stock, t_ls *next_stock, const char *foldername, int **max, int sort_options);
+int					ft_place_elem(t_ls *stock, t_ls *next_stock, int **max, int sort_options);
 void				ft_time(t_ls *stock);
 int					*ft_max_size(t_ls *stock, int *max, int sort_options);
 void				ft_put_whites(int max_str_len, int fillup, int options);

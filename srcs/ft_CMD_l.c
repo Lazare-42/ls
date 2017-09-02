@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 15:30:17 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 03:26:00 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 04:20:45 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <grp.h>
 #include <time.h>
 
-char	ft_mode(int mode)
+char		ft_mode(int mode)
 {
 	char c;
 
@@ -38,7 +38,9 @@ char	ft_mode(int mode)
 		(c = '?');
 	return (c);
 }
-void	ft_print(t_ls *stock, char *foldername, int *max_size, int file_mode)
+
+static void	ft_print(t_ls *stock, char *foldername,
+		int *max_size, int file_mode)
 {
 	time_t	local_time;
 	char	*path;
@@ -62,7 +64,7 @@ void	ft_print(t_ls *stock, char *foldername, int *max_size, int file_mode)
 	}
 }
 
-int		ft_cmd_l(t_ls *tmp, char *foldername, int *max_size, int file_mode)
+int			ft_cmd_l(t_ls *tmp, char *foldername, int *max_size, int file_mode)
 {
 	t_ls *stock;
 

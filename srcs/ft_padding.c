@@ -1,10 +1,12 @@
 /* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
 /*   ft_padding.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/10 13:45:32 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/18 16:27:25 by lazrossi         ###   ########.fr       */
+/*   Created: 2017/09/02 04:21:09 by lazrossi          #+#    #+#             */
+/*   Updated: 2017/09/02 04:21:49 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,19 +55,18 @@ int		*ft_fillup_val(t_ls *stock, int *max, int sort_options)
 		((int)stock->stat.st_size > max[3]) ?
 			max[3] = (int)stock->stat.st_size : 0;
 		max[4] = max[4] + stock->stat.st_blocks;
-		stock->name_len = 0; 
+		stock->name_len = 0;
 	}
 	else
 	{
 		stock->name_len = ft_strlen(stock->name);
-		(stock->name_len > max[0]) ? max[0] = stock->name_len : 0; 
+		(stock->name_len > max[0]) ? max[0] = stock->name_len : 0;
 	}
 	return (max);
 }
 
 int		*ft_max_size(t_ls *stock, int *max, int sort_options)
 {
-
 	max = ft_fillup_val(stock, max, sort_options);
 	return (max);
 }
