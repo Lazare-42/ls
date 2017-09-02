@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/10 14:43:46 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 18:31:03 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 20:51:23 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,6 @@ void	ls(char *name, int options, int file_mode)
 		return ;
 	}
 	max = ft_store(name, dir, options, &stock);
-	(options & CMD_REVERSE) ? ft_cmd_reverse(&(stock)) : 0;
 	tmp = stock;
 	((options & CMD_G) ||
 	(options & CMD_L)) ? max = ft_adapt_padding_size(max) : 0;
@@ -64,5 +63,7 @@ void	ls(char *name, int options, int file_mode)
 	(options & CMD_G) ? ft_cmd_g(tmp, name, max, file_mode) : 0;
 	pursue_ls(name, options, max, tmp);
 	(dir) ? closedir(dir) : 0;
+	if (max)
+		free(max);
 	ft_free(&stock);
 }
