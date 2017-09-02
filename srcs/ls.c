@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/10 14:43:46 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 13:46:09 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 05:20:14 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,16 +40,6 @@ void	pursue_ls(char *name, int options, int *max, t_ls *tmp)
 	((options & CMD_R) ? ft_cmd_r(tmp, name, options) : 0);
 }
 
-DIR		*ft_opendir(DIR *dir, int file_mode, char *name)
-{
-	if (file_mode && !(dir = opendir((const char *)name)))
-	{
-		ft_print_errors(name);
-		return (dir);
-	}
-	return (dir);
-}
-
 void	ls(char *name, int options, int file_mode)
 {
 	t_ls	*stock;
@@ -57,9 +47,13 @@ void	ls(char *name, int options, int file_mode)
 	DIR		*dir;
 	int		*max;
 
-	stock = NULL;
 	dir = NULL;
-	dir = ft_opendir(dir, file_mode, name);
+	stock = NULL;
+	if (file_mode && !(dir = opendir((const char *)name)))
+	{
+		ft_print_errors(name);
+		return ;
+	}
 	max = ft_store(name, dir, options, &stock);
 	(options & CMD_REVERSE) ? ft_cmd_reverse(&(stock)) : 0;
 	tmp = stock;
