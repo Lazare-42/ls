@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/04 01:51:31 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 14:08:52 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 14:06:23 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,40 +39,45 @@ t_ls	*ft_new_elem(char *name, const char *foldername,
 		return (NULL);
 	}
 	*max_padding = ft_max_size(new, *max_padding, sort_options);
-	if (foldername)
-		ft_strdel(&path);
+	(foldername) ? ft_strdel(&path) : 0;
 	return (new);
+}
+
+int		*ft_store_folder(char *foldername, int *max, t_ls **stock, DIR *dir)
+{
+	struct dirent	*dent;
+	t_ls			*new_stock;
+
+	while ((dir && (dent = readdir(dir))))
+	{
+		(!(max[5] & CMD_A) && dent->d_name[0] == '.') ?
+			dent = NULL : 0;
+		if (dent && !(*stock))
+		{
+			(*stock) = ft_new_elem(dent->d_name, foldername,
+					&max, max[5]);
+			((*stock)) ? (*stock)->color = 1 : 0;
+		}
+		else if (dent)
+		{
+			new_stock = ft_new_elem(dent->d_name, foldername,
+					&max, max[5]);
+			if (!(ft_place_elem((*stock), new_stock, &max, max[5])))
+				ft_rotate(stock, new_stock, max[5]);
+		}
+	}
+	return (max);
 }
 
 int		*ft_store(char *foldername, DIR *dir, int sort_options, t_ls **stock)
 {
-	struct dirent	*dent;
-	t_ls			*new_stock;
 	int				*max;
 
-	if (!(max = (int*)ft_memalloc(sizeof(int) * 5)))
+	if (!(max = (int*)ft_memalloc(sizeof(int) * 6)))
 		exit(1);
+	max[5] = sort_options;
 	if (dir != NULL)
-	{
-		while ((dir && (dent = readdir(dir))))
-		{
-			(!(sort_options & CMD_A) && dent->d_name[0] == '.') ?
-				dent = NULL : 0; 
-			if (dent && !(*stock))
-			{
-				(*stock) = ft_new_elem(dent->d_name, foldername,
-						&max, sort_options);
-				((*stock)) ? (*stock)->color = 1 : 0;
-			}
-			else if (dent)
-			{
-				new_stock = ft_new_elem(dent->d_name, foldername,
-						&max, sort_options);
-				if (!(ft_place_elem((*stock), new_stock, &max, sort_options)))
-					ft_rotate(stock, new_stock, sort_options);
-			}
-		}
-	}
+		max = ft_store_folder(foldername, max, stock, dir);
 	else
 		(*stock) = ft_new_elem(foldername, NULL, &max, sort_options);
 	return (max);
