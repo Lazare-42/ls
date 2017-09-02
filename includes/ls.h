@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/19 17:14:32 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/31 05:49:56 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 02:02:39 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ t_ls				*ft_advance_stock_if_no_a(t_ls *stock);
 void				ft_cmd_reverse(t_ls **begin_list);
 void				ft_cmd_1(t_ls *stock);
 void				ft_cmd_t(t_ls **stock);
-int					ft_cmd_l(t_ls *stock, char *foldername, int *max_size, int first);
+int					ft_cmd_l(t_ls *stock, char *foldername, int *max_size);
 int		ft_cmd_g(t_ls *tmp, char *foldername, int *max_size, int first);
 void				ft_cmd_r(t_ls *stock, char *name, int options);
 void				ft_free(t_ls **stock);

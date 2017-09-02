@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:55:44 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/01 14:50:52 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 01:11:54 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,7 @@ int		ft_sort_by_options(t_ls *stock, t_ls *next_stock, int sort_options)
 		else if (sort_options & CMD_U)
 			return (stock->stat.st_birthtimespec.tv_sec - next_stock->stat.st_birthtimespec.tv_sec);
 		else
-		{
-			printf("%s - %s\t%d\n", next_stock->name,stock->name ,ft_strcmp(next_stock->name, stock->name));
 			return (ft_strcmp(next_stock->name, stock->name));
-		}
 	}
 	else
 		if (sort_options & CMD_T)
@@ -41,10 +38,7 @@ int		ft_sort_by_options(t_ls *stock, t_ls *next_stock, int sort_options)
 		else if (sort_options & CMD_U)
 			return (next_stock->stat.st_birthtimespec.tv_sec - stock->stat.st_birthtimespec.tv_sec);
 		else
-		{
-			printf("%d\n", ft_strcmp(next_stock->name, stock->name));
 			return (ft_strcmp(stock->name, next_stock->name));
-		}
 }
 
 int		ft_place_elem(t_ls *stock, t_ls *next_stock,
@@ -54,8 +48,6 @@ int		ft_place_elem(t_ls *stock, t_ls *next_stock,
 	{
 		if (!stock->left)
 		{
-			ft_putstr(next_stock->name);
-			ft_putstr(": this element has been placed in the left node\n");
 			stock->left = next_stock; 
 			if (stock->color == 0)
 				return (0);
@@ -66,8 +58,6 @@ int		ft_place_elem(t_ls *stock, t_ls *next_stock,
 	}
 	if (!stock->right)
 	{
-			ft_putstr(next_stock->name);
-			ft_putstr(": this element has been placed in the right node\n");
 		stock->right = next_stock; 
 		if (stock->color == 0)
 			return (0);

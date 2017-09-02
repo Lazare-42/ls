@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:41:23 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/31 05:45:07 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 01:40:20 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,11 @@ void			ft_cmd_r(t_ls *stock, char *name, int options)
 	tmp = stock;
 	if (tmp)
 	{
+		if (tmp->left)
+			ft_cmd_r(tmp->left, name, options);
 		if (S_ISDIR(tmp->stat.st_mode) && ft_strcmp("..", tmp->name)
 				&& ft_strcmp(".", tmp->name))
 			ft_print_and_send(name, options, tmp, new_name);
-		if (tmp->left)
-			ft_cmd_r(tmp->left, name, options);
 		if (tmp->right)
 			ft_cmd_r(tmp->right, name, options);
 	}
