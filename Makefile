@@ -43,11 +43,11 @@ mkbin:
 
 $(NAME): $(OBJS)
 	@echo "Compiling ft_ls ..."
-	@-$(CC) $(CFLAGS) $(CDEBUG) -o $(NAME) $(OBJS) -I$(INCDIR) $(LDFLAGS) $(LNCURSES)
+	@-$(CC) $(CFLAGS) -o $(NAME) $(OBJS) -I$(INCDIR) $(LDFLAGS) $(LNCURSES)
 	@$(OK)
 
 $(ODIR)/%.o : $(SDIR)/%.c
-	$(CC) $(CFLAGS) $(CDEBUG) -c -o $@ $< -I$(INCDIR)
+	$(CC) $(CFLAGS) -c -o $@ $< -I$(INCDIR)
 
 clean:
 	@/bin/rm -rf $(ODIR)

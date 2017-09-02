@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:55:44 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 19:08:20 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 05:08:34 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,11 +58,6 @@ int				ft_sort_by_options(t_ls *stock,
 int				ft_place_elem(t_ls *stock, t_ls *next_stock,
 		int **max, int sort_options)
 {
-	if (!(stock))
-	{
-		stock = next_stock;
-		return (0);
-	}
 	if (ft_sort_by_options(stock, next_stock, sort_options) <= 0)
 	{
 		if (!stock->left)
