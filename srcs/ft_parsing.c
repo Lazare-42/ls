@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:50:16 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 16:54:05 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 02:56:21 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,20 +41,16 @@ int		ft_check_usage(char ***av)
 	return (command_options);
 }
 
-int		ft_check_file_errors(char **folder)
+void	ft_check_file_errors(char **folder)
 {
 	struct stat buffstatt;
 
 	while (folder && *folder)
 	{
 		if (lstat(*folder, &buffstatt))
-		{
 			ft_print_errors(*folder);
-			return (0);
-		}
 		folder++;
 	}
-	return (1);
 }
 
 int		ft_stock_commands(char command, int command_options)

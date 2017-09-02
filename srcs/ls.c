@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/10 14:43:46 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 02:02:40 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 03:11:36 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void	ls(char *name, int options, int file_mode)
 	tmp = stock;
 	((options & CMD_G) || (options & CMD_L)) ? max = ft_adapt_padding_size(max) : 0;
 	((options & CMD_L && (!(options & CMD_G)))) ?
-		ft_cmd_l(tmp, name, max) : 0;
+		ft_cmd_l(tmp, name, max, file_mode) : 0;
 	((options & CMD_L && (!(options & CMD_G)))) ? i = 0 : 0;
 	(options & CMD_G) ? i = 0 : 0;
 	(options & CMD_G) ?  ft_cmd_g(tmp, name, max, 1): 0;
