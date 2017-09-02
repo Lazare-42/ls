@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 15:37:13 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 15:59:18 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/02 16:49:03 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,11 @@ void	print_lnkabout(char *fpath)
 	int		path_size;
 	char	buf[1024];
 
-	path_size = readlink(fpath, buf, 1024);
+	if ((path_size = readlink(fpath, buf, 1024)) == -1)
+	{
+		ft_print_errors(fpath);
+		return;
+	}
 	buf[path_size] = '\0';
 	ft_putstr(" -> ");
 	ft_putstr(buf);
