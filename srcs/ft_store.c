@@ -77,7 +77,7 @@ int		*ft_store(char *foldername, DIR *dir, int sort_options, t_ls **stock)
 {
 	int				*max;
 
-	if (!(max = (int*)ft_memalloc(sizeof(int) * 6)))
+	if (!(max = (int*)ft_memalloc(sizeof(int) * 7)))
 		exit(1);
 	max[5] = sort_options;
 	if (dir != NULL)

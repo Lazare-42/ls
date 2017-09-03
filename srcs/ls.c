@@ -32,7 +32,7 @@ void	pursue_ls(char *name, int options, int *max, t_ls *tmp)
 	i = 1;
 	((options & CMD_L && (!(options & CMD_G)))) ? i = 0 : 0;
 	(options & CMD_G) ? i = 0 : 0;
-	(i && (!(options & CMD_1))) ? ft_print_normal(tmp, max[0]) : 0;
+	(i && (!(options & CMD_1))) ? ft_print_normal(tmp, max[0], options) : 0;
 	(i && (options & CMD_1)) ? ft_cmd_1(tmp) : 0;
 	((options & CMD_L || options & CMD_G) && (!(options & CMD_R))) ?
 		ft_putchar('\n') : 0;
@@ -55,6 +55,7 @@ void	ls(char *name, int options, int file_mode)
 		return ;
 	}
 	max = ft_store(name, dir, options, &stock);
+	max[6] = (options & CMD_I) ? 1 : 0;
 	tmp = stock;
 	((options & CMD_G) ||
 	(options & CMD_L)) ? max = ft_adapt_padding_size(max) : 0;

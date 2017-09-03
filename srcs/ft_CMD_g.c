@@ -51,6 +51,7 @@ void		ft_print(t_ls *stock, char *foldername, int *max_size,
 		(file_mode) ? ft_putchar('\n') : 0;
 		path = (ft_strcmp(foldername, stock->name)) ?
 			find_path(stock->name, foldername) : foldername;
+		(max_size[6]) ? ft_print_inode(stock->stat.st_ino) : 0;
 		ft_print_rights(stock, path);
 		ft_print_grp(stock, max_size);
 		ft_print_time(stock, local_time);

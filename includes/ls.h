@@ -34,6 +34,7 @@
 # define CMD_S 128
 # define CMD_U 256
 # define CMD_1 512
+# define CMD_I 1024 
 
 typedef struct		s_ls
 {
@@ -49,7 +50,8 @@ void				ft_ls(char *foldername, int options);
 void				ls(char *name, int options, int file_mode);
 int					*ft_store(char *foldername,
 					DIR *dir, int sort_options, t_ls **stock);
-void				ft_print_normal(t_ls *stock, int max_stock_val);
+void				ft_print_normal(t_ls *stock, int max_stock_val,
+		int sort_options);
 void				ft_print_usage_error(char error);
 void				ft_print_name(char *name, int st_mode);
 t_ls				*ft_advance_stock_if_no_a(t_ls *stock);
@@ -85,5 +87,6 @@ t_ls				*ft_new_elem(char *name, const
 void				ft_rotate(t_ls **stock, t_ls *new_stock, int sort_options);
 int					ft_sort_by_options(t_ls *stock, t_ls *next_stock,
 					int sort_options);
+void				ft_print_inode(int inode);
 
 #endif

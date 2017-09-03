@@ -58,7 +58,7 @@ int		ft_stock_commands(char command, int command_options)
 	if (command == 'l' || command == 'R' || command == 'a'
 			|| command == 'r' || command == 't' || command == 'u'
 			|| command == 'f' || command == 'g' || command == 'S'
-			|| command == 'U' || command == '1')
+			|| command == 'U' || command == '1' || command == 'i')
 	{
 		(command == 'l') ? command_options = command_options | CMD_L : 0;
 		(command == 'R') ? command_options = command_options | CMD_R : 0;
@@ -72,6 +72,7 @@ int		ft_stock_commands(char command, int command_options)
 		(command == 'S') ? command_options = command_options | CMD_S : 0;
 		(command == 'U') ? command_options = command_options | CMD_U : 0;
 		(command == '1') ? command_options = command_options | CMD_1 : 0;
+		(command == 'i') ? command_options = command_options | CMD_I : 0;
 	}
 	else
 		return (0);
