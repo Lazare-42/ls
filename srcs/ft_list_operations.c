@@ -14,19 +14,16 @@
 
 void	ft_free(t_ls **stock)
 {
-	t_ls *tmp;
 
 	if ((*stock) && (*stock)->left)
 		ft_free(&(*stock)->left);
-	if (*stock)
-	{
-		tmp = (*stock)->left;
-		free((*stock)->name);
-		ft_memdel((void**)stock);
-		*stock = tmp;
-	}
 	if ((*stock) && (*stock)->right)
 		ft_free(&(*stock)->right);
+	if (*stock)
+	{
+		ft_strdel(&((*stock)->name));
+		ft_memdel((void**)stock);
+	}
 }
 
 void	ft_cmd_reverse(t_ls **begin_list)
