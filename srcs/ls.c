@@ -6,11 +6,24 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/10 14:43:46 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 21:13:54 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/03 14:30:54 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
+
+void	ft_free(t_ls **stock)
+{
+	if ((*stock) && (*stock)->left)
+		ft_free(&(*stock)->left);
+	if ((*stock) && (*stock)->right)
+		ft_free(&(*stock)->right);
+	if (*stock)
+	{
+		ft_strdel(&((*stock)->name));
+		ft_memdel((void**)stock);
+	}
+}
 
 int		*ft_adapt_padding_size(int *max)
 {

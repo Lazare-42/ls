@@ -1,11 +1,10 @@
-NAME = ./ft_ls
+NAME = ft_ls
 
-SOURCES = ./ft_CMD_g.c \
-./ft_CMD_l.c \
+SOURCES = ./ft_cmd_g.c \
+./ft_cmd_l.c \
 ./ft_cmd_one.c \
-./ft_CMD_R.c \
+./ft_cmd_r.c \
 ./ft_find_path.c \
-./ft_list_operations.c \
 ./ft_padding.c \
 ./ft_parsing.c \
 ./ft_place_element.c \
@@ -43,12 +42,12 @@ mkbin:
 
 
 $(NAME): $(OBJS)
-	@echo "Compiling ./ft_ls ..."
-	@-$(CC) $(CFLAGS) -o $(NAME) $(OBJS) -I$(INCDIR) $(LDFLAGS) $(LNCURSES)
+	@echo "Compiling ft_ls ..."
+	@-$(CC) $(CFLAGS) $(CDEBUG) -o $(NAME) $(OBJS) -I$(INCDIR) $(LDFLAGS) $(LNCURSES)
 	@$(OK)
 
 $(ODIR)/%.o : $(SDIR)/%.c
-	$(CC) $(CFLAGS) -c -o $@ $< -I$(INCDIR)
+	$(CC) $(CFLAGS) $(CDEBUG) -c -o $@ $< -I$(INCDIR)
 
 clean:
 	@/bin/rm -rf $(ODIR)

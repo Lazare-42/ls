@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 14:03:25 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 15:59:17 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/03 14:28:14 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 void	ft_proper_print(t_ls *tmp, int max_ws_col,
 		int max_stock_val, int inode_option)
 {
-	int i;
-	static int total_written = 0;
+	int			i;
+	static int	total_written = 0;
 
 	i = max_stock_val;
 	if (tmp && tmp->name)
