@@ -22,6 +22,7 @@ t_ls	*ft_new_elem(char *name, const char *foldername,
 	t_ls *new;
 	char *path;
 
+	path = NULL;
 	if (!(name))
 		return (NULL);
 	if (!(new = malloc(sizeof(t_ls))))
@@ -36,10 +37,12 @@ t_ls	*ft_new_elem(char *name, const char *foldername,
 	{
 		ft_strdel(&path);
 		ft_print_errors(new->name);
+		ft_strdel(&(new->name));
+		ft_memdel((void**)new);
 		return (NULL);
 	}
 	*max_padding = ft_max_size(new, *max_padding, sort_options);
-	(foldername) ? ft_strdel(&path) : 0;
+	(path) ? ft_strdel(&path) : 0;
 	return (new);
 }
 
