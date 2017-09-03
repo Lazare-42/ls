@@ -39,11 +39,10 @@ void	ft_print_time(t_ls *stock, time_t local_time)
 	ft_strdel(&tmp);
 }
 
-char	*ft_get_rights(int mode)
+void	ft_get_rights(int mode)
 {
-	char *rights;
+	char rights[10];
 
-	rights = ft_strnew(10);
 	rights[0] = (mode & S_IRUSR) ? 'r' : '-';
 	rights[1] = (mode & S_IWUSR) ? 'w' : '-';
 	rights[2] = (mode & S_IXUSR) ? 'x' : '-';
@@ -56,7 +55,7 @@ char	*ft_get_rights(int mode)
 	rights[7] = (mode & S_IWOTH) ? 'w' : '-';
 	rights[8] = (mode & S_IXOTH) ? 'x' : '-';
 	rights[9] = '\0';
-	return (rights);
+	ft_putstr(rights);
 }
 
 void	ft_print_rights(t_ls *stock, char *path)
@@ -65,16 +64,13 @@ void	ft_print_rights(t_ls *stock, char *path)
 	acl_t	acl;
 	char	c;
 	int		mode;
-	char	*exec_rights;
 
-	exec_rights = NULL;
 	mode = stock->stat.st_mode;
 	attributes = listxattr(path, NULL, 0, XATTR_NOFOLLOW);
 	acl = acl_get_file(path, ACL_TYPE_EXTENDED);
 	c = ft_mode(mode);
 	ft_putchar(c);
-	exec_rights = ft_get_rights(stock->stat.st_mode);
-	(exec_rights) ? free(exec_rights) : 0;
+	ft_get_rights(stock->stat.st_mode);
 	(attributes) ? ft_putchar('@') : 0;
 	(acl && (!(attributes))) ? ft_putchar('+') : 0;
 	((!acl) && (!attributes)) ? ft_putchar(' ') : 0;
