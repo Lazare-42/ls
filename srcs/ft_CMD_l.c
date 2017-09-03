@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 15:30:17 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 17:26:48 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/03 14:50:30 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,8 @@ int			ft_cmd_l(t_ls *tmp, char *foldername, int *max_size, int file_mode)
 	{
 		ft_putstr("total ");
 		ft_putnbr(max_size[4]);
+		if ((!max_size[4]))
+			ft_putchar('\n');
 	}
 	ft_print(stock, foldername, max_size, file_mode);
 	return (1);
