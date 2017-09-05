@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 15:37:13 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/03 19:21:09 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/05 17:23:28 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,6 +90,8 @@ void	ft_print_grp_usr(t_ls *stock, int *max_size)
 		ft_put_whites(max_size[1],
 			ft_strlen(getpwuid(stock->stat.st_uid)->pw_name), 2);
 	}
+	else
+		ft_putnbr(stock->stat.st_uid);
 	grp = getgrgid(stock->stat.st_gid);
 	if (grp)
 	{

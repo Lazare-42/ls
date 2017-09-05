@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/02 04:21:09 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 20:59:30 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/05 17:32:37 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,14 +41,19 @@ int		*ft_fillup_val(t_ls *stock, int *max, int sort_options)
 {
 	int				val;
 	struct group	*grp;
-	int				k;
+	struct	passwd 	*uid;
 
-	k = 0;
+	uid = NULL;
 	if (stock && ((sort_options & CMD_L) || (sort_options & CMD_G)))
 	{
 		(stock->stat.st_nlink > max[0]) ? max[0] = stock->stat.st_nlink : 0;
-		val = (getpwuid(stock->stat.st_uid)) ?
+		if ((uid = getpwuid(stock->stat.st_uid)))
+		{
+			val = (getpwuid(stock->stat.st_uid)) ?
 			ft_strlen(getpwuid(stock->stat.st_uid)->pw_name) : 0;
+		}
+		else
+			val = ft_strlen(ft_itoa(stock->stat.st_uid));
 		(val > max[1]) ? max[1] = val : 0;
 		grp = getgrgid(stock->stat.st_gid);
 		(grp) ? val = ((int)ft_strlen(grp->gr_name)) : 0;
