@@ -6,14 +6,14 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/19 17:14:32 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 20:39:34 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/05 09:40:56 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LS_H
 # define LS_H
 
-# include "../libft/libft.h"
+# include "../libft/include/libft.h"
 # include <string.h>
 # include <dirent.h>
 # include <unistd.h>
@@ -55,14 +55,13 @@ void				ft_print_normal(t_ls *stock, int max_stock_val,
 void				ft_print_usage_error(char error);
 void				ft_print_name(char *name, int st_mode);
 t_ls				*ft_advance_stock_if_no_a(t_ls *stock);
-void				ft_cmd_reverse(t_ls **begin_list);
 void				ft_cmd_1(t_ls *stock);
 void				ft_cmd_t(t_ls **stock);
 int					ft_cmd_l(t_ls *stock, char
 					*foldername, int *max_size, int file_mode);
 int					ft_cmd_g(t_ls *tmp, char *foldername,
 		int *max_size, int first);
-void				ft_cmd_r(t_ls *stock, char *name, int options);
+void				ft_cmd_recurs(t_ls *stock, char *name, int options);
 void				ft_free(t_ls **stock);
 int					ft_place_elem(t_ls *stock,
 					t_ls *next_stock, int **max, int sort_options);

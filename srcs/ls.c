@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/10 14:43:46 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/03 14:30:54 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/03 14:52:41 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void	pursue_ls(char *name, int options, int *max, t_ls *tmp)
 	((options & CMD_L || options & CMD_G) && (!(options & CMD_R))) ?
 		ft_putchar('\n') : 0;
 	((options & CMD_R)) ? ft_putchar('\n') : 0;
-	((options & CMD_R) ? ft_cmd_r(tmp, name, options) : 0);
+	((options & CMD_R) ? ft_cmd_recurs(tmp, name, options) : 0);
 }
 
 void	ls(char *name, int options, int file_mode)

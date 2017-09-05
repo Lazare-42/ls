@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_cmd_r.c                                         :+:      :+:    :+:   */
+/*   ft_cmd_recurs.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:41:23 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 01:40:20 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/03 14:52:41 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static	void	ft_print_and_send(char *name,
 	ft_memdel((void**)&(add_slash));
 }
 
-void			ft_cmd_r(t_ls *stock, char *name, int options)
+void			ft_cmd_recurs(t_ls *stock, char *name, int options)
 {
 	t_ls	*tmp;
 	char	*new_name;
@@ -38,11 +38,11 @@ void			ft_cmd_r(t_ls *stock, char *name, int options)
 	if (tmp)
 	{
 		if (tmp->left)
-			ft_cmd_r(tmp->left, name, options);
+			ft_cmd_recurs(tmp->left, name, options);
 		if (S_ISDIR(tmp->stat.st_mode) && ft_strcmp("..", tmp->name)
 				&& ft_strcmp(".", tmp->name))
 			ft_print_and_send(name, options, tmp, new_name);
 		if (tmp->right)
-			ft_cmd_r(tmp->right, name, options);
+			ft_cmd_recurs(tmp->right, name, options);
 	}
 }

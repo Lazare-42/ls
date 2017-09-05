@@ -3,7 +3,7 @@ NAME = ft_ls
 SOURCES = ./ft_cmd_g.c \
 ./ft_cmd_l.c \
 ./ft_cmd_one.c \
-./ft_cmd_r.c \
+./ft_cmd_recurs.c \
 ./ft_find_path.c \
 ./ft_padding.c \
 ./ft_parsing.c \

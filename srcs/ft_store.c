@@ -6,11 +6,12 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/04 01:51:31 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 19:01:19 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/05 16:26:02 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ls.h"
+#include "../libft/include/libft.h"
 #include <sys/xattr.h>
 #include <pwd.h>
 #include <time.h>
@@ -35,14 +36,14 @@ t_ls	*ft_new_elem(char *name, const char *foldername,
 	(!(foldername)) ? path = name : 0;
 	if (lstat(path, &(new->stat)))
 	{
-		ft_strdel(&path);
+		(path && ft_strcmp(name, path) != 0) ? ft_strdel(&path) : 0;
 		ft_print_errors(new->name);
 		ft_strdel(&(new->name));
 		ft_memdel((void**)new);
 		return (NULL);
 	}
 	*max_padding = ft_max_size(new, *max_padding, sort_options);
-	(path) ? ft_strdel(&path) : 0;
+	(path && ft_strcmp(name, path) != 0) ? ft_strdel(&path) : 0;
 	return (new);
 }
 

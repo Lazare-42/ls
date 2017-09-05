@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/25 18:44:32 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/05/12 11:38:48 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/09/05 09:32:09 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBFT_H
 
 # include <stddef.h>
+
+# include "get_next_line.h"
 
 typedef	struct		s_list
 {
@@ -85,4 +87,6 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int					ft_int_size(int nbr);
 char				**ft_split_whitespaces(char *str);
 char				*ft_strjoinfree(char **s1, char **s2, char a);
+void				**ft_putab(char**str);
+int					get_next_line(const int fd, char **line);
 #endif
