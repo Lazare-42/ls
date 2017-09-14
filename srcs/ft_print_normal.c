@@ -42,6 +42,8 @@ void	ft_proper_print(t_ls *tmp, int max_ws_col,
 
 void	ft_print_name(char *name, int st_mode)
 {
+	st_mode++;
+	/*
 	if (S_ISDIR(st_mode))
 	{
 		ft_putstr("\e[0;96m");
@@ -61,6 +63,7 @@ void	ft_print_name(char *name, int st_mode)
 		ft_putstr("\e[0m");
 	}
 	else
+	*/
 		ft_putstr(name);
 }
 

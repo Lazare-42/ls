@@ -45,12 +45,12 @@ void	ft_get_rights(int mode)
 
 	rights[0] = (mode & S_IRUSR) ? 'r' : '-';
 	rights[1] = (mode & S_IWUSR) ? 'w' : '-';
-	rights[2] = (mode & S_IXUSR) ? 'x' : '-';
 	rights[2] = (mode & S_ISUID) ? 'S' : '-';
+	rights[2] = (mode & S_IXUSR && (!(mode & S_ISUID))) ? 'x' : '-';
 	rights[3] = (mode & S_IRGRP) ? 'r' : '-';
 	rights[4] = (mode & S_IWGRP) ? 'w' : '-';
-	rights[5] = (mode & S_IXGRP) ? 'x' : '-';
 	rights[5] = (mode & S_ISGID) ? 'S' : '-';
+	rights[5] = (mode & S_IXGRP && (!(mode & S_ISGID))) ? 'x' : '-';
 	rights[6] = (mode & S_IROTH) ? 'r' : '-';
 	rights[7] = (mode & S_IWOTH) ? 'w' : '-';
 	rights[8] = (mode & S_IXOTH) ? 'x' : '-';

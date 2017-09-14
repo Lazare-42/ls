@@ -1,7 +1,7 @@
 NAME = ft_ls
 
-SOURCES = ./ft_cmd_g.c \
-./ft_cmd_l.c \
+SOURCES = ./ft_CMD_g.c \
+./ft_CMD_l.c \
 ./ft_cmd_one.c \
 ./ft_cmd_recurs.c \
 ./ft_find_path.c \
