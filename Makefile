@@ -40,7 +40,7 @@ $(NAME): $(OBJS)
 	@$(OK)
 
 clean:
-	@/bin/rm -rf $(SDIR)
+	@/bin/rm $(OBJS)
 	@make -C $(LIBDIR) clean
 
 fclean: clean
