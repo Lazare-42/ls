@@ -6,11 +6,11 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:58:26 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 02:57:05 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/28 16:55:53 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ls.h"
+#include "../includes/ls.h"
 
 void	ft_print_errors(char *name)
 {

@@ -6,11 +6,11 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/28 16:51:06 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/12/28 16:51:08 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/28 16:54:27 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ls.h"
+#include "../includes/ls.h"
 
 static	void	ft_print_and_send(char *name,
 		int options, t_ls *stock, char *new_name)

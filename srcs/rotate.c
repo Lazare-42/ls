@@ -6,11 +6,11 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/02 03:54:45 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 04:07:25 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/28 16:55:37 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ls.h"
+#include "../includes/ls.h"
 
 static int	ft_rotate_2(t_ls **stock)
 {

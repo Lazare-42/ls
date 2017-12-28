@@ -6,11 +6,11 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/28 14:14:42 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 20:59:12 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/28 16:55:56 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ls.h"
+#include "../includes/ls.h"
 
 static	void	ft_send_folders_to_ls(char **name, int command_options, int j)
 {

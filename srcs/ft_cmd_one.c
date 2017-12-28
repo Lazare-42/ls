@@ -6,11 +6,11 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:35:50 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/08/10 13:36:10 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/28 16:54:15 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ls.h"
+#include "../includes/ls.h"
 
 void	ft_cmd_1(t_ls *stock)
 {

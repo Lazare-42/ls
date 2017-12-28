@@ -6,11 +6,11 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:50:16 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 02:56:21 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/28 16:55:02 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ls.h"
+#include "../includes/ls.h"
 
 int		ft_check_usage(char ***av)
 {

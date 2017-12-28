@@ -6,11 +6,11 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 13:55:44 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/02 05:08:34 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/28 16:55:45 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ls.h"
+#include "../includes/ls.h"
 #include <stdio.h>
 
 static int		ft_sort_by_rev_options(t_ls *stock,

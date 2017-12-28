@@ -6,12 +6,12 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/02 04:21:09 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/12/28 16:52:05 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/28 16:54:51 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <sys/xattr.h>
-#include "ls.h"
+#include "../includes/ls.h"
 #include <pwd.h>
 #include <time.h>
 #include <grp.h>

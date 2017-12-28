@@ -6,16 +6,16 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/04 01:51:31 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/05 16:26:02 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/28 16:55:56 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ls.h"
+#include "../includes/ls.h"
 #include "../libft/include/libft.h"
 #include <sys/xattr.h>
 #include <pwd.h>
 #include <time.h>
-#include "ls.h"
+#include "../includes/ls.h"
 
 t_ls	*ft_new_elem(char *name, const char *foldername,
 		int **max_padding, int sort_options)
