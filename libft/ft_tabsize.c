@@ -1,27 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_tabsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/10 14:54:27 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/12/18 15:29:39 by lazrossi         ###   ########.fr       */
+/*   Created: 2017/12/18 14:08:22 by lazrossi          #+#    #+#             */
+/*   Updated: 2017/12/18 14:08:23 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "include/libft.h"
 
-size_t	ft_strlen(char *s)
+int	ft_tabsize(char **tab)
 {
-	char *start;
+	int i;
 
-	if (!s)
-		return (0);
-	start = s;
-	while (*s != 0)
-	{
-		++s;
-	}
-	return (s - start);
+	i = 0;
+	while (tab && tab[i])
+		i++;
+	return (i);
 }

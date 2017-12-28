@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/19 17:14:32 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/05 09:40:56 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/28 16:28:43 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@
 # define CMD_S 128
 # define CMD_U 256
 # define CMD_1 512
-# define CMD_I 1024 
+# define CMD_I 1024
 
 typedef struct		s_ls
 {
@@ -87,5 +87,4 @@ void				ft_rotate(t_ls **stock, t_ls *new_stock, int sort_options);
 int					ft_sort_by_options(t_ls *stock, t_ls *next_stock,
 					int sort_options);
 void				ft_print_inode(int inode);
-
 #endif

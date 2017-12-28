@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/02 04:21:09 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/05 17:32:37 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/28 16:52:05 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,17 +41,16 @@ int		*ft_fillup_val(t_ls *stock, int *max, int sort_options)
 {
 	int				val;
 	struct group	*grp;
-	struct	passwd 	*uid;
+	struct passwd	*uid;
 
 	uid = NULL;
+	stock->name_len = ft_strlen(stock->name);
+	(stock->name_len > max[0]) ? max[0] = stock->name_len : 0;
 	if (stock && ((sort_options & CMD_L) || (sort_options & CMD_G)))
 	{
 		(stock->stat.st_nlink > max[0]) ? max[0] = stock->stat.st_nlink : 0;
 		if ((uid = getpwuid(stock->stat.st_uid)))
-		{
-			val = (getpwuid(stock->stat.st_uid)) ?
-			ft_strlen(getpwuid(stock->stat.st_uid)->pw_name) : 0;
-		}
+			val = ft_strlen(getpwuid(stock->stat.st_uid)->pw_name);
 		else
 			val = ft_strlen(ft_itoa(stock->stat.st_uid));
 		(val > max[1]) ? max[1] = val : 0;
@@ -62,11 +61,6 @@ int		*ft_fillup_val(t_ls *stock, int *max, int sort_options)
 			max[3] = (int)stock->stat.st_size : 0;
 		max[4] = max[4] + stock->stat.st_blocks;
 		stock->name_len = 0;
-	}
-	else
-	{
-		stock->name_len = ft_strlen(stock->name);
-		(stock->name_len > max[0]) ? max[0] = stock->name_len : 0;
 	}
 	return (max);
 }

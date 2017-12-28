@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/20 18:58:18 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/05 09:30:27 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/18 15:26:43 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t		len;
 	char		*concat;
 
+	concat = NULL;
 	if (s1 && s2)
 	{
 		len = ft_strlen(s1) + ft_strlen(s2);

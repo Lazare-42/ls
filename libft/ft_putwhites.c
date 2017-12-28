@@ -1,27 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putwhites.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/10 14:54:27 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/12/18 15:29:39 by lazrossi         ###   ########.fr       */
+/*   Created: 2017/12/18 15:31:01 by lazrossi          #+#    #+#             */
+/*   Updated: 2017/12/18 15:31:16 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "./include/libft.h"
 
-size_t	ft_strlen(char *s)
+void	ft_putwhites(int i)
 {
-	char *start;
+	int j;
 
-	if (!s)
-		return (0);
-	start = s;
-	while (*s != 0)
-	{
-		++s;
-	}
-	return (s - start);
+	j = -1;
+	while (++j < i)
+		ft_putchar(' ');
 }

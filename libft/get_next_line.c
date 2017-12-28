@@ -6,12 +6,11 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/08 13:30:36 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/05 09:36:35 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/27 14:12:53 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./include/libft.h"
-#include "./include/get_next_line.h"
+#include "include/libft.h"
 
 char	*ft_str_join_free(char **s1, char **s2)
 {
@@ -22,15 +21,16 @@ char	*ft_str_join_free(char **s1, char **s2)
 	return (str);
 }
 
-int		ft_fillup(char **line, t_gnl **stock)
+int		ft_fillup(char **line, t_gnl **stock, char tofind)
 {
-	if ((*stock)->rest && ft_strchr((*stock)->rest, '\n'))
+	*line = NULL;
+	if ((*stock)->rest && ft_strchr((*stock)->rest, tofind))
 	{
-		*line = ft_strnew((ft_strchr((*stock)->rest, '\n') - (*stock)->rest));
+		*line = ft_strnew((ft_strchr((*stock)->rest, tofind) - (*stock)->rest));
 		*line = ft_strncpy(*line, (*stock)->rest, \
-				((ft_strchr((*stock)->rest, '\n') - (*stock)->rest)));
+				((ft_strchr((*stock)->rest, tofind) - (*stock)->rest)));
 		(*stock)->rest = ft_strcpy((*stock)->rest,
-				ft_strchr((*stock)->rest, '\n') + 1);
+				ft_strchr((*stock)->rest, tofind) + 1);
 		return (1);
 	}
 	else if ((*stock)->rest && *(*stock)->rest)
@@ -48,6 +48,7 @@ t_gnl	*manage_stock(t_gnl **stock, int fd)
 	t_gnl *tmp;
 	t_gnl *new;
 
+	new = NULL;
 	if (*stock)
 	{
 		tmp = *stock;
@@ -71,29 +72,30 @@ t_gnl	*manage_stock(t_gnl **stock, int fd)
 	return (*stock);
 }
 
-int		get_next_line(const int fd, char **line)
+int		get_next_line(const int fd, char **line, char tofind)
 {
 	static t_gnl	*stock = NULL;
 	t_gnl			*tmp;
 	char			*buf;
 	int				ret;
 
+	buf = NULL;
 	buf = ft_strnew(BUFF_SIZE);
 	if (!(tmp = manage_stock(&stock, fd)))
 		return (-1);
 	ret = 1;
-	while ((ft_strchr(buf, '\n') == NULL))
+	while ((ft_strchr(buf, tofind) == NULL))
 	{
 		if ((ret = read(fd, buf, BUFF_SIZE)) == -1)
 			return (-1);
 		if (ret == 0)
 		{
 			ft_strdel(&(buf));
-			return (ft_fillup(line, &tmp));
+			return (ft_fillup(line, &tmp, tofind));
 		}
 		buf[ret] = '\0';
 		tmp->rest = ft_str_join_free(&tmp->rest, &buf);
 	}
 	ft_strdel(&(buf));
-	return (ft_fillup(line, &tmp));
+	return (ft_fillup(line, &tmp, tofind));
 }

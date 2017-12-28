@@ -1,27 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_tabdup_and_add.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/10 14:54:27 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/12/18 15:29:39 by lazrossi         ###   ########.fr       */
+/*   Created: 2017/12/18 14:02:18 by lazrossi          #+#    #+#             */
+/*   Updated: 2017/12/27 11:04:24 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "include/libft.h"
 #include <stdlib.h>
 
-size_t	ft_strlen(char *s)
+char	**ft_tabdup_and_add(char **tab, char *str)
 {
-	char *start;
+	int		i;
+	int		size;
+	char	**new_tab;
 
-	if (!s)
-		return (0);
-	start = s;
-	while (*s != 0)
+	i = 0;
+	new_tab = NULL;
+	size = ft_tabsize(tab) + 2;
+	if (!(new_tab = (char**)malloc(sizeof(char*) * size)))
+		return (NULL);
+	new_tab[size - 1] = NULL;
+	while (tab && tab[i])
 	{
-		++s;
+		if (!(new_tab[i] = ft_strdup(tab[i])))
+			return (NULL);
+		i++;
 	}
-	return (s - start);
+	if (!(new_tab[i] = ft_strdup(str)))
+		return (NULL);
+	return (new_tab);
 }

@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_tabdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/10 14:54:27 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/12/18 15:29:39 by lazrossi         ###   ########.fr       */
+/*   Created: 2017/09/05 09:29:17 by lazrossi          #+#    #+#             */
+/*   Updated: 2017/09/06 12:44:47 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "include/libft.h"
 #include <stdlib.h>
 
-size_t	ft_strlen(char *s)
+void	ft_tabdel(char **str)
 {
-	char *start;
+	int i;
 
-	if (!s)
-		return (0);
-	start = s;
-	while (*s != 0)
+	i = 0;
+	while (str[i])
 	{
-		++s;
+		ft_memdel((void**)&str[i]);
+		i++;
 	}
-	return (s - start);
+	ft_memdel((void**)&str);
 }

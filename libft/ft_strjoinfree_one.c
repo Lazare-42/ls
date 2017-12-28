@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strjoinfree_one.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/10 14:54:27 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/12/18 15:29:39 by lazrossi         ###   ########.fr       */
+/*   Created: 2017/12/27 11:18:32 by lazrossi          #+#    #+#             */
+/*   Updated: 2017/12/28 16:32:16 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "include/libft.h"
 #include <stdlib.h>
 
-size_t	ft_strlen(char *s)
+char	*ft_strjoinfree_one(char **s1, char *s2, char where)
 {
-	char *start;
+	char *str;
 
-	if (!s)
-		return (0);
-	start = s;
-	while (*s != 0)
+	if (where == 'B')
 	{
-		++s;
+		if (!(str = ft_strjoin(s2, *s1)))
+			return (NULL);
 	}
-	return (s - start);
+	else if (!(str = ft_strjoin(*s1, s2)))
+		return (NULL);
+	ft_memdel((void*)s1);
+	return (str);
 }

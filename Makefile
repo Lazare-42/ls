@@ -19,38 +19,28 @@ SOURCES = ./ft_cmd_g.c \
 
 LIBDIR = libft
 SDIR = srcs
-ODIR = bin
 CFLAGS = -Wall -Wextra -Werror
-CDEBUG = -fno-omit-frame-pointer -fsanitize=address -g
 INCDIR = includes
 LDFLAGS = -L$(LIBDIR) -lft
-LNCURSES = -lncurses
 CC = clang
 SRCS = $(addprefix $(SDIR)/, $(SOURCES:.c=.c))
-OBJS = $(addprefix $(ODIR)/, $(SOURCES:.c=.o))
+OBJS = $(addprefix $(SDIR)/, $(SOURCES:.c=.o))
 OK = echo "[32m OK ✓ [0m"
 
-all: lib mkbin $(NAME)
+all: lib $(NAME)
 
 lib:
 	@echo "Compiling libft ..."
 	@-make -C $(LIBDIR)
 	@$(OK)
 
-mkbin:
-	@mkdir -p $(ODIR)
-
-
 $(NAME): $(OBJS)
-	@echo "Compiling ft_ls ..."
-	@-$(CC) $(CFLAGS) $(CDEBUG) -o $(NAME) $(OBJS) -I$(INCDIR) $(LDFLAGS) $(LNCURSES)
+	@echo "Compiling  ..."
+	@-$(CC) $(CFLAGS) -o $(NAME) $(OBJS) -I$(INCDIR) $(LDFLAGS)
 	@$(OK)
 
-$(ODIR)/%.o : $(SDIR)/%.c
-	$(CC) $(CFLAGS) $(CDEBUG) -c -o $@ $< -I$(INCDIR)
-
 clean:
-	@/bin/rm -rf $(ODIR)
+	@/bin/rm -rf $(SDIR)
 	@make -C $(LIBDIR) clean
 
 fclean: clean

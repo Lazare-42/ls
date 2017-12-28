@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/25 18:44:32 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/09/05 09:32:09 by lazrossi         ###   ########.fr       */
+/*   Created: 2017/12/18 15:27:37 by lazrossi          #+#    #+#             */
+/*   Updated: 2017/12/28 16:32:45 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ int					ft_isascii(int c);
 int					ft_isprint(int c);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
+int					ft_str_isalpha(char *str);
 void				*ft_memalloc(size_t size);
 void				ft_memdel(void **ap);
 char				*ft_strnew(size_t size);
@@ -86,7 +87,23 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int					ft_int_size(int nbr);
 char				**ft_split_whitespaces(char *str);
+char				**ft_split_char(char *str, char c);
+char				**ft_split_whitespaces_nokots(char *str);
 char				*ft_strjoinfree(char **s1, char **s2, char a);
-void				**ft_putab(char**str);
-int					get_next_line(const int fd, char **line);
+void				ft_putabs(char**str, char separator);
+int					get_next_line(const int fd, char **line, char tofind);
+int					ft_advance_str_for_quotes(char *str, int i);
+char				*ft_strdup_to_quote(char *src, char *dst);
+char				*ft_make_blocks_for_quotes(char *str, int *i);
+void				ft_tabdel(char **str);
+char				**ft_tabdup(char **str, int size);
+int					ft_tabsize(char **tab);
+void				ft_putwhites(int i);
+char				**ft_tabdup_and_add(char **tab, char *str);
+char				**ft_tabdup_add_free(char ***tab, char **str, char which);
+char				*ft_strjoinfree_str_char(char **s1, char s2);
+char				*ft_strjoinfree_one(char **s1, char *s2, char where);
+char				*ft_strjoinfree_char_str(char s2, char **s1);
+char				*ft_strdupfrom_free(const char **str, int from);
+char				**ft_tab_replacestr(char ***tab, char **str, char *cmp);
 #endif

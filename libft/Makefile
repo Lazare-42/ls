@@ -6,7 +6,7 @@
 #    By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/27 14:56:05 by lazrossi          #+#    #+#              #
-#    Updated: 2017/04/26 11:41:57 by lazrossi         ###   ########.fr        #
+#    Updated: 2017/12/27 11:52:36 by lazrossi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME = libft.a
 
 SRC = ft_atoi.c \
 	  ft_bzero.c \
+	  ft_tabdel.c \
 	  ft_freetables.c \
 	  ft_int_size.c \
 	  ft_isalnum.c \
@@ -76,7 +77,21 @@ SRC = ft_atoi.c \
 	  ft_tolower.c \
 	  ft_toupper.c \
 	  ./ft_putabs.c \
+	  ./ft_advance_for_quotes.c \
 	  ./get_next_line.c  \
+	  ./ft_split_whitespaces_nokots.c \
+	  ./ft_str_isalpha.c \
+	  ./ft_tabdup.c \
+	  ./ft_tabsize.c \
+	  ./ft_putwhites.c \
+	  ./ft_tabdup_and_add.c \
+	  ./ft_split_char.c \
+	  ./ft_strjoinfree_str_char.c \
+	  ./ft_strjoinfree_char_str.c \
+	  ./ft_strdupfrom_free.c \
+	  ./ft_tabdup_add_free.c \
+	  ./ft_strjoinfree_one.c \
+	  ./ft_tab_replacestr.c \
 
 OBJECT = $(SRC:.c=.o)
 

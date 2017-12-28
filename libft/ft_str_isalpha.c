@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_str_isalpha.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/10 14:54:27 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/12/18 15:29:39 by lazrossi         ###   ########.fr       */
+/*   Created: 2017/12/28 16:31:25 by lazrossi          #+#    #+#             */
+/*   Updated: 2017/12/28 16:31:28 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "include/libft.h"
 
-size_t	ft_strlen(char *s)
+int	ft_str_isalpha(char *str)
 {
-	char *start;
+	int i;
 
-	if (!s)
-		return (0);
-	start = s;
-	while (*s != 0)
+	i = 0;
+	while (str[i])
 	{
-		++s;
+		if (!ft_isalpha(str[i]))
+			return (0);
+		i++;
 	}
-	return (s - start);
+	return (1);
 }
