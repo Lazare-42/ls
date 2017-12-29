@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/04 01:51:31 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/12/28 16:55:56 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/29 10:48:19 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,14 @@
 #include <time.h>
 #include "../includes/ls.h"
 
-t_ls	*ft_new_elem(char *name, const char *foldername,
+static void	ft_set_pointers_to_null(t_ls *new)
+{
+	new->left = NULL;
+	new->right = NULL;
+	new->color = 0;
+}
+
+t_ls		*ft_new_elem(char *name, const char *foldername,
 		int **max_padding, int sort_options)
 {
 	t_ls *new;
@@ -28,10 +35,9 @@ t_ls	*ft_new_elem(char *name, const char *foldername,
 		return (NULL);
 	if (!(new = malloc(sizeof(t_ls))))
 		exit(1);
-	new->left = NULL;
-	new->right = NULL;
-	new->color = 0;
-	new->name = ft_strdup(name);
+	ft_set_pointers_to_null(new);
+	if (!(new->name = ft_strdup(name)))
+		exit(1);
 	(foldername) ? path = find_path(name, (char*)foldername) : 0;
 	(!(foldername)) ? path = name : 0;
 	if (lstat(path, &(new->stat)))
@@ -47,7 +53,7 @@ t_ls	*ft_new_elem(char *name, const char *foldername,
 	return (new);
 }
 
-int		*ft_store_folder(char *foldername, int *max, t_ls **stock, DIR *dir)
+int			*ft_store_folder(char *foldername, int *max, t_ls **stock, DIR *dir)
 {
 	struct dirent	*dent;
 	t_ls			*new_stock;
@@ -74,7 +80,8 @@ int		*ft_store_folder(char *foldername, int *max, t_ls **stock, DIR *dir)
 	return (max);
 }
 
-int		*ft_store(char *foldername, DIR *dir, int sort_options, t_ls **stock)
+int			*ft_store
+	(char *foldername, DIR *dir, int sort_options, t_ls **stock)
 {
 	int				*max;
 

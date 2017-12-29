@@ -35,7 +35,7 @@ lib:
 	@$(OK)
 
 $(NAME): $(OBJS)
-	@echo "Compiling  ..."
+	@echo "Compiling ft_ls ...."
 	@-$(CC) $(CFLAGS) -o $(NAME) $(OBJS) -I$(INCDIR) $(LDFLAGS)
 	@$(OK)
 

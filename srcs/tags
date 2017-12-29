@@ -1,0 +1,50 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+find_path	ft_find_path.c	/^char	*find_path(char *name, char *foldername)$/;"	f
+ft_adapt_padding_size	ls.c	/^int		*ft_adapt_padding_size(int *max)$/;"	f
+ft_check_file_errors	ft_parsing.c	/^void	ft_check_file_errors(char **folder)$/;"	f
+ft_check_usage	ft_parsing.c	/^int		ft_check_usage(char ***av)$/;"	f
+ft_cmd_1	ft_cmd_one.c	/^void	ft_cmd_1(t_ls *stock)$/;"	f
+ft_cmd_g	ft_cmd_g.c	/^int			ft_cmd_g(t_ls *tmp, char *foldername, int *max_size, int file_mode)$/;"	f
+ft_cmd_l	ft_cmd_l.c	/^int			ft_cmd_l(t_ls *tmp, char *foldername, int *max_size, int file_mode)$/;"	f
+ft_cmd_recurs	ft_cmd_recurs.c	/^void			ft_cmd_recurs(t_ls *stock, char *name, int options)$/;"	f
+ft_fillup_val	ft_padding.c	/^int		*ft_fillup_val(t_ls *stock, int *max, int sort_options)$/;"	f
+ft_free	ls.c	/^void	ft_free(t_ls **stock)$/;"	f
+ft_get_rights	ft_print_info2.c	/^void	ft_get_rights(int mode)$/;"	f
+ft_max_size	ft_padding.c	/^int		*ft_max_size(t_ls *stock, int *max, int sort_options)$/;"	f
+ft_mode	ft_cmd_l.c	/^char		ft_mode(int mode)$/;"	f
+ft_new_elem	ft_store.c	/^t_ls	*ft_new_elem(char *name, const char *foldername,$/;"	f
+ft_place_elem	ft_place_element.c	/^int				ft_place_elem(t_ls *stock, t_ls *next_stock,$/;"	f
+ft_print	ft_cmd_g.c	/^void		ft_print(t_ls *stock, char *foldername, int *max_size,$/;"	f
+ft_print	ft_cmd_l.c	/^static void	ft_print(t_ls *stock, char *foldername,$/;"	f	file:
+ft_print_and_send	ft_cmd_recurs.c	/^static	void	ft_print_and_send(char *name,$/;"	f	file:
+ft_print_errors	ft_print_errors.c	/^void	ft_print_errors(char *name)$/;"	f
+ft_print_grp	ft_cmd_g.c	/^static void	ft_print_grp(t_ls *stock, int *max_size)$/;"	f	file:
+ft_print_grp_usr	ft_print_info2.c	/^void	ft_print_grp_usr(t_ls *stock, int *max_size)$/;"	f
+ft_print_inode	ft_print_info.c	/^void	ft_print_inode(int inode)$/;"	f
+ft_print_name	ft_print_normal.c	/^void	ft_print_name(char *name, int st_mode)$/;"	f
+ft_print_normal	ft_print_normal.c	/^void	ft_print_normal(t_ls *stock, int max_stock_val, int sort_options)$/;"	f
+ft_print_rights	ft_print_info2.c	/^void	ft_print_rights(t_ls *stock, char *path)$/;"	f
+ft_print_time	ft_print_info2.c	/^void	ft_print_time(t_ls *stock, time_t local_time)$/;"	f
+ft_print_usage_error	ft_print_errors.c	/^void	ft_print_usage_error(char error)$/;"	f
+ft_proper_print	ft_print_normal.c	/^void	ft_proper_print(t_ls *tmp, int max_ws_col,$/;"	f
+ft_put_whites	ft_padding.c	/^void	ft_put_whites(int max_str_len, int fillup, int options)$/;"	f
+ft_rotate	rotate.c	/^void		ft_rotate(t_ls **stock, t_ls *new_stock, int sort_options)$/;"	f
+ft_rotate_2	rotate.c	/^static int	ft_rotate_2(t_ls **stock)$/;"	f	file:
+ft_rotate_3	rotate.c	/^static int	ft_rotate_3(t_ls **stock)$/;"	f	file:
+ft_rotate_4	rotate.c	/^static int	ft_rotate_4(t_ls **stock)$/;"	f	file:
+ft_send_files_to_ls	main.c	/^static	void	ft_send_files_to_ls(char **folder, int command_options)$/;"	f	file:
+ft_send_folders_to_ls	main.c	/^static	void	ft_send_folders_to_ls(char **name, int command_options, int j)$/;"	f	file:
+ft_sort_by_options	ft_place_element.c	/^int				ft_sort_by_options(t_ls *stock,$/;"	f
+ft_sort_by_rev_options	ft_place_element.c	/^static int		ft_sort_by_rev_options(t_ls *stock,$/;"	f	file:
+ft_stock_commands	ft_parsing.c	/^int		ft_stock_commands(char command, int command_options)$/;"	f
+ft_store	ft_store.c	/^int		*ft_store(char *foldername, DIR *dir, int sort_options, t_ls **stock)$/;"	f
+ft_store_folder	ft_store.c	/^int		*ft_store_folder(char *foldername, int *max, t_ls **stock, DIR *dir)$/;"	f
+ls	ls.c	/^void	ls(char *name, int options, int file_mode)$/;"	f
+main	main.c	/^int				main(int ac, char **av)$/;"	f
+print_lnkabout	ft_print_info2.c	/^void	print_lnkabout(char *fpath)$/;"	f
+pursue_ls	ls.c	/^void	pursue_ls(char *name, int options, int *max, t_ls *tmp)$/;"	f
