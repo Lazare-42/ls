@@ -6,7 +6,7 @@
 /*   By: lazrossi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/10 15:37:13 by lazrossi          #+#    #+#             */
-/*   Updated: 2017/12/29 10:41:31 by lazrossi         ###   ########.fr       */
+/*   Updated: 2017/12/29 11:13:39 by lazrossi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,15 +46,21 @@ void	ft_get_rights(int mode)
 	rights[0] = (mode & S_IRUSR) ? 'r' : '-';
 	rights[1] = (mode & S_IWUSR) ? 'w' : '-';
 	rights[2] = (mode & S_IXUSR) ? 'x' : '-';
-	rights[2] = (mode & S_ISUID) ? 'S' : '-';
 	rights[3] = (mode & S_IRGRP) ? 'r' : '-';
 	rights[4] = (mode & S_IWGRP) ? 'w' : '-';
 	rights[5] = (mode & S_IXGRP) ? 'x' : '-';
-	rights[5] = (mode & S_ISGID) ? 'S' : '-';
 	rights[6] = (mode & S_IROTH) ? 'r' : '-';
 	rights[7] = (mode & S_IWOTH) ? 'w' : '-';
 	rights[8] = (mode & S_IXOTH) ? 'x' : '-';
 	rights[9] = '\0';
+	if (rights[2] == 'x')
+		rights[2] = (mode & S_ISUID) ? 'S' : 'x';
+	else
+		rights[2] = (mode & S_ISUID) ? 'S' : '-';
+	if (rights[5] == 'x')
+		rights[5] = (mode & S_ISGID) ? 'S' : 'x';
+	else
+		rights[5] = (mode & S_ISGID) ? 'S' : '-';
 	ft_putstr(rights);
 }
 
